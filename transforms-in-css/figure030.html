@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+ <html
+ <head>
+<title>Figure 29</title>
+<style>
+	.container {perspective: 850px; perspective-origin: 50% 0%; height: 50px; width: 800px; border: 1px solid gray; margin-bottom: 10px;}
+	.ruler {height: 50px; background: #DED url(img/ticks.gif) repeat-x;
+		transform: rotateX(60deg);
+		transform-origin: 50% 100%;}
+
+	#d1 {perspective-origin: 0% 0%;}
+	#d2 {perspective-origin: 33% 0%;}
+	#d3 {perspective-origin: 50% 0%;}
+	#d4 {perspective-origin: 67% 0%;}
+	#d5 {perspective-origin: 100% 0%;}
+
+	.container {position: relative;}
+	.container span {position: absolute; font: smaller monospace; text-align: center; margin-left: -2em;}
+	#d1 span {margin-left: 0;}
+	#d2 span {left: 33%;}
+	#d3 span {left: 50%;}
+	#d4 span {left: 67%;}
+	#d5 span {right: 0; width: 5em;}
+</style>
+ </head>
+ <body>
+
+	<div class="container" id="d1">
+		<span class="label">0% 0%</span>
+		<div class="ruler"></div>
+	</div>
+	<div class="container" id="d2">
+		<span class="label">33% 0%</span>
+		<div class="ruler"></div>
+	</div>
+	<div class="container" id="d3">
+		<span class="label">50% 0%</span>
+		<div class="ruler"></div>
+	</div>
+	<div class="container" id="d4">
+		<span class="label">67% 0%</span>
+		<div class="ruler"></div>
+	</div>
+	<div class="container" id="d5">
+		<span class="label">100% 0%</span>
+		<div class="ruler"></div>
+	</div>
+
+ </body>
+ </html>

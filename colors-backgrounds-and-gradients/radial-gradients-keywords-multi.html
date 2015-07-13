@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Simple linear gradients</title>
+<style type="text/css">
+div {float: left; margin: 10px; width: 200px;}
+div {text-align: center; font: bold 1em Helvetica, sans-serif;}
+div:nth-child(4n+1) {clear: left;}
+.circle {width: 200px; height: 200px;}
+.ellipse {width: 200px; height: 100px;}
+.cs {background-image: radial-gradient(closest-side at 33% 67%, purple, gold);}
+.fs {background-image: radial-gradient(farthest-side at 33% 67%, purple, gold);}
+.cc {background-image: radial-gradient(closest-corner at 33% 67%, purple, gold);}
+.fc {background-image: radial-gradient(farthest-corner at 33% 67%, purple, gold);}
+
+</style>
+ </head>
+ <body>
+ 
+<div>closest-side</div>
+<div>farthest-side</div>
+<div>closest-corner</div>
+<div>farthest-corner</div>
+
+<div class="circle cs"><b></b></div>
+<div class="circle fs"><b></b></div>
+<div class="circle cc"><b></b></div>
+<div class="circle fc"><b></b></div>
+<div class="ellipse cs"><b></b></div>
+<div class="ellipse fs"><b></b></div>
+<div class="ellipse cc"><b></b></div>
+<div class="ellipse fc"><b></b></div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure 21</title>
+<style>
+body {margin: 10px;}
+
+div {float: left; height: 110px; width: 110px; margin: 15px; padding: 1em; border: 1px dotted red;
+	background-image: url(i/yinyang-sm.png);
+	background-origin: padding-box;
+}
+div:nth-child(2n+1) {clear: left;}
+
+.round {background-repeat: round;}
+.space {background-repeat: space;}
+.clipc {background-clip: content-box;}
+.clipp {background-clip: padding-box;}
+.clipb {background-clip: border-box;}
+
+</style>
+</head>
+<body>
+
+<div id="ex01" class="round clipc"></div>
+<div id="ex02" class="round clipp"></div>
+<div id="ex04" class="space clipc"></div>
+<div id="ex05" class="space clipp"></div>
+
+</body>
+</html>

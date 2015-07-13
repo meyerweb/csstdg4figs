@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure 21</title>
+<style>
+body {margin: 10px;}
+
+	div {border: 1px solid red; width: 250px; height: 150px; float: left; position: relative; margin: 35px 10px; padding: 1em;
+		 background: green url(i/yinyang.png) center no-repeat;}
+	.cover {background-size: cover;}
+	.contain {background-size: contain;}
+	.clip-content {background-clip: content-box;}
+	.clip-padding {background-clip: padding-box;}
+	.origin-content {background-origin: content-box;}
+	.origin-padding {background-origin: padding-box;}
+
+div b {font: smaller Consolas, monospace; position: absolute; width: 100%; top: 103%; left: 0; text-align: center;}
+
+</style>
+</head>
+<body>
+
+<div id="ex01" class="cover clip-content origin-content"><b>cover clip-content origin-content</b></div>
+<div id="ex02" class="cover clip-content origin-padding"><b>cover clip-content origin-padding</b></div>
+<div id="ex01" class="cover clip-padding origin-content"><b>cover clip-padding origin-content</b></div>
+<div id="ex02" class="cover clip-padding origin-padding"><b>cover clip-padding origin-padding</b></div>
+<div id="ex04" class="contain clip-content origin-content"><b>contain clip-content origin-content</b></div>
+<div id="ex05" class="contain clip-content origin-padding"><b>contain clip-content origin-padding</b></div>
+<div id="ex04" class="contain clip-padding origin-content"><b>contain clip-padding origin-content</b></div>
+<div id="ex05" class="contain clip-padding origin-padding"><b>contain clip-padding origin-padding</b></div>
+
+</body>
+</html>

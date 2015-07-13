@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Figure 18</title>
+<style>
+body {margin: 100px;}
+
+	section {float: left; border: 1px dotted gray; margin: 2em 0;}
+	div {border: 1px solid red; float: left; position: relative; margin: 50px;}
+	img {height: 150px; width: 150px; vertical-align: bottom; opacity: 0.9;}
+	span {position: absolute; top: 115%; left: 0; width: 100%;
+		text-align: center; white-space: pre; font: 13px Anadale Mono, monospace;}
+
+	#ex01 {transform: perspective(100px) rotateY(-45deg);}
+	#ex02 {transform: perspective(250px) rotateY(-45deg);}
+	#ex03 {transform: perspective(500px) rotateY(-45deg);}
+	#ex04 {transform: perspective(1250px) rotateY(-45deg);}
+
+	#ex11 {transform: rotateY(-45deg) perspective(100px);}
+	#ex12 {transform: rotateY(-45deg) perspective(250px);}
+	#ex13 {transform: rotateY(-45deg) perspective(500px);}
+	#ex14 {transform: rotateY(-45deg) perspective(1250px);}
+
+
+</style>
+</head>
+<body>
+
+<section>
+
+<div><img src="img/box.png" alt="" id="ex01"><span>perspective(100px)</span></div>
+<div><img src="img/box.png" alt="" id="ex02"><span>perspective(250px)</span></div>
+<div><img src="img/box.png" alt="" id="ex03"><span>perspective(500px)</span></div>
+<div><img src="img/box.png" alt="" id="ex04"><span>perspective(1250px)</span></div>
+
+</section>
+
+<section>
+
+<div><img src="img/box.png" alt="" id="ex11"><span>perspective(px)</span></div>
+<div><img src="img/box.png" alt="" id="ex12"><span>perspective(px)</span></div>
+<div><img src="img/box.png" alt="" id="ex13"><span>perspective(px)</span></div>
+<div><img src="img/box.png" alt="" id="ex14"><span>perspective(px)</span></div>
+
+</section>
+
+</body>
+</html>

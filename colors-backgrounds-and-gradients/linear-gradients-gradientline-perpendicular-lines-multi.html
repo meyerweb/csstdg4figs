@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Simple linear gradients</title>
+<style type="text/css">
+
+body > div {float: left; margin: 20px;}
+div.clip {padding: 40px; overflow: hidden;}
+div.contain {position: relative;}
+div.ex01 {width: 300px; height: 200px;}
+div.ex02 {width: 200px; height: 200px;}
+div.ex03 {width: 200px; height: 300px;}
+
+div.gradline, div.perpend {
+	background-image: linear-gradient(
+		to right, #4097FF, #FFBE00, #4097FF
+	);
+}
+div[class^="perpend"], div.gradline {
+	position: absolute; top: -50%; left: 0;
+	margin: 0; height: 200%;
+}
+.ex01 div[class^="perpend"], .ex01 div.gradline {width: 362px;
+	transform: translateX(-31px) rotate(-35deg);
+}
+.ex02 div[class^="perpend"], .ex02 div.gradline {width: 278px;
+	transform: translateX(-39px) rotate(-35deg);
+}
+.ex03 div[class^="perpend"], .ex03 div.gradline {width: 336px;
+	transform: translateX(-68px) rotate(-35deg);
+}
+div.perpend-mask {
+	background-image:
+		repeating-linear-gradient(to right,
+			transparent, transparent 0.5%,
+			white 0.5%, white 5%);
+	background-position: center left;
+	background-size: 99.5% 100%;
+}
+div.gradline {top: 50%;
+	margin: -5px 0 0; height: 10px;}
+div.imagebox {position: relative; width: 100%; height: 100%; border: 1px dotted red;}
+</style>
+</head>
+<body>
+
+
+<div class="clip">
+<div class="contain ex01">
+<div class="perpend"><b></b></div>
+<div class="perpend-mask"><b></b></div>
+<div class="imagebox"><b></b></div>
+<div class="gradline"><b></b></div>
+</div>
+</div>
+
+<div class="clip">
+<div class="contain ex02">
+<div class="perpend"><b></b></div>
+<div class="perpend-mask"><b></b></div>
+<div class="imagebox"><b></b></div>
+<div class="gradline"><b></b></div>
+</div>
+</div>
+
+<div class="clip">
+<div class="contain ex03">
+<div class="perpend"><b></b></div>
+<div class="perpend-mask"><b></b></div>
+<div class="imagebox"><b></b></div>
+<div class="gradline"><b></b></div>
+</div>
+</div>
+
+
+</body>
+</html>

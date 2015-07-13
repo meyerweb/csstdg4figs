@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Figure 23</title>
+<style>
+body {margin: 100px;}
+
+	div {border: 1px solid red; float: left; margin: 50px; background: url(img/frame-sq.png); background-size: 100% 100%; background-origin: border-box; transform-style: preserve-3d; perspective: 500px;}
+	div:nth-child(5) {clear: left;}
+	div > img[id] {height: 150px; width: 150px; border: 1px solid gray;
+		vertical-align: bottom;
+		opacity: 0.67;
+		transform: skew(30deg,30deg);}
+	img.focus {position: absolute; top: 0; left: 0; margin: -6.5px 0 0 -6.5px;}
+
+	#ex01 {transform-origin: 0 0;}
+	#ex01 + img.focus {left: 0; top: 0;}
+	#ex02 {transform-origin: 0 100%;}
+	#ex02 + img.focus {left: 0; top: 100%;}
+	#ex03 {transform-origin: 100% 0;}
+	#ex03 + img.focus {left: 100%; top: 0;}
+	#ex04 {transform-origin: 100% 100%;}
+	#ex04 + img.focus {left: 100%; top: 100%;}
+	#ex05 {transform-origin: 75% 25%;}
+	#ex05 + img.focus {left: 75%; top: 25%;}
+	#ex06 {transform-origin: 25% 75%;}
+	#ex06 + img.focus {left: 25%; top: 75%;}
+	#ex07 {transform-origin: 50% 100%;}
+	#ex07 + img.focus {left: 50%; top: 100%;}
+	#ex08 {transform-origin: 50% 50%;}
+	#ex08 + img.focus {left: 50%; top: 50%;}
+
+</style>
+</head>
+<body>
+
+<div><img src="img/box.png" alt="" id="ex01"><img src="img/focus.png" class="focus" alt=""></div>
+<div><img src="img/box.png" alt="" id="ex02"><img src="img/focus.png" class="focus" alt=""></div>
+<div><img src="img/box.png" alt="" id="ex03"><img src="img/focus.png" class="focus" alt=""></div>
+<div><img src="img/box.png" alt="" id="ex04"><img src="img/focus.png" class="focus" alt=""></div>
+<div><img src="img/box.png" alt="" id="ex05"><img src="img/focus.png" class="focus" alt=""></div>
+<div><img src="img/box.png" alt="" id="ex06"><img src="img/focus.png" class="focus" alt=""></div>
+<div><img src="img/box.png" alt="" id="ex07"><img src="img/focus.png" class="focus" alt=""></div>
+<div><img src="img/box.png" alt="" id="ex08"><img src="img/focus.png" class="focus" alt=""></div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>The gradient ray and some ellipses</title>
+<style type="text/css">
+div[class^="ex"] {margin: 10px; position: relative;
+height: 600px; width: 800px;
+	background-image:
+		linear-gradient(to right,
+			transparent, transparent 50%, purple 50%, green, gold 100%),
+	 	radial-gradient(closest-side,
+	 		purple 0%, purple 2%,
+	 		transparent 2%, transparent 24.5%,
+	 		#404040 24.5%, #404040 25.5%,
+	 		transparent 25.5%, transparent 49.5%,
+	 		green 49.5%, green 50.5%,
+	 		transparent 50.5%, transparent 62%,
+	 		#409600 62%, #409600 63%,
+	 		transparent 63%, transparent 74.5%,
+	 		#80AC00 74.5%, #80AC00 75.5%,
+	 		transparent 75.5%, transparent 81%,
+	 		#A0B700 81%, #A0B700 82%,
+	 		transparent 82%, transparent 87%,
+	 		#BFC100 87%, #BFC100 88%,
+	 		transparent 88%, transparent 93%,
+	 		#DFCC00 93%, #DFCC00 94%,
+	 		transparent 94%, transparent 99%,
+	 		gold 99%, gold 99.9%,
+	 		transparent 100%)
+	;
+	background-size: 100% 2%, auto, auto, auto, auto;
+	background-position: center;
+	background-repeat: no-repeat;}
+b[id] {position: absolute; margin: -1.2em -2.5em; padding: 0 0.5em; width: 4em;
+	font: 0.875em Consolas, "Andale Mono", monospace; text-align: center;}
+#p00 {top: 50%; left: 50%; margin-top: -2em; line-height: 2;}
+#p25 {top: 62.5%; left: 50%;}
+#p50 {top: 75%; left: 50%;}
+#p75 {top: 87.5%; left: 50%;}
+#p100 {top: 100%; left: 50%;}
+</style>
+ </head>
+ <body>
+
+<div class="ex01">
+<b id="p00">0% purple</b>
+<b id="p25">25% #404040</b>
+<b id="p50">50% green</b>
+<b id="p75">75% #80AC00</b>
+<b id="p100">100% gold</b>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Simple linear gradients</title>
+<style type="text/css">
+body {padding: 1em;}
+section {background: gold; position: relative; padding: 25px; height: 25px; width: 800px;}
+	#spectrum {background-image: linear-gradient(90deg,
+		red 0%, orange 25%, yellow 50%, green 65%, blue 80%, indigo 95%, violet 100%);}
+b {position: absolute; top: 0%;
+	font: 12px Helvetica, monospace; text-align: center; text-indent: 0.5em;
+	width: 3.5em; margin-left: -1.75em; margin-top: 75px; padding-top: 1.25em;
+	background: linear-gradient(to right,
+		transparent, transparent 50%,
+		black 50%, black 52%,
+		transparent 52%);
+	background-size: 100% 1em;
+	background-repeat: no-repeat;}
+.p00 {left: 0;}
+.p25 {left: 25%;}
+.p50 {left: 50%;}
+.p65 {left: 65%;}
+.p80 {left: 80%;}
+.p95 {left: 95%;}
+.p100 {left: 99.9%;}
+</style>
+ </head>
+ <body>
+
+<section id="spectrum">
+
+<div id="ex01">
+<b class="p00">0% red</b>
+<b class="p25">25% orange</b>
+<b class="p50">50% yellow</b>
+<b class="p65">65% green</b>
+<b class="p80">80% blue</b>
+<b class="p95">95% indigo</b>
+<b class="p100">100% violet</b>
+</div>
+
+</section>
+
+</body>
+</html>

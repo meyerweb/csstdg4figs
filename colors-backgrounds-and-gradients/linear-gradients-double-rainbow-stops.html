@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Simple linear gradients</title>
+<style type="text/css">
+section {background: gold; padding: 25px; margin: 100px; height: 2em; width: 800px;}
+#wdim {position: relative;
+	background-image: linear-gradient(90deg,
+		red, orange, yellow, green, blue, indigo, violet,
+		red, orange, yellow, green, blue, indigo, violet
+	);}
+b {position: absolute; top: 0%;
+	font: 1em monospace; text-align: center;
+	width: 3em; margin-left: -1.5em; padding-top: 7.25em;
+	background: linear-gradient(to right,
+		transparent, transparent 49%,
+		black 49%, black 51%,
+		transparent 51%);
+		background-size: 100% 7em;
+		background-repeat: no-repeat;}
+.p00 {left: 0;}
+.p07 {left: 7.7%;}
+.p15 {left: 15.4%;}
+.p23 {left: 23.1%;}
+.p30 {left: 30.8%;}
+.p38 {left: 38.5%;}
+.p46 {left: 46.2%;}
+.p53 {left: 53.9%;}
+.p61 {left: 61.6%;}
+.p69 {left: 69.3%;}
+.p77 {left: 77%;}
+.p84 {left: 84.7%;}
+.p92 {left: 92.4%;}
+.p100 {left: 100%;}
+</style>
+ </head>
+ <body>
+
+<section id="wdim">
+
+<b class="p00">0%</b>
+<b class="p07">7.7%</b>
+<b class="p15">15.4%</b>
+<b class="p23">23.1%</b>
+<b class="p30">30.8%</b>
+<b class="p38">38.5%</b>
+<b class="p46">46.2%</b>
+<b class="p53">53.9%</b>
+<b class="p61">61.6%</b>
+<b class="p69">69.3%</b>
+<b class="p77">77%</b>
+<b class="p84">84.7%</b>
+<b class="p92">92.4%</b>
+<b class="p100">100%</b>
+
+</section>
+
+</body>
+</html>

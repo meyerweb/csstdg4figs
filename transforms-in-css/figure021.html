@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Figure 20</title>
+<style>
+body {margin: 100px;}
+
+	section {float: left; border: 1px dotted gray; margin: 2em 0;}
+	div {border: 1px solid red; float: left; margin: 50px;}
+	img {height: 150px; width: 150px; vertical-align: bottom; opacity: 0.9;}
+
+	#ex01 {transform: perspective(500px) rotateY(33deg) translate(24px,25px) skewX(-10deg);}
+	#ex02 {transform: matrix3d(
+		0.838671, 0, -0.544639, 0.00108928,
+		-0.14788, 1, 0.0960346, -0.000192069,
+		0.544639, 0, 0.838671, -0.00167734,
+		20.1281, 25, -13.0713, 1.02614);}
+
+
+</style>
+</head>
+<body>
+
+<section>
+
+<div><img src="img/box.png" alt="" id="ex01"></div>
+<div><img src="img/box.png" alt="" id="ex02"></div>
+
+</section>
+
+</body>
+</html>

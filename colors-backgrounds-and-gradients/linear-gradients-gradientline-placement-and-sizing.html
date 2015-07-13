@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Simple linear gradients</title>
+<style type="text/css">
+body {padding: 2em;}
+body > div {height: 200px; width: 400px; margin: 50px 20px;}
+.example, .imagebox {float: left;}
+div.example {background-image: linear-gradient(
+		55deg, #4097FF, #FFBE00, #4097FF
+	);}
+div.gradline {
+	background-color: black;
+	position: absolute; top: 50%; left: 0;
+	margin: -2px 0 0; height: 4px; width: 442px;
+	transform: translateX(-21px) rotate(-35deg);}
+div.imagebox {border: 1px dotted red; position: relative;}
+
+.gradline b {font: smaller Helvetica, sans-serif;}
+b.pnt {display: inline-block; transform: rotate(35deg);}
+b.st {position: absolute; top: 8px; left: -4%; width: 3em; text-align: center;}
+b.label {position: absolute; top: 5px; left: 50%; width: 10em; margin-left: -5em; text-align: center;}
+b.en {position: absolute; top: -20px; left: 101%;}
+
+.gradline img {position: absolute; right: 0; top: -5px; height: 15px;}
+
+div.line {position: absolute; height: 2px; width: 33px; transform: rotate(-90deg); top: 0; background: rgba(0,0,0,0.25);}
+div.st.line {transform-origin: 0 50%; left: 0;}
+div.en.line {transform-origin: 100% 50%; right: 0;}
+</style>
+ </head>
+ <body>
+
+<div class="imagebox">
+<div class="gradline">
+<b class="st pnt">start point</b>
+<div class="st line"></div>
+<b class="label">gradient line</b>
+<b class="en pnt">end point</b>
+<div class="en line"></div>
+<img src="i/arrowhead.png">
+</div>
+</div>
+
+<div class="example"><b></b></div>
+
+</body>
+</html>

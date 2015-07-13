@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure 1</title>
+<style type="text/css">
+body {margin: 5em; perspective: 5000px;}
+#worldbox {
+	width: 500px; height: 500px; border: 3px solid gray;
+	transform: translate(50%) rotateX(-25deg) rotateY(-50deg);
+	transform: translate(50%) rotate3d();
+	transform-style: preserve-3d;
+}
+div[id$="a"] {background: red; position: absolute; top: 49.5%; left: 0; width: 100%; height: 0.5%; font: bold x-large sans-serif;}
+div#ya {transform: rotateZ(90deg);}
+div#za {transform: rotateY(90deg);}
+
+div[id$="a"] b {position: absolute; border: 1px solid black; background: white; padding: 0.25em;}
+div#xa b {right: 0; transform: translate(-0.5em,-0.67em);}
+div#ya b {right: 0; transform: translate(-0.5em,-0.8em) rotateZ(-90deg);}
+div#za b { transform: translate(0.5em,-0.67em);}
+</style>
+ </head>
+ <body>
+
+<div id="worldbox">
+<div id="xa"><b>X</b></div>
+<div id="ya"><b>Y</b></div>
+<div id="za"><b>Z</b></div>
+</div>
+
+</body>
+</html>

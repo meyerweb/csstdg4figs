@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Figure 4</title>
+<style>
+body {margin: 100px;}
+
+	div {border: 1px solid red; float: left; position: relative; margin: 50px 50px 75px;
+		background: url(img/frame-sq.png); background-size: 100% 100%; background-origin: border-box;
+		transform-style: preserve-3d; perspective: 400px;}
+	div:nth-child(4) {clear: left;}
+	img {height: 150px; width: 150px; vertical-align: bottom; opacity: 0.9;}
+	span {position: absolute; top: 125%; left: 0; width: 100%;
+		text-align: center; white-space: pre; font: 17px Anadale Mono, monospace;}
+
+	#ex01 {transform: rotateX(45deg);}
+	#ex02 {transform: rotateY(45deg);}
+	#ex03 {transform: rotateZ(45deg);}
+
+	#ex04 {transform: rotateX(-45deg);}
+	#ex05 {transform: rotateY(-45deg);}
+	#ex06 {transform: rotateZ(-45deg);}
+
+</style>
+</head>
+<body>
+
+<div><img src="img/box-axes.png" alt="" id="ex01"><span>rotateX(45deg)</span></div>
+<div><img src="img/box-axes.png" alt="" id="ex02"><span>rotateY(45deg)</span></div>
+<div><img src="img/box-axes.png" alt="" id="ex03"><span>rotateZ(45deg)</span></div>
+<div><img src="img/box-axes.png" alt="" id="ex04"><span>rotateX(-45deg)</span></div>
+<div><img src="img/box-axes.png" alt="" id="ex05"><span>rotateY(-45deg)</span></div>
+<div><img src="img/box-axes.png" alt="" id="ex06"><span>rotateZ(-45deg)</span></div>
+
+</body>
+</html>

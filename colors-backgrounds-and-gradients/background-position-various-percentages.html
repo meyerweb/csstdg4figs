@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Figure 21</title>
+<style>
+body {margin: 50px;}
+
+	body > div {float: left; position: relative; height: 150px; width: 150px; margin: 15px; border: 1px none red;
+		background-image: 
+			url(i/frame-sq.png),
+			url(i/chrome.jpg)
+			;
+		background-size: 100% 100%, 50px 50px;
+		background-origin: padding-box;
+		background-repeat: no-repeat;
+		background-color: #EEE;}
+	div:nth-child(4n+1) {clear: left;}
+	div > div {width: 150px;
+		position: absolute; top: 100%; left: 0; width: 100%; text-align: center;
+		text-align: center; font: 13px Consolas, Andale Mono, monospace; line-height: 2;}
+
+	#ex01 {background-position: 0% 0%;}
+	#ex02 {background-position: 0% 50%;}
+	#ex03 {background-position: 0% 100%;}
+	#ex04 {background-position: 50% 0%;}
+	#ex05 {background-position: 50% 50%;}
+	#ex06 {background-position: 50% 100%;}
+	#ex07 {background-position: 100% 0%;}
+	#ex08 {background-position: 100% 50%;}
+	#ex09 {background-position: 100% 100%;}
+	#ex10 {background-position: 25% 75%;}
+	#ex11 {background-position: 75% 25%;}
+	#ex12 {background-position: 100% 50%;}
+
+</style>
+</head>
+<body>
+
+<div id="ex01"><div>0% 0%</div></div>
+<div id="ex02"><div>0% 50%</div></div>
+<div id="ex03"><div>0% 100%</div></div>
+<div id="ex10"><div>25% 75%</div></div>
+<div id="ex04"><div>50% 0%</div></div>
+<div id="ex05"><div>50% 50%</div></div>
+<div id="ex06"><div>50% 100%</div></div>
+<div id="ex11"><div>75% 25%</div></div>
+<div id="ex07"><div>100% 0%</div></div>
+<div id="ex08"><div>100% 50%</div></div>
+<div id="ex09"><div>100% 100%</div></div>
+<div id="ex12"><div>33% 75%</div></div>
+
+</body>
+</html>

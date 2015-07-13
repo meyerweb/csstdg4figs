@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Figure 14</title>
+<style>
+body {margin: 100px;}
+
+	div#r3d {border: 1px solid red; float: left; position: relative; margin: 50px;
+		background: url(img/frame-sq.png); background-size: 100% 100%; background-origin: border-box;
+		transform-style: preserve-3d; perspective: 800px; transition: 5s;}
+	div:nth-child(5) {clear: left;}
+	img {height: 250px; width: 250px; vertical-align: bottom; opacity: 0.9;}
+	span {position: absolute; top: 110%; left: -25%; width: 150%;
+		text-align: center; white-space: pre; font: 20px Anadale Mono, monospace;}
+
+	#ex01 {transform: rotate3d(-0.95,0.5,1,45deg);}
+
+
+#worldbox {
+	width: 500px; height: 500px; border: 3px solid gray;
+	transform: translate(100%) rotateX(-33deg) rotateY(-40deg);
+	transform-style: preserve-3d;
+}
+head:hover #worldbox {animation: spin 5s linear infinite;}
+@keyframes spin {
+	100% {transform: rotateY(-2000deg);}
+}
+div[id$="a"] {background: red; position: absolute; top: 49.75%; left: 0; width: 100%; height: 0.25%; font: bold xx-large sans-serif;}
+div#ya {transform: rotateZ(90deg);}
+div#za {transform: rotateY(90deg);}
+
+div[id$="a"] b {position: absolute; border: 1px solid black; background: rgba(255,255,255,0.9); color: silver; padding: 0.25em;}
+div#xa b {right: 0; transform: translate(-0.5em,-0.67em);}
+div#ya b {right: 0; transform: translate(-0.5em,-0.8em) rotateZ(-90deg);}
+div#za b { transform: translate(0.5em,-0.67em);}
+
+div[id^="t"] {background: linear-gradient(90deg,rgba(0,0,0,0.15),black); width: 20px; height: 3px; left: 50%;}
+div[id^="t"] img {height: 20px; width: 20px; position: absolute; right: -2px; top: -9px;}
+div#txa {width: 180px; transform-origin: 0 0; transform: translate3d(0,0,0) rotateZ(-180deg);}
+div#tya {width: 100px; transform-origin: 0 50%; transform: translate3d(-180px,0,0) rotateZ(90deg);}
+div#tza {width: 200px; transform-origin: 0% 50%; transform: translate3d(-180px,100px,0) rotateY(-90deg);}
+
+div#tba {width: 269px; transform-origin: 0 50%; transform: rotateY(-132deg) rotateX(0deg);
+	background: linear-gradient(90deg, silver 0%, gray 50%, transparent 50%, transparent 100%); background-size: 10px;}
+div#tha {width: 100px; transform-origin: 0 50%; transform: translate3d(-180px,0,200px) rotateZ(90deg);
+	background: linear-gradient(90deg, silver 0%, gray 50%, transparent 50%, transparent 100%); background-size: 7px;}
+
+</style>
+</head>
+<body>
+
+<div id="r3d"><img src="img/box-axes.png" alt="" id="ex01"><span>rotate3d(-0.95,0.5,1,45deg)</span></div>
+
+
+
+<div id="worldbox">
+<div id="xa"><b>x</b></div>
+<div id="ya"><b>y</b></div>
+<div id="za"><b>z</b></div>
+<div id="txa"><img src="img/arrowhead.png" alt=""></div>
+<div id="tya"><img src="img/arrowhead.png" alt=""></div>
+<div id="tza"><img src="img/arrowhead.png" alt=""></div>
+<!--
+ -->
+<div id="tba"></div>
+<div id="tha"></div>
+</div>
+
+
+</body>
+</html>

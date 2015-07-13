@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Figure 9</title>
+<style>
+body {margin: 100px;}
+
+	div {border: 1px solid red; float: left; position: relative; margin: 60px;
+		background: url(img/frame-sq.png); background-size: 100% 100%; background-origin: border-box;}
+	div:nth-child(5) {clear: left;}
+	img {height: 150px; width: 150px; vertical-align: bottom; opacity: 0.9;}
+	span {position: absolute; top: 105%; left: -25%; width: 150%;
+		text-align: center; white-space: pre; font: 17px Anadale Mono, monospace;}
+	span {top: 125%;}
+
+	#ex01 {transform: translate(25px);}
+	#ex02 {transform: translate(25%);}
+	#ex03 {transform: translate(0,25px);}
+	#ex04 {transform: translate(0,-25px);}
+	#ex05 {transform: translate(20%,20%);}
+	#ex06 {transform: translate(-20%,-20%);}
+	#ex07 {transform: translate(110%,25px);}
+
+</style>
+</head>
+<body>
+
+<div><img src="img/box.png" alt="" id="ex01"><span>translate(25px)</span></div>
+<div><img src="img/box.png" alt="" id="ex02"><span>translate(25%)</span></div>
+<div><img src="img/box.png" alt="" id="ex03"><span>translate(0,25px)</span></div>
+<div><img src="img/box.png" alt="" id="ex04"><span>translate(0,-25px)</span></div>
+<div><img src="img/box.png" alt="" id="ex05"><span>translate(20%,20%)</span></div>
+<div><img src="img/box.png" alt="" id="ex06"><span>translate(-20%,-20%)</span></div>
+<div><img src="img/box.png" alt="" id="ex07"><span>translate(110%,25px)</span></div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html
+<head>
+<meta charset="utf-8" />
+<title>Figure 31</title>
+<style type="text/css">
+body {margin: 5em;}
+	section {position: relative; border: 1px solid red; width: 250px; height: 250px; float: left; margin-right: 100px;}
+	img, div {position: absolute; top: 0; left: 0;}
+	div {transform: rotateY(180deg); backface-visibility: hidden;
+		background: rgba(255,255,255,0.9);}
+	section:hover {transform: rotateY(180deg); transform-style: preserve-3d;}
+	div.info {width: 100%; height: 100%; padding: 1em; box-sizing: border-box;}
+	div.info h3 {margin: 1em 0 0;}
+	div.info h4 {margin: 0.25em 0 0;font-style: italic;}
+</style>
+ </head>
+ <body>
+
+	<section>
+		<img src="img/box-salmon.png" alt="">
+		<div class="info">(…info goes here…)</div>
+	</section>
+	<section>
+		<img src="img/box-salmon.png" alt="">
+		<div class="info">
+<h3>CSS: The Definitive Guide, 4th Edition</h3>
+<h4>Visual Presentation for the Web</h4>
+<p>Eric A. Meyer and Estelle Weyl</p>
+<p>O’Reilly &amp; Associates, 2015</p>
+</div>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Figure 7</title>
+<style>
+div {float: left; position: relative;
+	margin: 150px; border: 1px solid silver; background: #EEE;}
+img {display: block;}
+img.guides {position: absolute; top: 0; left: 0;}
+span {position: absolute; top: -75px; left: 0; white-space: pre; font: 20px Anadale Mono, monospace;}
+
+#one [src*="box.png"] {transform: translateX(200px) rotate(45deg);}
+#one [src*="rotate.png"] {transform: translate(275px, 75px);}
+#one [src*="translate.png"]  {transform: translate(100px, 75px); transform-origin: 0% 50%;}
+
+#two [src*="box.png"] {transform: rotate(45deg) translateX(200px);}
+#two [src*="rotate.png"] {transform: translate(75px, 75px);}
+#two [src*="translate.png"] {transform: translate(100px, 75px) rotate(45deg); transform-origin: 0% 50%;}
+
+</style>
+ </head>
+ <body>
+
+<div id="one">
+<img src="img/box.png">
+<img src="img/rotate.png" class="guides">
+<img src="img/translate.png" class="guides">
+<span>translateX(200px) rotate(45deg);</span>
+</div>
+<div id="two">
+<img src="img/box.png">
+<img src="img/rotate.png" class="guides">
+<img src="img/translate.png" class="guides">
+<span>rotate(45deg) translateX(200px);</span>
+</div>
+
+</body>
+</html>

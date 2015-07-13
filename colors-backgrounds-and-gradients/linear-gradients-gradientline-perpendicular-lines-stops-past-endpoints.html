@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Simple linear gradients</title>
+<style type="text/css">
+div[class] {height: 200px; width: 400px;}
+body > div {float: left; margin: 20px;}
+
+div.clip {padding: 100px; overflow: hidden;}
+div.example {background-image: linear-gradient(
+		55deg, #4097FF -25%, #FFBE00, #4097FF 125%
+	);
+	margin-top: 120px;}
+
+div.contain {position: relative;}
+
+div.gradline, div.perpend {
+	background-image: linear-gradient(
+		to right, #4097FF, #FFBE00, #4097FF
+	);
+}
+div[class^="perpend"], div.gradline {
+	position: absolute; top: -50%; left: 0;
+	margin: 0; height: 200%; width: 663px;
+	transform: translateX(-131.5px) rotate(-35deg);
+}
+div.perpend-mask {
+	background-image:
+		repeating-linear-gradient(to right,
+			transparent, transparent 0.5%,
+			white 0.5%, white 3.33%);
+	background-position: center left;
+	background-size: 99.67% 100%;
+}
+div.gradline {top: 50%;
+	margin: -5px 0 0; height: 10px;}
+div.imagebox {position: relative; border: 1px dotted red;}
+</style>
+ </head>
+ <body>
+
+<div class="clip">
+
+<div class="contain">
+<div class="perpend"><b></b></div>
+<div class="perpend-mask"><b></b></div>
+<div class="imagebox"><b></b></div>
+<div class="gradline"><b></b></div>
+</div>
+
+</div>
+
+<div class="example"><b></b></div>
+
+</body>
+</html>
