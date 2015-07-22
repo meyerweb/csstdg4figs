@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+<title>Figure 4-11</title>
+<script>
+window.onload = function() {
+	// Parameters
+	var saturation = 100;
+	var lightness = 50;
+	var radius = 180;
+	var canvas = 850;
+	var centerx = 200;
+	var centery = 200;
+	var redstart = 90 * 0.017453292519943;
+
+	// Render
+	var canvas = document.querySelector('canvas');
+	var ctx = canvas.getContext('2d');
+
+	ctx.lineWidth = radius;
+	for(i=1;i<=360;i++) {
+		ctx.beginPath();
+		ctx.strokeStyle = 'hsl('+i+', '+saturation+'%, '+lightness+'%)';
+		var startAngle = (i * Math.PI/180) - redstart;
+		var endAngle = ((i-2) * Math.PI/180) - redstart;
+		console.log(startAngle+ ','+endAngle);
+		ctx.arc(centerx,centery,radius/2,startAngle,endAngle,true);
+		ctx.stroke();
+
+		ctx.fillStyle = 'hsl('+i+', '+saturation+'%, '+lightness+'%)';
+		ctx.fillRect(400,20+i,100,1);
+
+	}
+}
+</script>
+<style type="text/css" media="all">
+canvas {background: #FFF; margin: 1em auto; display: block; border: 1px solid gray;}
+</style>
+</head>
+<body>
+
+<canvas width="800" height="600"></canvas>
+
+</body>
+<html>

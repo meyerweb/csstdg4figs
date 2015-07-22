@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Figure 4-14</title>
+<style type="text/css" media="all">
+div#well, div#gs {margin: 2em 0 5em;}
+div#well ol li, div#gs ol li {
+	font: bold small sans-serif;
+	text-align: center;
+	list-style: none;
+	background: url(target.png) 50% 0 no-repeat;
+	position: absolute;
+	height: 10px; width: 4em;
+	top: 50%; left: 50%;
+	padding: 9px 0 0;
+	margin: -5px 0 0 -2em;
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.67), 1px -1px 0 rgba(255,255,255,0.67), -1px 1px 0 rgba(255,255,255,0.67), -1px -1px 0 rgba(255,255,255,0.67);
+}
+div#well {background: url(hsl-hues-lightness.png) center no-repeat;
+	-moz-background-size: 400px 400px;
+	-o-background-size: 400px 400px;
+	background-size: 400px 400px;
+	height: 400px;
+	width: 400px;
+	margin-right: 3em;
+	position: relative;
+	float: left;
+	-webkit-transition: all 0.25s;
+	-moz-transition: all 0.25s;
+	-o-transition: all 0.25s;
+	transition: all 0.25s;
+	}
+#well:hover {background-image: url(grid-black.png);}
+
+#well .red {-webkit-transform: rotate(0deg) translateY(-198px) rotate(-0deg);}
+#well .yellow {-webkit-transform: rotate(60deg) translateY(-199px) rotate(-60deg);}
+#well .lime {-webkit-transform: rotate(120deg) translateY(-199px) rotate(-120deg);}
+#well .aqua {-webkit-transform: rotate(180deg) translateY(-199px) rotate(-180deg);}
+#well .blue {-webkit-transform: rotate(240deg) translateY(-199px) rotate(-240deg);}
+#well .fuchsia {-webkit-transform: rotate(300deg) translateY(-199px) rotate(-300deg);}
+
+#well .maroon {-webkit-transform: rotate(0deg) translateY(-99px) rotate(-0deg);}
+#well .olive {-webkit-transform: rotate(60deg) translateY(-100px) rotate(-60deg);}
+#well .green {-webkit-transform: rotate(120deg) translateY(-100px) rotate(-120deg);}
+#well .teal {-webkit-transform: rotate(180deg) translateY(-100px) rotate(-180deg);}
+#well .navy {-webkit-transform: rotate(240deg) translateY(-100px) rotate(-240deg);}
+#well .purple {-webkit-transform: rotate(300deg) translateY(-100px) rotate(-300deg);}
+
+#well .red {-moz-transform: rotate(0deg) translateY(-198px) rotate(-0deg);}
+#well .yellow {-moz-transform: rotate(60deg) translateY(-199px) rotate(-60deg);}
+#well .lime {-moz-transform: rotate(120deg) translateY(-199px) rotate(-120deg);}
+#well .aqua {-moz-transform: rotate(180deg) translateY(-199px) rotate(-180deg);}
+#well .blue {-moz-transform: rotate(240deg) translateY(-199px) rotate(-240deg);}
+#well .fuchsia {-moz-transform: rotate(300deg) translateY(-199px) rotate(-300deg);}
+
+#well .maroon {-moz-transform: rotate(0deg) translateY(-99px) rotate(-0deg);}
+#well .olive {-moz-transform: rotate(60deg) translateY(-100px) rotate(-60deg);}
+#well .green {-moz-transform: rotate(120deg) translateY(-100px) rotate(-120deg);}
+#well .teal {-moz-transform: rotate(180deg) translateY(-100px) rotate(-180deg);}
+#well .navy {-moz-transform: rotate(240deg) translateY(-100px) rotate(-240deg);}
+#well .purple {-moz-transform: rotate(300deg) translateY(-100px) rotate(-300deg);}
+
+#well .red {-o-transform: rotate(0deg) translateY(-198px) rotate(-0deg);}
+#well .yellow {-o-transform: rotate(60deg) translateY(-199px) rotate(-60deg);}
+#well .lime {-o-transform: rotate(120deg) translateY(-199px) rotate(-120deg);}
+#well .aqua {-o-transform: rotate(180deg) translateY(-199px) rotate(-180deg);}
+#well .blue {-o-transform: rotate(240deg) translateY(-199px) rotate(-240deg);}
+#well .fuchsia {-o-transform: rotate(300deg) translateY(-199px) rotate(-300deg);}
+
+#well .maroon {-o-transform: rotate(0deg) translateY(-99px) rotate(-0deg);}
+#well .olive {-o-transform: rotate(60deg) translateY(-100px) rotate(-60deg);}
+#well .green {-o-transform: rotate(120deg) translateY(-100px) rotate(-120deg);}
+#well .teal {-o-transform: rotate(180deg) translateY(-100px) rotate(-180deg);}
+#well .navy {-o-transform: rotate(240deg) translateY(-100px) rotate(-240deg);}
+#well .purple {-o-transform: rotate(300deg) translateY(-100px) rotate(-300deg);}
+
+
+#well .red {transform: rotate(0deg) translateY(-198px) rotate(-0deg);}
+#well .yellow {transform: rotate(60deg) translateY(-199px) rotate(-60deg);}
+#well .lime {transform: rotate(120deg) translateY(-199px) rotate(-120deg);}
+#well .aqua {transform: rotate(180deg) translateY(-199px) rotate(-180deg);}
+#well .blue {transform: rotate(240deg) translateY(-199px) rotate(-240deg);}
+#well .fuchsia {transform: rotate(300deg) translateY(-199px) rotate(-300deg);}
+
+#well .maroon {transform: rotate(0deg) translateY(-124px) rotate(-0deg);}
+#well .olive {transform: rotate(60deg) translateY(-100px) rotate(-60deg);}
+#well .green {transform: rotate(120deg) translateY(-100px) rotate(-120deg);}
+#well .teal {transform: rotate(180deg) translateY(-100px) rotate(-180deg);}
+#well .navy {transform: rotate(240deg) translateY(-100px) rotate(-240deg);}
+#well .purple {transform: rotate(300deg) translateY(-100px) rotate(-300deg);}
+
+#gs {
+	position: relative;
+	float: left;
+	height: 395px;
+	width: 5em;
+	border: 1px solid gray;
+	background: -webkit-linear-gradient(bottom,black,white);
+	background: -moz-linear-gradient(bottom,black,white);
+	background: -o-linear-gradient(bottom,black,white);
+	background: linear-gradient(to top,black,white);
+}
+div#gs ol li {
+	margin-top: -4px;
+}
+#gs .white {top: 0%;}
+#gs .silver {top: 25%;}
+#gs .gray {top: 50%;}
+#gs .black {top: 100%;}
+
+#footer {clear: left;}
+</style>
+</head>
+<body id="www-meyerweb-com" class="css">
+
+<div id="well">
+<ol>
+<li class="aqua">aqua</li>
+<li class="blue">blue</li>
+<li class="fuchsia">fuchsia</li>
+<li class="green">green</li>
+<li class="lime">lime</li>
+<li class="maroon">maroon</li>
+<li class="navy">navy</li>
+<li class="olive">olive</li>
+<li class="purple">purple</li>
+<li class="red">red</li>
+<li class="teal">teal</li>
+<li class="yellow">yellow</li>
+</ol>
+</div>
+
+<div id="gs">
+<ol>
+<li class="white">white</li>
+<li class="silver">silver</li>
+<li class="gray">gray</li>
+<li class="black">black</li>
+</ol>
+</div>
+
+</body>
+</html>

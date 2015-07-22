@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>01-05</title>
+<style type="text/css" media="all">
+section[id] {position: absolute; padding: 0 1em 3.25em;
+	border: 2px solid; -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	font: 0.9em Courier New, monospace; white-space: pre;}
+
+#doc {top: 7em; left: 2.5em; width: 28em; line-height: 1.4;}
+#css1 {top: 3em; left: 40em; width: 31em;}
+#css2 {top: 22em; left: 40em; width: 25em;}
+
+section h1 {position: absolute; width: 100%; bottom: 0.15em; left: 0; margin: 0;
+	font: bold 2em "Proxima Sans", Helvetica, sans-serif; text-align: center;}
+
+section img {position: absolute;}
+#css1 img {bottom: -26px; left: -191px;
+	-moz-transform: rotate(-1deg);
+	-moz-transform-origin: 100% 100%;}
+#css2 img {top: -27px; left: -391px;
+	-moz-transform: rotate(1deg);
+	-moz-transform-origin: 100% 0;}
+
+</style>
+</head>
+<body>
+
+<section id="doc"><h1>index.html</h1>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Eric’s World of Waffles&lt;/title&gt;
+&lt;meta http-equiv="content-type"
+      content="text/html; charset=utf-8"&gt;
+<strong>&lt;link rel="stylesheet" type="text/css"
+      href="sheet1.css" media="all"&gt;</strong>
+&lt;style type="text/css"&gt;
+/* These are my styles! Yay! */
+<strong>@import url(sheet2.css);</strong>
+h1 {color: silver;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Waffles!&lt;/h1&gt;
+&lt;p style="color: gray;"&gt;The most wonderful of
+all breakfast foods is the waffle&mdash;a ridged and 
+cratered slab of home-cooked, fluffy goodness 
+that makes every child's heart soar with joy.  
+And they're so easy to make!  Just a simple 
+waffle-maker and some batter, and you're ready 
+for a morning of aromatic ecstasy!
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</section>
+
+<section id="css1"><h1>sheet1.css</h1>
+body {background: white; font: medium serif;}
+h1 {color: blue;}
+a:link {color: navy; text-decoration: underline;}
+p {margin-left: 5%; margin-right: 10%;}
+p:first-line {font-size: 120%; font-weight: bold;
+   color: black;}
+p.footnote {font-size: smaller;}
+blockquote {font-style: italic;}
+blockquote em {font-style: normal;}
+pre, code, tt {color: gray; font-family: monospace;}
+<img src="arrow1.png"></section>
+
+<section id="css2"><h1>sheet2.css</h1>
+h1 {
+	font-size: 1.8em;
+	border-bottom: 1px dotted silver;
+}
+h1:first-letter {
+	font-size: 125%;
+}
+<img src="arrow2.png"></section>
+
+</body>
+</html>

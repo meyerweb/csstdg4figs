@@ -1,0 +1,7 @@
+h1 {
+	font-size: 1.8em;
+	border-bottom: 1px dotted gray;
+}
+h1:first-letter {
+	font-size: 125%;
+}
