@@ -1,1 +1,1 @@
-html {background: #DDD;}body {width: 800px; padding: 1em; margin: 0;	box-sizing: border-box; background: white;}
+html {background: #DDD;}body {width: 800px; padding: 1em; margin: 0;	box-sizing: border-box; background: white;}/* for print preview/production */body:hover {filter: saturate(0%);}
