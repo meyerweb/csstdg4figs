@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 228 226" version="1.1">
+  <desc>Example fillrule-evenodd - demonstrates fill-rule:evenodd</desc>
+  <rect x="1" y="1" width="228" height="226" fill="none" stroke="none"/>
+  <g fill-rule="evenodd" fill="hsla(270,50%,50%,0.75)" stroke="black" stroke-width="0">
+    <path d="M 119,0 L 192,226 0,86 228,86 46,226 z"/>
+  </g>
+</svg>
