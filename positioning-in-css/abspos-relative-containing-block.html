@@ -10,6 +10,7 @@ p {margin: 2em; margin-right: 15em;}
 p.contain {position: relative;}   /* establish a containing block*/
 b {position: absolute; top: auto; right: 0; bottom: 0; left: auto;
    width: 8em; height: 5em; border: 1px solid gray;}
+code {font: 1em Consolas, monospace;}
 </style>
 </head>
 <body>
@@ -21,7 +22,7 @@ positioned <b>boldface</b> element it contains will be positioned with
 respect to the initial containing block.
 </p>
 <p class="contain">
-Thanks to ‘position: relative’, this paragraph establishes a containing 
+Thanks to <code>position: relative</code>, this paragraph establishes a containing 
 block for any of its descendant elements that are absolutely positioned.  
 Since there is such an element-- <em>that is to say, <b>a boldfaced element 
 that is absolutely positioned,</b> placed with respect to its containing 
