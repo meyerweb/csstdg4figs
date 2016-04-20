@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Untitled</title>
+<link rel="stylesheet" type="text/css" href="c/baseline.css">
+<style type="text/css">
+body {height: 470px; width: 650px; perspective: flat; perspective-origin: 200px 0;}
+body * {box-sizing: border-box;}
+
+section {position: absolute; transform-style: preserve-3d;
+	transform: rotateX(70deg); transform: rotate3d(0.5,-0.23,0.3,85deg);
+	top: 220px; left: 130px; height: 400px; width: 300px;}
+section div {position: absolute; height: 100%; width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	border: 2px solid gray;}
+section div span {border: 2px solid gray;}
+
+
+#cells {left: 0%; z-index: 5; transform: translateZ(333px);}
+#cells span {background: rgba(128,255,128,1);}
+#cells span:nth-child(1) {grid-column: 1; grid-row: 1 / span 2;}
+#cells span:nth-child(2) {grid-column: 1; grid-row: 3;}
+#cells span:nth-child(3) {grid-column: 1; grid-row: 4;}
+#cells span:nth-child(4) {grid-column: 1; grid-row: 5;}
+
+#cells span:nth-child(5) {grid-column: 2 / span 2; grid-row: 1;}
+#cells span:nth-child(6) {grid-column: 2 / span 2; grid-row: 2;}
+#cells span:nth-child(7) {grid-column: 2; grid-row: 3;}
+#cells span:nth-child(8) {grid-column: 2; grid-row: 5;}
+
+#cells span:nth-child(9) {grid-column: 3; grid-row: 3;}
+#cells span:nth-child(10) {grid-column: 3; grid-row: 4;}
+#cells span:nth-child(11) {grid-column: 3; grid-row: 5;}
+
+#rows {top: 0%; left: 0%; z-index: 4; transform: translateZ(267px);}
+#rows span {background: rgba(255,128,128,0.95);}
+#rows span {grid-column: 1 / span 3;}
+#rows span:nth-child(1) {grid-row: 1;}
+#rows span:nth-child(2) {grid-row: 2;}
+#rows span:nth-child(3) {grid-row: 3;}
+#rows span:nth-child(4) {grid-row: 4;}
+#rows span:nth-child(5) {grid-row: 5;}
+
+#rowgroups {top: 0%; left: 0%; z-index: 3; transform: translateZ(200px);}
+#rowgroups span {background: rgba(255,216,216,1);}
+#rowgroups span {grid-column: 1 / span 3;}
+#rowgroups span:nth-child(1) {grid-row: 1;}
+#rowgroups span:nth-child(2) {grid-row: 2 / span 3;}
+#rowgroups span:nth-child(3) {grid-row: 5;}
+
+#cols {top: 0%; left: 0%; z-index: 2; transform: translateZ(133px);}
+#cols span {background: rgba(128,255,255,0.95);}
+#cols span {grid-row: 1 / span 5;}
+#cols span:nth-child(1) {grid-column: 1;}
+#cols span:nth-child(2) {grid-column: 2;}
+#cols span:nth-child(3) {grid-column: 3;}
+
+#colgroups {top: 0%; left: 0%; z-index: 1; transform: translateZ(67px);}
+#colgroups span {background: rgba(216,255,255,1);}
+#colgroups span {grid-row: 1 / span 5;}
+#colgroups span:nth-child(1) {grid-column: 1 / span 2;}
+#colgroups span:nth-child(2) {grid-column: 3;}
+
+#table {background: rgba(255,128,255,0.5);}
+
+#labels {position: absolute; top: 67px; left: 512px;
+	padding: 0; margin: 0;}
+#labels li {list-style: none; z-index: 100; font: bold 1.25em sans-serif;
+	margin-bottom: 42px;}
+</style>
+</head>
+<body>
+
+<ol id="labels">
+<li>Cells</li>
+<li>Rows</li>
+<li>Row groups</li>
+<li>Columns</li>
+<li>Column groups</li>
+<li>Table</li>
+</ol>
+
+<section>
+<div id="cells">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div id="rows">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div id="rowgroups">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div id="cols">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div id="colgroups">
+<span></span>
+<span></span>
+</div>
+<div id="table"></div>
+</section>
+
+</body>
+</html>
