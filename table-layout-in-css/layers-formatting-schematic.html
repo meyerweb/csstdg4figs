@@ -8,24 +8,27 @@
 <style type="text/css">
 body {height: 470px; width: 650px; perspective: flat; perspective-origin: 200px 0;}
 body * {box-sizing: border-box;}
+body section {transition: 3s; top: 30px;}
+body:hover section {transform: rotate3d(0.5,-0.23,0.3,85deg); top: 220px;}
 
 section {position: absolute; transform-style: preserve-3d;
-	transform: rotateX(70deg); transform: rotate3d(0.5,-0.23,0.3,85deg);
-	top: 220px; left: 130px; height: 400px; width: 300px;}
+	 left: 130px; height: 400px; width: 300px;}
 section div {position: absolute; height: 100%; width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-	border: 2px solid gray;}
+	border: 2px solid gray;
+	translateZ(0px); transition: 2s;}
+body:hover section div {transition-delay: 1s;}
 section div span {border: 2px solid gray;}
 
-
-#cells {left: 0%; z-index: 5; transform: translateZ(333px);}
+#cells {left: 0%; z-index: 5; transform: translateZ(4px);}
 #cells span {background: rgba(128,255,128,1);}
 #cells span:nth-child(1) {grid-column: 1; grid-row: 1 / span 2;}
 #cells span:nth-child(2) {grid-column: 1; grid-row: 3;}
 #cells span:nth-child(3) {grid-column: 1; grid-row: 4;}
 #cells span:nth-child(4) {grid-column: 1; grid-row: 5;}
+body:hover #cells {transform: translateZ(333px);}
 
 #cells span:nth-child(5) {grid-column: 2 / span 2; grid-row: 1;}
 #cells span:nth-child(6) {grid-column: 2 / span 2; grid-row: 2;}
@@ -36,7 +39,7 @@ section div span {border: 2px solid gray;}
 #cells span:nth-child(10) {grid-column: 3; grid-row: 4;}
 #cells span:nth-child(11) {grid-column: 3; grid-row: 5;}
 
-#rows {top: 0%; left: 0%; z-index: 4; transform: translateZ(267px);}
+#rows {top: 0%; left: 0%; z-index: 4; transform: translateZ(4px);}
 #rows span {background: rgba(255,128,128,0.95);}
 #rows span {grid-column: 1 / span 3;}
 #rows span:nth-child(1) {grid-row: 1;}
@@ -44,31 +47,36 @@ section div span {border: 2px solid gray;}
 #rows span:nth-child(3) {grid-row: 3;}
 #rows span:nth-child(4) {grid-row: 4;}
 #rows span:nth-child(5) {grid-row: 5;}
+body:hover #rows {transform: translateZ(267px);}
 
-#rowgroups {top: 0%; left: 0%; z-index: 3; transform: translateZ(200px);}
+#rowgroups {top: 0%; left: 0%; z-index: 3; transform: translateZ(3px);}
 #rowgroups span {background: rgba(255,216,216,1);}
 #rowgroups span {grid-column: 1 / span 3;}
 #rowgroups span:nth-child(1) {grid-row: 1;}
 #rowgroups span:nth-child(2) {grid-row: 2 / span 3;}
 #rowgroups span:nth-child(3) {grid-row: 5;}
+body:hover #rowgroups {transform: translateZ(200px);}
 
-#cols {top: 0%; left: 0%; z-index: 2; transform: translateZ(133px);}
+#cols {top: 0%; left: 0%; z-index: 2; transform: translateZ(2px);}
 #cols span {background: rgba(128,255,255,0.95);}
 #cols span {grid-row: 1 / span 5;}
 #cols span:nth-child(1) {grid-column: 1;}
 #cols span:nth-child(2) {grid-column: 2;}
 #cols span:nth-child(3) {grid-column: 3;}
+body:hover #cols {transform: translateZ(133px);}
 
-#colgroups {top: 0%; left: 0%; z-index: 1; transform: translateZ(67px);}
+#colgroups {top: 0%; left: 0%; z-index: 1; transform: translateZ(1px);}
 #colgroups span {background: rgba(216,255,255,1);}
 #colgroups span {grid-row: 1 / span 5;}
 #colgroups span:nth-child(1) {grid-column: 1 / span 2;}
 #colgroups span:nth-child(2) {grid-column: 3;}
+body:hover #colgroups {transform: translateZ(67px);}
 
 #table {background: rgba(255,128,255,0.5);}
 
+body:hover #labels {opacity: 1; transition-delay: 2.5s;}
 #labels {position: absolute; top: 67px; left: 512px;
-	padding: 0; margin: 0;}
+	padding: 0; margin: 0; opacity: 0;  transition: 1s;}
 #labels li {list-style: none; z-index: 100; font: bold 1.25em sans-serif;
 	margin-bottom: 42px;}
 </style>
