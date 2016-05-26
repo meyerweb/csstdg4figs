@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Untitled</title>
+<link rel="stylesheet" type="text/css" href="c/baseline.css">
+<style type="text/css">
+table {border-collapse: separate; padding: 0.75em;
+  border: 0.125em solid black; border-spacing: 0.3125em 0.5em;}
+td {border: 0.0625em solid gray;}
+td#squeeze {border-width: 0.3125em;}
+
+#annotations {position: relative; width: 10.38em;
+	font-size: 5em;
+	background:
+		repeating-linear-gradient(135deg, rgba(0,128,255,0.13), rgba(0,128,255,0.13) 0.1em, transparent 0.1em, transparent 0.3em),
+		repeating-linear-gradient(45deg, rgba(0,128,255,0.13), rgba(0,128,255,0.13) 0.1em, transparent 0.1em, transparent 0.3em)
+		;}
+#annotations table {background-clip: content-box; background-color: white;}
+#annotations ol li {position: absolute;
+	list-style: none;
+	font: 0.33em Open Sans, sans-serif;}
+#annotations ol li:nth-child(1) {bottom: 0.5em; right: 1em; font-size: 0.42em;
+	text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white, 0 0 4px white, 0 0 5px white;
+}
+#annotations ol li.bs {padding-right: 1.25em;
+	background-image:
+		url(i/arrow-up.svg),
+		url(i/arrow-down.svg),
+		linear-gradient(180deg, transparent, transparent 45%, black 48%, black 52%, transparent 55%),
+		linear-gradient(90deg, black, black);
+	background-size:
+		20% 30%,
+		20% 30%,
+		30% 100%,
+		3% 80%;
+	background-position:
+		100% 0,
+		100% 100%,
+		87% 0,
+		91% 50%;
+	background-repeat: no-repeat;
+	background-color: ;
+	}
+#annotations ol li.bs.h {top: 55%; left: 8.4%; height: 0.95em; line-height: 0.7;
+	transform: rotate(-90deg); transform-origin: 0 0;}
+#annotations ol li:nth-child(2) {margin-left: 0;}
+#annotations ol li:nth-child(3) {margin-left: 40.1%;}
+#annotations ol li:nth-child(4) {margin-left: 80.1%;}
+
+#annotations ol li.bs.v {top: 13.6%; left: 19%; height: 1.5em;}
+#annotations ol li:nth-child(5) {margin-top: 0;}
+#annotations ol li:nth-child(6) {margin-top: 22.67%;}
+#annotations ol li:nth-child(7) {margin-top: 40.5%;}
+</style>
+</head>
+<body>
+
+<div id="annotations">
+<table>
+  <tr>
+    <td>cell one</td>
+    <td id="squeeze">cell two</td>
+  </tr>
+  <tr>
+    <td>cell three</td>
+    <td>cell four</td>
+  </tr>
+</table>
+<ol>
+<li><b>12px table padding</b></li>
+<li class="h bs">5px</li>
+<li class="h bs">5px</li>
+<li class="h bs">5px</li>
+<li class="v bs">8px</li>
+<li class="v bs">8px</li>
+<li class="v bs">8px</li>
+</div>
+
+</body>
+</html>
