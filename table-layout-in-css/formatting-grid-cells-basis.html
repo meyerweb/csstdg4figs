@@ -9,10 +9,15 @@
 body {float: left;}
 #g02 {margin-right: 0;}
 
-table {border-collapse: separate; border-spacing: 4px;}
-td {color: gray; border: 1px solid orange; padding: 0.5em;}
+table {border-collapse: separate; border-spacing: 4px; padding: 0; margin: -1px;
+	position: relative; z-index: 1;}
+td {color: gray; border: 1px solid orange; padding: 0.5em;
+	text-align: center;
+	background: rgba(255,255,255,0.667);
+	text-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px white;}
 .grid {position: relative; float: left; margin-right: 2em;}
-.grid .lines {position: absolute; width: 100%; height: 100%;}
+.grid .lines {position: absolute; z-index: 0; width: 100%; height: 100%;
+	border: 2px dotted black; box-sizing: border-box;}
 .grid .lines span {position: absolute; box-sizing: border-box;}
 .grid .lines .row {border-bottom: 2px dotted black; width: 100%;}
 .grid .lines .col {border-right: 2px dotted black; height: 100%;}
@@ -22,9 +27,9 @@ td {color: gray; border: 1px solid orange; padding: 0.5em;}
 
 #g02 span.row:nth-child(1) {height: 34.5%;}
 #g02 span.row:nth-child(2) {height: 66.667%;}
-#g02 span.col:nth-of-type(3) {width: 25.5%;}
+#g02 span.col:nth-of-type(3) {width: 25%;}
 #g02 span.col:nth-of-type(4) {width: 49%;}
-#g02 span.col:nth-of-type(5) {width: 75.5%;}
+#g02 span.col:nth-of-type(5) {width: 76%;}
 
 </style>
 </head>
