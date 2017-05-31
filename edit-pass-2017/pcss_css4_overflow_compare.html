@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Chapter 10 Figures</title>
+<style type="text/css">
+body {width: 55em;}
+#contain {display: flex; justify-content: space-between; flex-wrap: wrap;}
+b {width: 30%; font: 700 1.25em Consolas, Open Sans; padding-bottom: 1ch; text-align: center;}
+div.sidebar {width: 30%; height: 7em; background: rgba(216,128,0,0.33); color: rgba(0,0,0,0.5);
+	font: bold italic x-large sans-serif;}
+#scroll {overflow: scroll;}
+#hidden {overflow: hidden;}
+</style>
+</head>
+<body>
+
+
+
+<div id="contain">
+<b>visible</b>
+<b>hidden</b>
+<b>scroll</b>
+
+<div class="sidebar">This is a positioned element that’s acting as a ‘sidebar’, but it’s only 7em tall.  Any overflowing content will be visible outside the boundaries of the element box, whether or not that’s what the author really wanted.</div>
+<div class="sidebar" id="hidden">This is a positioned element that’s acting as a ‘sidebar’, but it’s only 7em tall.  Any overflowing content won’t be visible outside the boundaries of the element box, whether or not that’s what the author really wanted.</div>
+<div class="sidebar" id="scroll">This is a positioned element that’s acting as a ‘sidebar’, but it’s only 7em tall.  Any overflowing content won’t be visible outside the boundaries of the element box, whether or not that’s what the author really wanted.</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
