@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewbox="0 0 100 100" height="100" width="100" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path fill="gray" id="clip0" d="M 50,0 100,25 100,75 50,100 0,75 0,25"/>
+</svg>

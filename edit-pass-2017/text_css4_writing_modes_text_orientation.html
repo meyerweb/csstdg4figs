@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Figure</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body:hover {filter: grayscale(1);}
+</style>
+<style type="text/css" id="tests">
+[lang="jp"] {color: red;}
+.arena p[class] {border: 1px dotted; float: left; width: 12em; height: 9em; margin-right: 2em; margin-left: 0;
+	writing-mode: vertical-lr;}
+.cl1 {text-orientation: mixed;}
+.cl2 {text-orientation: upright;}
+.cl3 {text-orientation: sideways;}
+div.labels {clear: left; display: flex;}
+div.labels p {width: 12em; text-align: center; height: auto; margin-top: 0.5em; margin-right: 2em;}
+div.labels p strong {font: bold 90% Open Sans, sans-serif;}
+</style>
+</head>
+<body>
+
+<div class="arena">
+
+<p>
+This is a paragraph of <span lang="jp">日本語</span> and English text, largely unstyled. <span lang="jp">これより多くのテキストです。</span>
+</p>
+
+<p class="cl1">
+This is a paragraph of <span lang="jp">日本語</span> and English text, largely unstyled. <span lang="jp">これより多くのテキストです。</span>
+</p>
+
+<p class="cl2">
+This is a paragraph of <span lang="jp">日本語</span> and English text, largely unstyled. <span lang="jp">これより多くのテキストです。</span>
+</p>
+
+<p class="cl3">
+This is a paragraph of <span lang="jp">日本語</span> and English text, largely unstyled. <span lang="jp">これより多くのテキストです。</span>
+</p>
+
+<div class="labels">
+<p><strong>mixed</strong></p>
+<p><strong>upright</strong></p>
+<p><strong>sideways</strong></p>
+</div>
+
+</div>
+
+</body>
+</html>
