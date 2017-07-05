@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Flex Items: align-content</title>
+<link rel="stylesheet" href="c/examples.css"/>
+<style contenteditable>html{font-size:1.6em}
+body{padding:1ch;
+	display: flex; flex-wrap: wrap; justify-content: space-around;}
+article {flex: 0 0 45%;}
+div,div>p{background-color:rgba(0,0,0,0.1)}
+article>div{display:flex;flex-direction:row;border:1px dashed;}
+div>p{border:1px solid;margin:5px;padding:5px;}
+body{font-size:25px;text-align:center;}
+div p:nth-child(1) {font-size: 1.5rem;}
+div p:nth-child(2) {font-size: 1.15rem; background: rgba(0,128,0,0.2);}
+div p:nth-child(3) {font-size: 1rem;}
+div p:nth-child(4) {font-size: 0.9rem;}
+div p:nth-child(5) {font-size: 0.8rem;}
+div+p{margin:0 -20px 40px;}
+</style>
+</head>
+<body>
+
+<article>
+<div>
+<p>One</p>
+<p style="align-self: flex-start;">Two<br/>Two</p>
+<p>Three<br/>Three<br/>Three</p>
+<p>Four<br/>Four<br/>Four<br/>Four</p>
+<p>Five<br/>Five<br/>Five<br/>Five<br/>Five</p>
+</div>
+<p>align-self: flex-start; ⤴</p>
+</article>
+
+<article>
+<div>
+<p>One</p>
+<p style="align-self: flex-end;">Two<br/>Two</p>
+<p>Three<br/>Three<br/>Three</p>
+<p>Four<br/>Four<br/>Four<br/>Four</p>
+<p>Five<br/>Five<br/>Five<br/>Five<br/>Five</p>
+</div>
+<p>align-self: flex-end; ⤴</p>
+</article>
+
+<article>
+<div>
+<p>One</p>
+<p style="align-self: baseline; margin-top: 0.475rem;">Two<br/>Two</p>
+<p>Three<br/>Three<br/>Three</p>
+<p>Four<br/>Four<br/>Four<br/>Four</p>
+<p>Five<br/>Five<br/>Five<br/>Five<br/>Five</p>
+</div>
+<p>align-self: baseline; ⤴</p>
+</article>
+
+<article>
+<div>
+<p>One</p>
+<p style="align-self: center;">Two<br/>Two</p>
+<p>Three<br/>Three<br/>Three</p>
+<p>Four<br/>Four<br/>Four<br/>Four</p>
+<p>Five<br/>Five<br/>Five<br/>Five<br/>Five</p>
+</div>
+<p>align-self: center; ⤴</p>
+</article>
+
+<article>
+<div>
+<p>One</p>
+<p style="align-self: stretch;">Two<br/>Two</p>
+<p>Three<br/>Three<br/>Three</p>
+<p>Four<br/>Four<br/>Four<br/>Four</p>
+<p>Five<br/>Five<br/>Five<br/>Five<br/>Five</p>
+</div>
+<p>align-self: stretch; ⤴<br>align-self: auto; ⤴</p>
+</article>
+
+</body>
+</html>

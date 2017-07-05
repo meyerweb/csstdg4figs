@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Custom Property Scoping</title>
+<style type="text/css">
+html {
+    --base-color: #639;
+}
+aside {
+    --base-color: #F60;
+}
+
+h1 {color: var(--base-color);}
+</style>
+</head>
+<body>
+
+
+<div class="arena">
+
+<h1>Heading 1</h1>
+<p>Main text.</p>
+
+<aside>
+<h1>Heading 1</h1>
+<p>An aside.</p>
+</aside>
+
+<h1>Heading 1</h1>
+<p>Main text.</p>
+
+</div>
+
+
+</body>
+</html>

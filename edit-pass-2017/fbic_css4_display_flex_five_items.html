@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Flex Items: flex-wrap</title>
+<link rel="stylesheet" href="c/examples.css">
+<style>
+aside {
+	display: flex;
+	border: 1px dashed;
+	background: rgba(0,0,0,0.1);
+	padding: 2ch;
+	width: 80ch;
+	}
+aside > *:not(img) {border: 1px solid; background: rgba(0,0,0,0.1);
+	margin: 0 1ch; padding: 0.5ch;}
+aside > b {border-style: dashed; background: transparent; font-weight: normal;}
+</style>
+</head>
+<body>
+
+<aside>
+    <!-- a comment -->
+    <h1>Header</h1>
+
+    <img src="i/chrome.jpg" alt="foo master">
+    <b>Some text </b><a href="foo.html">with a link</a><b> and more text</b>
+</aside>
+
+<!-- the 'b' elements in the markup are used as stand-ins for anonymous flex boxes, for purposes of clarity -->
+
+</body>
+</html>

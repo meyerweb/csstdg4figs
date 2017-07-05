@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Flex Items</title>
+<link rel="stylesheet" href="c/examples.css"/>
+<style contenteditable id="editme">div{background-color:rgba(0,0,0,0.1);}
+article{width:540px;box-sizing:content-box;}
+article>div{display:flex;outline:1px dashed;padding:3px;min-height:100px;box-sizing:content-box;}
+div>div{outline:1px solid;margin:3px;padding:40px 0;font-size:1rem;box-sizing:content-box;}
+body{font-size:20px;text-align:center;}
+p{margin-top:0;}
+/*
+article>div {padding: 0;}
+div>div {margin: 0 !important;}
+ */
+</style>
+</head>
+<body>
+<article>
+<div>
+<div style="flex-basis: auto">flex-basis: auto;<br/> width: auto;</div>
+<div style="flex-basis: auto">flex-basis: auto;<br/> width: auto;</div>
+<div style="flex-basis: auto">flex-basis: auto;<br/> width: auto;</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+<article>
+<div>
+<div style="flex-basis: auto; width: 100px;">flex-basis: auto;<br/> width: 100px;</div>
+<div style="flex-basis: auto; width: 150px">flex-basis: auto;<br/> width: 150px;</div>
+<div style="flex-basis: auto; width: 200px">flex-basis: auto;<br/> width: 200px;</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+<article>
+<div>
+<div style="flex-basis: auto; width: 2000px;">flex-basis: auto;<br/> width: 2000px;</div>
+<div style="flex-basis: auto; width: 3000px">flex-basis: auto;<br/> width: 3000px;</div>
+<div style="flex-basis: auto; width: 4000px">flex-basis: auto;<br/> width: 4000px;</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+<article>
+<div>
+<div style="flex-basis: auto">flex-basis: auto</div>
+<div style="flex-basis: auto">flex-basis: auto</div>
+<div style="flex-basis: 100%">flex-basis: 100%</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+<article>
+<div>
+<div style="flex-basis: 70%">flex-basis: 70%</div>
+<div style="flex-basis: auto">flex-basis: auto</div>
+<div style="flex-basis: 80%">flex-basis: 80%</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+</body>
+</html>

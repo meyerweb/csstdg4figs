@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css">
+html {background: silver;}
+body {background: white; margin: 1em; padding: 0 1em;}
+.diagram {height: 100px; width: 1200px;
+	background: linear-gradient(to right, 
+	#BBB,
+	#333 100%
+	) 200px 0 / 800px 100% no-repeat,
+	linear-gradient(to right,
+	#BBB 50%, 50%,
+	#333)
+	;
+	display: flex;
+	align-items: center;}
+
+div p {font: 2em Arvo, serif; margin: 0 1ch;}
+p.labels {display: grid; grid-template-columns: 200px repeat(5,1fr) 200px;
+	width: 1200px; margin: 0;
+	font: 300 1em Arvo, serif;}
+p.labels b {padding: 1.75ch 0 2ch; margin: 0.25ch 0 0 -0.75ch;}
+p.labels b:first-child {grid-column: 2;}
+
+p.labels:first-of-type b {background: url(i/arrow-down.svg) no-repeat 100% 100% / 1.5ch 1.5ch;
+	text-align: right; margin-right: -0.75ch;}
+p.labels:last-of-type b {background: url(i/arrow-up.svg) no-repeat 0 0 / 1.5ch 1.5ch;}
+
+p.animlength {text-align: center;
+	background:
+	linear-gradient(to right,
+	#BBB 20%, 20%,
+	#A0A0A0 40%, 40%,
+	#858585 60%, 60%,
+	#696969 80%, 80%,
+	#4E4E4E 100%) no-repeat 50% 0 / 800px 50px,
+	linear-gradient(to right,
+	#A0A0A0 20%, 20%,
+	#858585 40%, 40%,
+	#696969 60%, 60%,
+	#4E4E4E 80%, 80%,
+	#333 100%) no-repeat 50% 100% / 800px 50px		
+	;
+	margin: -50px 0;
+	z-index: 10; position: relative;}
+p.animlength b {padding: 50px 0; border: 1px solid; border-color: white black; margin: 0 0 0 -1px; font-weight: 700;}
+p.animlength span {padding: 50px 0; margin: 0; grid-column: 1; font-style: italic; font-weight: 100;}
+</style>
+</head>
+<body>
+
+<section>
+
+<p class="labels"><b>Change 1</b> <b>Change 2</b> <b>Change 3</b> <b>Change 4</b> <b>Change 5</b></p>
+<div id="dg01" class="diagram"><p>end</p></div>
+<p class="animlength labels"><span>Animation timeline</span><b>Step 1</b><b>Step 2</b><b>Step 3</b><b>Step 4</b><b>Step 5</b></p>
+<div id="dg02" class="diagram"><p>start</p></div>
+<p class="labels"><b>Change 1</b> <b>Change 2</b> <b>Change 3</b> <b>Change 4</b> <b>Change 5</b></p>
+
+</section>
+
+
+
+</body>
+</html>
