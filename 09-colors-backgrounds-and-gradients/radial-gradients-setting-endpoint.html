@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>The gradient ray and the endpoint ellipse</title>
+<style type="text/css">
+div[class^="ex"] {margin: 10px; position: relative;
+height: 600px; width: 800px;
+	background-image:
+		linear-gradient(to right, transparent, transparent 50%, black 50%, black 87.5%, rgba(0,0,0,0.25) 87.5%, transparent),
+		radial-gradient(37.5% 37.5%, transparent, transparent 99%, black 99%, transparent 100%),
+		radial-gradient(37.5% 37.5%, cyan, lime, gold);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 0.5%, auto, auto, auto;}
+b[id] {position: absolute; margin: -1.33em -2em; padding: 0 0.5em; width: 4em;
+	font: 0.875em/1.4 Consolas, "Andale Mono", monospace; text-align: center;}
+#p00 {top: 50%; left: 50%;}
+#p25 {left: 59.375%; top: 50%;}
+#p50 {left: 68.75%; top: 50%;}
+#p75 {left: 78.125%; top: 50%;}
+#p100 {left: 87.5%; top: 50%; margin-left: -0.25em; text-align: left;}
+#finsh {top: 12.5%; left: 50%;}
+#gray {top: 50%; left: 68.75%; margin-left: -5em; width: 10em;}
+</style>
+ </head>
+ <body>
+
+<div class="ex01">
+<b id="p00">0% center</b>
+<b id="p25">25%</b>
+<b id="p50">50%</b>
+<b id="p75">75%</b>
+<b id="p100">100% endpoint</b>
+<b id="finsh"><i>endpoint ellipse</i></b>
+<b id="gray"><br><i>gradient ray</i></b>
+</div>
+
+</body>
+</html>

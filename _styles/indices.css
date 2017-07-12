@@ -1,0 +1,78 @@
+:root {
+	--pagebg: hsl(42,100%,97%);
+	background:
+		linear-gradient(-3deg, hsla(33,100%,60%,0.1), transparent 33%) no-repeat,
+		linear-gradient(147deg, hsla(33,100%,60%,0.1), transparent 25%) no-repeat,
+		hsl(42,100%,97%);
+	color: black;
+	min-height: 100vh;
+	font: 1em Open Sans, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+body {display: grid;
+	grid-template-columns: 1fr minmax(30ch,90ch) 1fr;
+	grid-template-rows: repeat(2,min-content) auto minmax(3ch,10vh) min-content;
+	margin: 0; padding: 1ch 0;
+	background: transparent;}
+body > * {padding: 0 1ch;
+	grid-column: 2;}
+
+header {display: flex; flex-direction: column-reverse;
+	margin: 3ch 0;}
+header > * {margin: 0;}
+header h1 {align-self: flex-start;
+	opacity: 0.85;
+	border-bottom: 1px solid;
+	font-size: 300%; line-height: 1;
+	text-shadow:
+		0 0 2px var(--pagebg),
+		0 0 2px var(--pagebg),
+		0 0 2px var(--pagebg),
+		0 0 2px var(--pagebg),
+		0 0 2px var(--pagebg),
+		0 0 2px var(--pagebg),
+		0 0 2px var(--pagebg),
+		0 0 2px var(--pagebg),
+		0 0 2px var(--pagebg),
+		0 0 2px var(--pagebg)
+		;}
+header h2 {opacity: 0.5;
+	text-transform: uppercase; font-size: 1.23em; font-weight: 300;
+	margin-top: 1ch;
+	word-spacing: 0.25ch;}
+
+main {font-family: Georgia, serif;}
+main h3 {display: inline-block;
+	font-family: Open Sans, Helvetica, sans-serif;
+	margin: 1ch 0 1.5ch; padding-bottom: 1.5ch;
+	background: linear-gradient(rgba(0,0,0,0.67),rgba(0,0,0,0.67)) no-repeat bottom left / 50% 0.5ch;}
+main p {font-size: 1.1em;}
+ol {list-style: decimal; margin: 0; padding-left: 3ch;}
+ol li {margin-bottom: 0.33ch; padding-left: 0.5ch;}
+
+ol li a[href]::after {color: black; font-style: italic;}
+ol li a[href$="ppt"]::after {content: " (MS Powerpoint document)";}
+ol li a[href$="doc"]::after, ol li a[href$="docx"]::after {content: " (MS Word document)";}
+ol li a[href$="png"]::after {content: " (PNG)";}
+ol li a[href$="jpg"]::after {content: " (JPG)";}
+ol li a[href$="gif"]::after {content: " (GIF)";}
+ol li a[href$="svg"]::after {content: " (SVG)";}
+
+nav {grid-row: 1;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(0,0,0,0.25);}
+nav > * {
+	padding: 1ch 0;
+	opacity: 0.67;}
+nav > a:hover {opacity: 1;}
+nav > *:nth-child(1) {text-align: left; flex: 0 1 50%;}
+nav > *:nth-child(2) {text-align: center; flex: none;}
+nav > *:nth-child(3) {text-align: right; flex: 0 1 50%;}
+
+footer {font-size: smaller; font-style: italic;
+	border-top: 1px solid; padding: 0.5ch 0 5ch;
+	grid-row: 5;
+	display: flex;
+	justify-content: space-between;}
+footer > * {opacity: 0.5;}

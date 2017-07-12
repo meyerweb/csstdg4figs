@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Figure</title>
+<style type="text/css">
+ol {display: flex; list-style: none; justify-content: space-between; width: 1200px; padding: 1ch; margin: 0;}
+li img {background: silver; border: 3px solid; height: 150px; width: 250px;}
+li b {display: block; text-align: center; font: 2em Open Sans, sans-serif;}
+
+li:nth-child(1) img {object-fit: none;}
+li:nth-child(2) img {object-fit: fill;}
+li:nth-child(3) img {object-fit: cover;}
+li:nth-child(4) img {object-fit: contain;}
+</style>
+</head>
+<body>
+
+<ol>
+<li><img src="i/chrome.jpg" alt=""><b>none</b></li>
+<li><img src="i/chrome.jpg" alt=""><b>fill</b></li>
+<li><img src="i/chrome.jpg" alt=""><b>cover</b></li>
+<li><img src="i/chrome.jpg" alt=""><b>contain</b></li>
+</ol>
+
+</body>
+</html>

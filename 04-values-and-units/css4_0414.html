@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css" media="all">
+main {display: grid;
+	grid-template-rows: repeat(4,10ch) 2ch;
+	grid-template-areas: "r" "g" "b" "cs";
+	grid-gap: 2ch 0;
+	margin: 2em auto;
+	width: 700px;
+}
+#r {grid-area: r;}
+#g {grid-area: g;}
+#b {grid-area: b;}
+#cs {grid-area: cs; margin: 0;}
+#labels {grid-area: 1 / 1 / -1 / -1;}
+
+div b {opacity: 0;}
+
+#r {background: linear-gradient(to right, hsl(0,100%,50%) 16.67%, transparent 33%, transparent 66.67%, hsl(0,100%,50%) 83.33%);}
+#g {background: linear-gradient(to right, transparent, hsl(120,100%,50%) 16.67%, hsl(120,100%,50%) 50%, transparent 66.67%);}
+#b {background: linear-gradient(to right, transparent 33.33%, hsl(240,100%,50%) 50%, hsl(240,100%,50%) 83.33%, transparent);}
+#cs {background: linear-gradient(to right, hsl(0,100%,50%), hsl(60,100%,50%), hsl(120,100%,50%), hsl(180,100%,50%), hsl(240,100%,50%), hsl(300,100%,50%), hsl(0,100%,50%));}
+
+#labels {display: grid; margin: 0; padding: 0; width: 100%;
+	grid-template-columns: repeat(6, 1fr);
+	grid-auto-columns: 0;
+	align-items: stretch;
+	}
+#labels li {grid-row: 1;
+	display: flex; align-items: end;
+	border-left: 1px solid;}
+#labels li b {font: 500 1em Georgia, serif;
+	transform: translate(-1.25ch,2ch);}
+#labels li:nth-child(1) b {
+	transform: translate(-0.75ch,2ch);}
+#labels li:nth-child(2) b {
+	transform: translate(-1ch,2ch);}
+</style>
+</head>
+<body>
+
+<main>
+<div id="r"><b>Red values</b></div>
+<div id="g"><b>Green values</b></div>
+<div id="b"><b>Blue values</b></div>
+<div id="cs"><b>The combined spectrum</b></div>
+<ol id="labels">
+<li><b>0º</b></li>
+<li><b>60º</b></li>
+<li><b>120º</b></li>
+<li><b>180º</b></li>
+<li><b>240º</b></li>
+<li><b>300º</b></li>
+<li><b>360º</b></li>
+</ol>
+</main>
+
+</body>
+<html>
