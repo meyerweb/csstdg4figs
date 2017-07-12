@@ -1,1 +1,81 @@
-<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Figure</title><style type="text/css">body {display: flex; justify-content: center;}.arena {display: grid;	grid-template-columns: repeat(3, 250px);	grid-template-rows: repeat(2, 250px);	grid-gap: 5em 40px;}</style><style type="text/css">ol {position: relative; height: 250px; width: 250px; list-style: none; margin: 0 auto; padding: 0;}ol li {height: 100%; width: 100%; position: absolute; top: 0; left: 0;}ol li > * {width: 100%; text-align: center; position: absolute; top: 100%; margin-top: 0.33em; font-size: 1.5em;}ol li:nth-child(1) {	background-image:		url(i/Kitchen-Dough-Blender.jpg),		url(i/Kitchen-Dough-Blender.jpg),		url(i/Kitchen-Dough-Blender.jpg),		linear-gradient(135deg, gray, gray);	background-position: top left, top right, bottom left, bottom right;	background-size: 50% 50%;	background-repeat: no-repeat;	z-index: 2;	}ol li:nth-child(2) {	background-image:		url(i/Kitchen-Dough-Blender.jpg),		linear-gradient(135deg, gray, gray),		linear-gradient(135deg, black, white),		linear-gradient(135deg, black, white);	background-position: top left, top right, bottom left, bottom right;	background-size: 50% 50%;	background-repeat: no-repeat;	}.examples {width: 540px; grid-area: 1/1; margin-left: 125px;}.examples li {width: 250px;}.multiply {grid-area: 2/1;}.screen {grid-area: 2/2;}.overlay {grid-area: 2/3;}.exclusion {grid-area: 2/4;}.examples li:nth-child(2) {left: auto; right: 0%;}.multiply li:first-child {mix-blend-mode: multiply;}.screen li:nth-child(1) {mix-blend-mode: screen;}.overlay li:nth-child(1) {mix-blend-mode: overlay;}.exclusion li:nth-child(1) {mix-blend-mode: exclusion;}</style></head><body><div class="arena"><ol class="examples"><li><em>source</em></li><li><em>destination</em></li></ol><ol class="multiply"><li><code>multiply</code></li><li></li></ol><ol class="screen"><li><code>screen</code></li><li></li></ol><ol class="overlay"><li><code>overlay</code></li><li></li></ol></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css">
+body {display: flex; justify-content: center;}
+.arena {display: grid;
+	grid-template-columns: repeat(3, 250px);
+	grid-template-rows: repeat(2, 250px);
+	grid-gap: 5em 40px;
+}
+</style>
+<style type="text/css">
+ol {position: relative; height: 250px; width: 250px; list-style: none; margin: 0 auto; padding: 0;}
+ol li {height: 100%; width: 100%; position: absolute; top: 0; left: 0;}
+ol li > * {width: 100%; text-align: center; position: absolute; top: 100%; margin-top: 0.33em; font-size: 1.5em;}
+ol li:nth-child(1) {
+	background-image:
+		url(i/Kitchen-Dough-Blender.jpg),
+		url(i/Kitchen-Dough-Blender.jpg),
+		url(i/Kitchen-Dough-Blender.jpg),
+		linear-gradient(135deg, gray, gray);
+	background-position: top left, top right, bottom left, bottom right;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	z-index: 2;
+	}
+ol li:nth-child(2) {
+	background-image:
+		url(i/Kitchen-Dough-Blender.jpg),
+		linear-gradient(135deg, gray, gray),
+		linear-gradient(135deg, black, white),
+		linear-gradient(135deg, black, white);
+	background-position: top left, top right, bottom left, bottom right;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	}
+
+.examples {width: 540px; grid-area: 1/1; margin-left: 125px;}
+.examples li {width: 250px;}
+.multiply {grid-area: 2/1;}
+.screen {grid-area: 2/2;}
+.overlay {grid-area: 2/3;}
+.exclusion {grid-area: 2/4;}
+
+.examples li:nth-child(2) {left: auto; right: 0%;}
+.multiply li:first-child {mix-blend-mode: multiply;}
+.screen li:nth-child(1) {mix-blend-mode: screen;}
+.overlay li:nth-child(1) {mix-blend-mode: overlay;}
+.exclusion li:nth-child(1) {mix-blend-mode: exclusion;}
+</style>
+</head>
+<body>
+
+<div class="arena">
+
+<ol class="examples">
+<li><em>source</em></li>
+<li><em>destination</em></li>
+</ol>
+
+<ol class="multiply">
+<li><code>multiply</code></li>
+<li></li>
+</ol>
+
+<ol class="screen">
+<li><code>screen</code></li>
+<li></li>
+</ol>
+
+<ol class="overlay">
+<li><code>overlay</code></li>
+<li></li>
+</ol>
+
+</div>
+
+</body>
+</html>

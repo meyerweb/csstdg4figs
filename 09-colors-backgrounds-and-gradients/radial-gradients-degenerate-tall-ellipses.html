@@ -1,1 +1,131 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Figure</title><style type="text/css">section {margin: 10px; position: relative; margin-bottom: 10em;}section div {height: 300px; width: 800px;}div.ovals {position: relative;	background-image:		linear-gradient(to right,			transparent, transparent 50%, black 50%, black 100%),	 	radial-gradient(300px 30000000px,	 		black 0, black 0.5px,	 		transparent 0.5px, transparent 4px,	 		orange 4px, orange 6px,	 		transparent 6px, transparent 49px,	 		green 49px, green 51px,	 		transparent 50px, transparent 99px,	 		blue 99px, blue 101px,	 		transparent 100.5px, transparent 199px,	 		purple 199px, purple 200.5px,	 		transparent 201px, transparent 299px,	 		gray 299px, gray 301px,	 		transparent 301px, transparent 302px	 		),	 	linear-gradient(to top, rgba(255,255,255,0.5), rgba(255,255,255,0.667)),	 	radial-gradient(300px 30000000px,			black,			orange 5px,			green 50px,			blue 100px,			purple 200px,			gray 300px,			gray 301px		)	;	background-size: 100% 4px, auto, auto, auto, auto;	background-position: center;	background-repeat: no-repeat;}#ah {height: 20px; position: absolute; right: -5px; top: 50%; margin-top: -10px;}div.key li {list-style: none;	font: italic 1.25em Helvetica, sans-serif; white-space: nowrap; color: #333;}div.key li::after {content: "px"; font-size: 0.85em; font-weight: normal; margin-left: 0.1em;}div.stops {position: absolute; top: 0; left: 400px; z-index: 0;}div.stops li {position: absolute; top: 50%; padding: 7px 8px; margin: 2px 1px;	background-image:		linear-gradient(45deg, transparent, transparent 50%, gray 48%, gray 52%, transparent 60%, transparent);	background-size: 9px 9px;	background-repeat: no-repeat;}div.stops li:nth-child(1) {left: 5px;}div.stops li:nth-child(2) {left: 50px;}div.stops li:nth-child(3) {left: 100px;}div.stops li:nth-child(4) {left: 200px;}div.stops li:nth-child(5) {left: 300px;}div.widths {position: absolute; top: 101.5%; width: 100%;}div.widths li {position: absolute; top: 0; left: 0; box-sizing: border-box;	border: 1px dashed; border-top: none;	text-align: center; font-style: normal;}div.widths li:nth-child(1) {padding-top: 0.5em; width: 10px; left: 395px; color: orange; text-indent: -10px;	border-radius: 0 0 1em 1em;}div.widths li:nth-child(2) {padding-top: 2em; width: 100px; left: 350px; color: green;	border-radius: 0 0 2em 2em;}div.widths li:nth-child(3) {padding-top: 3.5em; width: 200px; left: 300px; color: blue;	border-radius: 0 0 3em 3em;}div.widths li:nth-child(4) {padding-top: 5em; width: 400px; left: 200px; color: purple;	border-radius: 0 0 4em 4em;}div.widths li:nth-child(5) {padding-top: 6.5em; width: 600px; left: 100px; color: gray;	border-radius: 0 0 5em 5em;}div.heights {position: absolute; top: 93%; left: 78px;}div.heights li {position: absolute; font-weight: normal; font-style: italic;	-webkit-transform: rotate(-90deg); -webkit-transform-origin: top left;}div.heights li::after {content: "px tall";}div.heights li:nth-child(5) {left: 0px;}div.heights li:nth-child(4) {left: 100px;}div.heights li:nth-child(3) {left: 200px;}div.heights li:nth-child(2) {left: 250px;}div.heights li:nth-child(1) {left: 295px;}</style></head><body> <section><div class="ovals"><img id="ah" src="i/arrowhead.png"></div><div class="key stops"><ol><li>5</li><li>50</li><li>100</li><li>200</li><li>300</li></ol></div><div class="key widths"><ol><li><b>10</b></li><li><b>100</b></li><li><b>200</b></li><li><b>400</b></li><li><b>600</b></li></ol></div><div class="key heights"><ol><li>1,000,000</li><li>10,000,000</li><li>20,000,000</li><li>40,000,000</li><li>60,000,000</li></ol></div></section></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Figure</title>
+
+<style type="text/css">
+section {margin: 10px; position: relative; margin-bottom: 10em;}
+section div {height: 300px; width: 800px;}
+div.ovals {position: relative;
+	background-image:
+		linear-gradient(to right,
+			transparent, transparent 50%, black 50%, black 100%),
+	 	radial-gradient(300px 30000000px,
+	 		black 0, black 0.5px,
+	 		transparent 0.5px, transparent 4px,
+	 		orange 4px, orange 6px,
+	 		transparent 6px, transparent 49px,
+	 		green 49px, green 51px,
+	 		transparent 50px, transparent 99px,
+	 		blue 99px, blue 101px,
+	 		transparent 100.5px, transparent 199px,
+	 		purple 199px, purple 200.5px,
+	 		transparent 201px, transparent 299px,
+	 		gray 299px, gray 301px,
+	 		transparent 301px, transparent 302px
+	 		),
+	 	linear-gradient(to top, rgba(255,255,255,0.5), rgba(255,255,255,0.667)),
+	 	radial-gradient(300px 30000000px,
+			black,
+			orange 5px,
+			green 50px,
+			blue 100px,
+			purple 200px,
+			gray 300px,
+			gray 301px
+		)
+
+	;
+	background-size: 100% 4px, auto, auto, auto, auto;
+	background-position: center;
+	background-repeat: no-repeat;}
+#ah {height: 20px; position: absolute; right: -5px; top: 50%; margin-top: -10px;}
+
+div.key li {list-style: none;
+	font: italic 1.25em Helvetica, sans-serif; white-space: nowrap; color: #333;}
+div.key li::after {content: "px"; font-size: 0.85em; font-weight: normal; margin-left: 0.1em;}
+
+div.stops {position: absolute; top: 0; left: 400px; z-index: 0;}
+div.stops li {position: absolute; top: 50%; padding: 7px 8px; margin: 2px 1px;
+	background-image:
+		linear-gradient(45deg, transparent, transparent 50%, gray 48%, gray 52%, transparent 60%, transparent);
+	background-size: 9px 9px;
+	background-repeat: no-repeat;}
+div.stops li:nth-child(1) {left: 5px;}
+div.stops li:nth-child(2) {left: 50px;}
+div.stops li:nth-child(3) {left: 100px;}
+div.stops li:nth-child(4) {left: 200px;}
+div.stops li:nth-child(5) {left: 300px;}
+
+div.widths {position: absolute; top: 101.5%; width: 100%;}
+div.widths li {position: absolute; top: 0; left: 0; box-sizing: border-box;
+	border: 1px dashed; border-top: none;
+	text-align: center; font-style: normal;}
+div.widths li:nth-child(1) {padding-top: 0.5em; width: 10px; left: 395px; color: orange; text-indent: -10px;
+	border-radius: 0 0 1em 1em;}
+div.widths li:nth-child(2) {padding-top: 2em; width: 100px; left: 350px; color: green;
+	border-radius: 0 0 2em 2em;}
+div.widths li:nth-child(3) {padding-top: 3.5em; width: 200px; left: 300px; color: blue;
+	border-radius: 0 0 3em 3em;}
+div.widths li:nth-child(4) {padding-top: 5em; width: 400px; left: 200px; color: purple;
+	border-radius: 0 0 4em 4em;}
+div.widths li:nth-child(5) {padding-top: 6.5em; width: 600px; left: 100px; color: gray;
+	border-radius: 0 0 5em 5em;}
+
+div.heights {position: absolute; top: 93%; left: 78px;}
+div.heights li {position: absolute; font-weight: normal; font-style: italic;
+	-webkit-transform: rotate(-90deg); -webkit-transform-origin: top left;}
+div.heights li::after {content: "px tall";}
+div.heights li:nth-child(5) {left: 0px;}
+div.heights li:nth-child(4) {left: 100px;}
+div.heights li:nth-child(3) {left: 200px;}
+div.heights li:nth-child(2) {left: 250px;}
+div.heights li:nth-child(1) {left: 295px;}
+
+</style>
+</head>
+
+<body> 
+
+<section>
+
+<div class="ovals">
+<img id="ah" src="i/arrowhead.png">
+</div>
+
+<div class="key stops">
+<ol>
+<li>5</li>
+<li>50</li>
+<li>100</li>
+<li>200</li>
+<li>300</li>
+</ol>
+</div>
+
+<div class="key widths">
+<ol>
+<li><b>10</b></li>
+<li><b>100</b></li>
+<li><b>200</b></li>
+<li><b>400</b></li>
+<li><b>600</b></li>
+</ol>
+</div>
+
+<div class="key heights">
+<ol>
+<li>1,000,000</li>
+<li>10,000,000</li>
+<li>20,000,000</li>
+<li>40,000,000</li>
+<li>60,000,000</li>
+</ol>
+</div>
+
+</section>
+
+</body>
+</html>

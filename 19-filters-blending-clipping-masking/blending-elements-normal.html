@@ -1,1 +1,46 @@
-<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Figure</title><style type="text/css">body {display: flex; justify-content: center;}.arena {display: grid;	grid-template-columns: repeat(3, 250px);	grid-template-rows: repeat(1, 250px);	grid-gap: 0 5em;}}</style><style type="text/css">ol {position: relative; height: 250px; width: 250px; list-style: none; margin: 0; padding: 0;}ol li {height: 100%; width: 100%; position: absolute; top: 0; left: 0;}ol li > * {width: 100%; top: 0;}ol li:nth-child(1) {z-index: 2;}ol.translucent li:nth-child(1) {opacity: 0.75;}ol.swap li:nth-child(1) {z-index: -1;}</style></head><body><div class="arena"><ol><li><img src="i/Cloud.svg"></li><li><img src="i/Kitchen-Dough-Blender-masked.png"></li></ol><ol class="translucent"><li><img src="i/Cloud.svg"></li><li><img src="i/Kitchen-Dough-Blender-masked.png"></li></ol><ol class="swap"><li><img src="i/Cloud.svg"></li><li><img src="i/Kitchen-Dough-Blender-masked.png"></li></ol></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css">
+body {display: flex; justify-content: center;}
+.arena {display: grid;
+	grid-template-columns: repeat(3, 250px);
+	grid-template-rows: repeat(1, 250px);
+	grid-gap: 0 5em;}
+}
+</style>
+<style type="text/css">
+ol {position: relative; height: 250px; width: 250px; list-style: none; margin: 0; padding: 0;}
+ol li {height: 100%; width: 100%; position: absolute; top: 0; left: 0;}
+ol li > * {width: 100%; top: 0;}
+ol li:nth-child(1) {z-index: 2;}
+
+ol.translucent li:nth-child(1) {opacity: 0.75;}
+ol.swap li:nth-child(1) {z-index: -1;}
+</style>
+</head>
+<body>
+
+<div class="arena">
+
+<ol>
+<li><img src="i/Cloud.svg"></li>
+<li><img src="i/Kitchen-Dough-Blender-masked.png"></li>
+</ol>
+
+<ol class="translucent">
+<li><img src="i/Cloud.svg"></li>
+<li><img src="i/Kitchen-Dough-Blender-masked.png"></li>
+</ol>
+
+<ol class="swap">
+<li><img src="i/Cloud.svg"></li>
+<li><img src="i/Kitchen-Dough-Blender-masked.png"></li>
+</ol>
+
+</div>
+
+</body>
+</html>

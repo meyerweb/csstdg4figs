@@ -1,1 +1,77 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {width: auto; padding: 2em;}section {position: relative;}.grid {display: grid; width: auto; height: 10em; margin-bottom: 5em;}.grid:nth-of-type(1) {grid-template-columns: repeat(auto-fit, 10em);}.grid:nth-of-type(2) {grid-template-columns: repeat(auto-fill, 10em);}.box01 {grid-column: 1;}.box02 {grid-column: 2;}.box03 {grid-column: 4;}.box04 {grid-column: 5;}.box05 {grid-column: 7;}.labels.col {display: grid; grid-template-columns: repeat(auto-fit, 10em); margin: 0; padding: 0;}.labels.col li {display: flex; justify-content: end; align-items: start; flex-flow: column;}.labels li.line.label i {color: rebeccapurple; font: 400 1em Arvo, sans-serif;}.labels.col li.line.label i {border-left: 1px solid; padding-left: 0.25em;}.labels.col li i:last-child {padding-bottom: 0.5em;}.labels.col li:last-child {grid-column: -1;}p {text-align: center; font: bold 2em Consolas, monospace, sans-serif; margin: 1ch;}</style></head><body><section><p>repeat(auto-fit,20em)</p><ul class="labels col"><li class="col line label"><i>1</i></li><li class="col line label"><i>2</i></li><li class="col line label"><i>3</i><i>4</i></li><li class="col line label"><i>5</i></li><li class="col line label"><i>6</i><i>7</i></li><li class="col line label"><i>8</i><i>9</i></li></ul><div class="grid boxed lines"><span class="box01">1</span><span class="box02">2</span><span class="box03">4</span><span class="box04">5</span><span class="box05">7</span></div><p>repeat(auto-fill,20em)</p><ul class="labels col"><li class="col line label"><i>1</i></li><li class="col line label"><i>2</i></li><li class="col line label"><i>3</i></li><li class="col line label"><i>4</i></li><li class="col line label"><i>5</i></li><li class="col line label"><i>6</i></li><li class="col line label"><i>7</i></li><li class="col line label"><i>8</i></li><li class="col line label"><i>9</i></li></ul><div class="grid boxed lines"><span class="box01">1</span><span class="box02">2</span><span class="box03">4</span><span class="box04">5</span><span class="box05">7</span></div></section></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {width: auto; padding: 2em;}
+section {position: relative;}
+.grid {display: grid; width: auto; height: 10em; margin-bottom: 5em;}
+.grid:nth-of-type(1) {grid-template-columns: repeat(auto-fit, 10em);}
+.grid:nth-of-type(2) {grid-template-columns: repeat(auto-fill, 10em);}
+
+.box01 {grid-column: 1;}
+.box02 {grid-column: 2;}
+.box03 {grid-column: 4;}
+.box04 {grid-column: 5;}
+.box05 {grid-column: 7;}
+
+.labels.col {display: grid; grid-template-columns: repeat(auto-fit, 10em); margin: 0; padding: 0;}
+
+.labels.col li {display: flex; justify-content: end; align-items: start; flex-flow: column;}
+
+.labels li.line.label i {color: rebeccapurple; font: 400 1em Arvo, sans-serif;}
+.labels.col li.line.label i {border-left: 1px solid; padding-left: 0.25em;}
+.labels.col li i:last-child {padding-bottom: 0.5em;}
+.labels.col li:last-child {grid-column: -1;}
+
+p {text-align: center; font: bold 2em Consolas, monospace, sans-serif; margin: 1ch;}
+</style>
+</head>
+<body>
+
+<section>
+
+<p>repeat(auto-fit,20em)</p>
+<ul class="labels col">
+<li class="col line label"><i>1</i></li>
+<li class="col line label"><i>2</i></li>
+<li class="col line label"><i>3</i><i>4</i></li>
+<li class="col line label"><i>5</i></li>
+<li class="col line label"><i>6</i><i>7</i></li>
+<li class="col line label"><i>8</i><i>9</i></li>
+</ul>
+<div class="grid boxed lines">
+<span class="box01">1</span>
+<span class="box02">2</span>
+<span class="box03">4</span>
+<span class="box04">5</span>
+<span class="box05">7</span>
+</div>
+
+<p>repeat(auto-fill,20em)</p>
+<ul class="labels col">
+<li class="col line label"><i>1</i></li>
+<li class="col line label"><i>2</i></li>
+<li class="col line label"><i>3</i></li>
+<li class="col line label"><i>4</i></li>
+<li class="col line label"><i>5</i></li>
+<li class="col line label"><i>6</i></li>
+<li class="col line label"><i>7</i></li>
+<li class="col line label"><i>8</i></li>
+<li class="col line label"><i>9</i></li>
+</ul>
+<div class="grid boxed lines">
+<span class="box01">1</span>
+<span class="box02">2</span>
+<span class="box03">4</span>
+<span class="box04">5</span>
+<span class="box05">7</span>
+</div>
+
+</section>
+
+</body>
+</html>

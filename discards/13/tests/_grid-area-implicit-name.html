@@ -1,1 +1,70 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {width: auto;}.grid > * {border: 1px dotted red; margin: 3px;}.grid {display: grid; margin: 1em;}#g1 {grid-template-columns:		 [header-start footer-start left-start] 1fr		 [content-start left-end] 1fr [content-end right-start] 1fr		 [right-end header-end footer-end];	grid-template-rows:		[header-start] 3em		[header-end content-start] 1fr		[content-end footer-start] 3em		[footer-end];	}#g2 {grid-template-columns: 1fr [content-start] 1fr [content-end] 1fr;	grid-template-rows:	3em 1fr 3em;}.header {grid-area: header;}.content {grid-area: content;}.footer {grid-area: footer;}.right {grid-area: right;}</style></head><body><div class="grid boxed lines" id="g1"><span class="header">header</span><span class="content">content</span><span class="footer">footer</span><span class="right">right</span><span class="">.</span><span class="">.</span></div><div class="grid boxed lines" id="g2"><span class="">header</span><span class="content">content</span><span class="">footer</span><span class="">right</span><span class="">.</span><span class="">.</span><span class="">.</span><span class="">.</span><span class="">.</span><span class="">.</span></div><div class="grid boxed lines" id="g2"><span class="content">content</span><span class="">.</span><span class="">.</span><span class="">.</span><span class="">.</span><span class="">.</span><span class="">.</span><span class="">.</span><span class="">.</span><span class="">.</span></div></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {width: auto;}
+.grid > * {border: 1px dotted red; margin: 3px;}
+
+.grid {display: grid; margin: 1em;}
+#g1 {grid-template-columns:
+		 [header-start footer-start left-start] 1fr
+		 [content-start left-end] 1fr [content-end right-start] 1fr
+		 [right-end header-end footer-end];
+	grid-template-rows:
+		[header-start] 3em
+		[header-end content-start] 1fr
+		[content-end footer-start] 3em
+		[footer-end];
+	}
+#g2 {grid-template-columns: 1fr [content-start] 1fr [content-end] 1fr;
+	grid-template-rows:	3em 1fr 3em;}
+
+.header {grid-area: header;}
+.content {grid-area: content;}
+.footer {grid-area: footer;}
+.right {grid-area: right;}
+</style>
+</head>
+<body>
+
+<div class="grid boxed lines" id="g1">
+<span class="header">header</span>
+<span class="content">content</span>
+<span class="footer">footer</span>
+<span class="right">right</span>
+<span class="">.</span>
+<span class="">.</span>
+</div>
+
+<div class="grid boxed lines" id="g2">
+<span class="">header</span>
+<span class="content">content</span>
+<span class="">footer</span>
+<span class="">right</span>
+<span class="">.</span>
+<span class="">.</span>
+<span class="">.</span>
+<span class="">.</span>
+<span class="">.</span>
+<span class="">.</span>
+</div>
+
+<div class="grid boxed lines" id="g2">
+<span class="content">content</span>
+<span class="">.</span>
+<span class="">.</span>
+<span class="">.</span>
+<span class="">.</span>
+<span class="">.</span>
+<span class="">.</span>
+<span class="">.</span>
+<span class="">.</span>
+<span class="">.</span>
+</div>
+
+</body>
+</html>

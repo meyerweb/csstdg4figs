@@ -1,1 +1,118 @@
-<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Figure</title><style type="text/css">body {display: flex; justify-content: center;}img {display: block; margin: 0 auto; height: 100px; width: 100px;}span {display: block; margin-left: auto; position: relative; height: 150px; width: 150px; background: teal;}img[src="i/triangle.svg"] {width: 150px;}.arena {display: grid;	grid-template-columns: repeat(6,1fr);	grid-gap: 3em;	}.arena ol {display: grid;	grid-template-rows: 150px repeat(3,120px);	grid-gap: 3em;	margin: 0; padding: 0; list-style: none;	}.arena ol li:last-child {grid-row: 1;}ol:nth-of-type(1) span {mask:	url(i/square.svg) bottom 9px right 9px / 88px 88px add,	url(i/circle.svg) top left / 100px 100px exclude,	url(i/triangle.svg) center / 150px 100px add	;	}ol:nth-of-type(2) span {mask:	url(i/square.svg) bottom 9px right 9px / 88px 88px add,	url(i/circle.svg) top left / 100px 100px subtract,	url(i/triangle.svg) center / 150px 100px add	;	}ol:nth-of-type(3) span {mask:	url(i/square.svg) bottom 9px right 9px / 88px 88px subtract,	url(i/circle.svg) top left / 100px 100px add,	url(i/triangle.svg) center / 150px 100px add	;	}ol:nth-of-type(4) span {mask:	url(i/circle.svg) top left / 100px 100px subtract,	url(i/square.svg) bottom 9px right 9px / 88px 88px add,	url(i/triangle.svg) center / 150px 100px add	;	}ol:nth-of-type(5) span {mask:	url(i/circle.svg) top left / 100px 100px exclude,	url(i/square.svg) bottom 9px right 9px / 88px 88px add,	url(i/triangle.svg) center / 150px 100px add	;	}ol:nth-of-type(6) span {mask:	url(i/triangle.svg) center / 150px 100px subtract,	url(i/circle.svg) top left / 100px 100px intersect,	url(i/square.svg) bottom 9px right 9px / 88px 88px add	;	}.arena ol span {mask-repeat: no-repeat;}.arena ol code:not(:empty) {display: block; text-align: center; font-size: 1.2em;	margin-top: 0.5em; padding: 20px 0 13px 0;	background: url(i/arrow.svg) 50% 100% / 15px 13px no-repeat,		url(i/arrow.svg) 50% 4px / 15px 13px no-repeat;}.arena ol em {display: block; text-align: center; font-size: 1.2em;	margin-top: 0; padding: 0 0 15px 0;	background: url(i/arrow.svg) 50% 100% / 15px 13px no-repeat;}</style></head><body><div class="arena"><ol><li><img src="i/square.svg"><code>add</code></li><li><img src="i/circle.svg"><code>exclude</code></li><li><img src="i/triangle.svg"><code></code></li><li><span></span><em>result</em></li></ol><ol><li><img src="i/square.svg"><code>add</code></li><li><img src="i/circle.svg"><code>subtract</code></li><li><img src="i/triangle.svg"><code></code></li><li><span></span><em>result</em></li></ol><ol><li><img src="i/square.svg"><code>subtract</code></li><li><img src="i/circle.svg"><code>add</code></li><li><img src="i/triangle.svg"><code></code></li><li><span></span><em>result</em></li></ol><ol><li><img src="i/circle.svg"><code>subtract</code></li><li><img src="i/square.svg"><code>add</code></li><li><img src="i/triangle.svg"><code></code></li><li><span></span><em>result</em></li></ol><ol><li><img src="i/circle.svg"><code>exclude</code></li><li><img src="i/square.svg"><code>add</code></li><li><img src="i/triangle.svg"><code></code></li><li><span></span><em>result</em></li></ol><ol><li><img src="i/triangle.svg"><code>subtract</code></li><li><img src="i/square.svg"><code>intersect</code></li><li><img src="i/circle.svg"><code></code></li><li><span></span><em>result</em></li></ol></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css">
+body {display: flex; justify-content: center;}
+img {display: block; margin: 0 auto; height: 100px; width: 100px;}
+span {display: block; margin-left: auto; position: relative; height: 150px; width: 150px; background: teal;}
+img[src="i/triangle.svg"] {width: 150px;}
+.arena {display: grid;
+	grid-template-columns: repeat(6,1fr);
+	grid-gap: 3em;
+	}
+.arena ol {display: grid;
+	grid-template-rows: 150px repeat(3,120px);
+	grid-gap: 3em;
+	margin: 0; padding: 0; list-style: none;
+	}
+.arena ol li:last-child {grid-row: 1;}
+
+ol:nth-of-type(1) span {mask:
+	url(i/square.svg) bottom 9px right 9px / 88px 88px add,
+	url(i/circle.svg) top left / 100px 100px exclude,
+	url(i/triangle.svg) center / 150px 100px add
+	;
+	}
+ol:nth-of-type(2) span {mask:
+	url(i/square.svg) bottom 9px right 9px / 88px 88px add,
+	url(i/circle.svg) top left / 100px 100px subtract,
+	url(i/triangle.svg) center / 150px 100px add
+	;
+	}
+ol:nth-of-type(3) span {mask:
+	url(i/square.svg) bottom 9px right 9px / 88px 88px subtract,
+	url(i/circle.svg) top left / 100px 100px add,
+	url(i/triangle.svg) center / 150px 100px add
+	;
+	}
+ol:nth-of-type(4) span {mask:
+	url(i/circle.svg) top left / 100px 100px subtract,
+	url(i/square.svg) bottom 9px right 9px / 88px 88px add,
+	url(i/triangle.svg) center / 150px 100px add
+	;
+	}
+ol:nth-of-type(5) span {mask:
+	url(i/circle.svg) top left / 100px 100px exclude,
+	url(i/square.svg) bottom 9px right 9px / 88px 88px add,
+	url(i/triangle.svg) center / 150px 100px add
+	;
+	}
+ol:nth-of-type(6) span {mask:
+	url(i/triangle.svg) center / 150px 100px subtract,
+	url(i/circle.svg) top left / 100px 100px intersect,
+	url(i/square.svg) bottom 9px right 9px / 88px 88px add
+	;
+	}
+.arena ol span {mask-repeat: no-repeat;}
+
+.arena ol code:not(:empty) {display: block; text-align: center; font-size: 1.2em;
+	margin-top: 0.5em; padding: 20px 0 13px 0;
+	background: url(i/arrow.svg) 50% 100% / 15px 13px no-repeat,
+		url(i/arrow.svg) 50% 4px / 15px 13px no-repeat;}
+.arena ol em {display: block; text-align: center; font-size: 1.2em;
+	margin-top: 0; padding: 0 0 15px 0;
+	background: url(i/arrow.svg) 50% 100% / 15px 13px no-repeat;}
+</style>
+</head>
+<body>
+
+<div class="arena">
+
+<ol>
+<li><img src="i/square.svg"><code>add</code></li>
+<li><img src="i/circle.svg"><code>exclude</code></li>
+<li><img src="i/triangle.svg"><code></code></li>
+<li><span></span><em>result</em></li>
+</ol>
+
+<ol>
+<li><img src="i/square.svg"><code>add</code></li>
+<li><img src="i/circle.svg"><code>subtract</code></li>
+<li><img src="i/triangle.svg"><code></code></li>
+<li><span></span><em>result</em></li>
+</ol>
+
+<ol>
+<li><img src="i/square.svg"><code>subtract</code></li>
+<li><img src="i/circle.svg"><code>add</code></li>
+<li><img src="i/triangle.svg"><code></code></li>
+<li><span></span><em>result</em></li>
+</ol>
+
+<ol>
+<li><img src="i/circle.svg"><code>subtract</code></li>
+<li><img src="i/square.svg"><code>add</code></li>
+<li><img src="i/triangle.svg"><code></code></li>
+<li><span></span><em>result</em></li>
+</ol>
+
+<ol>
+<li><img src="i/circle.svg"><code>exclude</code></li>
+<li><img src="i/square.svg"><code>add</code></li>
+<li><img src="i/triangle.svg"><code></code></li>
+<li><span></span><em>result</em></li>
+</ol>
+
+<ol>
+<li><img src="i/triangle.svg"><code>subtract</code></li>
+<li><img src="i/square.svg"><code>intersect</code></li>
+<li><img src="i/circle.svg"><code></code></li>
+<li><span></span><em>result</em></li>
+</ol>
+
+</div>
+
+</body>
+</html>

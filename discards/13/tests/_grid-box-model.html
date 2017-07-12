@@ -1,1 +1,57 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {width: auto;}.grid > * {border: 1px dotted red;}.grid > [class]::before {content: ". . . . .";}.grid {display: grid; margin: 2em;	grid-template-columns: repeat(5, 6em);	grid-template-rows: repeat(2, 6em);}#g2 {grid-gap: 1em 2em;}.box01 {margin: 1em;}.box02 {margin: 1em; box-sizing: content-box;}.box03 {margin: -1em;}.box04 {width: 6em;}.box05 {width: 6em; margin: 1em;}.box06 {width: 3em; margin: 1em;}.box07 {width: 1em; margin: 1em;}.box08 {width: 0.5em; margin: -1em 2.25em;}</style></head><body><div class="grid boxed lines small" id="g1"><span class="box01"></span><span class="box02"></span><span class="box03"></span><span class="box04"></span><span class="box05"></span><span class="box06"></span><span class="box07"></span><span class="box08"></span><span class="box09"></span><span class="box10"></span></div><div class="grid boxed lines small" id="g2"><span class="box01"></span><span class="box02"></span><span class="box03"></span><span class="box04"></span><span class="box05"></span><span class="box06"></span><span class="box07"></span><span class="box08"></span><span class="box09"></span><span class="box10"></span></div></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {width: auto;}
+.grid > * {border: 1px dotted red;}
+.grid > [class]::before {content: ". . . . .";}
+
+.grid {display: grid; margin: 2em;
+	grid-template-columns: repeat(5, 6em);
+	grid-template-rows: repeat(2, 6em);
+}
+#g2 {grid-gap: 1em 2em;}
+.box01 {margin: 1em;}
+.box02 {margin: 1em; box-sizing: content-box;}
+.box03 {margin: -1em;}
+.box04 {width: 6em;}
+.box05 {width: 6em; margin: 1em;}
+.box06 {width: 3em; margin: 1em;}
+.box07 {width: 1em; margin: 1em;}
+.box08 {width: 0.5em; margin: -1em 2.25em;}
+</style>
+</head>
+<body>
+
+<div class="grid boxed lines small" id="g1">
+<span class="box01"></span>
+<span class="box02"></span>
+<span class="box03"></span>
+<span class="box04"></span>
+<span class="box05"></span>
+<span class="box06"></span>
+<span class="box07"></span>
+<span class="box08"></span>
+<span class="box09"></span>
+<span class="box10"></span>
+</div>
+
+<div class="grid boxed lines small" id="g2">
+<span class="box01"></span>
+<span class="box02"></span>
+<span class="box03"></span>
+<span class="box04"></span>
+<span class="box05"></span>
+<span class="box06"></span>
+<span class="box07"></span>
+<span class="box08"></span>
+<span class="box09"></span>
+<span class="box10"></span>
+</div>
+
+</body>
+</html>

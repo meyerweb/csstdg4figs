@@ -1,1 +1,101 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {display: grid;	grid-template-columns: repeat(5, 3em 9em);	width: 100%;	justify-items: center; align-items: center;}.grid {display: grid; padding: 0.5em;	width: auto; height: 20em;	grid-gap: 0.75em 0.5em; border: 1px solid;	grid-template-rows: repeat(3, 3em); grid-template-columns: 2em 2em;	justify-self: start;}h1 { 	background: rgba(0,0,0,0.1); 	padding: 0.5em 0.75em 0.25em;	text-align: center; white-space: nowrap;	transform: rotate(-90deg);	font: 1.33em Helvetica, sans-serif; margin: 0;}h1 code {font: 1.1em monospace, serif;}div[id] span[class*="box"] {box-sizing: border-box; color: inherit; background: hsla(117,50%,50%,0.25);}#g1 {align-content: start;}#g2 {align-content: end;}#g3 {align-content: left;}#g4 {align-content: right;}#g5 {align-content: center;}span[class*="01"] {grid-row: 1; grid-column: 1;}span[class*="02"] {grid-row: 2; grid-column: 1;}span[class*="03"] {grid-row: 3; grid-column: 1;}span[class*="04"] {grid-row: 1; grid-column: 2;}span[class*="05"] {grid-row: 2; grid-column: 2;}span[class*="06"] {grid-row: 3; grid-column: 2;}</style></head><body><h1><code>align-content: start</code></h1><div class="grid small" id="g1"><span class="box01"></span><span class="box02"></span><span class="box03"></span><span class="box04"></span><span class="box05"></span><span class="box06"></span></div><h1><code>align-content: end</code></h1><div class="grid small" id="g2"><span class="box01"></span><span class="box02"></span><span class="box03"></span><span class="box04"></span><span class="box05"></span><span class="box06"></span></div><h1><code>align-content: left</code></h1><div class="grid small" id="g3"><span class="box01"></span><span class="box02"></span><span class="box03"></span><span class="box04"></span><span class="box05"></span><span class="box06"></span></div><h1><code>align-content: right</code></h1><div class="grid small" id="g4"><span class="box01"></span><span class="box02"></span><span class="box03"></span><span class="box04"></span><span class="box05"></span><span class="box06"></span></div><h1><code>align-content: center</code></h1><div class="grid small" id="g5"><span class="box01"></span><span class="box02"></span><span class="box03"></span><span class="box04"></span><span class="box05"></span><span class="box06"></span></div></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {display: grid;
+	grid-template-columns: repeat(5, 3em 9em);
+	width: 100%;
+	justify-items: center; align-items: center;
+}
+.grid {display: grid; padding: 0.5em;
+	width: auto; height: 20em;
+	grid-gap: 0.75em 0.5em; border: 1px solid;
+	grid-template-rows: repeat(3, 3em); grid-template-columns: 2em 2em;
+	justify-self: start;}
+
+h1 {
+ 	background: rgba(0,0,0,0.1);
+ 	padding: 0.5em 0.75em 0.25em;
+	text-align: center; white-space: nowrap;
+	transform: rotate(-90deg);
+	font: 1.33em Helvetica, sans-serif; margin: 0;}
+h1 code {font: 1.1em monospace, serif;}
+
+div[id] span[class*="box"] {box-sizing: border-box; color: inherit; background: hsla(117,50%,50%,0.25);}
+
+#g1 {align-content: start;}
+#g2 {align-content: end;}
+#g3 {align-content: left;}
+#g4 {align-content: right;}
+#g5 {align-content: center;}
+
+span[class*="01"] {grid-row: 1; grid-column: 1;}
+span[class*="02"] {grid-row: 2; grid-column: 1;}
+span[class*="03"] {grid-row: 3; grid-column: 1;}
+span[class*="04"] {grid-row: 1; grid-column: 2;}
+span[class*="05"] {grid-row: 2; grid-column: 2;}
+span[class*="06"] {grid-row: 3; grid-column: 2;}
+
+</style>
+</head>
+<body>
+
+<h1><code>align-content: start</code></h1>
+<div class="grid small" id="g1">
+<span class="box01"></span>
+<span class="box02"></span>
+<span class="box03"></span>
+<span class="box04"></span>
+<span class="box05"></span>
+<span class="box06"></span>
+</div>
+
+<h1><code>align-content: end</code></h1>
+<div class="grid small" id="g2">
+<span class="box01"></span>
+<span class="box02"></span>
+<span class="box03"></span>
+<span class="box04"></span>
+<span class="box05"></span>
+<span class="box06"></span>
+</div>
+
+<h1><code>align-content: left</code></h1>
+<div class="grid small" id="g3">
+<span class="box01"></span>
+<span class="box02"></span>
+<span class="box03"></span>
+<span class="box04"></span>
+<span class="box05"></span>
+<span class="box06"></span>
+</div>
+
+<h1><code>align-content: right</code></h1>
+<div class="grid small" id="g4">
+<span class="box01"></span>
+<span class="box02"></span>
+<span class="box03"></span>
+<span class="box04"></span>
+<span class="box05"></span>
+<span class="box06"></span>
+</div>
+
+<h1><code>align-content: center</code></h1>
+<div class="grid small" id="g5">
+<span class="box01"></span>
+<span class="box02"></span>
+<span class="box03"></span>
+<span class="box04"></span>
+<span class="box05"></span>
+<span class="box06"></span>
+</div>
+
+
+
+
+</body>
+</html>

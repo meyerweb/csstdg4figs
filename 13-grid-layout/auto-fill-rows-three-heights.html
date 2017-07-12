@@ -1,1 +1,83 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {display: grid; grid-template-columns: repeat(3, max-content 1fr);}.grid {display: grid;}.grid {grid-template-rows: repeat(auto-fill, [top] 5em [bottom]); border: 1px solid; margin-right: 3em; grid-row: 2;}.grid:nth-of-type(1) {height: 11em; grid-column: 2;}.grid:nth-of-type(2) {height: 18em; grid-column: 4;}.grid:nth-of-type(3) {height: 21em; grid-column: 6;}.labels:nth-of-type(1) {height: 11em; grid-column: 1;}.labels:nth-of-type(2) {height: 18em; grid-column: 3;}.labels:nth-of-type(3) {height: 21em; grid-column: 5;}b {font: 1.1em Consolas; grid-row: 1; margin: 0 3em 1em 0; text-align: center;}b:nth-of-type(1) {grid-column: 2;}b:nth-of-type(2) {grid-column: 4;}b:nth-of-type(3) {grid-column: 6;}.labels.row {display: grid; grid-template-rows: repeat(auto-fill, [top] 5em [bottom]); grid-row: 2;}.labels.row {margin: 0 0; padding: 0 2px;}.labels.row li {display: flex; justify-content: end; align-items: start; flex-flow: row;}.labels li.line.label i {color: rebeccapurple; font: 1em Arvo, sans-serif;}.labels li.line.label.implicit i {font-style: italic; opacity: 0.67;}.labels.row li.line.label i {border-top: 1px solid; padding-top: 0.1ch;}.labels.row li i:last-child {padding-right: 1ch;}.labels.row li i::after {content: " || "; color: silver; margin-right: 0.25em;}.labels.row li i:last-child::after {content: "";}.labels .line.row.label  {grid-template-column: 1; grid-template-row: auto / span 1;}</style></head><body><b>height: 11em</b><b>height: 18em</b><b>height: 21em</b><div class="grid gridlines"><span class="gridlines"></span><span class="gridlines"></span></div><ul class="labels row"><li class="col line label"><i>top</i><i>1</i></li><li class="col line label"><i>top</i><i>bottom</i><i>2</i></li><li class="col line label"><i>bottom</i><i>3</i></li></ul><div class="grid gridlines"><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span></div><ul class="labels row"><li class="col line label"><i>top</i><i>1</i></li><li class="col line label"><i>top</i><i>bottom</i><i>2</i></li><li class="col line label"><i>top</i><i>bottom</i><i>3</i></li><li class="col line label"><i>bottom</i><i>4</i></li></ul><div class="grid gridlines"><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span></div><ul class="labels row"><li class="col line label"><i>top</i><i>1</i></li><li class="col line label"><i>top</i><i>bottom</i><i>2</i></li><li class="col line label"><i>top</i><i>bottom</i><i>3</i></li><li class="col line label"><i>top</i><i>bottom</i><i>4</i></li><li class="col line label"><i>bottom</i><i>5</i></li></ul></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {display: grid; grid-template-columns: repeat(3, max-content 1fr);}
+.grid {display: grid;}
+
+.grid {grid-template-rows: repeat(auto-fill, [top] 5em [bottom]); border: 1px solid; margin-right: 3em; grid-row: 2;}
+.grid:nth-of-type(1) {height: 11em; grid-column: 2;}
+.grid:nth-of-type(2) {height: 18em; grid-column: 4;}
+.grid:nth-of-type(3) {height: 21em; grid-column: 6;}
+.labels:nth-of-type(1) {height: 11em; grid-column: 1;}
+.labels:nth-of-type(2) {height: 18em; grid-column: 3;}
+.labels:nth-of-type(3) {height: 21em; grid-column: 5;}
+
+b {font: 1.1em Consolas; grid-row: 1; margin: 0 3em 1em 0; text-align: center;}
+b:nth-of-type(1) {grid-column: 2;}
+b:nth-of-type(2) {grid-column: 4;}
+b:nth-of-type(3) {grid-column: 6;}
+
+.labels.row {display: grid; grid-template-rows: repeat(auto-fill, [top] 5em [bottom]); grid-row: 2;}
+.labels.row {margin: 0 0; padding: 0 2px;}
+.labels.row li {display: flex; justify-content: end; align-items: start; flex-flow: row;}
+
+.labels li.line.label i {color: rebeccapurple; font: 1em Arvo, sans-serif;}
+.labels li.line.label.implicit i {font-style: italic; opacity: 0.67;}
+.labels.row li.line.label i {border-top: 1px solid; padding-top: 0.1ch;}
+.labels.row li i:last-child {padding-right: 1ch;}
+.labels.row li i::after {content: " || "; color: silver; margin-right: 0.25em;}
+.labels.row li i:last-child::after {content: "";}
+
+.labels .line.row.label  {grid-template-column: 1; grid-template-row: auto / span 1;}
+</style>
+</head>
+<body>
+
+<b>height: 11em</b>
+<b>height: 18em</b>
+<b>height: 21em</b>
+
+<div class="grid gridlines">
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+</div>
+<ul class="labels row">
+<li class="col line label"><i>top</i><i>1</i></li>
+<li class="col line label"><i>top</i><i>bottom</i><i>2</i></li>
+<li class="col line label"><i>bottom</i><i>3</i></li>
+</ul>
+
+<div class="grid gridlines">
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+</div>
+<ul class="labels row">
+<li class="col line label"><i>top</i><i>1</i></li>
+<li class="col line label"><i>top</i><i>bottom</i><i>2</i></li>
+<li class="col line label"><i>top</i><i>bottom</i><i>3</i></li>
+<li class="col line label"><i>bottom</i><i>4</i></li>
+</ul>
+
+<div class="grid gridlines">
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+</div>
+<ul class="labels row">
+<li class="col line label"><i>top</i><i>1</i></li>
+<li class="col line label"><i>top</i><i>bottom</i><i>2</i></li>
+<li class="col line label"><i>top</i><i>bottom</i><i>3</i></li>
+<li class="col line label"><i>top</i><i>bottom</i><i>4</i></li>
+<li class="col line label"><i>bottom</i><i>5</i></li>
+</ul>
+
+
+</body>
+</html>

@@ -1,1 +1,75 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {width: 64em; padding: 5em; margin: 1px;}#grid {width: 54em; grid-template-rows: repeat(3,7em);}#grid {display: grid;	grid-template-areas:		"header   header  header  header"		"leftside content content rightside"		"leftside footer  footer  footer";}	#masthead {grid-row: header; grid-column: header / header;}	#sidebar {grid-row: 2 / 4; grid-column: leftside / span 1;}	#main {grid-row: content / content; grid-column: content;}	#navbar {grid-row: rightside / 3; grid-column: rightside;}	#footer {grid-row: 3 / span 1; grid-column: footer / footer;}		.one {		grid-row-start: R 2; grid-row-end: 5;		grid-column-start: col-B; grid-column-end: span 2;}	.two {		grid-row-start: R; grid-row-end: span R 2;		grid-column-start: col-A 3; grid-column-end: span 2 col-A;}	.three {		grid-row-start: 4;		grid-column-start: col-A -2;}span[class*="box"] {z-index: 1;}.labels#col {display: grid; grid-template-rows: 5em; grid-template-columns: repeat(4, 33.333%); width: 54em;}.labels#row {display: grid; grid-template-rows: repeat(6, [R] 7em); grid-template-columns: 5em;}.labels#col {position: absolute; top: 0; left: 5em; margin: 0; padding: 1px;}.labels#row {position: absolute; top: 5em; left: 0; margin: 0; padding: 1px;}.labels#col li {display: flex; justify-content: end; align-items: start; flex-flow: column;}.labels#row li {display: flex; justify-content: end; align-items: start; flex-flow: row;}.labels li.line.label i {color: rebeccapurple; font: 1em Arvo, sans-serif;}.labels#col li.line.label i {border-left: 1px solid; padding-left: 0.25em;}.labels#col li i:last-child {padding-bottom: 0.5em;}.labels#col li.high i:last-child {padding-bottom: 4em;}.labels .line.col.label  {grid-template-row: 1; grid-template-column: auto / span 1;}.labels li.line.label i {color: rebeccapurple; font: 1em Arvo, sans-serif;}.labels#col li.line.label i {border-left: 1px solid; padding-left: 0.25em;}.labels#row li.line.label i {border-top: 1px solid; padding-top: 0.25em;}.labels#row li i {padding-right: 0.5em;}.labels#col li i:last-child {padding-bottom: 0.5em;}.labels#col li.high i:last-child {padding-bottom: 4em;}</style></head><body><div class="grid boxed gridlines" id="grid"><span class="box01 one" id="masthead">masthead</span><span class="box02 two" id="sidebar">sidebar</span><span class="box03 three" id="main">main</span><span class="box04 three" id="navbar">navbar</span><span class="box05 three" id="footer">footer</span></div></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {width: 64em; padding: 5em; margin: 1px;}
+#grid {width: 54em; grid-template-rows: repeat(3,7em);}
+
+#grid {display: grid;
+	grid-template-areas:
+		"header   header  header  header"
+		"leftside content content rightside"
+		"leftside footer  footer  footer";}
+	#masthead {grid-row: header; grid-column: header / header;}
+	#sidebar {grid-row: 2 / 4; grid-column: leftside / span 1;}
+	#main {grid-row: content / content; grid-column: content;}
+	#navbar {grid-row: rightside / 3; grid-column: rightside;}
+	#footer {grid-row: 3 / span 1; grid-column: footer / footer;}
+	
+	.one {
+		grid-row-start: R 2; grid-row-end: 5;
+		grid-column-start: col-B; grid-column-end: span 2;}
+	.two {
+		grid-row-start: R; grid-row-end: span R 2;
+		grid-column-start: col-A 3; grid-column-end: span 2 col-A;}
+	.three {
+		grid-row-start: 4;
+		grid-column-start: col-A -2;}
+
+span[class*="box"] {z-index: 1;}
+
+
+.labels#col {display: grid; grid-template-rows: 5em; grid-template-columns: repeat(4, 33.333%); width: 54em;}
+.labels#row {display: grid; grid-template-rows: repeat(6, [R] 7em); grid-template-columns: 5em;}
+
+.labels#col {position: absolute; top: 0; left: 5em; margin: 0; padding: 1px;}
+.labels#row {position: absolute; top: 5em; left: 0; margin: 0; padding: 1px;}
+
+.labels#col li {display: flex; justify-content: end; align-items: start; flex-flow: column;}
+.labels#row li {display: flex; justify-content: end; align-items: start; flex-flow: row;}
+
+.labels li.line.label i {color: rebeccapurple; font: 1em Arvo, sans-serif;}
+.labels#col li.line.label i {border-left: 1px solid; padding-left: 0.25em;}
+.labels#col li i:last-child {padding-bottom: 0.5em;}
+.labels#col li.high i:last-child {padding-bottom: 4em;}
+
+.labels .line.col.label  {grid-template-row: 1; grid-template-column: auto / span 1;}
+
+.labels li.line.label i {color: rebeccapurple; font: 1em Arvo, sans-serif;}
+.labels#col li.line.label i {border-left: 1px solid; padding-left: 0.25em;}
+.labels#row li.line.label i {border-top: 1px solid; padding-top: 0.25em;}
+
+.labels#row li i {padding-right: 0.5em;}
+.labels#col li i:last-child {padding-bottom: 0.5em;}
+.labels#col li.high i:last-child {padding-bottom: 4em;}
+
+</style>
+</head>
+<body>
+
+<div class="grid boxed gridlines" id="grid">
+<span class="box01 one" id="masthead">masthead</span>
+<span class="box02 two" id="sidebar">sidebar</span>
+<span class="box03 three" id="main">main</span>
+<span class="box04 three" id="navbar">navbar</span>
+<span class="box05 three" id="footer">footer</span>
+</div>
+
+
+
+</body>
+</html>

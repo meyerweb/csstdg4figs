@@ -1,1 +1,56 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {width: 574px;}section {position: relative; width: 500px;}.grid {display: grid; width: 200px; height: 100px;	grid-template-rows: repeat(3,1fr); grid-template-columns: repeat(5,1fr);}.grid.inline {display: inline-grid; width: 100px; height: 70px;}.float {float: left; border: 2px solid red; background: yellow; width: 30%; margin: 0 1em 1em 1em; padding: 1em;}.border {border: 2px solid silver;}</style></head><body><section><p class="float">This is a floated paragraph with some styles applied in order to show its extent.</p><p class="border">This is a normal-flow paragraph of text with a border.  It is followed by a <code>div</code> that’s been made into a grid.</p><div class="grid boxed lines"><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span></div><p>This is a paragraph that comes after the grid in the normal flow.  Notice how the grid does not “slide under” the float, as normal-flow elements do.  In this sense, the grid acts sort of like a float, although it is still a block box in the normal flow.</p></section></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {width: 574px;}
+section {position: relative; width: 500px;}
+
+.grid {display: grid; width: 200px; height: 100px;
+	grid-template-rows: repeat(3,1fr); grid-template-columns: repeat(5,1fr);}
+.grid.inline {display: inline-grid; width: 100px; height: 70px;}
+
+.float {float: left; border: 2px solid red; background: yellow; width: 30%; margin: 0 1em 1em 1em; padding: 1em;}
+.border {border: 2px solid silver;}
+</style>
+</head>
+<body>
+
+<section>
+
+<p class="float">
+This is a floated paragraph with some styles applied in order to show its extent.
+</p>
+<p class="border">
+This is a normal-flow paragraph of text with a border.  It is followed by a <code>div</code> that’s been made into a grid.
+</p>
+
+<div class="grid boxed lines">
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+</div>
+<p>
+This is a paragraph that comes after the grid in the normal flow.  Notice how the grid does not “slide under” the float, as normal-flow elements do.  In this sense, the grid acts sort of like a float, although it is still a block box in the normal flow.
+</p>
+
+
+</section>
+
+</body>
+</html>

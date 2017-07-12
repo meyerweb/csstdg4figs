@@ -1,1 +1,36 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Padding, Borders, Outlines, and Margins</title><link rel="stylesheet" type="text/css" href="c/pbom-baseline.css"><style type="text/css">html {background: white;}body {padding: 3em; background: none;}	div {border: 1px solid gray; margin: 1em;}	p {margin: 1em; border: 1px dashed silver;}	p.one {margin: 0 -1em;}	p.two {margin: -1em 0;}</style></head><body><div><p>A normal paragraph.  Nothing really exciting about it besides having a one-em margin all the way around (that's why it doesn't go all the way to the dotted border).</p><p class="one">A paragraph with a <code>class</code> of <code>one</code>.  This element therefore has negative left and right margins, and so will be "pulled out" of its parent element.  ITs lack of top and bottom margins may also cause overlap with the following paragraph, which has negative top and bottom margins. </p><p class="two">A paragraph with a <code>class</code> of <code>two</code>.  This element therefore has neagtive top and bottom margins.  This will cause it to be "pulled upward" and overlap the element before it, and also "pull up" the following paragraph to overlap this one.  Since the following paragraph has a margin, however, the content will not overlap.  The negative bottom margin of this paragraph and the positive top margin of the following paragraph will cause the following element's top margin to overlap this one.  Therefore their border edges will end up touching.</p><p>Another normal paragraph.  Nothing really exciting about it besides having a one-em margin all the way around.</p></div></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Padding, Borders, Outlines, and Margins</title>
+<link rel="stylesheet" type="text/css" href="c/pbom-baseline.css">
+<style type="text/css">
+html {background: white;}
+body {padding: 3em; background: none;}
+	div {border: 1px solid gray; margin: 1em;}
+	p {margin: 1em; border: 1px dashed silver;}
+	p.one {margin: 0 -1em;}
+	p.two {margin: -1em 0;}
+
+</style>
+</head>
+<body>
+
+<div>
+<p>
+A normal paragraph.  Nothing really exciting about it besides having a one-em margin all the way around (that's why it doesn't go all the way to the dotted border).
+</p>
+<p class="one">
+A paragraph with a <code>class</code> of <code>one</code>.  This element therefore has negative left and right margins, and so will be "pulled out" of its parent element.  ITs lack of top and bottom margins may also cause overlap with the following paragraph, which has negative top and bottom margins. 
+</p>
+<p class="two">
+A paragraph with a <code>class</code> of <code>two</code>.  This element therefore has neagtive top and bottom margins.  This will cause it to be "pulled upward" and overlap the element before it, and also "pull up" the following paragraph to overlap this one.  Since the following paragraph has a margin, however, the content will not overlap.  The negative bottom margin of this paragraph and the positive top margin of the following paragraph will cause the following element's top margin to overlap this one.  Therefore their border edges will end up touching.
+</p>
+<p>
+Another normal paragraph.  Nothing really exciting about it besides having a one-em margin all the way around.
+</p>
+</div>
+
+</body>
+</html>

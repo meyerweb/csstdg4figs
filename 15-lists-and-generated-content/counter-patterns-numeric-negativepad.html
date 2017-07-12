@@ -1,1 +1,65 @@
-<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Figure</title><style type="text/css">@counter-style negativezeropad {    system: numeric;    symbols: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9';    suffix: '. ';    negative: '–';    pad: 4 "0";}@counter-style negativespacepad {    system: numeric;    symbols: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9';    suffix: '. ';    negative: '–';    pad: 4 " ";}ol.list01 {list-style: negativezeropad;}ol.list02 {list-style: negativespacepad;}.arena {display: flex; flex-wrap: wrap; justify-content: stretch;}.arena ol {flex-grow: 1;	margin: 0.5em; padding: 0.5em 0.25em 0.5em 2em;}</style></head><body><div class="arena"><ol class="list01"><li value="-3">minus three</li><li>minus two</li><li>minus one</li><li>zero</li><li>one</li><li>two</li><li>three</li><li>four</li><li>five</li><li>six</li><li>seven</li></ol><ol class="list02"><li value="-3">minus three</li><li>minus two</li><li>minus one</li><li>zero</li><li>one</li><li>two</li><li>three</li><li>four</li><li>five</li><li>six</li><li>seven</li></ol></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css">
+@counter-style negativezeropad {
+    system: numeric;
+    symbols: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9';
+    suffix: '. ';
+    negative: '–';
+    pad: 4 "0";
+}
+@counter-style negativespacepad {
+    system: numeric;
+    symbols: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9';
+    suffix: '. ';
+    negative: '–';
+    pad: 4 " ";
+}
+
+ol.list01 {list-style: negativezeropad;}
+ol.list02 {list-style: negativespacepad;}
+
+.arena {display: flex; flex-wrap: wrap; justify-content: stretch;}
+.arena ol {flex-grow: 1;
+	margin: 0.5em; padding: 0.5em 0.25em 0.5em 2em;}
+
+</style>
+</head>
+<body>
+
+<div class="arena">
+
+<ol class="list01">
+<li value="-3">minus three</li>
+<li>minus two</li>
+<li>minus one</li>
+<li>zero</li>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+<li>five</li>
+<li>six</li>
+<li>seven</li>
+</ol>
+<ol class="list02">
+<li value="-3">minus three</li>
+<li>minus two</li>
+<li>minus one</li>
+<li>zero</li>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+<li>five</li>
+<li>six</li>
+<li>seven</li>
+</ol>
+
+</div>
+
+</body>
+</html>

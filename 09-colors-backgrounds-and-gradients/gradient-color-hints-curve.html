@@ -1,1 +1,53 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><title>Figure 9-15</title><style type="text/css">body {width: 1000px; padding: 0 2em;}section {display: grid;	grid-template-columns: 25% [cs1] 8%  17% [mp] 17% [ch] 8% [cs2] 25%;	grid-template-rows: repeat(2,6em) 2em;}div {width: 100%; height: 5em; margin-bottom: 1em;	display: flex; align-items: center; justify-content: end;	grid-column: 1 / -1;}div::before {content: "#" attr(id); font: bold 1em Open Sans; color: black; margin-right: 1em; opacity: 0.5;}#ex01 {background: linear-gradient(to right, #000 25%, rgb(45%,45%,45%) 67%, rgb(90%,90%,90%) 75%);	grid-row: 1;}#ex02 {background: linear-gradient(to right, #000 25%, 67%, rgb(90%,90%,90%) 75%);	grid-row: 2;}b {grid-row: 1 / -1; font: bold 1em Open Sans;	background: linear-gradient(to bottom,black 50%, 50%, rgba(255,255,255,0.5) 100%) repeat-y 0 100% / 1px 0.6em;	display: flex; flex-direction: column-reverse;	padding-left: 0.4em;}.st {grid-column: 1;}.cs1 {grid-column: cs1;}.cs2 {grid-column: cs2;}.ch {grid-column: ch;}.mp {grid-column: mp;}.en {grid-column: -1;}b span {background: white; margin-left: -2ch;}.st span {margin-left: -1.5ch;}.en span {margin-left: -2.5ch;}</style></head><body><section><div id="ex01"></div><div id="ex02"></div><b class="st"><span>0%</span></b><b class="cs1"><span>25%</span></b><b class="mp"><span>50%</span></b><b class="ch"><span>67%</span></b><b class="cs2"><span>75%</span></b><b class="en"><span>100%</span></b></section></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Figure 9-15</title>
+<style type="text/css">
+body {width: 1000px; padding: 0 2em;}
+section {display: grid;
+	grid-template-columns: 25% [cs1] 8%  17% [mp] 17% [ch] 8% [cs2] 25%;
+	grid-template-rows: repeat(2,6em) 2em;
+}
+div {width: 100%; height: 5em; margin-bottom: 1em;
+	display: flex; align-items: center; justify-content: end;
+	grid-column: 1 / -1;}
+div::before {content: "#" attr(id); font: bold 1em Open Sans; color: black; margin-right: 1em; opacity: 0.5;}
+#ex01 {background: linear-gradient(to right, #000 25%, rgb(45%,45%,45%) 67%, rgb(90%,90%,90%) 75%);
+	grid-row: 1;}
+#ex02 {background: linear-gradient(to right, #000 25%, 67%, rgb(90%,90%,90%) 75%);
+	grid-row: 2;}
+
+b {grid-row: 1 / -1; font: bold 1em Open Sans;
+	background: linear-gradient(to bottom,black 50%, 50%, rgba(255,255,255,0.5) 100%) repeat-y 0 100% / 1px 0.6em;
+	display: flex; flex-direction: column-reverse;
+	padding-left: 0.4em;}
+.st {grid-column: 1;}
+.cs1 {grid-column: cs1;}
+.cs2 {grid-column: cs2;}
+.ch {grid-column: ch;}
+.mp {grid-column: mp;}
+.en {grid-column: -1;}
+
+b span {background: white; margin-left: -2ch;}
+.st span {margin-left: -1.5ch;}
+.en span {margin-left: -2.5ch;}
+</style>
+</head>
+<body>
+
+<section>
+
+<div id="ex01"></div>
+<div id="ex02"></div>
+<b class="st"><span>0%</span></b>
+<b class="cs1"><span>25%</span></b>
+<b class="mp"><span>50%</span></b>
+<b class="ch"><span>67%</span></b>
+<b class="cs2"><span>75%</span></b>
+<b class="en"><span>100%</span></b>
+
+</section>
+
+</body>
+</html>

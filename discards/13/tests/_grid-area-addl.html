@@ -1,1 +1,42 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {width: auto;}.grid > * {border: 1px dotted red; margin: 3px;}.grid {display: grid;	grid-template-areas:		"header  header  header  header"		"left    ...     ...     right"		"footer  footer  footer  footer";	grid-template-columns: 1fr 20em 20em 1fr 1fr;	grid-template-rows: 140px 1fr 3em 20px;}.header {grid-area: header;}.left {grid-area: left;}.right {grid-area: right;}.footer {grid-area: footer;}.null {grid-column: 2/4; grid-row: 2/3;}.unnamed.col {grid-column: 5/6; grid-row: 1/5;}.unnamed.row {grid-column: 1/6; grid-row: 4/5;}</style></head><body><div class="grid boxed lines"><span class="header">header</span><span class="left">left</span><span class="right">right</span><span class="null">null</span><span class="footer">footer</span><span class="unnamed col">unnamed column</span><span class="unnamed row">unnamed row</span></div></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {width: auto;}
+.grid > * {border: 1px dotted red; margin: 3px;}
+
+.grid {display: grid;
+	grid-template-areas:
+		"header  header  header  header"
+		"left    ...     ...     right"
+		"footer  footer  footer  footer";
+	grid-template-columns: 1fr 20em 20em 1fr 1fr;
+	grid-template-rows: 140px 1fr 3em 20px;}
+
+.header {grid-area: header;}
+.left {grid-area: left;}
+.right {grid-area: right;}
+.footer {grid-area: footer;}
+.null {grid-column: 2/4; grid-row: 2/3;}
+.unnamed.col {grid-column: 5/6; grid-row: 1/5;}
+.unnamed.row {grid-column: 1/6; grid-row: 4/5;}
+</style>
+</head>
+<body>
+
+<div class="grid boxed lines">
+<span class="header">header</span>
+<span class="left">left</span>
+<span class="right">right</span>
+<span class="null">null</span>
+<span class="footer">footer</span>
+<span class="unnamed col">unnamed column</span>
+<span class="unnamed row">unnamed row</span>
+</div>
+
+</body>
+</html>

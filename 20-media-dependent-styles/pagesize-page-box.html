@@ -1,1 +1,57 @@
-<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Figure</title><style type="text/css">body {padding: 1em 8em;}p {margin: 0; font: bold 1em Arvo;}#paper {width: 4in; height: 5.5in;	border: 1px solid; box-shadow: 0.5em 0.5em 0.5em rgba(0,0,0,0.75);	position: relative;}#pagebox {border: 1px solid; margin: 1em; height: calc(100% - 2em);	position: relative;	background:		repeating-linear-gradient(45deg, silver 0px, silver 1px, transparent 1px, transparent 5px),		repeating-linear-gradient(135deg, silver 0px, silver 1px, transparent 1px, transparent 5px)		;}#pagearea {border: 1px solid; margin: 2em; height: calc(100% - 4em);	display: flex; align-items: center; justify-content: center;	background: white;}#paper p.pointer {position: absolute; width: auto; right: 100%; padding-right: 2em; margin-right: 2px; white-space: nowrap;	background:		url(i/arrow-right.svg),		linear-gradient(to bottom,black,black);		background-position: center right, 95% 50%;		background-size: 10px 17px, 1.5em 5px;		background-repeat: no-repeat;		}#pagebox p.pointer {top: 5em; padding-right: 3em; background-size: 10px 17px, 2.5em 5px;}#pagebox > p {position: absolute; width: 100%; top: 0; text-align: center; margin-top: 0.5em;}</style></head><body><div id="paper"><p class="pointer">Paper</p><div id="pagebox"><p class="pointer">Page box</p><p>Margin area</p><div id="pagearea"><p>Page area</p></div></div></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css">
+body {padding: 1em 8em;}
+p {margin: 0; font: bold 1em Arvo;}
+#paper {width: 4in; height: 5.5in;
+	border: 1px solid; box-shadow: 0.5em 0.5em 0.5em rgba(0,0,0,0.75);
+	position: relative;}
+#pagebox {border: 1px solid; margin: 1em; height: calc(100% - 2em);
+	position: relative;
+	background:
+		repeating-linear-gradient(45deg, silver 0px, silver 1px, transparent 1px, transparent 5px),
+		repeating-linear-gradient(135deg, silver 0px, silver 1px, transparent 1px, transparent 5px)
+		;}
+#pagearea {border: 1px solid; margin: 2em; height: calc(100% - 4em);
+	display: flex; align-items: center; justify-content: center;
+	background: white;}
+
+#paper p.pointer {position: absolute; width: auto; right: 100%; padding-right: 2em; margin-right: 2px; white-space: nowrap;
+	background:
+		url(i/arrow-right.svg),
+		linear-gradient(to bottom,black,black);
+		background-position: center right, 95% 50%;
+		background-size: 10px 17px, 1.5em 5px;
+		background-repeat: no-repeat;
+		}
+#pagebox p.pointer {top: 5em; padding-right: 3em; background-size: 10px 17px, 2.5em 5px;}
+#pagebox > p {position: absolute; width: 100%; top: 0; text-align: center; margin-top: 0.5em;}
+
+</style>
+</head>
+<body>
+
+<div id="paper">
+
+<p class="pointer">Paper</p>
+
+<div id="pagebox">
+
+<p class="pointer">Page box</p>
+<p>Margin area</p>
+
+<div id="pagearea">
+
+<p>Page area</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

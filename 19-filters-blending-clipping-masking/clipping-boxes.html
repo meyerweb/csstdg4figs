@@ -1,1 +1,65 @@
-<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Figure</title><style type="text/css">body {display: flex; justify-content: center;}.arena ol {display: grid;	grid-template-columns: repeat(2, 315px);	grid-template-rows: repeat(1, 1fr);	grid-gap: 10em;	margin-top: 1em;}</style><style type="text/css">ol {position: relative; display: flex; align-items: center;	list-style: none; margin: 0; padding: 0;}ol > li {position: relative;}ol > li img {width: 100%; box-sizing: border-box; display: block;}ol > li:nth-child(1) img {padding: 2em; border: 2em solid silver;}ol > li img {margin: 2em;}ol ul li {position: absolute; display: block; top: 0; left: 0; list-style: none;	border: 2px dotted; box-sizing: border-box;}li b {position: absolute; top: -1.15em; left: 0; font: 1.1em Consolas; line-height: 1;}#mb {width: calc(100% + 4em); height: calc(100%); color: red;}#bb {width: 100%; height: calc(100% - 4em); top: 2em; left: 2em; color: green;}#pb {width: calc(100% - 4em); height: calc(100% - 8em); top: 4em; left: 4em; color: blue;}#cb {width: calc(100% - 8em); height: calc(100% - 12em); top: 6em; left: 6em;}#vb {width: calc(100% + 4em); height: calc(100%); color: red;}#sb {width: calc(100% - 0.9em); height: calc(100% - 6.9em + 30px); top: 2.45em; left: 2.45em; color: green;}#fb {width: calc(100% - 2.5em); height: calc(100% - 6.5em); top: calc(2.33em + 15px); left: calc(2.33em + 15px); color: blue;}#fb b {right: -0.5em; left: auto; padding: 0 0.5em; border-radius: 1em; background: rgba(255,255,255,0.75);}</style></head><body><div class="arena"><ol><li><img src="i/Nozyce_stajenne-do_strzyzenia_grzyw_konskich.jpg"><ul><li id="mb"><b>margin-box</b></li><li id="bb"><b>border-box</b></li><li id="pb"><b>padding-box</b></li><li id="cb"><b>content-box</b></li></ul></li><li><img src="i/cloud-stroke.svg"><ul><li id="vb"><b>view-box</b></li><li id="sb"><b>stroke-box</b></li><li id="fb"><b>fill-box</b></li></ul></li></ol></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css">
+body {display: flex; justify-content: center;}
+.arena ol {display: grid;
+	grid-template-columns: repeat(2, 315px);
+	grid-template-rows: repeat(1, 1fr);
+	grid-gap: 10em;
+	margin-top: 1em;}
+</style>
+<style type="text/css">
+ol {position: relative; display: flex; align-items: center;
+	list-style: none; margin: 0; padding: 0;}
+ol > li {position: relative;}
+ol > li img {width: 100%; box-sizing: border-box; display: block;}
+
+ol > li:nth-child(1) img {padding: 2em; border: 2em solid silver;}
+ol > li img {margin: 2em;}
+
+ol ul li {position: absolute; display: block; top: 0; left: 0; list-style: none;
+	border: 2px dotted; box-sizing: border-box;}
+li b {position: absolute; top: -1.15em; left: 0; font: 1.1em Consolas; line-height: 1;}
+
+#mb {width: calc(100% + 4em); height: calc(100%); color: red;}
+#bb {width: 100%; height: calc(100% - 4em); top: 2em; left: 2em; color: green;}
+#pb {width: calc(100% - 4em); height: calc(100% - 8em); top: 4em; left: 4em; color: blue;}
+#cb {width: calc(100% - 8em); height: calc(100% - 12em); top: 6em; left: 6em;}
+
+#vb {width: calc(100% + 4em); height: calc(100%); color: red;}
+#sb {width: calc(100% - 0.9em); height: calc(100% - 6.9em + 30px); top: 2.45em; left: 2.45em; color: green;}
+#fb {width: calc(100% - 2.5em); height: calc(100% - 6.5em); top: calc(2.33em + 15px); left: calc(2.33em + 15px); color: blue;}
+#fb b {right: -0.5em; left: auto; padding: 0 0.5em; border-radius: 1em; background: rgba(255,255,255,0.75);}
+</style>
+</head>
+<body>
+
+<div class="arena">
+
+<ol>
+<li>
+<img src="i/Nozyce_stajenne-do_strzyzenia_grzyw_konskich.jpg">
+<ul>
+<li id="mb"><b>margin-box</b></li>
+<li id="bb"><b>border-box</b></li>
+<li id="pb"><b>padding-box</b></li>
+<li id="cb"><b>content-box</b></li>
+</ul>
+</li>
+<li>
+<img src="i/cloud-stroke.svg">
+<ul>
+<li id="vb"><b>view-box</b></li>
+<li id="sb"><b>stroke-box</b></li>
+<li id="fb"><b>fill-box</b></li>
+</ul>
+</li>
+</ol>
+
+</div>
+
+</body>
+</html>

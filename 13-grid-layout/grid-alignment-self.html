@@ -1,1 +1,99 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {width: auto;}.grid {display: grid; padding: 0.5em; margin: 0.25em 0 2em;	grid-gap: 0.75em 0.5em;}#g1 {grid-template-rows: 6em; grid-template-columns: repeat(10, 9em);}#g2 {grid-template-rows: 6em; grid-template-columns: repeat(10, 9em);}h1 {grid-row: span 1 / 1; grid-column: 1 / span 8; 	background: rgba(0,0,0,0.15); 	padding: 0.5em 0 0.25em;	text-align: center; font: 1.33em Helvetica, sans-serif; margin: 0;}h1 code {font: 1.1em monospace, serif;}div[id] span[class*="box"] {box-sizing: border-box; color: inherit; background: transparent;}#g1 [class*="box"] {height: auto; align-self: center;}#g2 [class*="box"] {width: auto; justify-self: center;}#g1 .box01 {justify-self: start;}#g1 .box02 {justify-self: end;}#g1 .box03 {justify-self: center;}#g1 .box04 {justify-self: left;}#g1 .box05 {justify-self: right;}#g1 .box06 {justify-self: self-start; direction: rtl;}#g1 .box07 {justify-self: self-end; direction: rtl;}#g1 .box08 {justify-self: stretch;}#g2 .box01 {align-self: start;}#g2 .box02 {align-self: end;}#g2 .box03 {align-self: center;}#g2 .box04 {align-self: left;}#g2 .box05 {align-self: right;}#g2 .box06 {align-self: self-start; direction: rtl;}#g2 .box07 {align-self: self-end; direction: rtl;}#g2 .box08 {align-self: stretch;}span[class*="01"] {grid-row: 1; grid-column: 1;}span[class*="02"] {grid-row: 1; grid-column: 2;}span[class*="03"] {grid-row: 1; grid-column: 3;}span[class*="04"] {grid-row: 1; grid-column: 4;}span[class*="05"] {grid-row: 1; grid-column: 5;}span[class*="06"] {grid-row: 1; grid-column: 6;}span[class*="07"] {grid-row: 1; grid-column: 7;}span[class*="08"] {grid-row: 1; grid-column: 8;}span[class*="gridline"] {color: blue;}</style></head><body><div class="grid small" id="g1"><h1><code>justify-self</code> values <em>(inline-axis alignment)</em></h1><span class="box01">start</span><span class="box02">end</span><span class="box03">center</span><span class="box04">left</span><span class="box05">right</span><span class="box06">self-start (RTL)</span><span class="box07">self-end (RTL)</span><span class="box08">stretch</span><span class="gridline01"></span><span class="gridline02"></span><span class="gridline03"></span><span class="gridline04"></span><span class="gridline05"></span><span class="gridline06"></span><span class="gridline07"></span><span class="gridline08"></span></div><div class="grid small" id="g2"><h1><code>align-self</code> values<em>(block-axis alignment)</em></h1><span class="box01">start</span><span class="box02">end</span><span class="box03">center</span><span class="box04">left</span><span class="box05">right</span><span class="box06">self-start (RTL)</span><span class="box07">self-end (RTL)</span><span class="box08">stretch</span><span class="gridline01"></span><span class="gridline02"></span><span class="gridline03"></span><span class="gridline04"></span><span class="gridline05"></span><span class="gridline06"></span><span class="gridline07"></span><span class="gridline08"></span></div></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {width: auto;}
+.grid {display: grid; padding: 0.5em; margin: 0.25em 0 2em;
+	grid-gap: 0.75em 0.5em;}
+#g1 {grid-template-rows: 6em; grid-template-columns: repeat(10, 9em);}
+#g2 {grid-template-rows: 6em; grid-template-columns: repeat(10, 9em);}
+
+h1 {grid-row: span 1 / 1; grid-column: 1 / span 8;
+ 	background: rgba(0,0,0,0.15);
+ 	padding: 0.5em 0 0.25em;
+	text-align: center; font: 1.33em Helvetica, sans-serif; margin: 0;}
+h1 code {font: 1.1em monospace, serif;}
+
+div[id] span[class*="box"] {box-sizing: border-box; color: inherit; background: transparent;}
+#g1 [class*="box"] {height: auto; align-self: center;}
+#g2 [class*="box"] {width: auto; justify-self: center;}
+
+#g1 .box01 {justify-self: start;}
+#g1 .box02 {justify-self: end;}
+#g1 .box03 {justify-self: center;}
+#g1 .box04 {justify-self: left;}
+#g1 .box05 {justify-self: right;}
+#g1 .box06 {justify-self: self-start; direction: rtl;}
+#g1 .box07 {justify-self: self-end; direction: rtl;}
+#g1 .box08 {justify-self: stretch;}
+
+#g2 .box01 {align-self: start;}
+#g2 .box02 {align-self: end;}
+#g2 .box03 {align-self: center;}
+#g2 .box04 {align-self: left;}
+#g2 .box05 {align-self: right;}
+#g2 .box06 {align-self: self-start; direction: rtl;}
+#g2 .box07 {align-self: self-end; direction: rtl;}
+#g2 .box08 {align-self: stretch;}
+
+span[class*="01"] {grid-row: 1; grid-column: 1;}
+span[class*="02"] {grid-row: 1; grid-column: 2;}
+span[class*="03"] {grid-row: 1; grid-column: 3;}
+span[class*="04"] {grid-row: 1; grid-column: 4;}
+span[class*="05"] {grid-row: 1; grid-column: 5;}
+span[class*="06"] {grid-row: 1; grid-column: 6;}
+span[class*="07"] {grid-row: 1; grid-column: 7;}
+span[class*="08"] {grid-row: 1; grid-column: 8;}
+span[class*="gridline"] {color: blue;}
+
+</style>
+</head>
+<body>
+
+<div class="grid small" id="g1">
+<h1><code>justify-self</code> values <em>(inline-axis alignment)</em></h1>
+<span class="box01">start</span>
+<span class="box02">end</span>
+<span class="box03">center</span>
+<span class="box04">left</span>
+<span class="box05">right</span>
+<span class="box06">self-start (RTL)</span>
+<span class="box07">self-end (RTL)</span>
+<span class="box08">stretch</span>
+<span class="gridline01"></span>
+<span class="gridline02"></span>
+<span class="gridline03"></span>
+<span class="gridline04"></span>
+<span class="gridline05"></span>
+<span class="gridline06"></span>
+<span class="gridline07"></span>
+<span class="gridline08"></span>
+</div>
+
+
+<div class="grid small" id="g2">
+<h1><code>align-self</code> values<em>(block-axis alignment)</em></h1>
+<span class="box01">start</span>
+<span class="box02">end</span>
+<span class="box03">center</span>
+<span class="box04">left</span>
+<span class="box05">right</span>
+<span class="box06">self-start (RTL)</span>
+<span class="box07">self-end (RTL)</span>
+<span class="box08">stretch</span>
+<span class="gridline01"></span>
+<span class="gridline02"></span>
+<span class="gridline03"></span>
+<span class="gridline04"></span>
+<span class="gridline05"></span>
+<span class="gridline06"></span>
+<span class="gridline07"></span>
+<span class="gridline08"></span>
+</div>
+
+</body>
+</html>

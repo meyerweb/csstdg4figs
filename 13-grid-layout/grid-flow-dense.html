@@ -1,1 +1,91 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {width: auto;}.grid {display: inline-grid;	grid-template-columns: repeat(4, 80px);	grid-template-rows: repeat(4, 80px);	grid-auto-columns: 80px;	grid-auto-rows: 80px;	vertical-align: top;	margin-right: 5em;}#g1 {grid-auto-flow: row dense;}#g2 {grid-auto-flow: dense column;}#g1 span {align-items: start; padding-top: 0.25em;}#g2 span {justify-content: flex-start; padding-left: 0.25em;}span[class*="box"] {font-size: 1.5em; border-width: 0.167em;}*[class*="01"] {color: hsl(0,67%,50%);   background: hsla(0,67%,50%,0.2);}*[class*="02"] {color: hsl(24,67%,50%);  background: hsla(24,67%,50%,0.2);}*[class*="03"] {color: hsl(48,67%,50%);  background: hsla(48,67%,50%,0.2);}*[class*="04"] {color: hsl(72,67%,50%);  background: hsla(72,67%,50%,0.2);}*[class*="05"] {color: hsl(96,67%,50%);  background: hsla(96,67%,50%,0.2);}*[class*="06"] {color: hsl(120,67%,50%); background: hsla(120,67%,50%,0.2);}*[class*="07"] {color: hsl(144,67%,50%); background: hsla(144,67%,50%,0.2);}*[class*="08"] {color: hsl(168,67%,50%); background: hsla(168,67%,50%,0.2);}*[class*="09"] {color: hsl(192,67%,50%); background: hsla(192,67%,50%,0.2);}*[class*="10"] {color: hsl(216,67%,50%); background: hsla(216,67%,50%,0.2);}*[class*="11"] {color: hsl(240,67%,50%); background: hsla(240,67%,50%,0.2);}*[class*="12"] {color: hsl(264,67%,50%); background: hsla(264,67%,50%,0.2);}*[class*="13"] {color: hsl(288,67%,50%); background: hsla(288,67%,50%,0.2);}*[class*="14"] {color: hsl(312,67%,50%); background: hsla(312,67%,50%,0.2);}*[class*="15"] {color: hsl(336,67%,50%); background: hsla(336,67%,50%,0.2);}*[class*="16"] {color: hsl(360,67%,50%); background: hsla(360,67%,50%,0.2);}.wide {grid-column: auto / span 2;}.tall {grid-row: auto / span 2;}</style></head><body><div class="grid" id="g1"><span class="box01">1</span><span class="box02 wide">2</span><span class="box03">3</span><span class="box04">4</span><span class="box05">5</span><span class="box06">6</span><span class="box07">7</span><span class="box08 tall">8</span><span class="box09">9</span><span class="box10">10</span><span class="box11 wide tall">11</span><span class="box12">12</span><span class="box13">13</span><span class="box14">14</span><span class="box15">15</span><span class="box16">16</span></div><div class="grid" id="g2"><span class="box01">1</span><span class="box02 wide">2</span><span class="box03">3</span><span class="box04">4</span><span class="box05">5</span><span class="box06">6</span><span class="box07">7</span><span class="box08 tall">8</span><span class="box09">9</span><span class="box10 wide tall">10</span><span class="box11">11</span><span class="box12">12</span><span class="box13">13</span><span class="box14">14</span><span class="box15">15</span><span class="box16">16</span></div></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {width: auto;}
+
+.grid {display: inline-grid;
+	grid-template-columns: repeat(4, 80px);
+	grid-template-rows: repeat(4, 80px);
+	grid-auto-columns: 80px;
+	grid-auto-rows: 80px;
+	vertical-align: top;
+	margin-right: 5em;
+}
+#g1 {grid-auto-flow: row dense;}
+#g2 {grid-auto-flow: dense column;}
+
+#g1 span {align-items: start; padding-top: 0.25em;}
+#g2 span {justify-content: flex-start; padding-left: 0.25em;}
+
+span[class*="box"] {font-size: 1.5em; border-width: 0.167em;}
+*[class*="01"] {color: hsl(0,67%,50%);   background: hsla(0,67%,50%,0.2);}
+*[class*="02"] {color: hsl(24,67%,50%);  background: hsla(24,67%,50%,0.2);}
+*[class*="03"] {color: hsl(48,67%,50%);  background: hsla(48,67%,50%,0.2);}
+*[class*="04"] {color: hsl(72,67%,50%);  background: hsla(72,67%,50%,0.2);}
+*[class*="05"] {color: hsl(96,67%,50%);  background: hsla(96,67%,50%,0.2);}
+*[class*="06"] {color: hsl(120,67%,50%); background: hsla(120,67%,50%,0.2);}
+*[class*="07"] {color: hsl(144,67%,50%); background: hsla(144,67%,50%,0.2);}
+*[class*="08"] {color: hsl(168,67%,50%); background: hsla(168,67%,50%,0.2);}
+*[class*="09"] {color: hsl(192,67%,50%); background: hsla(192,67%,50%,0.2);}
+*[class*="10"] {color: hsl(216,67%,50%); background: hsla(216,67%,50%,0.2);}
+*[class*="11"] {color: hsl(240,67%,50%); background: hsla(240,67%,50%,0.2);}
+*[class*="12"] {color: hsl(264,67%,50%); background: hsla(264,67%,50%,0.2);}
+*[class*="13"] {color: hsl(288,67%,50%); background: hsla(288,67%,50%,0.2);}
+*[class*="14"] {color: hsl(312,67%,50%); background: hsla(312,67%,50%,0.2);}
+*[class*="15"] {color: hsl(336,67%,50%); background: hsla(336,67%,50%,0.2);}
+*[class*="16"] {color: hsl(360,67%,50%); background: hsla(360,67%,50%,0.2);}
+
+
+.wide {grid-column: auto / span 2;}
+.tall {grid-row: auto / span 2;}
+
+</style>
+</head>
+<body>
+
+<div class="grid" id="g1">
+<span class="box01">1</span>
+<span class="box02 wide">2</span>
+<span class="box03">3</span>
+<span class="box04">4</span>
+<span class="box05">5</span>
+<span class="box06">6</span>
+<span class="box07">7</span>
+<span class="box08 tall">8</span>
+<span class="box09">9</span>
+<span class="box10">10</span>
+<span class="box11 wide tall">11</span>
+<span class="box12">12</span>
+<span class="box13">13</span>
+<span class="box14">14</span>
+<span class="box15">15</span>
+<span class="box16">16</span>
+</div>
+
+<div class="grid" id="g2">
+<span class="box01">1</span>
+<span class="box02 wide">2</span>
+<span class="box03">3</span>
+<span class="box04">4</span>
+<span class="box05">5</span>
+<span class="box06">6</span>
+<span class="box07">7</span>
+<span class="box08 tall">8</span>
+<span class="box09">9</span>
+<span class="box10 wide tall">10</span>
+<span class="box11">11</span>
+<span class="box12">12</span>
+<span class="box13">13</span>
+<span class="box14">14</span>
+<span class="box15">15</span>
+<span class="box16">16</span>
+</div>
+
+
+</body>
+</html>

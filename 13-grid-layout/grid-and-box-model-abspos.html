@@ -1,1 +1,38 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {width: auto;}.grid > * {border: 1px dotted red;}	#grid {display: grid; width: 500px;		grid-template-rows: repeat(3, 100px); grid-template-columns: repeat(5, 100px);}	.exel {grid-row: 2 / 4; grid-column: 2 / 5; position: relative;}	.exel i {		position: absolute;		top: 1em; bottom: 15%;		left: 35px; right: 1rem;}</style></head><body><div class="grid boxed lines" id="grid"><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="gridlines"></span><span class="exel"><i class="box01">exel</i></span></div></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {width: auto;}
+.grid > * {border: 1px dotted red;}
+
+	#grid {display: grid; width: 500px;
+		grid-template-rows: repeat(3, 100px); grid-template-columns: repeat(5, 100px);}
+	.exel {grid-row: 2 / 4; grid-column: 2 / 5; position: relative;}
+	.exel i {
+		position: absolute;
+		top: 1em; bottom: 15%;
+		left: 35px; right: 1rem;}
+
+</style>
+</head>
+<body>
+
+<div class="grid boxed lines" id="grid">
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="gridlines"></span>
+<span class="exel"><i class="box01">exel</i></span>
+</div>
+
+</body>
+</html>

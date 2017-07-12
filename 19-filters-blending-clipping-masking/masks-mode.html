@@ -1,1 +1,39 @@
-<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Figure</title><style type="text/css">body {display: flex; justify-content: center;}.arena {transform: scale(0.8); transform-origin: center top;}.arena ol {display: grid;	grid-template-columns: repeat(3, 400px);	grid-template-rows: repeat(2, 1fr);	grid-gap: 5em 0;	list-style: none;}li {position: relative;}li code {position: absolute; top: 100%; left: 0; width: 350px; margin-top: 0.5em; text-align: center; font-size: 2em; color: rgba(0,0,0,0.75);}</style><style type="text/css">img.theatre {mask-image: url(i/theatre-masks.svg);}img.compass {mask-image: url(i/Compass_masked.png);}img.lum {mask-mode: luminance;}</style></head><body><div class="arena"><ol>	<li><img src="i/theatre-masks.svg"></li>	<li><img class="theatre" src="i/mask.JPG"><code>mask-mode: alpha</code></li>	<li><img class="theatre lum" src="i/mask.JPG"><code>mask-mode: luminance</code></li>	<li><img src="i/Compass_masked.png"></li>	<li><img class="compass" src="i/mask.JPG"><code>mask-mode: alpha</code></li>	<li><img class="compass lum" src="i/mask.JPG"><code>mask-mode: luminance</code></li></ol></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css">
+body {display: flex; justify-content: center;}
+.arena {transform: scale(0.8); transform-origin: center top;}
+.arena ol {display: grid;
+	grid-template-columns: repeat(3, 400px);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 5em 0;
+	list-style: none;}
+li {position: relative;}
+li code {position: absolute; top: 100%; left: 0; width: 350px; margin-top: 0.5em; text-align: center; font-size: 2em; color: rgba(0,0,0,0.75);}
+</style>
+<style type="text/css">
+img.theatre {mask-image: url(i/theatre-masks.svg);}
+img.compass {mask-image: url(i/Compass_masked.png);}
+img.lum {mask-mode: luminance;}
+</style>
+</head>
+<body>
+
+<div class="arena">
+
+<ol>
+	<li><img src="i/theatre-masks.svg"></li>
+	<li><img class="theatre" src="i/mask.JPG"><code>mask-mode: alpha</code></li>
+	<li><img class="theatre lum" src="i/mask.JPG"><code>mask-mode: luminance</code></li>
+	<li><img src="i/Compass_masked.png"></li>
+	<li><img class="compass" src="i/mask.JPG"><code>mask-mode: alpha</code></li>
+	<li><img class="compass lum" src="i/mask.JPG"><code>mask-mode: luminance</code></li>
+</ol>
+
+</div>
+
+</body>
+</html>

@@ -1,1 +1,72 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {width: auto;}.grid {display: grid; padding: 0.5em; margin: 0.25em 0 2em;	grid-gap: 0.75em 0.5em;}#g1 {grid-template-rows: 6em; grid-template-columns: repeat(4, 11em);}#g2 {grid-template-rows: 6em; grid-template-columns: repeat(4, 11em);}h1 {grid-row: span 1 / 1; grid-column: 1 / 5; 	background: rgba(0,0,0,0.15); 	padding: 0.5em 0 0.25em;	text-align: center; font: 1.33em Helvetica, sans-serif; margin: 0;}h1 code {font: 1.1em monospace, serif;}big {font-size: 100%;}div[id] span[class*="box"] {box-sizing: border-box; color: inherit; background: transparent;}#g1 [class*="box"] {align-self: start;}#g2 [class*="box"] {justify-self: start;}#g1 .box01 {justify-self: start; font-size: 120%;}#g1 .box02 {justify-self: baseline;}#g1 .box03 {justify-self: last-baseline;}#g1 .box04 {justify-self: start;}#g2 .box01 {align-self: start; font-size: 120%;}#g2 .box02 {align-self: baseline;}#g2 .box03 {align-self: last-baseline;}#g2 .box04 {align-self: start;}span[class*="01"] {grid-row: 1; grid-column: 1;}span[class*="02"] {grid-row: 1; grid-column: 2;}span[class*="03"] {grid-row: 1; grid-column: 3;}span[class*="04"] {grid-row: 1; grid-column: 4;}span[class*="gridline"] {color: blue;}</style></head><body><div class="grid small" id="g1"><h1><code>justify-self</code> values <em>(inline-axis alignment)</em></h1><span class="box01">This element has a fair amount of content.</span><span class="box02"><big>baseline</big></span><span class="box03"><big>last-baseline</big></span><span class="box04">This element has some content.</span><span class="gridline01"></span><span class="gridline02"></span><span class="gridline03"></span><span class="gridline04"></span></div><div class="grid small" id="g2"><h1><code>align-self</code> values<em>(block-axis alignment)</em></h1><span class="box01">This element has a fair amount of content.</span><span class="box02"><big>baseline</big></span><span class="box03"><big>last-baseline</big></span><span class="box04">This element has some content.</span><span class="gridline01"></span><span class="gridline02"></span><span class="gridline03"></span><span class="gridline04"></span></div></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {width: auto;}
+.grid {display: grid; padding: 0.5em; margin: 0.25em 0 2em;
+	grid-gap: 0.75em 0.5em;}
+#g1 {grid-template-rows: 6em; grid-template-columns: repeat(4, 11em);}
+#g2 {grid-template-rows: 6em; grid-template-columns: repeat(4, 11em);}
+
+h1 {grid-row: span 1 / 1; grid-column: 1 / 5;
+ 	background: rgba(0,0,0,0.15);
+ 	padding: 0.5em 0 0.25em;
+	text-align: center; font: 1.33em Helvetica, sans-serif; margin: 0;}
+h1 code {font: 1.1em monospace, serif;}
+big {font-size: 100%;}
+
+div[id] span[class*="box"] {box-sizing: border-box; color: inherit; background: transparent;}
+#g1 [class*="box"] {align-self: start;}
+#g2 [class*="box"] {justify-self: start;}
+
+#g1 .box01 {justify-self: start; font-size: 120%;}
+#g1 .box02 {justify-self: baseline;}
+#g1 .box03 {justify-self: last-baseline;}
+#g1 .box04 {justify-self: start;}
+
+#g2 .box01 {align-self: start; font-size: 120%;}
+#g2 .box02 {align-self: baseline;}
+#g2 .box03 {align-self: last-baseline;}
+#g2 .box04 {align-self: start;}
+
+span[class*="01"] {grid-row: 1; grid-column: 1;}
+span[class*="02"] {grid-row: 1; grid-column: 2;}
+span[class*="03"] {grid-row: 1; grid-column: 3;}
+span[class*="04"] {grid-row: 1; grid-column: 4;}
+span[class*="gridline"] {color: blue;}
+
+</style>
+</head>
+<body>
+
+<div class="grid small" id="g1">
+<h1><code>justify-self</code> values <em>(inline-axis alignment)</em></h1>
+<span class="box01">This element has a fair amount of content.</span>
+<span class="box02"><big>baseline</big></span>
+<span class="box03"><big>last-baseline</big></span>
+<span class="box04">This element has some content.</span>
+<span class="gridline01"></span>
+<span class="gridline02"></span>
+<span class="gridline03"></span>
+<span class="gridline04"></span>
+</div>
+
+
+<div class="grid small" id="g2">
+<h1><code>align-self</code> values<em>(block-axis alignment)</em></h1>
+<span class="box01">This element has a fair amount of content.</span>
+<span class="box02"><big>baseline</big></span>
+<span class="box03"><big>last-baseline</big></span>
+<span class="box04">This element has some content.</span>
+<span class="gridline01"></span>
+<span class="gridline02"></span>
+<span class="gridline03"></span>
+<span class="gridline04"></span>
+</div>
+
+</body>
+</html>

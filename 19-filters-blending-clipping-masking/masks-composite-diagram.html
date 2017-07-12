@@ -1,1 +1,47 @@
-<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Figure</title><style type="text/css">body {display: flex; justify-content: center;}ul {display: grid;	grid-template-columns: repeat(4,225px);	grid-template-rows: 160px 1fr;	grid-gap: 5em 0;	list-style: none;}li {position: relative;}li img {display: block; margin: 0 auto; height: 150px; width: 150px;}li span {display: block; position: relative; height: 225px; width: 225px; background: teal;	mask:	url(i/circle.svg) top left / 150px 150px no-repeat,	url(i/square.svg) bottom 18px right 18px / 132px 132px no-repeat;	}li:nth-child(1) {grid-column: 2;}li:nth-child(2) {grid-column: 3;}li:nth-child(n + 3) {grid-row: 2;}li:nth-child(3) span {mask-composite: add;}li:nth-child(4) span {mask-composite: subtract;}li:nth-child(5) span {mask-composite: intersect;}li:nth-child(6) span {mask-composite: exclude;}li *:last-child {position: absolute; top: 100%; right: 0; left: auto; width: 100%; 	text-align: center; font-size: 1.5em;}</style></head><body><div class="arena"><ul><li><img src="i/circle.svg"><em>source (top)</em></li><li><img src="i/square.svg"><em>destination (bottom)</em></li><li><span></span><code>add</code></li><li><span></span><code>subtract</code></li><li><span></span><code>intersect</code></li><li><span></span><code>exclude</code></li></ul></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css">
+body {display: flex; justify-content: center;}
+ul {display: grid;
+	grid-template-columns: repeat(4,225px);
+	grid-template-rows: 160px 1fr;
+	grid-gap: 5em 0;
+	list-style: none;}
+li {position: relative;}
+li img {display: block; margin: 0 auto; height: 150px; width: 150px;}
+li span {display: block; position: relative; height: 225px; width: 225px; background: teal;
+	mask:
+	url(i/circle.svg) top left / 150px 150px no-repeat,
+	url(i/square.svg) bottom 18px right 18px / 132px 132px no-repeat;
+	}
+li:nth-child(1) {grid-column: 2;}
+li:nth-child(2) {grid-column: 3;}
+li:nth-child(n + 3) {grid-row: 2;}
+li:nth-child(3) span {mask-composite: add;}
+li:nth-child(4) span {mask-composite: subtract;}
+li:nth-child(5) span {mask-composite: intersect;}
+li:nth-child(6) span {mask-composite: exclude;}
+li *:last-child {position: absolute; top: 100%; right: 0; left: auto; width: 100%; 
+	text-align: center; font-size: 1.5em;}
+</style>
+</head>
+<body>
+
+<div class="arena">
+
+<ul>
+<li><img src="i/circle.svg"><em>source (top)</em></li>
+<li><img src="i/square.svg"><em>destination (bottom)</em></li>
+<li><span></span><code>add</code></li>
+<li><span></span><code>subtract</code></li>
+<li><span></span><code>intersect</code></li>
+<li><span></span><code>exclude</code></li>
+</ul>
+
+</div>
+
+</body>
+</html>

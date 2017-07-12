@@ -1,1 +1,36 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {width: 64em; padding: 5em; margin: 1px;}#grid {width: 50em; height: 15em;	grid-template-columns: 1fr 3fr;	grid-template-rows: 4em 7em 4em;}	#grid {display: grid;		grid-template-areas:			"header header"			"sidebar content"			"footer footer";}	#header {grid-area: header;}	#sidebar {grid-area: sidebar / sidebar / footer-end / sidebar;}	#footer {grid-area: footer;}</style></head><body><div class="grid boxed gridlines" id="grid"><span class="box01 one" id="header">header</span><span class="box02 two" id="sidebar">sidebar</span><span class="box03" id="footer">footer</span></div></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {width: 64em; padding: 5em; margin: 1px;}
+#grid {width: 50em; height: 15em;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 4em 7em 4em;}
+
+	#grid {display: grid;
+		grid-template-areas:
+			"header header"
+			"sidebar content"
+			"footer footer";}
+	#header {grid-area: header;}
+	#sidebar {grid-area: sidebar / sidebar / footer-end / sidebar;}
+	#footer {grid-area: footer;}
+
+</style>
+</head>
+<body>
+
+<div class="grid boxed gridlines" id="grid">
+<span class="box01 one" id="header">header</span>
+<span class="box02 two" id="sidebar">sidebar</span>
+<span class="box03" id="footer">footer</span>
+</div>
+
+
+
+</body>
+</html>

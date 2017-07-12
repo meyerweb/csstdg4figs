@@ -1,1 +1,35 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {width: auto;}.grid > * {border: 1px dotted red; margin: 3px;}span[class*="box"] {background: white !important; border: 2px solid; box-shadow: 4px 4px 7px rgba(0,0,0,0.67);}span[class*="box"]::before {content: attr(class);}	#grid {display: grid; width: 80%; height: 20em;		grid-rows: repeat(10, 1fr); grid-columns: repeat(10, 1fr);}	.box01 {grid-row: 1 / span 4; grid-column: 1 / span 4;}	.box02 {grid-row: 4 / span 4; grid-column: 4 / span 4;}	.box03 {grid-row: 7 / span 4; grid-column: 7 / span 4;}	.box04 {grid-row: 4 / span 7; grid-column: 3 / span 2;}	.box05 {grid-row: 2 / span 3; grid-column: 4 / span 5;}		.box02 {z-index: 1;}</style></head><body><div class="grid boxed lines" id="grid"><span class="box01"></span><span class="box02"></span><span class="box03"></span><span class="box04"></span><span class="box05"></span></div></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {width: auto;}
+.grid > * {border: 1px dotted red; margin: 3px;}
+span[class*="box"] {background: white !important; border: 2px solid; box-shadow: 4px 4px 7px rgba(0,0,0,0.67);}
+span[class*="box"]::before {content: attr(class);}
+	#grid {display: grid; width: 80%; height: 20em;
+		grid-rows: repeat(10, 1fr); grid-columns: repeat(10, 1fr);}
+	.box01 {grid-row: 1 / span 4; grid-column: 1 / span 4;}
+	.box02 {grid-row: 4 / span 4; grid-column: 4 / span 4;}
+	.box03 {grid-row: 7 / span 4; grid-column: 7 / span 4;}
+	.box04 {grid-row: 4 / span 7; grid-column: 3 / span 2;}
+	.box05 {grid-row: 2 / span 3; grid-column: 4 / span 5;}
+	
+	.box02 {z-index: 1;}
+</style>
+</head>
+<body>
+
+<div class="grid boxed lines" id="grid">
+<span class="box01"></span>
+<span class="box02"></span>
+<span class="box03"></span>
+<span class="box04"></span>
+<span class="box05"></span>
+</div>
+
+</body>
+</html>

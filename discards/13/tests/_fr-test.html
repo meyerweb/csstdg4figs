@@ -1,1 +1,42 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"			"http://www.w3.org/TR/REC-html40/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Grid Layout</title><link rel="stylesheet" type="text/css" href="c/grid-baseline.css"><style type="text/css">body {width: auto;}.grid {display: grid;	grid-template-columns: 15em 4.5fr minmax(1em,3fr) 10%;}.grid span {font-size: 16px;	grid-auto-flow: row;}#g2 {	grid-template-columns: 15em 4.5fr minmax(3fr,500px) 10%;}</style></head><body><div class="grid"><span class="box01">1</span><span class="box02">2</span><span class="box03">3</span><span class="box04">4</span></div><div class="grid" id="g2"><span class="box01">1</span><span class="box02">2</span><span class="box03">3</span><span class="box04">4</span></div></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+			"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Grid Layout</title>
+<link rel="stylesheet" type="text/css" href="c/grid-baseline.css">
+<style type="text/css">
+body {width: auto;}
+
+.grid {display: grid;
+	grid-template-columns: 15em 4.5fr minmax(1em,3fr) 10%;
+}
+
+.grid span {font-size: 16px;
+	grid-auto-flow: row;}
+
+#g2 {
+	grid-template-columns: 15em 4.5fr minmax(3fr,500px) 10%;
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid">
+<span class="box01">1</span>
+<span class="box02">2</span>
+<span class="box03">3</span>
+<span class="box04">4</span>
+</div>
+
+<div class="grid" id="g2">
+<span class="box01">1</span>
+<span class="box02">2</span>
+<span class="box03">3</span>
+<span class="box04">4</span>
+</div>
+
+
+</body>
+</html>

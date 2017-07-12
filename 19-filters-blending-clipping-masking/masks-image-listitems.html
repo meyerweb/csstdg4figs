@@ -1,1 +1,53 @@
-<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Figure</title><style type="text/css">body {display: flex; justify-content: center;}.arena ul {display: grid;	grid-template-columns: repeat(2, 1fr);	grid-template-rows: repeat(1, 1fr);	grid-gap: 2em;	grid-auto-flow: column;	list-style: none;}</style><style type="text/css">ol {width: 13em; font-size: 1.5em;}ol li {background: cyan; padding: 0.5em; margin: 0.5em;}*.masked {mask-image: url(i/Compass_masked.png);}#mask > * {display: block;}#mask img {margin: 0 auto;}#mask b {text-align: center; font: italic 1.2em serif; padding-top: 1em;}</style></head><body><div class="arena"><ul><li id="mask"><img src="i/Compass_masked.png"><b>The image mask applied to the ordered list</b></li><!-- li><ol><li>One</li><li>Two</li><li>Three</li><li>Four</li><li>Five</li></ol></li --><li><ol class="masked"><li>One</li><li>Two</li><li>Three</li><li>Four</li><li>Five</li></ol></li></ul></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css">
+body {display: flex; justify-content: center;}
+.arena ul {display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	grid-gap: 2em;
+	grid-auto-flow: column;
+	list-style: none;}
+</style>
+<style type="text/css">
+ol {width: 13em; font-size: 1.5em;}
+ol li {background: cyan; padding: 0.5em; margin: 0.5em;}
+*.masked {mask-image: url(i/Compass_masked.png);}
+#mask > * {display: block;}
+#mask img {margin: 0 auto;}
+#mask b {text-align: center; font: italic 1.2em serif; padding-top: 1em;}
+</style>
+</head>
+<body>
+
+<div class="arena">
+
+<ul>
+<li id="mask"><img src="i/Compass_masked.png"><b>The image mask applied to the ordered list</b></li>
+<!-- li>
+<ol>
+<li>One</li>
+<li>Two</li>
+<li>Three</li>
+<li>Four</li>
+<li>Five</li>
+</ol>
+</li -->
+<li>
+<ol class="masked">
+<li>One</li>
+<li>Two</li>
+<li>Three</li>
+<li>Four</li>
+<li>Five</li>
+</ol>
+</li>
+</ul>
+
+</div>
+
+</body>
+</html>

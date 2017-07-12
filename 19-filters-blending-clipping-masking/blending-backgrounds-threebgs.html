@@ -1,1 +1,60 @@
-<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Figure</title><style type="text/css">body {display: flex; justify-content: center;}.arena {display: grid;	grid-template-columns: 200px 250px 250px 3em 1fr;	grid-template-rows: 250px 1fr 1fr;	}p, img {width: 275px; height: 275px;}#gradient, img {transform: scale(0.67); transform-origina: center;}#gradient {background: linear-gradient(135deg, #F00, #AEA);}#threebg {	background-image:        url(i/star.svg),        url(i/diamond.png),        linear-gradient(135deg, #F00, #AEA);    background-blend-mode: color-burn, luminosity, darken;    background-size: 275px auto;    background-position: center;    background-repeat: no-repeat;    grid-column: 5;    grid-row: 1 / span 2;}#label {grid-row: 2 / span 2; grid-column: 1 / span 4;	width: auto; height: auto; margin: 1.25em 3em; padding-top: 1em;	font-style: italic; font-size: 1.33em; text-align: center;	background-image:		linear-gradient(black, black),		linear-gradient(black, black),		linear-gradient(black, black);	background-size: 100% 2px, 2px 50%, 2px 50%;	background-position: center, top left, top right;	background-repeat: no-repeat;	opacity: 0.67;	}#label span {background: white; padding: 0 0.5em;}</style></head><body><div class="arena"><img src="i/star.svg"><img src="i/diamond.png"><p id="gradient"></p><p id="threebg"></p><p id="label"><span>The three background images to be blended together</span></p></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css">
+body {display: flex; justify-content: center;}
+.arena {display: grid;
+	grid-template-columns: 200px 250px 250px 3em 1fr;
+	grid-template-rows: 250px 1fr 1fr;
+	}
+p, img {width: 275px; height: 275px;}
+#gradient, img {transform: scale(0.67); transform-origina: center;}
+#gradient {background: linear-gradient(135deg, #F00, #AEA);}
+#threebg {
+	background-image:
+        url(i/star.svg),
+        url(i/diamond.png),
+        linear-gradient(135deg, #F00, #AEA);
+    background-blend-mode: color-burn, luminosity, darken;
+    background-size: 275px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 5;
+    grid-row: 1 / span 2;}
+
+#label {grid-row: 2 / span 2; grid-column: 1 / span 4;
+	width: auto; height: auto; margin: 1.25em 3em; padding-top: 1em;
+	font-style: italic; font-size: 1.33em; text-align: center;
+	background-image:
+		linear-gradient(black, black),
+		linear-gradient(black, black),
+		linear-gradient(black, black);
+	background-size: 100% 2px, 2px 50%, 2px 50%;
+	background-position: center, top left, top right;
+	background-repeat: no-repeat;
+	opacity: 0.67;
+	}
+#label span {background: white; padding: 0 0.5em;}
+</style>
+</head>
+<body>
+
+<div class="arena">
+
+<img src="i/star.svg">
+<img src="i/diamond.png">
+<p id="gradient"></p>
+
+<p id="threebg">
+</p>
+
+<p id="label">
+<span>The three background images to be blended together</span>
+</p>
+
+</div>
+
+</body>
+</html>

@@ -1,1 +1,169 @@
-<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Figure</title><style type="text/css">@counter-style hexadecimal {    system: numeric;    symbols: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9' 'A' 'B' 'C' 'D' 'E' 'F';}@counter-style hexpad {    system: extends hexadecimal;    pad: 2 "0";}@counter-style hexcolon {    system: extends hexadecimal;    suffix: ": ";}@counter-style hexcolonlimited {    system: extends hexcolon;    range: 1 255; /* stops at FF */}ol {margin-left: 4em; padding-left: 0; columns: 2;}ol:nth-child(1) {list-style: hexadecimal;}ol:nth-child(2) {list-style: hexpad;}ol:nth-child(3) {list-style: hexcolon;}ol:nth-child(4) {list-style: hexcolonlimited;}.arena {display: flex; flex-wrap: wrap; justify-content: stretch;}.arena ol {flex-grow: 1;	margin: 0.5em; padding: 0.5em 0 0.5em 4em;	border-right: 1px solid;}.arena ol:last-child {border-right: none;}</style></head><body><div class="arena"><ol><li value="-3">minus three</li><li>minus two</li><li>minus one</li><li>zero</li><li>one</li><li>two</li><li>three</li><li>four</li><li>five</li><li>six</li><li>seven</li><li>eight</li><li>nine</li><li>ten</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li value="253">253</li><li>254</li><li>255</li><li>256</li><li>257</li></ol><ol><li value="-3">minus three</li><li>minus two</li><li>minus one</li><li>zero</li><li>one</li><li>two</li><li>three</li><li>four</li><li>five</li><li>six</li><li>seven</li><li>eight</li><li>nine</li><li>ten</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li value="253">253</li><li>254</li><li>255</li><li>256</li><li>257</li></ol><ol><li value="-3">minus three</li><li>minus two</li><li>minus one</li><li>zero</li><li>one</li><li>two</li><li>three</li><li>four</li><li>five</li><li>six</li><li>seven</li><li>eight</li><li>nine</li><li>ten</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li value="253">253</li><li>254</li><li>255</li><li>256</li><li>257</li></ol><ol><li value="-3">minus three</li><li>minus two</li><li>minus one</li><li>zero</li><li>one</li><li>two</li><li>three</li><li>four</li><li>five</li><li>six</li><li>seven</li><li>eight</li><li>nine</li><li>ten</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li value="253">253</li><li>254</li><li>255</li><li>256</li><li>257</li></ol></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css">
+@counter-style hexadecimal {
+    system: numeric;
+    symbols: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9' 'A' 'B' 'C' 'D' 'E' 'F';
+}
+@counter-style hexpad {
+    system: extends hexadecimal;
+    pad: 2 "0";
+}
+@counter-style hexcolon {
+    system: extends hexadecimal;
+    suffix: ": ";
+}
+@counter-style hexcolonlimited {
+    system: extends hexcolon;
+    range: 1 255; /* stops at FF */
+}
+
+ol {margin-left: 4em; padding-left: 0; columns: 2;}
+ol:nth-child(1) {list-style: hexadecimal;}
+ol:nth-child(2) {list-style: hexpad;}
+ol:nth-child(3) {list-style: hexcolon;}
+ol:nth-child(4) {list-style: hexcolonlimited;}
+
+.arena {display: flex; flex-wrap: wrap; justify-content: stretch;}
+.arena ol {flex-grow: 1;
+	margin: 0.5em; padding: 0.5em 0 0.5em 4em;
+	border-right: 1px solid;}
+.arena ol:last-child {border-right: none;}
+
+</style>
+</head>
+<body>
+
+<div class="arena">
+
+<ol>
+<li value="-3">minus three</li>
+<li>minus two</li>
+<li>minus one</li>
+<li>zero</li>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+<li>five</li>
+<li>six</li>
+<li>seven</li>
+<li>eight</li>
+<li>nine</li>
+<li>ten</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li value="253">253</li>
+<li>254</li>
+<li>255</li>
+<li>256</li>
+<li>257</li>
+</ol>
+
+<ol>
+<li value="-3">minus three</li>
+<li>minus two</li>
+<li>minus one</li>
+<li>zero</li>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+<li>five</li>
+<li>six</li>
+<li>seven</li>
+<li>eight</li>
+<li>nine</li>
+<li>ten</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li value="253">253</li>
+<li>254</li>
+<li>255</li>
+<li>256</li>
+<li>257</li>
+</ol>
+
+<ol>
+<li value="-3">minus three</li>
+<li>minus two</li>
+<li>minus one</li>
+<li>zero</li>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+<li>five</li>
+<li>six</li>
+<li>seven</li>
+<li>eight</li>
+<li>nine</li>
+<li>ten</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li value="253">253</li>
+<li>254</li>
+<li>255</li>
+<li>256</li>
+<li>257</li>
+</ol>
+
+<ol>
+<li value="-3">minus three</li>
+<li>minus two</li>
+<li>minus one</li>
+<li>zero</li>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+<li>five</li>
+<li>six</li>
+<li>seven</li>
+<li>eight</li>
+<li>nine</li>
+<li>ten</li>
+<li>11</li>
+<li>12</li>
+<li>13</li>
+<li>14</li>
+<li>15</li>
+<li>16</li>
+<li>17</li>
+<li>18</li>
+<li>19</li>
+<li value="253">253</li>
+<li>254</li>
+<li>255</li>
+<li>256</li>
+<li>257</li>
+</ol>
+
+</div>
+
+</body>
+</html>
