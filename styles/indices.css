@@ -49,7 +49,7 @@ main h3 {display: inline-block;
 	background: linear-gradient(rgba(0,0,0,0.67),rgba(0,0,0,0.67)) no-repeat bottom left / 50% 0.5ch;}
 main p {font-size: 1.1em;}
 main p.note {border: 2px solid hsl(42deg,70%,40%); background: rgba(0,0,0,0.1); padding: 1em 0.5em;}
-ol {list-style: decimal; margin: 0; padding-left: 3ch;}
+ol {list-style: decimal; margin: 0; padding-left: 2.5ch;}
 ol li {margin-bottom: 0.33ch; padding-left: 0.5ch;}
 
 ol li a[href]::after {color: black; font-style: italic;}
@@ -63,13 +63,15 @@ ol li a[href$="svg"]::after {content: " (SVG)";}
 nav {grid-row: 1;
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 1px solid rgba(0,0,0,0.25);}
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	padding: 0;}
 nav > * {
+	border: 1px;
 	padding: 1ch 0;
 	opacity: 0.67;}
 nav > a:hover {opacity: 1;}
 nav > *:nth-child(1) {text-align: left; flex: 0 1 50%;}
-nav > *:nth-child(2) {text-align: center; flex: none;}
+nav > *:nth-child(2) {text-align: center; flex: none; padding: 1ch 3ch;}
 nav > *:nth-child(3) {text-align: right; flex: 0 1 50%;}
 
 footer {font-size: smaller; font-style: italic;
