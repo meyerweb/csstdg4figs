@@ -24,6 +24,7 @@ header h1 {align-self: flex-start;
 	opacity: 0.85;
 	border-bottom: 1px solid;
 	font-size: 300%; line-height: 1;
+	letter-spacing: -0.0667ch;
 	text-shadow:
 		0 0 2px var(--pagebg),
 		0 0 2px var(--pagebg),
