@@ -6,12 +6,12 @@
 <style type="text/css">
 body {display: flex; justify-content: center;}
 .arena ol {display: grid;
-	grid-template-columns: repeat(3, 400px);
-	grid-template-rows: repeat(1, 1fr);
-	grid-gap: 15vh;
+	grid-template-columns: repeat(3, 1fr min-content);
+	align-items: center;
+	grid-gap: 1em;
 	list-style: none;}
 li {position: relative;}
-li b {position: absolute; top: 50%; margin-top: -13vh; right: -5vh; font-size: 25vh; color: rgba(0,0,0,0.75); font-style: italic;}
+li b {font-size: 8vw; color: rgba(0,0,0,0.75); font-style: italic;}
 </style>
 <style type="text/css">
 img.masked {mask-image: url(i/theatre-masks.svg);}
@@ -22,8 +22,10 @@ img.masked {mask-image: url(i/theatre-masks.svg);}
 <div class="arena">
 
 <ol>
-	<li><img src="i/mask.JPG"><b>+</b></li>
-	<li><img src="i/theatre-masks.svg"><b>=</b></li>
+	<li><img src="i/mask.JPG"></li>
+	<li><b>+</b></li>
+	<li><img src="i/theatre-masks.svg"></li>
+	<li><b>=</b></li>
 	<li><img class="masked" src="i/mask.JPG"></li>
 </ol>
 
