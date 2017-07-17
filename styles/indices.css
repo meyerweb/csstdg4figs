@@ -48,7 +48,7 @@ main h3 {display: inline-block;
 	margin: 1ch 0 1.5ch; padding-bottom: 1.5ch;
 	background: linear-gradient(rgba(0,0,0,0.67),rgba(0,0,0,0.67)) no-repeat bottom left / 50% 0.5ch;}
 main p {font-size: 1.1em;}
-main p.note {border: 2px solid hsl(42deg,70%,40%); background: rgba(0,0,0,0.1); padding: 1em 0.5em;}
+main p.note {border: 2px solid hsl(42,70%,40%); background: rgba(0,0,0,0.1); padding: 1em 0.5em;}
 ol {list-style: decimal; margin: 0; padding-left: 2.5ch;}
 ol li {margin-bottom: 0.33ch; padding-left: 0.5ch;}
 
