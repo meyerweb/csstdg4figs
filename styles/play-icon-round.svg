@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" id="a-cloud" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="100" width="100" preserveAspectRatio="xMaxYMax" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
+	<g opacity="0.67">
+		<circle cx="50" cy="50" r="45" stroke="black" stroke-width="10" fill="transparent"/>
+		<path d="M 31.5,25 81,50 31.5,75" fill="black" />
+	</g>
+</svg>
