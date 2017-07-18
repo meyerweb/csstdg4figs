@@ -93,7 +93,7 @@ footer > *:nth-child(2) {text-align: right;}
 	footer > * {padding: 0 1ch;}
 }
 
-@supports (writing-mode: sideways-lr) {
+@supports (writing-mode: sideways-lr) or (writing-mode: vertical-lr) {
 	@media (min-width: 60ch) {
 		nav {margin-bottom: 3em;}
 		header {grid-column: 1 / 2; grid-row: 2 / 3;
@@ -102,6 +102,9 @@ footer > *:nth-child(2) {text-align: right;}
 			justify-content: flex-end;
 			padding-top: 1.25rem; margin-top: 0;}
 		header > * {writing-mode: sideways-lr; grid-row: 1; align-self: flex-start;}
+		@supports (writing-mode: vertical-lr) {
+			header > * {writing-mode: vertical-lr; transform: rotate(180deg);}
+		}
 		header h1 {grid-column: 2; margin-right: 1.75rem; border-bottom: 0;
 			max-height: 75vh; text-align: right;}
 		header h2 {grid-column: 1; margin: 0 -0.5ch 0 0;}
