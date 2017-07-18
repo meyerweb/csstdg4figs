@@ -1,1 +1,4 @@
 header h2 {word-spacing: 0;}
+@supports (writing-mode: sideways-lr) {
+	header h2 {margin-right: 0;}
+}
