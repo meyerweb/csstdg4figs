@@ -18,7 +18,9 @@ body > * {padding: 0 1ch;
 	grid-column: 2;}
 
 header {display: flex; flex-direction: column-reverse;
-	margin: 3ch 0;}
+	margin: 3ch 0;
+	opacity: 0;
+	animation: slide 0.6s 0.2s forwards;}
 header > * {margin: 0;}
 header h1 {align-self: flex-start;
 	opacity: 0.85;
@@ -48,7 +50,8 @@ main h3 {display: inline-block;
 	margin: 1ch 0 1.5ch; padding-bottom: 1.5ch;
 	background: linear-gradient(rgba(0,0,0,0.67),rgba(0,0,0,0.67)) no-repeat bottom left / 50% 0.5ch;}
 main p {font-size: 1.1em;}
-main p.note {border: 2px solid hsl(0,70%,60%); background: hsl(0,10%,90%); mix-blend-mode: luminosity; padding: 1em 0.5em;}
+main p.note {border: 2px solid hsl(0,70%,60%); background: hsl(0,10%,90%); mix-blend-mode: luminosity;
+	padding: 1em 0.5em;}
 ol {list-style: decimal; margin: 0; padding-left: 2.5ch;}
 ol li {margin-bottom: 0.33ch; padding-left: 0.5ch;}
 
@@ -110,5 +113,16 @@ footer > *:nth-child(2) {text-align: right;}
 			max-height: 75vh; text-align: right; word-spacing: 0.13ch;}
 		header h2 {grid-column: 1; margin: 0 -0.5ch 0 0;}
 		main h3 {margin-top: 0.75rem;}
+	}
+}
+
+@keyframes slide {
+	from {
+		transform: translate(-0.5vw,0);
+		opacity: 0;
+	}
+	to {
+		transform: translate(0);
+		opacity: 1;
 	}
 }
