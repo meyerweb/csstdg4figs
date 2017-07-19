@@ -94,7 +94,7 @@ footer > *:nth-child(2) {text-align: right;}
 	footer > * {padding: 0 1ch;}
 }
 
-@supports (writing-mode: sideways-lr) or (writing-mode: vertical-lr) {
+@supports (writing-mode: sideways-lr) or (writing-mode: vertical-rl) {
 	@media (min-width: 60ch) {
 		nav {margin-bottom: 3em;}
 		header {grid-column: 1 / 2; grid-row: 2 / 3;
@@ -104,7 +104,7 @@ footer > *:nth-child(2) {text-align: right;}
 			padding-top: 1.25rem; margin-top: 0;
 			opacity: 0;
 			animation: slide 0.6s 0.2s forwards;}
-		header > * {writing-mode: vertical-lr; transform: rotate(180deg);
+		header > * {writing-mode: vertical-rl; transform: rotate(180deg);
 			writing-mode: sideways-lr; grid-row: 1; align-self: flex-start;}
 		@supports (writing-mode: sideways-lr) {
 			header > * {writing-mode: sideways-lr; transform: rotate(0deg);}
