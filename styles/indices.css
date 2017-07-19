@@ -101,12 +101,13 @@ footer > *:nth-child(2) {text-align: right;}
 			grid-template-columns: repeat(2,min-content);
 			justify-content: flex-end;
 			padding-top: 1.25rem; margin-top: 0;}
-		header > * {writing-mode: sideways-lr; grid-row: 1; align-self: flex-start;}
-		@supports (writing-mode: vertical-lr) {
-			header > * {writing-mode: vertical-lr; transform: rotate(180deg);}
+		header > * {writing-mode: vertical-lr; transform: rotate(180deg);
+			writing-mode: sideways-lr; grid-row: 1; align-self: flex-start;}
+		@supports (writing-mode: sideways-lr) {
+			header > * {writing-mode: sideways-lr; transform: rotate(0deg);}
 		}
 		header h1 {grid-column: 2; margin-right: 1.75rem; border-bottom: 0;
-			max-height: 75vh; text-align: right;}
+			max-height: 75vh; text-align: right; word-spacing: 0.13ch;}
 		header h2 {grid-column: 1; margin: 0 -0.5ch 0 0;}
 		main h3 {margin-top: 0.75rem;}
 	}
