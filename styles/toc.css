@@ -1,4 +1,20 @@
 header h2 {word-spacing: 0;}
 @supports (writing-mode: sideways-lr) or (writing-mode: vertical-rl) {
 	header h2 {margin-right: 0;}
+	@supports (writing-mode: sideways-lr) {
+		@media (min-width: 60ch) {
+			header h2 {animation: slide 0.7s 0.5s forwards; opacity: 0;}
+		}
+	}
+}
+
+@keyframes slide {
+	from {
+		transform: translate(1rem,0);
+		opacity: 0;
+	}
+	to {
+		transform: translate(0);
+		opacity: 1;
+	}
 }
