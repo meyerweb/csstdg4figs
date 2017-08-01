@@ -4,12 +4,7 @@
 <title></title>
 <meta charset="utf-8">
 <link type="text/css" href="c/style-edit.css" rel="stylesheet">
-<style type="text/css">
-div {
-	margin: auto;
-}
-</style>
-<style <style type="text/css" contenteditable id="editme">.dancer {width: 56px; height: 100px;
+<style type="text/css" contenteditable id="editme">.dancer {width: 56px; height: 100px;
     background-image: url(c/dancer.png);
     animation-name: dance_in_place;
     animation-duration: 4s;
@@ -21,10 +16,27 @@ div {
     to {background-position: -1232px 0;}
 }
 </style>
+<style type="text/css">
+div {
+	margin-left: 45%;
+	margin-bottom: 1em;
+}
+.strip {border: 1px solid; width: 56px; height: 100px;}
+.strip:hover {overflow: hidden;}
+.strip img {
+	animation: filmstrip 4s steps(22,end) infinite;
+	position: relative;}
+@keyframes filmstrip {
+    from {left: 0;}
+    to {left: -1232px;}
+}
+</style>
 </head>
 
 <body>
 <div class="dancer"></div>
+<div class="strip"><img src="c/dancer.png" alt=""></div>
+<p>Hover over the box to suppress the image outside the box</p>
 </body>
 
 </html>
