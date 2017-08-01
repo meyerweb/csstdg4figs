@@ -1,0 +1,135 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Transitions: Card Flip</title>
+	<style>
+
+section {
+	perspective: 600;
+	margin: 10vw;
+}
+.card, 
+.front,
+.back {
+	transition: all 0.4s ease-in-out;
+ }
+.card {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  margin: auto;
+  float: left;
+  font-size: .8em;
+  position: relative;
+}
+.card .front {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 900;
+width: inherit;
+height: inherit;
+border-radius: 10px;
+border: 10px solid #fff;
+text-align: center;
+box-shadow: 0 1px 5px rgba(0,0,0,0.9);
+transform: rotateX(0deg) rotateY(0deg);
+transform-style: preserve-3d;
+backface-visibility: hidden;
+background:
+linear-gradient(-45deg, white 25%, transparent 25%, transparent 75%, red 75%, red) 0 0,
+linear-gradient(-45deg, red 25%, transparent 25%, transparent 75%, white 75%, white) 1em 1em,
+linear-gradient(45deg, red 17%, transparent 17%, transparent 25%, red 25%, red 36%, transparent 36%, transparent 64%, red 64%, red 75%, transparent 75%, transparent 83%, red 83%) 1em 1em;
+background-color: white;
+background-size: 2em 2em;
+background-position: -1em -1em;
+
+}
+.card:hover .front {
+  z-index: 900;
+  transform: rotateY(180deg);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+.card .back {
+  float: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  width: inherit;
+  height: inherit;
+  background: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  border: 10px solid #fff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.9);
+}
+.card:nth-of-type(2) {
+  z-index: 2000;
+}
+.card:hover .back {
+  z-index: 1000;
+  transform: rotateY(0);
+}
+.card:first-of-type {
+  transform: rotate(-5deg);
+}
+.card:nth-of-type(2):hover{
+  transform: rotate(0) translatey(-40px);
+}
+.card:last-of-type {
+  transform: rotate(5deg) translatex(10px);
+}
+.card:first-of-type:hover{
+  transform: rotate(10deg) translatey(30px);
+}
+
+
+.card .back {
+	color:red; 
+	font-size: 50px; 
+	line-height: 300px; 
+	text-align:center;
+}
+.spades .back {
+	color: black;
+}
+.card .back:after  {
+	content: 'A'; 
+	position:absolute; 
+	top: 10px; 
+	left: 10px; 
+	line-height:20px;
+}
+.card .back:before {
+	content: 'A'; 
+	position:absolute; 
+	bottom: 10px; 
+	right: 10px; 
+	line-height:20px;
+}
+
+
+</style>
+</head>
+<body>
+
+	<section class="cards">
+	    <div class="card">
+	        <div class="front"></div>
+	        <div class="back">♥</div>
+	    </div>
+	    <div class="card spades">
+	        <div class="front"></div>
+	        <div class="back">♣</div>
+	    </div>
+	    <div class="card">
+	        <div class="front"></div>
+	        <div class="back">♦</div>
+	    </div>
+	</section>
+</body>
+</html>

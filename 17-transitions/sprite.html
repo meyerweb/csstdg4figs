@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+head {
+	display: block; 
+}
+[contenteditable] {
+	display: block; 
+	-webkit-user-modify: read-write-plaintext-only;
+	white-space: pre-wrap;
+	background-color: #dedede;
+	border: 0.25ch solid #aaa; 
+	border-radius: 1ch; 
+	font-size: 1.1em;
+	padding: 1ch 2ch;
+	margin: 1ch;  
+	font-family: Consolas, "Courier New", Courier, monospace;
+	max-height: 50vh;
+	overflow: auto;
+}
+body {font: 1.2em Verdana, Helvetica, sans-serif;}
+p {text-align: center;}
+div {margin:auto;}
+</style>
+<style contenteditable id="editme">#psy {width: 49px; height: 100px;
+  background-image: url(i/psy.png);
+  background-position: 0 0;
+  transition: background-position 4s steps(22, end);
+}
+#psy:hover{
+  background-position: -1229px 0;
+}
+</style>
+<title>Sprite Animation</title>
+</head>
+
+<body>
+<p>Hover over the dancer to see him dance!</p>
+  <div id="psy"></div>
+</body>
+</html>
+
+

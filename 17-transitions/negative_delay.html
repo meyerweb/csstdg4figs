@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+head {
+    display: block;
+}
+[contenteditable] {
+    display: block;
+    -webkit-user-modify: read-write-plaintext-only;
+    white-space: pre-wrap;
+}
+#editme {
+    background-color: #dedede;
+    padding: 20px;
+    font-size: 1.1em;
+    white-space: pre;
+    font-family: monospace;
+    white-space: pre;
+    border-radius: 10px;
+    border: 3px solid #aaa;
+    background-color: #dedede;
+    margin: 20px auto;
+    width: 80%;
+    font-family: Consolas, "Courier New", Courier, monospace;
+    max-height: 50vh;
+    overflow: auto;
+}
+div {
+  color: #ff0000;
+  border: 1px solid #00ff00;
+  border-radius: 0;
+  opacity: 1;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+  width: 50px;
+  padding: 100px;
+}
+</style>
+<style contenteditable id="editme">div {
+  transform: translateX(0);
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-delay: -1.50s;
+  transition-timing-function: linear;
+}
+div:hover {
+  transform: translateX(200px);
+}</style>
+<title>negative transition-delay</title>
+</head>
+
+<body>
+<ul>
+<div></div>
+</body>
+</html>

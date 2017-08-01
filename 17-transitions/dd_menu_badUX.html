@@ -1,0 +1,99 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Transitions: Menu Open Bad UX</title>
+<style>
+head {display: block;}
+[contenteditable] {user-modify: read-write-plaintext-only;display: block;}
+#editme {
+	font-size: 1.3em; font-family: Consolas, "Courier New", Courier, monospace;
+	white-space: pre-wrap;
+	border-radius: 10px; border: 3px solid #aaa;
+	background-color:#EEE;
+	position: absolute; top: 3em;
+	width: 80%; max-height: 75vh;
+	margin: 1ch 10%;
+	padding: 1ch 2ch;
+	overflow: auto;
+	box-sizing: border-box;
+	}
+body {font-family:Verdana, Geneva, sans-serif; font-size:1.2em}
+:root {background-color:#ccc;}
+ul, li  {  
+  margin: 0; 
+  padding: 0; 
+  list-style-type: none;
+  background-color: red;
+  color: white;
+  border: 1px solid #fff;
+}
+nav ul li {
+  padding: 3px 5px;
+}
+nav > ul > li {
+  position:relative;
+  min-width: 120px;
+  display: inline-block;
+  position:relative;
+  border-width: 0 1px 0 0;
+}
+nav ul ul {
+  position:absolute;
+  top: 100%;
+}
+</style>
+
+<style contenteditable id="editme">nav li ul {
+	transition-property: transform;
+	transition-duration: 200ms;
+	transition-timing-function: ease-in;
+	transition-delay: 50ms;
+	transform: scale(1,0);
+	transform-origin: top center;
+}
+nav li:hover ul {
+	transition-property: transform;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+	transition-delay: 1s;
+	transform: scale(1,1);
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+      <li>Bad
+        <ul>
+            <li>Me</li>
+            <li>You</li>
+            <li>Them</li>
+            <li>Nobody</li>
+       </ul>
+        </li>
+        <li>User
+        <ul>
+            <li>Door Post</li>
+            <li>Wall hanging</li>
+            <li>Stair Banister</li>
+            <li>Washington</li>
+       </ul></li>
+        <li>Experience
+        <ul>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>SEO</li>
+       </ul></li>
+        <li>Design
+        <ul>
+            <li>Party</li>
+            <li>Dinner</li>
+            <li>Hike</li>
+            <li>Foo Camp</li>
+       </ul></li>
+   </ul>
+</nav>
+</body>
+</html>

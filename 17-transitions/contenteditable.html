@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+head {
+	display: block; 
+}
+style[contenteditable] {
+	display: block; 
+	-webkit-user-modify: read-write-plaintext-only;
+	white-space: pre-wrap;
+	background-color: #dedede;
+	border: 0.25ch solid #aaa; 
+	border-radius: 1ch; 
+	font-size: 1.1em;
+	width: 80%;
+	padding: 1ch 2ch;
+	margin: 1ch auto;  
+	font-family: Consolas, "Courier New", Courier, monospace;
+	max-height: 50vh;
+	overflow: auto;
+}
+p {
+	font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
+	font-size: 2em;
+	padding: 1ch;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	width: 80%;
+	margin: 1ch auto; 
+}
+</style>
+<style contenteditable id="editme">p[contenteditable] {
+	background-color: rgba(0,0,0,0); 
+}
+p[contenteditable]:focus {
+	background-color: rgba(0,0,0,0.1); 
+}
+</style>
+<title>Contenteditable changing on focus</title>
+</head>
+<body>
+<p contenteditable>Try to edit this paragraph text, and those styles</p>
+</body>
+</html>
