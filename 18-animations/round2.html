@@ -1,0 +1,66 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+#editme {
+    -webkit-columns: 2;
+    columns: 2;
+}
+div {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 2em;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 10px 100px;
+    text-align: center;
+}
+</style>
+<style contenteditable id="editme">div {
+    -webkit-animation: 10s round alternate 2 5s;
+    animation: 10s round alternate 2 5s;
+}
+div:nth-of-type(even) {
+    -webkit-animation: 10s square_to_round alternate 2 5s;
+    animation: 10s square_to_round 2 infinite 5s;
+}
+@-webkit-keyframes round {
+    100% {
+        border-radius: 50%;
+    }
+}
+@-webkit-keyframes square_to_round {
+    0% {
+        border-radius: 0%;
+    }
+    100% {
+        border-radius: 50%;
+    }
+}
+@keyframes round {
+    100% {
+        border-radius: 50%;
+    }
+}
+@keyframes square_to_round {
+    0% {
+        border-radius: 0%;
+    }
+    100% {
+        border-radius: 50%;
+    }
+}</style>
+</head>
+<body>
+<div>No border-radius</div>
+<div>No border-radius</div>
+<div style="border-radius: 0;">border-radius: 0;</div>
+<div style="border-radius: 0;">border-radius: 0;</div>
+<div style="border-radius: 25%;">border-radius: 25%;</div>
+<div style="border-radius: 25%;">border-radius: 25%;</div>
+</body>
+</html>

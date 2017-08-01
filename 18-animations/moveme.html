@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+div {
+	padding: 20px;
+	margin: 20px;
+	border: 5px black solid!important;
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 2rem;
+}
+.ball {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: red;
+}
+</style>
+<style contenteditable id="editme">.ball {
+	animation-name: move_me;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.a {animation-iteration-count: 0.6;}
+.b {animation-iteration-count: 1;}
+@keyframes move_me {
+	0%   {transform: translateX(0);     }
+	100% {transform: translateX(1000px);}
+}
+</style>
+</head>
+<body>
+<p>Iteration count 0.6 (A) versus 1 (B):</p>
+<div class="ball moved a">A</div>
+<div class="ball moved b">B</div>
+</body>
+</html>

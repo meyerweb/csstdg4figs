@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+div {
+	padding: 20px;
+	margin: 20px;
+	border: 5px black solid!important;
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 2rem;
+}
+</style>
+<style contenteditable id="editme">.ball {	height: 50px; width: 50px;
+	border-radius: 50%;
+	background-color: red;
+	animation-name: bounce;
+	animation-duration: 1s;
+	animation-delay: -4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+}
+@keyframes bounce {
+	from {transform: translateY(0);}
+	to {transform: translateY(500px);}
+}
+</style>
+</head>
+
+<body>
+	<div class="ball"></div>
+</body>
+
+</html>

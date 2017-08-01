@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+div {
+	padding: 20px;
+	border: 5px black solid!important;
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 2rem;
+}
+@-webkit-keyframes red {
+	from, 30% {
+		background-color: #f00;
+	}
+	to {
+		background-color: #f33;
+	}
+}
+@keyframes red {
+	from, 30% {
+		background-color: #f00;
+	}
+	to {
+		background-color: #f33;
+	}
+}
+@-webkit-keyframes green {
+	from, 30% {
+		background-color: #030;
+	}
+	to {
+		background-color: #393;
+	}
+}
+@keyframes green {
+	from, 30% {
+		background-color: #030;
+	}
+	to {
+		background-color: #393;
+	}
+}
+@-webkit-keyframes blue {
+	from, 30% {
+		background-color: #0000ff;
+	}
+	to {
+		background-color: #3333ff;
+	}
+}
+@keyframes blue {
+	from, 30% {
+		background-color: #0000ff;
+	}
+	to {
+		background-color: #33f;
+	}
+}
+</style>
+<style contenteditable id="editme">div {
+	-webkit-animation-name: red, green, blue;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-duration: 4s, 0, 2s;
+	-webkit-animation-delay: 2s;
+	animation-name: red, green, blue;
+	animation-iteration-count: 1;
+	animation-duration: 4s, 0, 2s;
+	animation-delay: 2s;
+}
+</style></head>
+<body>
+<div id="blue"><p>Does the animation even happen?</p></div>
+<script>
+  var foo = document.getElementById('blue');
+  console.log('foo');
+  foo.addEventListener( 'webkitAnimationEnd',
+    function( event ) {
+        console.log('animation end');
+    },
+    false );
+  foo.addEventListener( 'webkitAnimationStart',
+    function( event ) {
+        console.log('animation start');
+    },
+    false );
+    foo.addEventListener( 'animationend',
+    function( event ) {
+        console.log('animation end');
+    },
+    false );
+  foo.addEventListener( 'animationstart',
+    function( event ) {
+        console.log('animation start');
+    },
+    false );
+</script>
+</body>
+</html>

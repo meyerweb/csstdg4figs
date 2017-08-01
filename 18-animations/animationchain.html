@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+div {
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+@keyframes red {
+	100% {
+		background-color: red;
+	}
+}
+@keyframes orange {
+	100% {
+		background-color: orange;
+	}
+}
+@keyframes yellow {
+	100% {
+		background-color: yellow;
+	}
+}
+@keyframes green {
+	100% {
+		background-color: green;
+	}
+}
+@keyframes blue {
+	100% {
+		background-color: blue;
+	}
+}
+</style>
+<style contenteditable id="editme">.rainbow {
+	animation-name: red, orange, yellow, blue, green;
+	animation-duration: 1s, 3s, 5s, 7s, 11s;
+	animation-delay: 3s, 4s, 7s, 12s, 19s;
+}
+</style>
+</head>
+<body>
+<div class="rainbow">One animation happens after another.</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+div {
+	margin: auto;
+}
+</style>
+<style type="text/css" contenteditable id="editme">.dancer {width: 56px; height: 100px;
+	background-image: url(c/dancer.png);
+	animation-name: dance_in_place, move_around;
+	animation-duration: 4s, 16s;
+	animation-timing-function: steps(22, end), steps(5, end);
+	animation-iteration-count: infinite;
+}
+@keyframes dance_in_place {
+	from {background-position: 0 0;}
+	to {background-position: -1232px 0;}
+}
+@keyframes move_around {
+	0%, 100% {transform: translate(0, -40px) scale(0.9);}
+	25% {transform: translate(40px, 0) scale(1);}
+	50% {transform: translate(0, 40px) scale(1.1);}
+	75% {transform: translate(-40px, 0) scale(1);}
+}
+</style>
+</head>
+
+<body>
+	<div class="dancer"></div>
+</body>
+
+</html>

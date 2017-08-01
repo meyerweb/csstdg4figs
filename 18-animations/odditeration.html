@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+div {
+	border: 5px black solid;
+	padding: 10px;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+article {
+	height: 10px;
+	background: red;
+	background: linear-gradient(to right, black 10%, white 10%);
+	background-size: 50px 10px;
+	margin: 20px 0;
+	position: relative;
+}
+article:after,
+article:before {
+	content: '';
+	height: 30px;
+	width: 5px;
+	top: -10px;
+	position: absolute;
+	left: 500px;
+	background-color: red;
+}
+article:before {
+	left: 100px;
+}
+</style>
+<style contenteditable id="editme">div {
+	-webkit-animation: width 10s linear 5s;
+	-webkit-animation-iteration-count: 0.25;
+	animation: width 10s linear 5s;
+	animation-iteration-count: 0.25;
+}
+@-webkit-keyframes width {
+	0% {
+		height: 500px;
+		width: 500px;
+	}
+	100% {
+		height: 100px;
+		width: 100px;
+	}
+}
+@keyframes width {
+	0% {
+		height: 500px;
+		width: 500px;
+	}
+	100% {
+		height: 100px;
+		width: 100px;
+	}
+}
+</style>
+</head>
+<body>
+<article></article>
+<div id="blue">Does the animation finish?</div>
+</body>
+</html>

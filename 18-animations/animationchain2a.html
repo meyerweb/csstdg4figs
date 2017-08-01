@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+li {
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+li {}
+</style>
+<style contenteditable id="editme">li:first-of-type {
+	animation-name: red;
+	animation-duration: 1s;
+	animation-delay: 3s;
+}
+li:nth-of-type(2) {
+	animation-name: orange;
+	animation-duration: 3s;
+	animation-delay: 4s;
+}
+li:nth-of-type(3) {
+	animation-name: yellow;
+	animation-duration: 5s;
+	animation-delay: 7s;
+}
+li:nth-of-type(4) {
+	animation-name: green;
+	animation-duration: 7s;
+	animation-delay: 12s;
+}
+li:nth-of-type(5) {
+	animation-name: blue;
+	animation-duration: 11s;
+	animation-delay: 19s;
+}
+@keyframes red {
+	100% {background-color: red;}
+}
+@keyframes orange {
+	100% {background-color: orange;}
+}
+@keyframes yellow {
+	100% {background-color: yellow;}
+}
+@keyframes green {
+	100% {background-color: green;}
+}
+@keyframes blue {
+	100% {background-color: blue;}
+}
+</style></head>
+<body>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+div {
+	padding: 20px;
+	border: 5px black solid!important;
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 2rem;
+}
+@-webkit-keyframes red {
+	from, 30% {
+		background-color: #f00;
+	}
+	to {
+		background-color: #f33;
+	}
+}
+@keyframes red {
+	from, 30% {
+		background-color: #f00;
+	}
+	to {
+		background-color: #f33;
+	}
+}
+@-webkit-keyframes green {
+	from, 30% {
+		background-color: #030;
+	}
+	to {
+		background-color: #393;
+	}
+}
+@keyframes green {
+	from, 30% {
+		background-color: #030;
+	}
+	to {
+		background-color: #393;
+	}
+}
+@-webkit-keyframes blue {
+	from, 30% {
+		background-color: #0000ff;
+	}
+	to {
+		background-color: #3333ff;
+	}
+}
+@keyframes blue {
+	from, 30% {
+		background-color: #0000ff;
+	}
+	to {
+		background-color: #33f;
+	}
+}
+</style>
+<style contenteditable id="editme">#blue {
+	-webkit-animation: red 5s linear 5, green 4s linear 4, blue 3s linear 3;
+	animation: red 5s linear 5, green 4s linear 4, blue 3s linear 3;
+}
+#red {
+	-webkit-animation: red 5s linear 5 -12s, green 4s linear 4 -12s, blue 3s linear 3 -12s;
+	animation: red 5s linear 5 -12s, green 4s linear 4 -12s, blue 3s linear 3 -12s;
+}
+</style></head>
+<body>
+<div id="blue"><p>Open the console and tell me what you see.</p></div>
+<div id="red"><p>This has a long delay</p></div>
+<script>
+  var foo = document.getElementById('blue');
+  console.log('foo');
+  foo.addEventListener( 'webkitAnimationEnd',
+    function( event ) {
+        console.log('animation end');
+    },
+    false );
+  foo.addEventListener( 'webkitAnimationStart',
+    function( event ) {
+        console.log('animation start');
+    },
+    false );
+  foo.addEventListener( 'webkitAnimationIteration',
+    function( event ) {
+        console.log('animation iteration');
+    },
+    false );
+  foo.addEventListener( 'animationend',
+    function( event ) {
+        console.log('animation end');
+    },
+    false );
+  foo.addEventListener( 'animationstart',
+    function( event ) {
+        console.log('animation start');
+    },
+    false );
+  foo.addEventListener( 'animationiteration',
+    function( event ) {
+        console.log('animation iteration');
+    },
+    false );
+  var bar = document.getElementById('red');
+  console.log('bar');
+  bar.addEventListener( 'webkitAnimationEnd',
+    function( event ) {
+        console.log('2 animation end');
+    },
+    false );
+  bar.addEventListener( 'webkitAnimationStart',
+    function( event ) {
+        console.log('2 animation start');
+    },
+    false );
+  bar.addEventListener( 'webkitAnimationIteration',
+    function( event ) {
+        console.log('2 animation iteration');
+    },
+    false );
+  bar.addEventListener( 'animationend',
+    function( event ) {
+        console.log('2 animation end');
+    },
+    false );
+  bar.addEventListener( 'animationstart',
+    function( event ) {
+        console.log('2 animation start');
+    },
+    false );
+  bar.addEventListener( 'animationiteration',
+    function( event ) {
+        console.log('2 åanimation iteration');
+    },
+    false );
+</script>
+</body>
+</html>

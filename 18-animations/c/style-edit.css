@@ -1,0 +1,24 @@
+head {
+	display: block;
+	}
+style[contenteditable] {
+	display: block;
+	-webkit-user-modify: read-write-plaintext-only;
+	white-space: pre-wrap;
+	}
+#editme {
+	padding: 1ch 2ch; margin: 2ch;
+	border: 0.25ch solid #aaa;
+	border-radius: 1ch;
+	background-color: #dedede;
+	font: 1.2rem Consolas, "Courier New", Courier, monospace;
+	white-space: pre;
+	max-height: 50vh;
+	overflow: auto;
+	}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.2em;
+    padding: 1em;
+}

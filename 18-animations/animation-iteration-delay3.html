@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>animation-iteration-delay</title>
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+div.foo {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: yellow, yellow, yellow;
+    animation-delay: 1s, 5s, 10s;
+    animation-duration: 1s;
+}
+@keyframes yellow {
+    0% {
+        background-color: green;
+        transform: scale(0.5);
+    }
+    100% {
+        background-color: yellow;
+        transform: scale(1.5);
+    }
+}
+
+div.foo {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: yellow, yellow, yellow;
+    animation-delay: 1s, 5s, 10s;
+    animation-duration: 1s;
+}
+@keyframes yellow {
+    0% {
+        background-color: green;
+        transform: scale(0.5);
+    }
+    100% {
+        background-color: yellow;
+        transform: scale(1.5);
+    }
+}
+</style>
+</head>
+<body>
+<div class="foo"></div>
+</body>
+</html>

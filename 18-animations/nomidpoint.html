@@ -1,0 +1,42 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+div{padding:20px;margin:20px;border:5px black solid;font-family:sans-serif;}
+</style>
+<style contenteditable id="editme">div {
+    -webkit-animation: height linear infinite 5s;
+    animation: height linear infinite 5s;
+}
+@-webkit-keyframes height {
+    0% {
+        height: auto;
+        width: auto;
+    }
+    100% {
+        height: 200px;
+        width: 200px;
+    }
+}
+@keyframes height {
+    0% {
+        height: auto;
+        width: auto;
+    }
+    100% {
+        height: 200px;
+        width: 200px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div id="blue">Height change?</div>
+</body>
+</html>
+

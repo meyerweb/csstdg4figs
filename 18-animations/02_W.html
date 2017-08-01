@@ -1,0 +1,72 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">[contenteditable] {
+    -webkit-columns: 2;
+    columns: 2;
+}
+.pencil {
+    color: blue;
+    height: 140px;
+    width: 140px;
+    margin: 10px auto;
+    font-size: 140px;
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+    line-height: 140px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: 100px 123px;
+}
+.pencil {
+    -webkit-animation: W 3s infinite linear;
+    animation: W 3s infinite linear;
+}
+</style>
+<style contenteditable id="editme">@-webkit-keyframes W {
+    from {
+        left: 0;
+        top: 0;
+    }
+    25%,
+    75% {
+        top: 100%;
+    }
+    50% {
+        top: 50%;
+    }
+    to {
+        left: 100%;
+        top: 0;
+    }
+}
+@keyframes W {
+    from {
+        left: 0;
+        top: 0;
+    }
+    25%,
+    75% {
+        top: 100%;
+    }
+    50% {
+        top: 50%;
+    }
+    to {
+        left: 100%;
+        top: 0;
+    }
+}</style>
+
+</head>
+<body>
+<p></p>
+<div class="pencil">✎</div>
+</body>
+</html>

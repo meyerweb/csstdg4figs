@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+div {
+	border: 5px black solid;
+	color: white;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	margin-bottom: 2px;
+}
+article {
+	height: 10px;
+	background: red;
+	background: linear-gradient(to right, black 10%, white 10%);
+	background-size: 50px 10px;
+	margin: 20px 0;
+	position: relative;
+}
+article:after {
+	content: '';
+	height: 10px;
+	width: 5px;
+	position: absolute;
+	left: 498px;
+	background-color: red;
+}
+div:nth-of-type(1) {
+	border-color: red;
+}
+div:nth-of-type(1) {
+	-webkit-animation-iteration-count: 0.0000001;
+}
+div:nth-of-type(2) {
+	-webkit-animation-iteration-count: 0.05;
+}
+div:nth-of-type(3) {
+	-webkit-animation-iteration-count: 0.1;
+}
+div:nth-of-type(4) {
+	-webkit-animation-iteration-count: 0.15;
+}
+div:nth-of-type(5) {
+	-webkit-animation-iteration-count: 0.2;
+}
+div:nth-of-type(6) {
+	-webkit-animation-iteration-count: 0.25;
+}
+div:nth-of-type(7) {
+	-webkit-animation-iteration-count: 0.3;
+}
+div:nth-of-type(8) {
+	-webkit-animation-iteration-count: 0.35;
+}
+div:nth-of-type(9) {
+	-webkit-animation-iteration-count: 0.4;
+}
+div:nth-of-type(10) {
+	-webkit-animation-iteration-count: 0.45;
+}
+div:nth-of-type(11) {
+	-webkit-animation-iteration-count: 0.50;
+}
+div:nth-of-type(12) {
+	-webkit-animation-iteration-count: 0.55;
+}
+div:nth-of-type(13) {
+	-webkit-animation-iteration-count: 0.6;
+}
+div:nth-of-type(14) {
+	-webkit-animation-iteration-count: 0.65;
+}
+div:nth-of-type(15) {
+	-webkit-animation-iteration-count: 0.7;
+}
+div:nth-of-type(16) {
+	-webkit-animation-iteration-count: 0.75;
+}
+div:nth-of-type(17) {
+	-webkit-animation-iteration-count: 0.8;
+}
+div:nth-of-type(18) {
+	-webkit-animation-iteration-count: 0.85;
+}
+div:nth-of-type(19) {
+	-webkit-animation-iteration-count: 0.9;
+}
+div:nth-of-type(20) {
+	-webkit-animation-iteration-count: 0.95;
+}
+div:nth-of-type(21) {
+	-webkit-animation-iteration-count: 1;
+	border-color: red;
+}
+div:nth-of-type(n+22) {
+	display: none;
+}
+article:after,
+article:before {
+	height: 300px!important;
+	opacity: 0.25;
+	content: "";
+}
+article:before {
+	position: absolute;
+	left: 100px;
+	width: 5px;
+	background-color: black;
+}
+</style>
+<style contenteditable id="editme">div {	-webkit-animation: width 5s cubic-bezier(0, 4, 1, -4) both;
+	animation: width 5s cubic-bezier(0, 4, 1, -4) both;
+}
+@-webkit-keyframes width {
+	0%   {height: 5px; width: 500px;}
+	100% {height: 5px; width: 100px;}
+}
+@keyframes width {
+	0%   {height: 5px; width: 500px;}
+	100% {height: 5px; width: 100px;}
+}
+</style>
+</head>
+<body>
+<article></article>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+li {
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+</style>
+<style contenteditable id="editme">li {background-color: white; animation-fill-mode: forwards;}
+li:nth-of-type(1) {animation-duration: 1s; animation-name: red;}
+li:nth-of-type(2) {animation-duration: 2s;}
+li:nth-of-type(3) {animation-duration: 3s;}
+li:nth-of-type(4) {animation-duration: 4s;}
+li:nth-of-type(5) {animation-duration: 5s;}
+
+@keyframes red {
+	100% {background-color: red;}
+}
+@keyframes orange {
+	100% {background-color: orange;}
+}
+@keyframes yellow {
+	100% {background-color: yellow;}
+}
+@keyframes green {
+	100% {background-color: green;}
+}
+@keyframes blue {
+	100% {background-color: blue;}
+}
+</style>
+</head>
+<body>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+</ul>
+</body>
+<script>
+document.querySelectorAll('li')[0].addEventListener( 'webkitAnimationEnd',
+      function(e) {
+          document.querySelectorAll('li')[1].style.webkitAnimationName = 'orange';
+      },
+      false );
+
+document.querySelectorAll('li')[1].addEventListener( 'webkitAnimationEnd',
+      function(e) {
+          document.querySelectorAll('li')[2].style.webkitAnimationName = 'yellow';
+      },
+      false );
+
+document.querySelectorAll('li')[2].addEventListener( 'webkitAnimationEnd',
+      function(e) {
+          document.querySelectorAll('li')[3].style.webkitAnimationName = 'green';
+      },
+      false );
+
+document.querySelectorAll('li')[3].addEventListener( 'webkitAnimationEnd',
+      function(e) {
+          document.querySelectorAll('li')[4].style.webkitAnimationName = 'blue';
+      },
+      false );
+
+
+document.querySelectorAll('li')[0].addEventListener( 'animationend',
+      function(e) {
+          document.querySelectorAll('li')[1].style.animationName = 'orange';
+      },
+      false );
+
+document.querySelectorAll('li')[1].addEventListener( 'animationend',
+      function(e) {
+          document.querySelectorAll('li')[2].style.animationName = 'yellow';
+      },
+      false );
+
+document.querySelectorAll('li')[2].addEventListener( 'animationend',
+      function(e) {
+          document.querySelectorAll('li')[3].style.animationName = 'green';
+      },
+      false );
+
+document.querySelectorAll('li')[3].addEventListener( 'animationend',
+      function(e) {
+          document.querySelectorAll('li')[4].style.animationName = 'blue';
+      },
+      false );</script>
+</html>

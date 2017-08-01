@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+div {
+	padding: 20px;
+	margin: 20px;
+	border: 5px black solid!important;
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 2rem;
+}
+.ball {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: red;
+}
+@keyframes bounce {
+	0%  {transform: translateY(0);     animation-timing-function: ease-in;}
+	30% {transform: translateY(100px); animation-timing-function: ease-in;}
+	58% {transform: translateY(200px); animation-timing-function: ease-in;}
+	80% {transform: translateY(300px); animation-timing-function: ease-in;}
+	95% {transform: translateY(360px); animation-timing-function: ease-in;}
+	15%,
+	45%,
+	71%,
+	89%,
+	100% {transform: translateY(380px); animation-timing-function: ease-out;}
+}
+</style>
+<style contenteditable id="editme">.ball {
+	animation-name: bounce;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+	animation-timing-function: ease-in;
+}
+.ball:hover {
+	animation-play-state: paused;
+}
+</style></head>
+<body>
+<p>Pause the ball by hovering over it.</p>
+<div class="ball"></div>
+</body>
+</html>

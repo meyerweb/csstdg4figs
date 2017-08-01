@@ -4,6 +4,16 @@
 <meta charset="utf-8" />
 <title>Animations (Chapter 18)</title>
 <link type="text/css" href="../styles/indices.css" rel="stylesheet">
+<style type="text/css">
+ol {counter-reset: figs; list-style: none;}
+li.fig + li.xmp, li.xmp + li.fig {margin-top: 1.5ch;}
+
+li.fig::before {content: counter(figs) ". "; display: inline-block; width: 2ch;}
+li.fig {counter-increment: figs; margin-left: -2ch;}
+
+li.xmp {font-style: italic;
+	padding-left: 1.25em; background: url(../styles/play-icon-round.svg) 0.25em 50% / 0.8em no-repeat;}
+</style>
 </head>
 <body>
 
@@ -15,21 +25,54 @@
 <main>
 
 
-<h3>Examples</h3>
-<p>
-See <a href="http://standardista.com/animations/">Estelle’s page of examples for this chapter</a>.
-</p>
-
-<h3>Figures</h3>
+<h3>Figures & Code Examples</h3>
 <ol>
-<li>Visualizing background color changes over time</li>
-<li>Cubic Bézier named functions</li>
-<li>Bézier curve keywords</li>
-<li>An outlandish Bézier curve</li>
-<li>Effect of outlandish Bézier curve</li>
-<li>Sprite of dancing</li>
-<li>Visualizing start and end change points</li>
-<li>Changing the animation timing function mid-animation</li>
+<li class="xmp"><a href="name.html">Weird animation names work</a></li>
+<li class="xmp"><a href="badnames.html">Keywords as animation names are a bad idea</a></li>
+<li class="xmp"><a href="02_W.html">The W animation</a></li>
+<li class="xmp"><a href="no0or100.html">No 0% or 100% keyframes</a></li>
+<li class="xmp"><a href="nomidpoint.html">Without a midpoint, auto doesn’t animate well</a></li>
+<li class="xmp"><a href="round2.html">Setting/omitting initial values and 0%</a></li>
+<li class="xmp"><a href="appendRule.html">Animation API</a></li>
+<li class="xmp"><a href="badnames.html">Unfortunate animation names</a></li>
+<li class="xmp"><a href="nameaddedlater.html">Keywords as animation names are a bad idea</a> (redux)</li>
+<li class="xmp"><a href="no0or100.html">No 0% or 100% keyframes</a> (redux)</li>
+<li class="fig">Visualizing background color changes over time</li>
+<li class="xmp"><a href="duration_broken_value.html">animation-duration with invalid value</a></li>
+<li class="xmp"><a href="odditeration.html">Using fractional duration values</a></li>
+<li class="xmp"><a href="ball6.html">Basic bouncing ball</a></li>
+<li class="xmp"><a href="fortypercent.html">Partial animation</a></li>
+<li class="xmp"><a href="ball_animation_delay_negative.html">Bouncing ball animation with negative animation delay</a></li>
+<li class="xmp"><a href="events.html">Animation events</a></li>
+<li class="xmp"><a href="events2.html">Animation events, again</a></li>
+<li class="xmp"><a href="animationchain.html">Animation chaining</a></li>
+<li class="xmp"><a href="animationchain2a.html">Animation following and animation</a></li>
+<li class="xmp"><a href="animationchain2.html">Animation chaining with Javascript</a></li>
+<li class="xmp"><a href="animation-iteration-delay1.html">Animation iteration delay with Javascript</a></li>
+<li class="xmp"><a href="animation-iteration-delay.html">Animation iteration delay</a></li>
+<li class="xmp"><a href="animation-iteration-delay2.html">Animation iteration delay</a></li>
+<li class="xmp"><a href="animation-iteration-delay3.html">Animation iteration delay</a></li>
+<li class="xmp"><a href="animation-iteration-delay4.html">Animation iteration delay</a></li>
+<li class="xmp"><a href="animation-iteration-delay.html">Animation iteration delay</a> (redux)</li>
+<li class="fig">Cubic Bézier named functions</li>
+<li class="fig">An outlandish Bézier curve</li>
+<li class="fig">Effect of outlandish Bézier curve</li>
+<li class="xmp"><a href="cubicbezierprint.html">Representation of a cubic Bézier curve</a></li>
+<li class="xmp"><a href="ball1.html">Better bouncing ball animation</a></li>
+<li class="fig">Sprite of dancing</li>
+<li class="xmp"><a href="sprite.html">Steps timing function, Gangam style</a></li>
+<li class="fig">Visualizing start and end change points</li>
+<li class="xmp"><a href="sprite2.html">Steps timing function with translate transforms</a></li>
+<li class="fig">Changing the animation timing function mid-animation</li>
+<li class="xmp"><a href="cubicbezierprint2.html">Representation of another cubic Bézier curve</a></li>
+<li class="xmp"><a href="ball3.html">Bodacious bouncing ball animation</a></li>
+<li class="xmp"><a href="ball4.html">Interactive bouncing ball animation</a></li>
+<li class="xmp"><a href="halfiterationforwards.html">Partial iteration with fill-mode</a></li>
+<li class="xmp"><a href="moveme.html">Partial iteration with fill-mode, again</a></li>
+<li class="xmp"><a href="snowflake.html">A snowflake</a></li>
+<li class="xmp"><a href="animationorder.html">Running animations take precedence</a></li>
+<li class="xmp"><a href="animationorder2.html">Last declared anaimation takes precedence</a></li>
+<li class="xmp"><a href="snowflake2.html">A snowflake with animation starts and stops</a></li>
 </ol>
 
 </main>

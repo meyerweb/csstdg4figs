@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+div {
+	padding: 20px;
+	margin: 20px;
+	border: 5px black solid;
+	font-family: sans-serif;
+}
+</style>
+<style contenteditable id="editme">div {width: 100%; height: auto;}
+div {	animation-name: size;
+	animation-duration: 10s;
+	animation-timing-mode: linear;
+	animation-direction: reverse;
+	animation-delay: 1s;
+	animation-iteration-count: 0.25;
+	animation-fill-mode: both;
+}
+@keyframes size {
+	0%   {height: 500px; width: 500px;}
+	100% {height: 100px; width: 100px;}
+}
+</style></head>
+<body>
+<div id="blue">Where does animation start? Stop?</div>
+<p>…and what happens in Safari?</p>
+</body>
+</html>

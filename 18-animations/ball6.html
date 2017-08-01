@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+body {
+	height: 100vh;
+}
+.ball {
+	height: 50px;
+	width: 50px;
+	background-color: blue;
+	border-radius: 50%;
+}
+</style>
+<style contenteditable id="editme">.ball {	animation-name: bouncing;
+	animation-duration: 400ms;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+@keyframes bouncing {
+	from {transform: translateY(500px);}
+	to {transform: translateY(0);}
+}
+</style></head>
+<body>
+<div class="ball"></div>
+</body>
+</html>

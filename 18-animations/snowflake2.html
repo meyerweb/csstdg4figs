@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Snowflake 2</title>
+<meta charset="utf-8">
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+html {
+	background-image: linear-gradient(to bottom, #3a67ab, #e8f6ff 100%);
+	height: 100vh;
+}
+i {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	display: inline-block;
+	background-image: linear-gradient(to bottom, transparent 40%, #FFF 40%, #FFF 60%, transparent 60%), linear-gradient(to left, transparent 40%, #FFF 40%, #FFF 60%, transparent 60%), linear-gradient(to top right, transparent 43%, #FFF 43%, #FFF 57%, transparent 57%), linear-gradient(to bottom right, transparent 43%, #FFF 43%, #FFF 57%, transparent 57%);
+	transform: rotate(0deg);
+}
+</style>
+<style id="editme" contenteditable>.snowflake {
+	animation: spin 2s linear 1s 20;
+	display: none;
+	display: list-item;
+}
+@keyframes spin {
+	to {transform: rotate(360deg);}
+}
+</style>
+</head>
+
+<body>
+<i class="snowflake"></i>
+<p>Comment in and out the list item or the animation name to “reset” the animation. <br>
+Note: <code>display: list-item</code> keeps the bullet point so you can count how many times it spins
+</body>
+
+</html>

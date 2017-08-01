@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>animation-iteration-delay</title>
+<link type="text/css" href="c/style-edit.css" rel="stylesheet">
+<style type="text/css">
+#foo {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+}
+.animate {
+    background-color: red;
+    animation: color_and_scale_after_delay;
+    animation-iteration-count: 3;
+    animation-duration: 5s;
+}
+@keyframes color_and_scale_after_delay {
+    80% {
+        transform: scale(1);
+        background-color: red;
+    }
+    80.1% {
+        background-color: green;
+        transform: scale(0.5);
+    }
+    100% {
+        background-color: yellow;
+        transform: scale(1.5);
+    }
+}</style>
+</head>
+<body>
+	<div id="foo" class="animate"></div>
+</body>
+</html>
