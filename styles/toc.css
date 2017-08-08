@@ -7,6 +7,10 @@ header h2 {word-spacing: 0;}
 		}
 	}
 }
+@supports (--chno: 0) {
+	ol {list-style: decimal;}
+	ol li:not(.xmp) {margin-left: 0;}
+}
 
 @keyframes slide {
 	from {

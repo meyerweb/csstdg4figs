@@ -51,7 +51,23 @@ main p {font-size: 1.1em;}
 main p.note {border: 2px solid hsl(0,70%,60%); background: hsl(0,10%,90%); mix-blend-mode: luminosity;
 	padding: 1em 0.5em; border-radius: 1ch;}
 ol {list-style: decimal; margin: 0; padding-left: 2.5ch;}
+
+@supports (counter-reset: example) {
+	ol {counter-reset: figs; list-style: none;}
+	ol li:not(.xmp)::before {content: counter(figs) ". ";
+		display: inline-block; width: 6ch; text-align: right; margin: 0 0.67ch 0 -6.67ch;}
+	ol li:not(.xmp) {counter-increment: figs;}
+
+	@supports (--chno: 0) {
+		ol {margin-left: 2ch;}
+		ol li:not(.xmp)::before {content: var(--chno) "-" counter(figs) ". ";}
+	}
+}
+
 ol li {margin-bottom: 0.33ch; padding-left: 0.5ch;}
+li.fig + li.xmp, li.xmp + li.fig {margin-top: 1.5ch;}
+li.xmp {font-style: italic;
+	padding-left: 1.25em; background: url(../styles/play-icon-round.svg) 0.25em 50% / 0.8em no-repeat;}
 
 ol li a[href]::after {color: black; font-style: italic;}
 ol li a[href$="ppt"]::after {content: " (MS Powerpoint document)";}
