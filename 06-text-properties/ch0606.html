@@ -5,11 +5,18 @@
 <title>Figure 6-6</title>
 <link rel="stylesheet" type="text/css" href="ch06.css">
 <style type="text/css">
-body {width: 500px;}
-p {border: 1px dotted gray; line-height: 1; width: 3em; float: left; margin-left: 2em; padding: 0.5em; height: 13em; -moz-columns: 2; direction: rtl;}
+body {margin: 1ch auto; display: grid;
+	grid-template-columns: repeat(3,min-content);
+	grid-template-rows: repeat(2,min-content);
+	grid-gap: 0 5ch;}
+p {border: 1px dotted gray; line-height: 1;
+	padding: 0.5em; height: 13em;
+	direction: rtl;
+	writing-mode: vertical-lr;}
 .cl1 {text-align: left;}
 .cl2 {text-align: right;}
 .cl3 {text-align: center;}
+strong {text-align: center; font: 1.33em Arvo, sans-serif; margin-top: 1ch;}
 </style>
 </head>
 <body>
@@ -25,6 +32,10 @@ p {border: 1px dotted gray; line-height: 1; width: 3em; float: left; margin-left
 <p class="cl3" lang="jp">
 このテキストは、他の手段で整列しました。
 </p>
+
+<strong>left</strong>
+<strong>right</strong>
+<strong>center</strong>
 
 </body>
 </html>
