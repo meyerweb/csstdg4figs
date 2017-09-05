@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css">
+body {display: flex; justify-content: center;}
+.arena p {font-size: 3em; border: 0.1em solid black; padding: 2em;
+	box-sizing: border-box;
+	border-radius: 33%;
+	width: 14.4em;
+	height: 5.4em;
+	position: relative;
+	background-color: silver; background-clip: content-box;}
+.arena p b {position: absolute;
+	width: calc(14.4em*0.33);
+	height: calc(5.4em*0.33);
+ 	border: 0.1em solid rgba(255,192,0,0.5);
+ 	background-image:
+		radial-gradient(circle at center, transparent 3.5em),
+		linear-gradient(to left, black, black);
+	background-repeat: no-repeat;
+	background-size: 100% 100%, 50% 1px;
+	display: flex;
+	align-items: center;
+	filter:
+		drop-shadow(0 0 1px white)
+		drop-shadow(0 0 1px white)
+		drop-shadow(0 0 2px white)
+		drop-shadow(0 0 3px white)
+		;
+	}
+.arena p b.top {top: -0.1em; border-bottom-width: 0;}
+.arena p b.bottom {bottom: -0.1em; border-top-width: 0;}
+.arena p b.right {right: -0.1em; border-left-width: 0;
+	background-position: center, center right;
+	justify-content: end;
+}
+.arena p b.left {left: -0.1em; border-right-width: 0;
+	background-position: center, center left;
+	justify-content: start;
+}
+
+.arena p b i {	font: 0.5em Arvo, serif; position: absolute;
+background: white; margin: 0; font-style: normal;}
+.arena p b.top.left i:nth-child(1) {top: -1ch; left: 15%;}
+.arena p b.top.left i:nth-child(2) {left: -2ch; top: 1ch;}
+.arena p b.bottom.right i:nth-child(1) {bottom: -1ch; right: 15%;}
+.arena p b.bottom.right i:nth-child(2) {right: -2ch; bottom: 1ch;}
+</style>
+</head>
+<body>
+
+<section class="arena">
+
+<p>
+My borders are rounded.
+<b class="top left"><i>33%</i><i>33%</i></b>
+<b class="bottom right"><i>33%</i><i>33%</i></b>
+</p>
+
+</section>
+
+</body>
+</html>

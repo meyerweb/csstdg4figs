@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Figure</title>
+<style type="text/css">
+body {display: flex; justify-content: center;}
+.arena p {font-size: 3em; border: 4px solid black; padding: 2em;
+	border-radius: 2.1em;
+	position: relative;
+	background-color: silver; background-clip: content-box;}
+.arena p b {position: absolute; 
+	font: 0.5em Arvo, serif;
+	height: 7.85em; width: 7.85em; border-radius: 4em;
+ 	border: 2px dashed green;
+ 	background-image:
+		radial-gradient(circle at center, transparent 3.5em, rgba(0,128,0,0.25) 3.85em),
+		linear-gradient(to left, black, black);
+	background-repeat: no-repeat;
+	background-size: 100% 100%, 50% 1px;
+	display: flex;
+	align-items: center;
+	}
+.arena p b.top {top: 0;}
+.arena p b.bottom {bottom: 0;}
+.arena p b.right {right: 0;
+	background-position: center, center right;
+	justify-content: end;
+}
+.arena p b.left {left: 0;
+	background-position: center, center left;
+	justify-content: start;
+}
+
+.arena p b i {background: white; margin: 0 1em; font-style: normal;}
+</style>
+</head>
+<body>
+
+<section class="arena">
+
+<p>
+My borders are rounded.
+<b class="top left"><i>2em</i></b>
+<b class="bottom right"><i>2em</i></b>
+</p>
+
+</section>
+
+</body>
+</html>
