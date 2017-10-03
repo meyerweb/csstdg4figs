@@ -9,19 +9,10 @@
 div {
     padding: 20px;
     border: 5px black solid !important;
-    -webkit-animation: red infinite 3s alternate;
     animation: red infinite 3s alternate;
     font-family: sans-serif;
     text-align: center;
     font-size: 2rem;
-}
-@-webkit-keyframes red {
-    from, 30% {
-        background-color: #f00;
-    }
-    to {
-        background-color: #f33;
-    }
 }
 @keyframes red {
     from, 30% {
@@ -31,28 +22,12 @@ div {
         background-color: #f33;
     }
 }
-@-webkit-keyframes green {
-    from, 30% {
-        background-color: #030;
-    }
-    to {
-        background-color: #393;
-    }
-}
 @keyframes green {
     from, 30% {
         background-color: #030;
     }
     to {
         background-color: #393;
-    }
-}
-@-webkit-keyframes blue {
-    from, 30% {
-        background-color: #0000ff;
-    }
-    to {
-        background-color: #3333ff;
     }
 }
 @keyframes blue {
@@ -64,8 +39,6 @@ div {
     }
 }</style>
 <style contenteditable id="editme">div {
-    -webkit-animation-name: xred, xgreen, xblue;
-    -webkit-animation-delay: 2s;
     animation-name: xred, xgreen, xblue;
     animation-delay: 2s;
 }</style>
