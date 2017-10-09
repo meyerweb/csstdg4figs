@@ -1,72 +1,80 @@
 <!doctype html>
 <html class="code">
 <head style="display: block;">
-  <meta charset="utf-8"/>
-  <title>Justify-content</title>  
-  <link rel="stylesheet" href="c/examples.css"/><style>
-  <style>
-div {width: 50%;}
-  div, p {
-    padding: 5px;
-    border: solid 1px;
-    margin: 5px;
-    background-color: #eee;
-  }
-  p {
-    background-color: #bbb;
-  }
-  body {
-    font-size: 16px;
-    font-family: monospace;
-  }
-  </style>
-  <style id="editme"  contenteditable>
-  div {
+<meta charset="utf-8"/>
+<title>Justify-content</title>  
+<link rel="stylesheet" href="c/examples.css">
+<style type="text/css">
+body {padding: 100px;}
+div {background-color: rgba(0,0,0,0.1); font-family: monospace;}
+article { }
+article > div {
   display: flex;
-  flex-direction: row;
-}</style>
+  border: 1px dashed;
+  max-height: 200px;
+}
+div > div {
+  border: 1px solid;
+  height: 50px;
+  margin: 5px;
+  padding: 5px;
+  line-height: 50px;
+}
+body {
+  font-size: 25px;
+  text-align: center;
+}
+p {margin-top: 0;}
+</style>
 </head>
 <body>
-  justify-content: flex-start;
-    <div style="justify-content: flex-start;">
-    <p>One</p>
-    <p>Two</p>
-    <p>Three</p>
-    <p>Four</p>
-    <p>Five</p>
-  </div>
-  <br/>justify-content: flex-end;
-  <div style="justify-content: flex-end;">
-    <p>One</p>
-    <p>Two</p>
-    <p>Three</p>
-    <p>Four</p>
-    <p>Five</p>
-  </div>
-  <br/>justify-content: center;
-  <div style="justify-content: center;">
-    <p>One</p>
-    <p>Two</p>
-    <p>Three</p>
-    <p>Four</p>
-    <p>Five</p>
-  </div>
-  <br/>justify-content: space-between;
-  <div style="justify-content: space-between;">
-    <p>One</p>
-    <p>Two</p>
-    <p>Three</p>
-    <p>Four</p>
-    <p>Five</p>
-  </div>
-  <br/>justify-content: space-around;
-  <div style="justify-content: space-around;">
-    <p>One</p>
-    <p>Two</p>
-    <p>Three</p>
-    <p>Four</p>
-    <p>Five</p>
-  </div>
+<article>
+<div style="justify-content: flex-start;">
+<div>A</div>
+<div>BBB</div>
+<div>CCCCCC</div>
+</div>
+<p>justify-content: flex-start; ⤴</p>
+</article>
+<article>
+<div style="justify-content: flex-end;">
+<div>A</div>
+<div>BBB</div>
+<div>CCCCCC</div>
+</div>
+<p>justify-content: flex-end;⤴</p>
+</article>
+<article>
+<div style="justify-content: center;">
+<div>A</div>
+<div>BBB</div>
+<div>CCCCCC</div>
+</div>
+<p>justify-content: center;⤴</p>
+</article>
+<article>
+<div style="justify-content: space-between;">
+<div>A</div>
+<div>BBB</div>
+<div>CCCCCC</div>
+</div>
+<p>justify-content: space-between;⤴</p>
+</article>
+<article>
+<div style="justify-content: space-around;">
+<div>A</div>
+<div>BBB</div>
+<div>CCCCCC</div>
+</div>
+<p>justify-content: space-around;⤴</p>
+</article>
+<article>
+<div style="justify-content: space-evenly;">
+<div>A</div>
+<div>BBB</div>
+<div>CCCCCC</div>
+</div>
+<p>justify-content: space-evenly;⤴</p>
+</article>
 
-</body>
-</html>
+</body></html>
