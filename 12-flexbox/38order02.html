@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items</title>
+
+  <link rel="stylesheet" href="c/examples.css"/>
+  <style contenteditable id="editme">
+    ul {
+      display: inline-flex;
+    }
+    li:nth-of-type(3n-1) {
+      order: 1;
+      background-color: rgba(0,0,0,0.2);
+    }
+    li:nth-of-type(3n+1) {
+      order: -1;
+      background-color: rgba(0,0,0,0.4);
+    }
+        body {padding: 100px;}
+    * {}
+ol {
+  background-color: rgba(0,0,0,0.1);
+}
+ol {
+  display: inline-flex;
+  border: 1px dashed;
+  padding: 1px;
+  list-style-type: none;
+  counter-reset: num;
+}
+li {
+  border: 1px solid;
+  height: 50px;
+  margin: 1px;
+  line-height: 50px;
+  min-width: 1.5em;
+  text-align: center;
+  counter-increment: num;
+}
+li:before {content: counter(num);}
+body {
+  font-size: 25px;
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+<ol>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+</body>
+</html>

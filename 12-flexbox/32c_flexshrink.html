@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items</title>
+
+  <link rel="stylesheet" href="c/examples.css"/>
+  <style contenteditable id="editme">
+
+  /* as if flex: 0 1 value; were set */
+div {
+    background-color: rgba(0,0,0,0.1);
+  }
+article  {
+  width: 520px; /* book reads 500. We added 20px to allow for between item padding */
+  box-sizing: content-box;
+}
+article > div {
+  display: flex;
+  border: 1px dashed;
+  flex-wrap: wrap;
+  padding: 2px; 
+  min-height: 100px; 
+  box-sizing: content-box;
+}
+div > div {
+  border: 1px solid;
+  margin: 2px; /* this makes the extra distributed space available less than 450px */
+  padding: 40px 0; 
+  font-size: 1rem;
+  flex-shrink: 1;
+  box-sizing: content-box;
+  max-width: 250px;
+
+}
+body {
+  font-size: 20px;
+  text-align: center;
+}
+p {margin-top: 0;}
+</style>
+</head>
+<body>
+
+
+<article>
+<div>
+  <div>Some kitten text.</div>
+  <div>Cat is love, cat is life sit on human, destroy couch. Knock over christmas tree chase imaginary bugs, for sleep on dog bed, force dog to sleep on floor stare out the window. Asdflkjaertvlkjasntvkjn (sits on keyboard) use lap as chair lick butt. Lick plastic bags. Thinking longingly about tuna brine peer out window, chatter at birds, lure them to mouth so swat at dog, for meowwww or hola te quiero yet lick sellotape. Please stop looking at your phone and pet me chase ball of string. Nap all day meow all night having their mate disturbing sleeping humans, or stick butt in face. </div>
+  <div>Cat</div>
+  <div> is </div>
+  <div>love,</div>
+  <div> cat is life </div>
+  <div>sit on human</div>
+  <div> destroy couch.</div>
+  <div>Cat is love.</div>
+  <div>Cat is life sit on human, destroy couch. </div>
+  <div>Knock over christmas tree chase imaginary bugs, for sleep on dog bed, force dog to sleep on floor stare out the window. </div>
+  <div>Asdflkjaertvlkjasntvkjn (sits on keyboard) use lap as chair lick butt. Lick plastic bags. </div>
+  <div>Thinking longingly about tuna brine peer out window, chatter at birds, lure them to mouth so swat at dog, for meowwww or hola te quiero yet lick sellotape. </div>
+  <div>Please stop looking at your phone and pet me chase ball of string.</div>
+  <div> Nap all day meow all night having their mate disturbing sleeping humans, or stick butt in face. </div>
+  <div>Cat is love, cat is life sit on human, destroy couch.</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+</body>
+</html>

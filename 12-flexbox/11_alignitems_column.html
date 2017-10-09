@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: align-content</title> 
+
+  <link rel="stylesheet" href="c/examples.css"/>
+    <style contenteditable>
+    html {font-size: 1.6em}
+    body {padding: 100px;}
+div{background-color: rgba(0,0,0,0.1); text-align: initial;}
+article { float: left; margin-right: 50px;}
+article > div {
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed;
+  width: 200px;
+}
+div > div {
+  border: 1px solid; margin: 5px; padding: 5px;
+}
+
+body {
+  font-size: 25px;
+  text-align: center;
+}
+p {margin: 0 -20px 40px; text-align: center;}
+
+div:nth-of-type(3) {
+  font-size: 1.4rem;
+}
+div:nth-of-type(2) {
+  padding: 20px;
+}
+</style>
+</head>
+<body> 
+<article>
+  
+   <div style="align-items: flex-start;">
+    <div>1</div>
+    <div>2 2<br>2 2</div>
+    <div>3 3 3<br>3 3 3<br>3 3 3</div>
+    <div>4 4 4 4<br>4 4 4 4<br>4 4 4 4<br>4 4 4 4</div>
+    <div>5 5 5 5 5</div>
+  </div>
+
+  <p>align-items: flex-start;</p>
+
+</article>
+<article>
+  
+  <div style="align-items: flex-end;">
+    <div>1</div>
+    <div>2 2<br>2 2</div>
+    <div>3 3 3<br>3 3 3<br>3 3 3</div>
+    <div>4 4 4 4<br>4 4 4 4<br>4 4 4 4<br>4 4 4 4</div>
+    <div>5 5 5 5 5</div>
+  </div>
+  <p>align-items: flex-end;</p>
+</article>
+<article>
+  
+
+  <div style="align-items: center;">
+    <div>1</div>
+    <div>2 2<br>2 2</div>
+    <div>3 3 3<br>3 3 3<br>3 3 3</div>
+    <div>4 4 4 4<br>4 4 4 4<br>4 4 4 4<br>4 4 4 4</div>
+    <div>5 5 5 5 5</div>
+  </div>
+
+  <p>align-items: center;</p>
+</article>
+<article>
+  
+
+  <div style="align-items: baseline;">
+    <div>1</div>
+    <div>2 2<br>2 2</div>
+    <div>3 3 3<br>3 3 3<br>3 3 3</div>
+    <div>4 4 4 4<br>4 4 4 4<br>4 4 4 4<br>4 4 4 4</div>
+    <div>5 5 5 5 5</div>
+  </div>
+
+  <p>align-items: baseline;</p>
+</article>
+<article>
+  
+
+ 
+  <div style="align-items: stretch;">
+    <div>1</div>
+    <div>2 2<br>2 2</div>
+    <div>3 3 3<br>3 3 3<br>3 3 3</div>
+    <div>4 4 4 4<br>4 4 4 4<br>4 4 4 4<br>4 4 4 4</div>
+    <div>5 5 5 5 5</div>
+  </div>
+
+  <p>align-items: stretch;</p>
+</article>
+  
+</body>
+</html>

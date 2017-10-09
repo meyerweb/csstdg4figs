@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items</title>
+
+  <link rel="stylesheet" href="c/examples.css"/>
+  <style contenteditable id="editme">
+div {background-color: rgba(0,0,0,0.1)}
+article  {
+  width: 900px;
+}
+article > div {
+  display: flex;
+  border: 1px dashed;
+  padding: 2px;
+  min-height: 100px;
+}
+div > div {
+  border: 1px solid;
+  margin: 2px;
+  padding: 4px 0;
+  line-height: 100px;
+}
+body {
+  font-size: 20px;
+  text-align: center;
+  padding: 100px;
+}
+p {margin-top: 0;}
+</style>
+</head>
+<body>
+<article>
+<div>
+   <div style="flex: 2 1 auto"> flex: 2 1 auto; </div>
+  <div style="flex: 1 1 auto"> flex: 1 1 auto; </div>
+  <div style="flex: 3 1 auto"> flex: 3 1 auto; </div>
+</div>
+<p>flex-basis: auto; ⤴</p>
+</article>
+
+<article>
+<div>
+  <div style="flex: 2 1 0%"> flex: 2 1 0%; </div>
+  <div style="flex: 1 1 0%"> flex: 1 1 0%; </div>
+  <div style="flex: 3 1 0%"> flex: 3 1 0%; </div>
+</div>
+<p>flex-basis: 0; ⤴</p>
+</article>
+
+</body></html>

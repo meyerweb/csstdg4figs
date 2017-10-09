@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: flex shrink</title> 
+  <link rel="stylesheet" href="c/examples.css"/>
+  <style contenteditable id="editme">
+
+   div {
+    background-color: rgba(0,0,0,0.1);
+  }
+article  {
+  width: 770px; /* book reads 750. We added 20px to allow for between item padding */
+  box-sizing: content-box;
+}
+article > div {
+  display: flex;
+  border: 1px dashed;
+  padding: 2px;
+  min-height: 100px; 
+  box-sizing: content-box;
+}
+div > div {
+  border: 1px solid;
+  margin: 2px; /* this makes the extra distributed space available less than 450px */
+  padding: 40px 0; 
+  width: 300px; 
+  font-size: 1rem;
+  box-sizing: content-box;
+
+}
+body {
+  font-size: 20px;
+  text-align: center;
+}
+p {margin-top: 0;}
+</style>
+</head>
+<body>
+
+<article>
+<div>
+  <div style="flex-shrink: 0">flex-shrink: 0</div>
+  <div style="flex-shrink: 0">flex-shrink: 0</div>
+  <div style="flex-shrink: 0">flex-shrink: 0</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+<article>
+<div>
+  <div style="flex-shrink: 0">flex-shrink: 0</div>
+  <div style="flex-shrink: 0">flex-shrink: 0</div>
+  <div style="flex-shrink: 1">flex-shrink: 1</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+
+<article>
+<div>
+  <div style="flex-shrink: 1">flex-shrink: 1</div>
+  <div style="flex-shrink: 1">flex-shrink: 1</div>
+  <div style="flex-shrink: 3">flex-shrink: 3</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+<!-- Not pictured in book -->
+
+
+<article>
+<div>
+  <div style="flex-shrink: 0.25">flex-shrink: 0.25 with lots and lots of additional text that does wrap but doesn't make the flex item wider. Supercalifragispicipsialidocioustimesamillionfourhunddred.</div>
+  <div style="flex-shrink: 0.25">flex-shrink: 0.25</div>
+  <div style="flex-shrink: 0.75">flex-shrink: 0.75</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+<article>
+<div>
+  <div style="flex-shrink: 0.25">flex-shrink: 0.25 with lots and lots of additional text that does wrap but doesn't make the flex item wider. Supercalifragispicipsialidocioustimesamillionfourhunddred.</div>
+  <div style="flex-shrink: 0.25">flex-shrink: 0.25 Supercalifragispicipsialidocioustimesamillionfourhunddred.</div>
+  <div style="flex-shrink: 0.75">flex-shrink: 0.75 Supercalifragispicipsialidocioustimesamillionfourhunddred.</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+<article>
+<div>
+  <div style="flex-shrink: .1">flex-shrink: 0.1</div>
+  <div style="flex-shrink: .1">flex-shrink: 0.1</div>
+  <div style="flex-shrink: 3">flex-shrink: 3.0</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+</body>
+</html>

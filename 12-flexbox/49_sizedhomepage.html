@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Inner Page</title>  <style>
+  head {display: block;}
+  head * {display: none;}
+    </style><style contenteditable style="display: block; white-space: pre">
+  html {
+    background-color: #deded8;
+    font-family: trebuchet, geneva, sans-serif;
+  } 
+body { 
+margin: 0;  
+    padding: 5px;
+} 
+article, aside, footer, header { 
+  padding: 0.5rem; 
+  box-sizing: border-box; 
+} 
+header { 
+  background-color: #333; 
+  color: #ccc; 
+  text-align: center; 
+  border-bottom: 1px solid; 
+} 
+aside { 
+  background-color: white; 
+} 
+/* default navigation values */ 
+nav { 
+    display: flex; 
+    background-color: black; 
+    padding: 10px 0; 
+} 
+nav a { 
+  flex: auto; 
+  text-align: center; 
+  background: #ccc; 
+  color: black; 
+  margin: 0 5px; 
+  padding: 5px 0; 
+  text-decoration: none; 
+} 
+nav a:hover { 
+  outline: 1px solid red; 
+  color: red; 
+  text-decoration: underline; 
+} 
+/* larger screen */ 
+@media screen and (min-width: 30rem){ 
+  body { 
+    display: flex; 
+    flex-direction: column; 
+    max-width: 75rem; 
+    margin: auto;
+  } 
+  main { 
+    display: flex; 
+    flex-wrap: wrap; 
+    box-sizing: border-box; 
+    border-bottom: 0.5rem solid; 
+  } 
+  nav, header { 
+    order: -1; 
+  } 
+  article { 
+    flex: 75%; 
+  } 
+  aside { 
+    flex: 25%; 
+  } 
+} 
+  </style>
+</head>
+<body>
+    <body>
+      <header>
+        <h1>Site Wide Header</h1>
+      </header>
+      <main>
+        <article>
+          <h2>This is the heading of the article</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero. Etiam vehicula eleifend bibendum. Morbi gravida metus ut sapien condimentum sodales mollis augue sodales. Vestibulum quis quam at sem placerat aliquet. Curabitur a felis at sapien ullamcorper fermentum. Mauris molestie arcu et lectus iaculis sit amet eleifend eros posuere. Fusce nec porta orci.</p>
+        </article>
+        <aside>
+          <h3>Aside Heading</h3>
+          <p>Mauris molestie arcu et lectus iaculis sit amet eleifend eros posuere. Fusce nec porta orci.</p>
+        </aside>
+      </main>
+      <nav>
+        <a href="#1">Home</a>
+        <a href="#2">About</a>
+        <a href="#3">Blog</a>
+        <a href="#4">Careers</a>
+        <a href="#5">Contact Us</a>
+      </nav>
+      <footer>
+          <p>Copyright &copy; 2017 <a href="#6">My Site</a></p>
+      </footer>
+    </body>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="code">
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: flex grow</title> 
+  <link rel="stylesheet" href="c/examples.css"/>
+  <style contenteditable id="editme">
+div {background-color: rgba(0,0,0,0.1)}
+article  {
+  width: 750px; 
+  box-sizing: content-box;
+}
+article > div {
+  display: flex;
+  border: 1px dashed;
+  padding: 2px;
+  min-height: 100px; 
+  box-sizing: content-box;
+}
+div > div {
+  border: 1px solid;
+  margin: 2px; /* this makes the extra distributed space available less than 450px */
+  padding: 40px 0; 
+  width: 100px; 
+  font-size: 1rem;
+  box-sizing: content-box;
+}
+body {
+  font-size: 20px;
+  text-align: center;
+}
+p {margin-top: 0;}
+</style>
+</head>
+<body>
+<article>
+<div>
+  <div style="flex: 0.5">flex: 0.5</div>
+  <div style="flex: 0.5">flex: 0.5</div>
+  <div style="flex: 1.5">flex: 1.5</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+<article>
+<div>
+  <div style="flex-grow: 0.5">flex-grow: 0.5</div>
+  <div style="flex-grow: 0.5">flex-grow: 0.5</div>
+  <div style="flex-grow: 1.5">flex-grow: 1.5</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+</body>
+</html>

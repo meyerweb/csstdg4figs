@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Power Grid home page example</title>  <style>
+  head, #editme {display: block;}
+  head * {display: none;}
+  #editme {
+      padding: 20px; 
+      font-size: 1.5em; 
+      white-space: pre; 
+      font-family: monospace; 
+      background-color: rgba(255,255,255,0.5);
+      float: left;
+      border-radius: 1rem;
+      margin-right: 1rem;}
+  html {
+    background-color: #333;
+  }
+    body {width: 400px;}
+    body > *, main > * {
+      outline: 1px #ccc solid;} 
+    * { font-family: sans-serif;
+      cmargin: 10px;
+      padding: 10px;
+    } 
+ nav {
+  background-color: #ccc;
+ }
+ header , footer { 
+    text-align: center; 
+    background: #ddaa00; 
+    color: white;
+  } 
+  main {
+    background-color: grey;
+  }
+  body, nav, main, article {
+    display: flex;
+  }
+  main {
+    flex-flow: column;
+  }
+  body, article {
+    flex-direction: column; 
+    background-color: white; 
+    margin: 5px;
+  }
+  article {
+    flex: 1 1 33%;
+  }
+  img {
+    width: 100%; 
+    background-color: #ccc;
+    padding: 0;
+  }
+  h1 {margin: 0;}
+  p {flex: 1 0 auto;}
+  nav {
+    padding: 5px 2px; 
+    justify-content: space-between;
+  }
+  nav a {
+    min-width: 0; 
+    color: #ddaa00; 
+    text-align: center; 
+    text-decoration: none;
+  }</style><style id="editme" contenteditable>
+  nav, 
+  footer {
+    order: 4;
+  }
+  </style>
+</head>
+<body>
+<article>
+  <header><h1>Power Grid: Store or Homepage</h1></header>
+  <nav>
+      <a href="#1">Home</a>
+      <a href="#2">About</a>
+      <a href="#3">Blog</a>
+      <a href="#4">Careers</a>
+      <a href="#5">Contact Us</a>
+  </nav>
+  <main>
+      <article>
+        <img alt="" src="../static/img/unicorn3.jpg">
+        <p>We have lots of content here to show that content can grow, and everything can be the same size if you use flexbox. Even if this has tons of text, it will line up with the other sections.</p>
+        <button>Do Something</button>
+      </article>
+  </main>
+  <footer>Copyright &copy; 2017</footer>
+  </article>
+</body>
+</html>

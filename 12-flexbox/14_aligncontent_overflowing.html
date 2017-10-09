@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: align-content</title> 
+
+   <link rel="stylesheet" href="c/examples.css"/>
+
+    <style style="display: block; padding: 10px; white-space: pre; font-size: 16px; " contenteditable>
+    body {padding: 10px 20px 10px 40px;}
+div {background-color: rgba(0,0,0,0.1);}
+article {position: relative; width: 320px; float: left; margin-right: 50px;}
+article > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border: 1px dashed;
+  height: 300px; letter-spacing: 2px;
+}
+div > div {
+  border: 1px solid;
+  background-color: rgb(208,208,208);
+}
+
+body {
+  font-size: 25px;
+  text-align: center;
+}
+p {margin: 0 -20px 40px;}
+.stretch {
+  align-self: stretch;
+  width: 1px;
+  background-color: transparent;
+  border-color: transparent;
+}
+.stretch:before {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  border-top: 1px solid red;
+  transform: translateY(-3px);
+}
+.e:after,
+.f:after,
+.k:after {
+  content: '';
+  left: 0; right: 0;
+  position: absolute;
+  border-top: transparent solid 1px;
+  border-bottom: 1px solid blue;
+  height: 1.2em;
+}
+.stretch:last-of-type:before,
+article:last-of-type p:before {
+
+  xtransform: translatey(-2px);
+}
+
+p {transform: translatey(-100px) rotate(90deg);
+position: relative;
+margin: -40px;
+right: 180px;
+}
+article {position: relative; width: 325px; float: left; margin: 120px 50px;}
+</style>
+</head>
+<body>
+<article>
+<div style="align-content: flex-start">
+  <div class="a">A</div>
+  <div class="b">BB<br/>BB</div>
+  <div class="c">CCC<br/>CCC<br/>CCC</div>
+  <div class="d">DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="e">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="stretch"></div>
+  <div class="f">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class="g">GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div  class="h">HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class="i">III<br/>III<br/>III</div>
+  <div class="j">JJ<br/>JJ</div>
+  <div class="stretch"></div>
+  <div class="k">K</div>
+  <div class="stretch"></div>
+</div>
+<p>align-content: flex-start ⤴</p>
+</article>
+
+<article>
+<div style="align-content: flex-end">
+  <div class="a">A</div>
+  <div class="b">BB<br/>BB</div>
+  <div class="c">CCC<br/>CCC<br/>CCC</div>
+  <div class="d">DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="e">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="stretch"></div>
+  <div class="f">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class="g">GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div  class="h">HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class="i">III<br/>III<br/>III</div>
+  <div class="j">JJ<br/>JJ</div>
+  <div class="stretch"></div>
+  <div class="k">K</div>
+  <div class="stretch"></div>
+</div>
+<p>align-content: flex-end ⤴</p>
+</article>
+
+<article>
+<div style="align-content: center">
+  <div class="a">A</div>
+  <div class="b">BB<br/>BB</div>
+  <div class="c">CCC<br/>CCC<br/>CCC</div>
+  <div class="d">DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="e">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="stretch"></div>
+  <div class="f">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class="g">GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div  class="h">HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class="i">III<br/>III<br/>III</div>
+  <div class="j">JJ<br/>JJ</div>
+  <div class="stretch"></div>
+  <div class="k">K</div>
+  <div class="stretch"></div>
+</div>
+<p>align-content: center; ⤴</p>
+</article>
+
+<article>
+<div style="align-content: space-between;">
+  <div class="a">A</div>
+  <div class="b">BB<br/>BB</div>
+  <div class="c">CCC<br/>CCC<br/>CCC</div>
+  <div class="d">DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="e">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="stretch"></div>
+  <div class="f">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class="g">GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div  class="h">HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class="i">III<br/>III<br/>III</div>
+  <div class="j">JJ<br/>JJ</div>
+  <div class="stretch"></div>
+  <div class="k">K</div>
+  <div class="stretch"></div>
+</div>
+<p>align-content:  space-between; ⤴</p>
+</article>
+<article>
+<div style="align-content: space-around;">
+  <div class="a">A</div>
+  <div class="b">BB<br/>BB</div>
+  <div class="c">CCC<br/>CCC<br/>CCC</div>
+  <div class="d">DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="e">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="stretch"></div>
+  <div class="f">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class="g">GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div  class="h">HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class="i">III<br/>III<br/>III</div>
+  <div class="j">JJ<br/>JJ</div>
+  <div class="stretch"></div>
+  <div class="k">K</div>
+  <div class="stretch"></div>
+</div>
+<p>align-content:  space-around; ⤴</p>
+</article>
+
+<article>
+<div style="align-content: stretch;">
+  <div class="a">A</div>
+  <div class="b">BB<br/>BB</div>
+  <div class="c">CCC<br/>CCC<br/>CCC</div>
+  <div class="d">DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="e">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="stretch"></div>
+  <div class="f">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class="g">GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div  class="h">HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class="i">III<br/>III<br/>III</div>
+  <div class="j">JJ<br/>JJ</div>
+  <div class="stretch"></div>
+  <div class="k">K</div>
+  <div class="stretch"></div>
+</div>
+<p>align-content: stretch; ⤴</p>
+</article>
+</body>
+</html>

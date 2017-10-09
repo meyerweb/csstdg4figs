@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: flex-wrap</title>  
+  <link rel="stylesheet" href="c/examples.css"/><style>
+    body {padding: 100px;}
+div {background-color: rgba(0,0,0,0.1); font-family: monospace;}
+article > div {
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed;
+  padding: 10px;
+  height: 440px;
+}
+div > div {
+  border: 1px solid;
+  margin: 10px;
+  padding: 0.5em 1em;
+  min-width: 0;
+}
+body {
+  font-size: 25px;
+  text-align: center;
+}
+p {margin-top: 0;}
+body {
+  display: flex;
+}
+section { margin-right: 50px;}
+</style>
+</head>
+<body>
+<section style="flex: 2">
+<article>
+<div style="flex-wrap: nowrap">
+  <div>A</div>
+  <div>BB</div>
+  <div>CCC</div>
+  <div>DDDD</div>
+  <div>EEE<br>EE</div>
+  <div>FFF<br>FFF</div>
+  <div>GGGG<br>GGGG</div>
+  <div>HHH<br>HHH<br>HHH</div>
+  <div>IIIII<br>IIIII</div>
+  <div>JJJJ<br>JJJ<br>JJJJ</div>
+</div>
+<p style="clear: both; margin-top: 570px">flex-flow: column nowrap; ⤴</p>
+</article>
+</section>
+<section style="flex: 3">
+<article>
+<div style="flex-wrap: wrap">
+  <div>A</div>
+  <div>BB</div>
+  <div>CCC</div>
+  <div>DDDD</div>
+  <div>EEE<br>EE</div>
+  <div>FFF<br>FFF</div>
+  <div>GGGG<br>GGGG</div>
+  <div>HHH<br>HHH<br>HHH</div>
+  <div>IIIII<br>IIIII</div>
+  <div>JJJJ<br>JJJ<br>JJJJ</div>
+</div>
+<p>flex-flow: column wrap; ⤴</p>
+</article><article>
+<div style="flex-wrap: wrap-reverse">
+  <div>A</div>
+  <div>BB</div>
+  <div>CCC</div>
+  <div>DDDD</div>
+  <div>EEE<br>EE</div>
+  <div>FFF<br>FFF</div>
+  <div>GGGG<br>GGGG</div>
+  <div>HHH<br>HHH<br>HHH</div>
+  <div>IIIII<br>IIIII</div>
+  <div>JJJJ<br>JJJ<br>JJJJ</div>
+</div>
+<p>flex-flow: column wrap-reverse; ⤴</p>
+</article>
+</section>
+
+</body>
+</html>

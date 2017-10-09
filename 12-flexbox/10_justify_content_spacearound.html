@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="code">
+<head style="display: block;">
+  <meta charset="utf-8"/>
+  <title>Justify-content</title> 
+  <link rel="stylesheet" href="c/examples.css"/><style>
+    <style>
+    body {padding: 100px;}
+div {background-color: rgba(0,0,0,0.1); font-family: monospace;}
+article { }
+article > div {
+  display: flex;
+  border: 1px dashed;
+  max-height: 200px;
+}
+div > div {
+  border: 1px solid;
+  height: 50px;
+  margin: 5px;
+  padding: 5px;
+  line-height: 50px;
+}
+body {
+  font-size: 25px;
+  text-align: center;
+}
+p {margin-top: 0;}
+.container {
+  margin: 20px;
+  background-image: repeating-linear-gradient( to right,
+    rgba(0,0,0,1) 0px, 
+    rgba(0,0,0,1) 10px, 
+    rgba(0,0,0,0) 10px, 
+    rgba(0,0,0,0) 20px
+    );
+  background-size: 100% 5px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.container {flex-wrap: wrap;}
+article {width: 60%; margin: auto;}
+</style>
+<style contenteditable>
+.container:nth-of-type(1) {
+  justify-content: center;
+}
+.container:nth-of-type(2) {
+  justify-content: space-between;
+}
+.container:nth-of-type(3) {
+  justify-content: space-around;
+}
+</style>
+</head>
+<body>
+
+<p>Remove the two slashes in front of the justify-content value you want to test.</p>
+<article>
+<div class="container">
+    <div>A</div>
+    <div>BBB</div>
+    <div>CCC</div>
+    <div>DD</div>
+    <div>EEEEEEEE</div>
+    <div>FFFFF</div>
+    <div>GGGGGGG</div>
+    <div>H</div>
+    <div>III</div>
+</div>
+<p contenteditable>justify-content: center; ⤴</p>
+<div class="container">
+    <div>A</div>
+    <div>BBB</div>
+    <div>CCC</div>
+    <div>DD</div>
+    <div>EEEEEEEE</div>
+    <div>FFFFF</div>
+    <div>GGGGGGG</div>
+    <div>H</div>
+    <div>III</div>
+</div>
+<p contenteditable>justify-content: space-between; ⤴</p>
+<div class="container">
+    <div>A</div>
+    <div>BBB</div>
+    <div>CCC</div>
+    <div>DD</div>
+    <div>EEEEEEEE</div>
+    <div>FFFFF</div>
+    <div>GGGGGGG</div>
+    <div>H</div>
+    <div>III</div>
+</div>
+<p contenteditable>justify-content: space-around; ⤴</p>
+</article>
+</body>
+</html>

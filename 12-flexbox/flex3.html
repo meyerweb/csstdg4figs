@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+head, style {display: block;}
+[contenteditable] {-webkit-user-modify: read-write-plaintext-only;}
+style:first-of-type {visibility:hidden;}
+style:last-of-type {padding: 20px; font-size: 1.5em; white-space: pre; font-family: monospace; background-color: rgba(255,255,255,0.5);}
+html {min-height:100%;}
+div {border: 3px solid #ddaa00; padding: 3px; line-height: 2rem;}
+div div {border-color: #333;}
+div>div {border-style: dotted;}
+div:nth-of-type(2){border-style: dashed;}
+.a {background-color: #fff;}
+.b {background-color: #ccc;}
+.c {background-color: #999;}
+</style>
+
+<style contenteditable>
+body > div {
+  display: flex;
+}
+.a, .b {
+  flex: 2;
+}
+.c {
+  flex: 1;
+}
+ </style>
+<title>Flexbox</title>
+</head>
+
+<body>
+	<div id="container">
+		<div class="box a"><h1>A</h1><p>flex: 1 == flex: 1 0 0px.</p></div>
+		<div class="box b"><h1>B</h1><p>Setting flex-grow/flex-shrink to different values can make items grow/shrink relative to each other</div>
+		<div class="box c"><h1>C</h1><p>But only if flex basis is 0! If they are all 0px in width, then all the width on the line
+is extra. flex: 5 item gets 5 times as much
+width as the others a flex: 1.
+</p></div>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: flex-direction: row;</title>  
+<link rel="stylesheet" href="c/examples.css">  
+<style  contenteditable>
+    body {padding: 100px;}
+    * {}
+div {background-color: rgba(0,0,0,0.1)}
+article {position: relative; border: 1px solid; border-color: blue red transparent;}
+
+article > div::before {
+  content: '⬋ cross axis';
+  position: absolute;
+  color: red;
+  border-left: 2px solid;
+  height: 105%;
+  top: 0;
+  left: 5%;
+}
+article > div::after {
+  content: 'main axis ⬈';
+  color: blue;
+  text-align: left;
+  text-indent: 7%;
+  position: absolute;
+  border-top: 2px solid;
+  width: 105%;
+  left: 0;
+  top: 25%;
+}
+article::after,
+article::before {
+  content: '';
+  border: 7px solid transparent;
+  position: absolute;
+}
+article::after {
+  border-top-color: red;
+  top: 105%;
+  left: 4.1%;
+}
+
+
+article::before {
+  border-left-color: red;
+  top: 24.1%;
+  left: 115%;
+}
+article:nth-of-type(1)::after {
+  border-top-color: blue;
+  top: 105%;
+  left: 73.5%;
+}
+article:nth-of-type(2)::after {
+  border-bottom-color: blue;
+  border-top-color: transparent;
+  top: -13%;
+  left: 73.5%;
+}
+
+
+span {
+  position: relative; left: -10px;
+  top: 70px;
+  max-width: 1px;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+
+article > div {
+  display: flex;
+  border: 1px dashed;
+  padding: 10px;
+}
+div > div {
+  border: 1px solid;
+  height: 50px;
+  margin: 10px;
+  line-height: 50px;
+  flex: 1 1 auto;
+  min-height: 100px;
+}
+body {
+  font-size: 25px;
+  text-align: center;
+}
+span {color: blue;}
+p {margin: 0 -30px; border-top: 1px solid blue; padding-top: 10px;}
+
+article > div::before {
+  content: '⬋ main axis';
+  position: absolute;
+  white-space: nowrap;
+  color: blue;
+  border-left: 2px solid;
+  height: 98%;
+  top: 0;
+  padding-top: 58px;
+  left: 75%;
+}
+article:last-of-type > div::before {
+  top: -11.6%;
+  padding-top: 40%;
+  height: 105%;
+  box-sizing: border-box;
+}
+article > div::after {
+  content: 'cross axis  ⬈';
+  color: red;
+  text-align: left;
+  text-indent: 57%;
+  position: absolute;
+  border-top: 2px solid;
+  width: 115%;
+  left: 0;
+  top: 25%;
+}
+
+
+div:nth-of-type(2):before {
+  content: "cross start";
+  color: red;
+  position: absolute;
+  top: -33px;
+  left: 20px;
+}
+div:nth-of-type(2):after {
+  content: "cross end";
+  color: red;
+  position: absolute;
+  bottom: 24px;
+  left: 20px;
+}
+
+[class^="col"] span {
+  position: relative;
+  left: 300px;
+  top: -34px;
+  max-width: 1px;
+  overflow: visible;
+  white-space: nowrap;
+}
+[class^="col"] div:nth-of-type(2):before{
+  left: -58px;
+  transform: rotate(-90deg);
+  top: auto;
+}
+[class^="col"] div:nth-of-type(2):after{
+  right: -58px;
+  transform: rotate(-90deg);
+  left: auto;
+  bottom: auto;
+}
+.column-reverse div:nth-of-type(2):before,
+.column-reverse div:nth-of-type(2):after {
+  bottom: 530px;
+}
+
+
+</style>
+</head>
+<body>
+
+<article style="width: 40%; float: left">
+<div class="column" style="flex-direction: column;">
+  <span>main-start</span>
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <span style="top: 15px;">main-end</span>
+</div>
+<p>flex-direction: column; ⤴</p>
+</article><article style="width: 40%; float: right">
+<div class="column-reverse" style="flex-direction:  column-reverse;">
+  <span style="top: 15px;">main-start</span>
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <span>main-end</span>
+</div>
+<p>flex-direction: column-reverse; ⤴</p>
+</article>
+</body>
+</html>

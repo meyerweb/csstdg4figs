@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: basis 0 versus auto</title>
+  <link rel="stylesheet" href="c/examples.css"/>
+    <style id="editme" contenteditable>
+div {background-color: rgba(0,0,0,0.1)}
+article  {
+  width: 540px;
+}
+article > div {
+  display: flex;
+  outline: 1px dashed;
+  padding: 3px;
+  min-height: 100px;
+}
+div > div {
+  outline: 1px solid;
+  margin: 3px;
+  padding: 20px 0;
+  line-height: 30px;
+}
+body {
+  text-align: center;
+  padding: 100px;
+}
+p {margin-top: 0;}
+</style>
+</head>
+<body>
+<article>
+<div>
+   <div style="flex: 2 1 auto">flex: 2 1 auto</div>
+  <div style="flex: 1 1 auto">flex: 1 1 auto</div>
+  <div style="flex: 3 1 auto">flex: 3 1 auto</div>
+</div>
+
+<p>Flex container⤴</p>
+</article>
+
+<article>
+<div>
+  <div style="flex: 2 1 0%">flex: 2 1 0%</div>
+  <div style="flex: 1 1 0%">flex: 1 1 0%</div>
+  <div style="flex: 3 1 0%">flex: 3 1 0%</div>
+</div>
+
+<p>Flex container⤴</p>
+</article>
+</body>
+</html>

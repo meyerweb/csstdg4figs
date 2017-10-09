@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="code">
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items</title>
+<link rel="stylesheet" href="c/examples.css"/>
+<style contenteditable>
+div {background-color: rgba(0,0,0,0.1)}
+article  {
+}
+article > div {
+  border: 1px dashed;
+  padding: 3px;
+}
+div > div {
+  border: 1px solid;
+  margin: 10px;
+  padding: 20px 5px;
+  line-height: 30px;
+}
+body {
+  font-size: 20px;
+  padding: 100px;
+}
+p {margin-top: 0;}
+</style>
+</head>
+<body>
+<article>
+<div style="display: flex;">
+  <div>Here is some content.</div>
+  <div>More content than before, but no properties explicitly set.</div>
+  <div>Lots and lots of content. Even more content than to the left, but no properties explicitly set.</div>
+</div>
+<p><code>display: flex; ⤴</code></p>
+</article>
+
+<article>
+<div style="display: inline-flex;">
+  <div>Here is some content.</div>
+  <div>More content than before, but no properties explicitly set.</div>
+  <div>Lots and lots of content. Even more content than to the left, but no properties explicitly set.</div>
+</div>
+<p><code>display: inline-flex;</code> ⤴</p>
+</article><body>
+<article>
+<div style="display: flex;">
+  <div>flex item with<br/>
+       two longer lines</div>
+  <div>flex item</div>
+  <div>flex item</div>
+</div>
+<p><code>display: flex;</code> ⤴</p>
+</article>
+
+<article>
+<div style="display: inline-flex;">
+  <div>flex item with<br/>
+       two longer lines</div>
+  <div>flex item</div>
+  <div>flex item</div>
+</div>
+<p><code>display: inline-flex;</code> ⤴</p>
+</article>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: align-content</title> 
+
+  <link rel="stylesheet" href="c/examples.css"/>
+    <style contenteditable>
+    html {font-size: 1.6em}
+    body {padding: 100px;}
+div{background-color: rgba(0,0,0,0.1); text-align: initial;}
+article { float: left; margin-right: 50px;}
+article > div {
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed;
+  width: 200px;
+  margin-bottom: 10px;
+}
+div > div {
+  border: 1px solid; margin: 5px; padding: 5px;
+}
+
+body {
+  font-size: 25px;
+  text-align: center;
+}
+p {margin: 0 0 40px; text-align: left;}
+
+</style>
+</head>
+<body> 
+<article>
+  
+
+  <div style="align-items: stretch; flex-direction: row; width: auto; height: auto;">
+    <div>1</div>
+    <div>2 2<br>2 2</div>
+    <div style="margin-top: 30px;">3 3 3<br>3 3 3<br>3 3 3</div>
+    <div style="margin-bottom: 40px;">4 4 4 4<br>4 4 4 4<br>4 4 4 4<br>4 4 4 4</div>
+    <div>5 5 5 5 5</div>
+  </div>
+
+  <p>.three { margin-top: 30px; }<br/>
+.four {margin-bottom: 40px; }
+  </p>
+
+</article>
+<article>
+  
+
+ 
+  <div style="align-items: stretch;">
+    <div>1</div>
+    <div>2 2<br>2 2</div>
+    <div style="margin-left: 30px;">3 3 3<br>3 3 3<br>3 3 3</div>
+    <div style="margin-right: 40px;">4 4 4 4<br>4 4 4 4<br>4 4 4 4<br>4 4 4 4</div>
+    <div>5 5 5 5 5</div>
+  </div>
+
+  <p>.three { margin-left: 30px; }<br/>
+.four {margin-right: 40px; }</p>
+</article>
+  
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+head, style {display: block;}
+[contenteditable] {-webkit-user-modify: read-write-plaintext-only;}
+style:first-of-type {visibility:hidden;}
+style:last-of-type {padding: 20px; font-size: 1.5em; white-space: pre; font-family: monospace; background-color: rgba(255,255,255,0.5);}
+html {min-height:100%;}
+#container {background-color: #ddaa00;}
+div {border: 3px solid #ddaa00; padding: 3px; line-height: 2rem; text-align: center; }
+
+.a {background-color: #fff;}
+.b {background-color: #ccc;}
+.c {background-color: #999;}
+</style>
+
+<style contenteditable>
+body > div {
+  display: flex;
+  justify-content: space-between;
+}
+.a, .b, .c {
+  flex: 0 0 100px;
+  }</style>
+<title>Flexbox</title>
+</head>
+
+<body>
+	<div id="container">
+		<div class="box a">A</div>
+		<div class="box b">B</div>
+		<div class="box c">C</div>
+	</div>
+  <code>flex-start | flex-end | center | space-between | space-around</code>
+</body>
+</html>
+

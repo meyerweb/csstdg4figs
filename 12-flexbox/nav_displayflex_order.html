@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Simple Navigation Example</title>  
+  <link rel="stylesheet" href="c/examples.css"/>
+  <style>
+  body {
+    padding: 100px;
+  }
+  nav {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+    }
+  a {
+    margin: 0 5px;
+    padding: 5px 15px;
+    background-color: #da0;
+    border-radius: 3px 3px 0 0;
+    text-decoration: none;
+    color: white;
+  }
+  a:hover, a.active {
+    background-color: #fc2;
+    text-decoration: none;
+    color: black;
+  }
+  a.active {
+    order: -1;
+  }
+  </style>
+</head>
+<body>
+    <nav>
+      <a href="#1">Home</a>
+      <a href="#2">About</a>
+      <a class="active">Blog</a>
+      <a href="#4">Careers</a>
+      <a href="#5">Contact Us</a>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="code">
+<head style="display: block;">
+  <meta charset="utf-8"/>
+  <title>Justify-content</title>  
+
+  <link rel="stylesheet" href="c/examples.css"/><style>
+  <style>
+    body {padding-top: 200px; margin-top: 200px;}
+div {background-color: rgba(0,0,0,0.2)}
+body {display: flex;
+}
+article {
+  flex: 1 0 20%; padding-top: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+article p {
+  flex: 0 1 2rem;
+}
+
+article > div {
+  display: inline-flex;
+  flex-direction: column;
+  border: 2px dashed;
+  padding: 3px;
+  height: 200px;
+  align-items: center;
+}
+div > div {
+  flex: 0 0 50px;
+  border: 1px solid;
+  width: 2em;
+  height: 50px;
+  margin: 3px;
+  line-height: 50px;
+  min-width: 2rem;
+  text-align:  center;
+}
+div:first-of-type {}
+div > div:first-of-type {color: red;)}
+p {margin-top: 1rem; text-align: center}
+</style>
+<style id="editme" contenteditable>article > div {
+  display: inline-flex;
+  flex-direction: column;
+}
+article:nth-of-type(1) > div {justify-content: flex-start;}
+article:nth-of-type(2) > div {justify-content: flex-end;}
+article:nth-of-type(3) > div {justify-content: center;}
+article:nth-of-type(4) > div {justify-content: space-between;}
+article:nth-of-type(5) > div {justify-content: space-around;}
+</style>
+</head>
+<body>
+<article>
+<div style="">
+    <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>
+</div>
+<p>justify-content:<br/> 
+flex-start; ⤴</p>
+</article>
+<article>
+  <div style="">
+      <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>
+  </div>
+  <p>justify-content: <br/> flex-end;⤴</p>
+</article>
+<article>
+  <div style="">
+      <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>
+  </div>
+  <p>justify-content: <br/> center;⤴</p>
+</article>
+<article>
+  <div style="">
+      <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>
+  </div>
+  <p>justify-content: <br/> space-between;⤴</p>
+</article>
+<article>
+  <div style="">
+      <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>
+  </div>
+  <p>justify-content: <br/> space-around;⤴</p>
+</article>
+</body>
+</html>

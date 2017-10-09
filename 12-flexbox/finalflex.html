@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+head, style {display: block;}
+[contenteditable] {-webkit-user-modify: read-write-plaintext-only;}
+style:first-of-type {visibility:hidden;}
+#editme {padding: 20px; font-size: 1.5em; white-space: pre; font-family: monospace; background-color: rgba(255,255,255,0.5);}
+html {min-height:100%;}
+div {border: 3px solid #ddaa00; padding: 3px; line-height: 2rem;}
+div div {border-color: #333;}
+div>div {border-style: dotted;}
+div:nth-of-type(2){border-style: dashed;}
+.a {background-color: #fff;}
+.b {background-color: #ccc;}
+.c {background-color: #999;}
+</style>
+
+<style contenteditable id=editme>
+body > div {
+  display: flex;
+  flex-direction: row;
+}
+div >  div {
+  flex: 20%;
+}
+.b {
+  order: -1;
+   flex: 40%;
+}
+</style>
+<title>Flexbox</title>
+</head>
+
+<body>
+	<div id="container">
+		<div class="box a">A</div>
+		<div class="box b">B</div>
+		<div class="box c">C</div>
+	</div>
+</body>
+</html>
+

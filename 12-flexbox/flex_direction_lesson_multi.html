@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: flex-direction: row;</title> 
+<link rel="stylesheet" href="c/examples.css">
+
+    <style contenteditable>
+    body {padding: 100px;}
+    * {}
+div {background-color: rgba(0,0,0,0.1)}
+article {position: relative;}
+article > div::before {
+  content: '⬋ cross axis';
+  position: absolute;
+  color: red;
+  border-left: 2px solid;
+  height: 105%;
+  top: 0;
+  left: 5%;
+}
+article > div::after {
+  content: 'main axis  ⬈';
+  color: blue;
+  text-align: left;
+  text-indent: 7%;
+  position: absolute;
+  border-top: 2px solid;
+  width: 105%;
+  left: 0;
+  top: 25%;
+}
+article::after,
+article::before {
+  content: '';
+  border: 7px solid transparent;
+  position: absolute;
+}
+article::after {
+  border-top-color: red;
+  top: 105%;
+  left: 4.5%;
+}
+article:nth-of-type(1)::before {
+  border-left-color: blue;
+  top: 22%;
+  left: 105%;
+}
+
+article:nth-of-type(2)::before {
+  border-right-color: blue;
+  top: 22%;
+  left: -6%;
+}
+
+article:nth-of-type(n+3)::before {
+  border-left-color: red;
+  top: 24.1%;
+  left: 105%;
+}
+article:nth-of-type(3)::after {
+  border-top-color: blue;
+  top: 105%;
+  left: 73.5%;
+}
+article:nth-of-type(4)::after {
+  border-bottom-color: blue;
+  border-top-color: transparent;
+  top: -15%;
+  left: 73.5%;
+}
+
+span {
+  position: relative; left: -10px;
+  top: 70px;
+  max-width: 1px;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+[class^=row] span {
+  transform: rotate(-90deg);
+  left: 25px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px dashed;
+  padding: 10px;
+  max-height: 350px;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.item {
+  border: 1px solid;
+  margin: 10px;
+  padding: 10px;
+  line-height: 50px;
+}
+body {
+  font-size: 25px;
+  text-align: center;
+}
+span {color: blue;}
+p {margin-top: 0;}
+
+article:nth-of-type(n+3) > div::before {
+  content: '⬋ main axis';
+  position: absolute;
+  white-space: nowrap;
+  color: blue;
+  border-left: 2px solid;
+  height: 105%;
+  top: 0;
+  left: 75%;
+}
+article:nth-of-type(4) > div::before {
+  top: -13.6%;
+  padding-top: 24%;
+  box-sizing: border-box;
+}
+article:nth-of-type(n+3) > div::after {
+  content: 'cross axis  ⬈';
+  color: red;
+  text-align: left;
+  text-indent: 57%;
+  position: absolute;
+  border-top: 2px solid;
+  width: 105%;
+  left: 0;
+  top: 25%;
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  padding: 10px;
+}
+.start, .end {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -18px;
+  top: 50%;
+  transform-origin: top left;
+}
+.end {
+  left: 99%;
+}
+article:nth-of-type(n+3) span {
+  color: red;
+}
+article:nth-of-type(2) {
+  margin-bottom: 150px;
+}
+
+div:nth-of-type(2):before {
+  content: "cross start";
+  color: red;
+  position: absolute;
+  top: -24px;
+  left: 20px;
+}
+div:nth-of-type(2):after {
+  content: "cross end";
+  color: red;
+  position: absolute;
+  bottom: -28px;
+  left: 20px;
+}
+
+
+
+[class^="col"] span {
+  position: relative;
+  left: 300px;
+  top: -34px;
+  max-width: 1px;
+  overflow: visible;
+  white-space: nowrap;
+}
+[class^="col"] div:nth-of-type(2):before{
+  left: -58px;
+  transform: rotate(-90deg);
+  top: auto;
+}
+[class^="col"] div:nth-of-type(2):after{
+  right: -35px;
+  transform: rotate(-90deg);
+  left: auto;
+  bottom: auto;
+}
+.column-reverse div:nth-of-type(2):before,
+.column-reverse div:nth-of-type(2):after {
+  bottom: 530px;
+}
+.row {
+  flex-direction: row;
+}
+.row-reverse {
+  flex-direction: row-reverse;
+}
+.row-reverse::before {
+
+}
+.row-reverse::after {
+  right: 0;
+  text-indent: 90%;
+  left: auto;
+}
+i {
+  position: absolute;
+  width: 100%;
+  color: blue;
+  border: 1px solid;
+  border-top: none;
+  transform: translate(-10px, -70px);
+}
+div > div {background-color: rgba(0,0,0,0.3);}
+article:first-of-type section:before{
+    content: '';
+    position: absolute;
+    width: 104%;
+    border-bottom: 1px solid #00F;
+    top: 96px;
+    left: 10px;
+}
+article:nth-of-type(2) section:before{
+    content: '';
+    position: absolute;
+    width: 103%;
+    border-bottom: 1px solid #00F;
+    top: 96px;
+    right: 10px;
+}
+
+article:not(:nth-of-type(n+3)) section:after{
+    content: '';
+    position: absolute;
+    height: 113%;
+    border-left: 1px solid #F00;
+    top: 11px;
+    left: 36px;
+}
+article:nth-of-type(n+3) .container {
+  height: 420px;
+}
+article:nth-of-type(n+3) .item {
+  flex: 0 0 auto;
+}
+
+#n4 div:nth-of-type(2):after,
+#n3 div:nth-of-type(2):before {
+  content: "main start";
+  color: blue;
+}
+#n4 div:nth-of-type(2):before,
+#n3 div:nth-of-type(2):after {
+  content: "main end";
+  color: blue;
+}
+
+#n4 div:nth-of-type(2):after {
+  top: 94%;
+}
+
+div:nth-of-type(2):before {
+  content: "cross start";
+  color: red;
+  position: absolute;
+  top: -24px;
+  left: 20px;
+}
+div:nth-of-type(2):after {
+  content: "cross end";
+  color: red;
+  position: absolute;
+  bottom: -28px;
+  left: 20px;
+}
+article:nth-of-type(3)::after {top: 90%; left: 25%;}
+article:nth-of-type(4)::after  {top: -2%; left: 25%;}
+</style>
+</head>
+<body>
+<article style="margin-bottom: 100px;">
+<section>
+<div class="container row">
+  <i>main-size</i>
+  <span class="start">main-start</span>
+  <div class="item">A</div>
+  <div class="item">Banana</div>
+  <div class="item">CCC</div>
+  <div class="item">DDDD</div>
+  <div class="item">EEE<br>EE</div>
+  <div class="item">FFF<br>FFF</div>
+  <div class="item">GGGG<br>GGGG</div>
+  <div class="item">HHH<br>HHH<br>HHH</div>
+  <div class="item">IIIII<br>IIIII</div>
+  <div class="item">JJJJ<br>JJJ<br>JJJJ</div>
+  <span class="end">main-end</span>
+</div>
+</section>
+<p>flex-flow: wrap row; ⤴</p>
+</article>
+<article>
+<section>
+<div class="container row-reverse">
+  <span class="start" style="transform: rotate(90deg); left: 15px;">main-end</span>
+  <div class="item">A</div>
+  <div class="item">Banana</div>
+  <div class="item">CCC</div>
+  <div class="item">DDDD</div>
+  <div class="item">EEE<br>EE</div>
+  <div class="item">FFF<br>FFF</div>
+  <div class="item">GGGG<br>GGGG</div>
+  <div class="item">HHH<br>HHH<br>HHH</div>
+  <div class="item">IIIII<br>IIIII</div>
+  <div class="item">JJJJ<br>JJJ<br>JJJJ</div>
+  <span class="end" style="transform: rotate(90deg); left: auto; right: -18px;">main-start</span>
+</div>
+</section>
+<p>flex-flow: wrap row-reverse; ⤴</p>
+</article>
+<article  id="n3">
+<section>
+<div class="container column" style="flex-flow: wrap-reverse column;">
+  <span class="start">cross-end</span>
+  <div class="item">A</div>
+  <div class="item">Banana</div>
+  <div class="item">CCC</div>
+  <div class="item">DDDD</div>
+  <div class="item">EEE<br>EE</div>
+  <div class="item">FFF<br>FFF</div>
+  <div class="item">GGGG<br>GGGG</div>
+  <div class="item">HHH<br>HHH<br>HHH</div>
+  <div class="item">IIIII<br>IIIII</div>
+  <div class="item">JJJJ<br>JJJ<br>JJJJ</div>
+  <span class="end">cross-start</span>
+</div>
+</section>
+<p>flex-flow: wrap-reverse column; ⤴</p>
+</article><article  id="n4">
+<section>
+<div class="container column-reverse" style="flex-flow:  wrap-reverse column-reverse;">
+  
+  <span class="start">cross-end</span>
+  <div class="item">A</div>
+  <div class="item">Banana</div>
+  <div class="item">CCC</div>
+  <div class="item">DDDD</div>
+  <div class="item">EEE<br>EE</div>
+  <div class="item">FFF<br>FFF</div>
+  <div class="item">GGGG<br>GGGG</div>
+  <div class="item">HHH<br>HHH<br>HHH</div>
+  <div class="item">IIIII<br>IIIII</div>
+  <div class="item">JJJJ<br>JJJ<br>JJJJ</div>
+  
+  <span class="end">cross-start</span>
+</div>
+</section>
+<p>flex-flow:  wrap-reverse column-reverse; ⤴</p>
+</article>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+head, style {display: block;}
+[contenteditable] {-webkit-user-modify: read-write-plaintext-only;}
+style:first-of-type {visibility:hidden;}
+style:last-of-type {padding: 20px; font-size: 1.5em; white-space: pre; font-family: monospace; background-color: rgba(255,255,255,0.5);}
+html {min-height:100%;}
+div {border: 3px solid #ddaa00; padding: 3px; line-height: 2rem; min-height: 2rem;}
+div div {border-color: #333;}
+div>div {border-style: dotted;}
+div:nth-of-type(2){border-style: dashed;}
+.a {background-color: #fff;}
+.b {background-color: #ccc;}
+.c {background-color: #999;}
+</style>
+
+<style contenteditable>
+body > div {
+  display: flex;
+  flex-flow: row-reverse  wrap;
+
+}
+div >  div {
+  flex: 10%;
+}
+</style>
+<title>Flexbox</title>
+</head>
+
+<body>
+	<div id="container">
+    <div class="box a">Alphabet</div>
+    <div class="box b">Banana</div>
+    <div class="box c">Crayons</div>
+    <div class="box a">Dinosaurs</div>
+    <div class="box b">Eggplant</div>
+    <div class="box c">Foundation</div>
+    <div class="box a">Ghosts</div>
+    <div class="box b">Happy</div>
+    <div class="box c">Igloo</div>
+    <div class="box a">Janitors</div>
+    <div class="box b">Kittens</div>
+    <div class="box c">Lasso</div>
+    <div class="box a">Magic 8-ball</div>
+    <div class="box b">Nincompoop</div>
+    <div class="box c">Orange</div>
+    <div class="box a">Petunia</div>
+    <div class="box b">Quality</div>
+    <div class="box c">Rancid</div>
+    <div class="box a">Shoelace</div>
+    <div class="box b">Terydactyl</div>
+    <div class="box c">Umbrella</div>
+    <div class="box a">Valentine</div>
+    <div class="box b">Westward</div>
+    <div class="box c">Xylophone</div>
+	</div>
+</body>
+</html>
+

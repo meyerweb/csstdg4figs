@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Inner Page</title>  <style>
+  head {display: block;}
+  head * {display: none;}
+    </style><style contenteditable style="display: block; white-space: pre">
+  html {
+    background-color: #deded8;
+    font-family: trebuchet, geneva, sans-serif;
+  }
+  body {
+    margin: 0;
+  }
+  article, aside, footer, header {
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+  header {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+  aside {
+    background-color: white;
+  }
+
+  /* default navigation values */
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px 0;
+  }
+  nav a {
+    flex: auto;
+    text-align: center;
+    color: white;
+    margin: 0 5px;
+    padding: 5px 0;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+  }
+  nav a:hover {
+    outline: 1px solid red;
+    color: red;
+    text-decoration: underline;
+  }
+
+
+  /* larger screen 
+  @media screen and (min-width: 500px) {*/
+
+    main {
+      display: flex;
+      box-sizing: border-box;
+      border-bottom: 0.5rem solid;
+    }
+    nav {
+      order: -1;
+      flex: 2 1 auto;
+      _min-width: 150px;
+    }
+    article {
+      flex: 5 1 auto;
+    }
+    aside {
+      
+      flex: 2 1 auto;
+      _min-width: 150px;
+    }
+    b {font-weight: 900; font-family: monospace;}
+ /* }*/
+
+  </style>
+</head>
+<body>
+    <body>
+      <header>
+        <h1>Site Wide Header</h1>
+      </header>
+      <main>
+        <article>
+          <h2>This is the heading of the article</h2>
+          <p><b>flex: 5 1 auto;</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat mauris, faucibus quis pharetra sit amet, pretium ac libero. Etiam vehicula eleifend bibendum. <!--</p><p>-->Morbi gravida metus ut sapien condimentum sodales mollis augue sodales. Vestibulum quis quam at sem placerat aliquet. Curabitur a felis at sapien ullamcorper fermentum. Mauris molestie arcu et lectus iaculis sit amet eleifend eros posuere. Fusce nec porta orci.
+
+</p>
+        </article>
+        <aside>
+          <h3>Aside Heading</h3>
+          <div><b>flex: 2 1 auto;</b>Mauris molestie arcu et lectus iaculis sit amet eleifend eros posuere. Fusce nec porta orci.</div>
+        </aside>
+        <nav>
+          <a href="#1">Home</a>
+          <a href="#2">About</a>
+          <a href="#4">Careers</a>
+          <a href="#5">Contact Us</a>
+          <a href="6"><b>flex: 2 1 auto;</b></a>
+        </nav>
+      </main>
+      <footer>
+          <div>Copyright &copy; 2017 <a href="#6">My Site</a></div>
+      </footer>
+    </body>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="code">
+<head>
+  <meta charset="utf-8"/>
+  <title>Align Items</title>  
+  <link rel="stylesheet" src="examples.css"/>
+  <style>
+div {width: 50%;}
+  div {
+    border: solid 5px;
+    background-color: #eee;
+  }
+  p {
+    border: solid 2px #666;
+    padding: 5px;
+    background-color: #bbb;
+    margin: 0;
+  }
+  body {
+    font-size: 16px;
+      }
+  </style>
+  <style contenteditable>
+  div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}</style>
+</head>
+<body>
+    <div style="align-items: flex-start;">
+    <p style="font-size: 1.4rem;">One</p>
+    <p style="font-size: 1.2rem;">Two<br/>Two</p>
+    <p style="font-size: 1rem;">Three<br/>Three<br/>Three</p>
+    <p style="font-size: 0.8rem;">Four<br/>Four<br/>Four<br/>Four</p>
+    <p style="font-size: 0.7rem;">Five<br/>Five<br/>Five<br/>Five<br/>Five</p>
+  </div>
+
+  <p>align-items: flex-start; ⤴</p>
+  <div style="align-items: flex-end;"><p style="font-size: 1.4rem;">One</p>
+    <p style="font-size: 1.2rem;">Two<br/>Two</p>
+    <p style="font-size: 1rem;">Three<br/>Three<br/>Three</p>
+    <p style="font-size: 0.8rem;">Four<br/>Four<br/>Four<br/>Four</p>
+    <p style="font-size: 0.7rem;">Five<br/>Five<br/>Five<br/>Five<br/>Five</p>
+  </div>
+  <p>align-items: flex-end; ⤴</p>
+
+  <div style="align-items: center;"><p style="font-size: 1.4rem;">One</p>
+    <p style="font-size: 1.2rem;">Two<br/>Two</p>
+    <p style="font-size: 1rem;">Three<br/>Three<br/>Three</p>
+    <p style="font-size: 0.8rem;">Four<br/>Four<br/>Four<br/>Four</p>
+    <p style="font-size: 0.7rem;">Five<br/>Five<br/>Five<br/>Five<br/>Five</p>
+  </div>
+
+  <p>align-items: center; ⤴</p>
+
+  <div style="align-items: baseline;"><p style="font-size: 1.4rem;">One</p>
+    <p style="font-size: 1.2rem;">Two<br/>Two</p>
+    <p style="font-size: 1rem;">Three<br/>Three<br/>Three</p>
+    <p style="font-size: 0.8rem;">Four<br/>Four<br/>Four<br/>Four</p>
+    <p style="font-size: 0.7rem;">Five<br/>Five<br/>Five<br/>Five<br/>Five</p>
+  </div>
+
+  <p>align-items: baseline; ⤴</p>
+
+ 
+  <div style="align-items: stretch;"><p style="font-size: 1.4rem;">One</p>
+    <p style="font-size: 1.2rem;">Two<br/>Two</p>
+    <p style="font-size: 1rem;">Three<br/>Three<br/>Three</p>
+    <p style="font-size: 0.8rem;">Four<br/>Four<br/>Four<br/>Four</p>
+    <p style="font-size: 0.7rem;">Five<br/>Five<br/>Five<br/>Five<br/>Five</p>
+  </div>
+
+  <p>align-items: stretch; ⤴</p>
+
+</body>
+</html>

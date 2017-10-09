@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: flex-direction: row;</title>  
+<link rel="stylesheet" href="c/examples.css">  
+<style  contenteditable>
+    body {padding: 100px;}
+    * {}
+div {background-color: rgba(0,0,0,0.1)}
+article {position: relative; }
+article:first-of-type,
+article:nth-of-type(2) {border-top: 1px solid red;}
+
+article:last-of-type,
+article:nth-of-type(3) {border-left: 1px solid red;}
+article .container::before {
+  content: '⬋ cross axis';
+  position: absolute;
+  color: red;
+  border-left: 2px solid;
+  height: 105%;
+  top: 0;
+  left: 5%;
+}
+article .container::after {
+  content: 'main axis ⬈';
+  color: blue;
+  text-align: left;
+  text-indent: 7%;
+  position: absolute;
+  border-top: 2px solid;
+  width: 150%;
+  left: -25%;
+  top: 25%;
+}
+article::after,
+article::before {
+  content: '';
+  border: 7px solid transparent;
+  position: absolute;
+}
+article::after {
+  border-top-color: red;
+  top: 105%;
+  left: 4.1%;
+}
+article:nth-of-type(1)::before {
+  border-left-color: blue;
+  top: 22%;
+  left: 105%;
+}
+
+article:nth-of-type(2)::before {
+  border-right-color: blue;
+  top: 22%;
+  left: -6%;
+}
+
+article:nth-of-type(n+3)::before {
+  border-left-color: red;
+  top: 24.1%;
+  left: 105%;
+}
+article:nth-of-type(3)::after {
+  border-top-color: blue;
+  top: 105%;
+  left: 73.5%;
+}
+article:nth-of-type(4)::after {
+  border-bottom-color: blue;
+  border-top-color: transparent;
+  top: -15%;
+  left: 73.5%;
+}
+
+article:first-of-type p,
+article:nth-of-type(2) p {
+  border-top: 1px solid red;
+}
+
+span {
+  position: relative; left: -10px;
+  top: 70px;
+  max-width: 1px;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+[class^=row] span {
+  transform: rotate(-90deg);
+  left: 25px;
+}
+[class^=row] span:last-of-type {}
+
+.container {
+  display: inline-flex;
+  border: 1px dashed;
+  padding: 10px;
+}
+div > div {
+  border: 1px solid;
+  height: 50px;
+  margin: 10px;
+  padding: 0 20px;
+  line-height: 50px;
+  flex: 1 1 auto;
+  min-height: 100px;
+}
+body {
+  font-size: 25px;
+  text-align: center;
+}
+span {color: blue;}
+p {margin-top: 0;}
+
+article:nth-of-type(n+3) .container::before {
+  content: '⬋ main axis';
+  position: absolute;
+  white-space: nowrap;
+  color: blue;
+  border-left: 2px solid;
+  height: 105%;
+  top: 0;
+  left: 75%;
+}
+article:nth-of-type(4) .container::before {
+  top: -13.6%;
+  padding-top: 24%;
+  box-sizing: border-box;
+}
+article:nth-of-type(n+3) .container::after {
+  content: 'cross axis  ⬈';
+  color: red;
+  text-align: left;
+  text-indent: 57%;
+  position: absolute;
+  border-top: 2px solid;
+  width: 105%;
+  left: 0;
+  top: 25%;
+}
+
+
+article:nth-of-type(2) {
+  margin-bottom: 150px;
+}
+
+div:nth-of-type(2):before {
+  content: "cross start";
+  color: red;
+  position: absolute;
+  top: -33px;
+  left: 20px;
+}
+div:nth-of-type(2):after {
+  content: "cross end";
+  color: red;
+  position: absolute;
+  bottom: 24px;
+  left: 20px;
+}
+
+[class^="col"] span {
+  position: relative;
+  left: 300px;
+  top: -34px;
+  max-width: 1px;
+  overflow: visible;
+  white-space: nowrap;
+}
+[class^="col"] div:nth-of-type(2):before{
+  left: -58px;
+  transform: rotate(-90deg);
+  top: auto;
+}
+[class^="col"] div:nth-of-type(2):after{
+  right: -35px;
+  transform: rotate(-90deg);
+  left: auto;
+  bottom: auto;
+}
+.column-reverse div:nth-of-type(2):before,
+.column-reverse div:nth-of-type(2):after {
+  bottom: 530px;
+}
+.row {
+  flex-direction: row;
+}
+.row-reverse {
+  flex-direction: row-reverse;
+}
+.row-reverse::before {
+
+}
+.row-reverse::after {
+  right: 0;
+  text-indent: 90%;
+  left: auto;
+}
+.container {
+  position: relative;
+}
+i {
+  position: absolute;
+  width: 100%;
+  color: blue;
+  border: 1px solid;
+  border-top: none;
+  transform: translate(-10px, -70px);
+}
+</style>
+</head>
+<body>
+<article style="margin-bottom: 100px;">
+<div class="row container">
+<i>main size</i>
+  <span>⬉ main-start</span>
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <span style="left: 60px;">main-end</span>
+</div>
+<p>flex-direction: row; ⤴</p>
+</article>
+<article>
+<div class="row-reverse container">
+  <span style="left: 60px;">main-start</span>
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <span>main-end</span>
+</div>
+<p>flex-direction: row-reverse; ⤴</p>
+</article>
+<article style="width: 45%; float: left">
+<div class="column container" style="flex-direction: column;">
+  <span>main-start</span>
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <span style="top: 15px;">main-end</span>
+</div>
+<p>flex-direction: column; ⤴</p>
+</article><article style="width: 45%; float: right">
+<div class="column-reverse container" style="flex-direction:  column-reverse;">
+  <span style="top: 15px;">main-start</span>
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <span>main-end</span>
+</div>
+<p>flex-direction: column-reverse; ⤴</p>
+</article>
+</body>
+</html>

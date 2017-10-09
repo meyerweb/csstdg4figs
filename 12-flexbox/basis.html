@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items</title>  <style>
+  head {display: block;}
+  head * {display: none;}
+  div {background-color: rgba(255,255,255,0.5)}
+  article { margin: 10px;  }
+  #editme {display: block; padding: 20px; font-size: 1.5em; white-space: pre; font-family: monospace; background-color: rgba(255,255,255,0.5); }
+article > div {
+  display: flex;
+  border: 1px dashed;
+  padding: 10px;
+  min-height: 100px;
+  box-sizing: border-box;
+}
+div > div {
+  border: 1px solid;
+  margin: 10px;
+  padding: 20px 0;
+  line-height: 30px;
+}
+body {
+  font-size: 20px;
+  text-align: center;
+  padding: 100px; display: flex;
+  justify-content: space-between;
+}
+p {margin-top: 0;}
+  </style>
+    <style id="editme" contenteditable>article > div {
+  display: flex;
+}
+</style>
+</head>
+<body>
+<article>
+<div>
+   <div style="flex: 2 1 auto"><b>flex: 2 1 auto;</b> some content, no width.</div>
+  <div style="flex: 1 1 auto"><b>flex: 1 1 auto;</b> Even more content than before, but no width explicitly set.</div>
+  <div style="flex: 3 1 auto"><b>flex: 3 1 auto;</b> Lots and lots of content. Even more content than to the left, but no width explicitly set.</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+
+<article>
+<div>
+  <div style="flex: 2 1 0%"><b>flex: 2 1 0%;</b> some content, no width.</div>
+  <div style="flex: 1 1 0%"><b>flex: 1 1 0%;</b> Even more content than before, but no width explicitly set.</div>
+  <div style="flex: 3 1 0%"><b>flex: 3 1 0%;</b> Lots and lots of content. Even more content than to the left, but no width explicitly set.</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+</body>
+</html>

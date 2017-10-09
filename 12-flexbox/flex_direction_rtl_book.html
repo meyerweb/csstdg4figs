@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: flex-direction, rtl</title>  
+  
+<link rel="stylesheet" href="c/examples.css">  
+<style  contenteditable>
+    body {padding: 100px;}
+div {background-color: rgba(0,0,0,0.1)}
+article > div {
+  display: inline-flex;
+  border: 1px dashed;
+  padding: 10px;
+}
+div > div {
+  border: 1px solid;
+  height: 50px;
+  padding: 0 10px;
+  margin: 10px;
+  line-height: 50px;
+  flex: 1 1 auto;
+  font-size: 0.8em;
+}
+.col div{
+  min-width: 3em;
+  height: 30px; line-height: 30px;
+}
+body {
+  font-size: 25px;
+  text-align: center;
+}
+p {margin-top: 0;}
+div > div:nth-of-type(2) {background-color: rgba(0,0,0,0.2);}
+div > div:nth-of-type(3) {background-color: rgba(0,0,0,0.3);}
+div > div:nth-of-type(4) {background-color: rgba(0,0,0,0.4);}
+div > div:nth-of-type(5) {background-color: rgba(0,0,0,0.5);}
+</style>
+</head>
+<body  dir="rtl">
+  <main style="display: flex"><article>
+<div style="flex-direction: column;" class="col">
+  <div>א</div>
+  <div>ב</div>
+  <div>ג</div>
+  <div>ד</div>
+  <div>ה</div>
+</div>
+<p>:flex-direction<br/>column</p>
+</article><article>
+<div style="flex-direction:  column-reverse;" class="col">
+  <div>א</div>
+  <div>ב</div>
+  <div>ג</div>
+  <div>ד</div>
+  <div>ה</div>
+</div>
+<p>:flex-direction<br/>column-reverse</p>
+</article>
+<article dir="rtl" style="margin-right: 40px">
+<div style="flex-direction: row;">
+  <div>א</div>
+  <div>ב</div>
+  <div>ג</div>
+  <div>ד</div>
+  <div>ה</div>
+</div>
+<p>;flex-direction: row</p>
+
+<div style="flex-direction: row-reverse; margin-top: 1.6em">
+  <div>א</div>
+  <div>ב</div>
+  <div>ג</div>
+  <div>ד</div>
+  <div>ה</div>
+</div>
+<p>;flex-direction: row-reverse</p>
+</article></main>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: flex-wrap</title>  <style>
+  head {display: block;}
+  head * {display: none;}    body {padding: 100px;}
+    article {width: 500px;}
+
+    article:nth-of-type(n+8) {
+      height: 500px;
+    }
+    article:nth-of-type(n+8) div{
+      max-width: 5em;
+    }
+    section { background-color: rgba(255,255,255,0.6);}
+div {background-color: rgba(0,0,0,0.1); font-family: monospace;}div {
+  border: 1px solid;
+  margin: 10px;
+  padding: 0.5em 1em;
+
+body {
+  font-size: 16px;
+  text-align: center;
+}
+p {margin-top: 0;}
+}section {
+  display: flex;
+  border: 1px dashed;
+  padding: 10px;
+}
+  </style>
+    <style style="display: block; padding: 10px; white-space: pre; font-size: 16px; font-family: monospace; background-color: rgba(255,255,255,0.6);" contenteditable>section {
+  flex-flow: row nowrap;
+  max-height: 300px;
+}
+div {
+  max-width: 100px;
+}
+</style>
+</head>
+<body>
+<article>
+<section>
+  <div>A</div>
+  <div>BB</div>
+  <div>CCC</div>
+  <div>DD<br>DD</div>
+  <div>EEE<br>EE</div>
+  <div>FFF<br>FFF</div>
+  <div>GGG<br>GGG<br>G</div>
+  <div>HH<br>HH<br>HH<br>HH</div>
+  <div>III<br>III<br>III</div>
+  <div>JJJJJ<br>JJJJJ</div>
+</section>
+</article>
+
+</body>
+</html>

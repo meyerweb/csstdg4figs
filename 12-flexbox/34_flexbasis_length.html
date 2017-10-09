@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items</title>  
+  
+  <link rel="stylesheet" href="c/examples.css"/>
+  <style contenteditable id="editme">
+div {
+    background-color: rgba(0,0,0,0.1);
+  }
+article  {
+  width: 520px; /* book reads 500. We added 20px to allow for between item padding */
+  box-sizing: content-box;
+}
+article > div {
+  display: flex;
+  border: 1px dashed;
+  padding: 2px; 
+  min-height: 100px; 
+  box-sizing: content-box;
+}
+div > div {
+  border: 1px solid;
+  margin: 2px; /* this makes the extra distributed space available less than 450px */
+  padding: 40px 0; 
+  font-size: 1rem;
+  box-sizing: content-box;
+
+}
+body {
+  font-size: 20px;
+  text-align: center;
+}
+p {margin-top: 0;}
+</style>
+</head>
+<body>
+
+<article>
+<div>
+  <div style="width: 100px">width: 100px</div>
+  <div style="width: 200px">width: 200px</div>
+  <div style="width: 300px">width: 300px</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+<article>
+<div>
+  <div  style="width: 200px">width: 200px</div>
+  <div  style="width: 400px">width: 400px</div>
+  <div  style="width: 200px">width: 200px</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+
+<article>
+<div>
+  <div>lots of content, but no width explicitly set.</div>
+  <div>Even more content than above, but no width explicitly set.</div>
+  <div>Lots and lots of content.Even more content than above, but no width explicitly set.</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+</body>
+</html>

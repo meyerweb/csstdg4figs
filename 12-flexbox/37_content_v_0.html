@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items</title><link rel="stylesheet" href="c/examples.css"/><style contenteditable>
+div {background-color: rgba(0,0,0,0.1)}
+article  {
+  width: 520px;
+}
+article > div {
+  display: flex;
+  outline: 1px dashed;
+  padding: 3px;
+  min-height: 100px;
+}
+div > div {
+  outline: 1px solid;
+  margin: 3px;
+  padding: 20px 3px;
+}
+body {
+  text-align: center;
+  padding: 100px;
+}
+p {margin-top: 0;}
+</style>
+</head>
+<body>
+<article>
+<div>
+   <div style="flex: 2 1 auto"><b>flex: 2 1 auto;</b> some content, no width.</div>
+  <div style="flex: 1 1 auto"><b>flex: 1 1 auto;</b> Even more content than before, but no width explicitly set.</div>
+  <div style="flex: 3 1 auto"><b>flex: 3 1 auto;</b> Lots and lots of content. Even more content than to the left, but no width explicitly set.</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+
+<article>
+<div>
+  <div style="flex: 2 1 0%"><b>flex: 2 1 0%;</b> some content, no width.</div>
+  <div style="flex: 1 1 0%"><b>flex: 1 1 0%;</b> Even more content than before, but no width explicitly set.</div>
+  <div style="flex: 3 1 0%"><b>flex: 3 1 0%;</b> Lots and lots of content. Even more content than to the left, but no width explicitly set.</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+</body>
+</html>

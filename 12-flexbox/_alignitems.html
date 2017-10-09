@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: align-content</title>
+  <link rel="stylesheet" href="c/examples.css"/>
+    <style contenteditable>
+    body {padding: 100px;}
+div {background-color: rgba(0,0,0,0.1)}
+article {position: relative; width: 470px;}
+article > div {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px dashed;
+  padding: 10px;
+}
+div > div {
+  border: 1px solid;
+  margin: 0 10px 0;
+  padding: 0 5px;
+}
+article:nth-of-type(3) > div > div {
+  margin: 0 10px;
+}
+div:nth-of-type(5n+3) {
+  margin: 10px;
+}
+div:nth-of-type(5n+4) {
+  margin: 20px 10px;
+}
+body {
+  font-size: 25px;
+  text-align: center;
+}
+p {margin-top: 0;}
+.e:before,
+.e:after,
+.f:before,
+.f:after,
+.k:before,
+.k:after,
+.e:before,
+.f:before,
+.k:before {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  border-top: 1px solid red;
+  height: 1px;
+}
+.e:before {
+  margin-top: -1px;
+}
+.j {font-size: 3rem;}
+.e:after,
+.f:after,
+.k:after {
+  border-top: none; height: 1.2em;
+  border-bottom: 1px solid blue;
+}
+article .k:before {
+  margin-top: -2px;
+}
+article .e:nth-of-type(5):after {
+  margin-top: 2px;
+}
+article:first-of-type .k:after,
+article:last-of-type .k:after {
+  margin-top: 1px;
+}
+article:nth-of-type(4) .f:before {
+  margin-top: -21px;
+}
+article:nth-of-type(4) .e:before,
+article:nth-of-type(4) .k:before {
+  margin-top: -2px;
+}
+
+
+   div[style] {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border: 1px dashed;
+      padding: 10px;
+    }
+    div[class] {
+      border: 1px solid;
+      margin: 0 10px;
+    }
+    .c, .h {
+      margin: 10px;
+    }
+    .d, .i {
+      margin: 20px 10px;
+    }
+    .j {
+      font-size: 3rem;
+    }
+</style>
+</head>
+<body>
+<article>
+<div style="align-items: flex-start">
+  <div class=a>A</div>
+  <div class=b>BB<br/>BB</div>
+  <div class=c>CCC<br/>CCC<br/>CCC</div>
+  <div class=d>DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class=e>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class=f>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class=g>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div class=h>HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class=i>III<br/>III<br/>III</div>
+  <div class=j>JJ<br/>JJ</div>
+  <div class=k>K</div>
+</div>
+<p>align-items: flex-start ⤴</p>
+</article>
+
+<article>
+<div style="align-items: flex-end">
+  <div class=a>A</div>
+  <div class=b>BB<br/>BB</div>
+  <div class=c>CCC<br/>CCC<br/>CCC</div>
+  <div class=d>DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class=e>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class=f>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class=g>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div class=h>HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class=i>III<br/>III<br/>III</div>
+  <div class=j>JJ<br/>JJ</div>
+  <div class=k>K</div>
+</div>
+<p>align-items: flex-end ⤴</p>
+</article>
+
+<article>
+<div style="align-items: center">
+  <div class=a>A</div>
+  <div class=b>BB<br/>BB</div>
+  <div class=c>CCC<br/>CCC<br/>CCC</div>
+  <div class=d>DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class=e>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class=f>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class=g>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div class=h>HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class=i>III<br/>III<br/>III</div>
+  <div class=j>JJ<br/>JJ</div>
+  <div class=k>K</div>
+</div>
+<p>align-items: center; ⤴</p>
+</article>
+
+<article>
+<div style="align-items: baseline;">
+  <div class=a>A</div>
+  <div class=b>BB<br/>BB</div>
+  <div class="c foo">CCC<br/>CCC<br/>CCC</div>
+  <div class=d>DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class=e>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class=f>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class=g>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div class=h>HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class=i>III<br/>III<br/>III</div>
+  <div class=j>JJ<br/>JJ</div>
+  <div class=k>K</div>
+</div>
+<p>align-items: baseline; ⤴</p>
+</article>
+
+<article>
+<div style="align-items: stretch;">
+  <div class=a>A</div>
+  <div class=b>BB<br/>BB</div>
+  <div class=c>CCC<br/>CCC<br/>CCC</div>
+  <div class=d>DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class=e>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class=f>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class=g>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div class=h>HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class=i>III<br/>III<br/>III</div>
+  <div class=j>JJ<br/>JJ</div>
+  <div class=k>K</div>
+</div>
+<p>align-items: stretch; ⤴</p>
+</article>
+</body>
+</html>

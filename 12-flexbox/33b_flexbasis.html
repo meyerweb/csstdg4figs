@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items</title>
+
+  <link rel="stylesheet" href="c/examples.css"/>
+  <style contenteditable id="editme">
+
+  /* as if flex-basis: 0 1 value; were set */
+div {
+    background-color: rgba(0,0,0,0.1);
+  }
+article  {
+  width: 520px; /* book reads 500. We added 20px to allow for between item padding */
+  box-sizing: content-box;
+}
+article > div {
+  display: flex;
+  border: 1px dashed;
+  padding: 2px; 
+  min-height: 100px; 
+  box-sizing: content-box;
+}
+div > div {
+  border: 1px solid;
+  margin: 2px; /* this makes the extra distributed space available less than 450px */
+  padding: 40px 0; 
+  font-size: 1rem;
+  box-sizing: content-box;
+
+}
+body {
+  font-size: 20px;
+  text-align: center;
+}
+p {margin-top: 0;}
+</style>
+</head>
+<body>
+
+<article>
+<div>
+  <div style="flex-basis: auto">flex-basis: auto</div>
+  <div style="flex-basis: auto">flex-basis: auto</div>
+  <div style="flex-basis: auto">flex-basis: auto</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+
+<article>
+<div>
+  <div style="flex-basis: auto"><b>flex-basis: auto</b> is set with a few words</div>
+  <div style="flex-basis: auto; background-color: rgba(0,0,0,0.2);">This has <b>flex-basis: auto;</b> and <b>background-color: rgba(0, 0, 0, 0.2);</b> set with a lot of additional text, unlike other flex items across a few lines.</div>
+  <div style="flex-basis: auto">This too has <b>flex-basis: auto</b> with a medium amount of extra content.</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+
+
+<article>
+<div>
+  <div style="flex: 0 0 auto"><b>flex-basis: auto</b> is set with a few words</div>
+  <div style="flex: 0 0 auto; background-color: rgba(0,0,0,0.2);">This has <b>flex-basis: auto;</b> and <b>background-color: rgba(0, 0, 0, 0.2);</b> set with a lot of additional text, unlike other flex items across a few lines.</div>
+  <div style="flex: 0 0 auto">This too has <b>flex-basis: auto</b> with a medium amount of extra content.</div>
+</div>
+<p>Flex container⤴ no shrink</p>
+</article>
+
+<article>
+<div>
+  <div style="flex-basis: auto"><b>flex-basis: auto</b> is set with a few words</div>
+  <div style="flex-basis: auto; background-color: rgba(0,0,0,0.2);">This has <b>flex-basis: auto;</b> and <b>background-color: rgba(0, 0, 0, 0.2);</b> set with a lot of additional text, unlike other flex items across a few lines.</div>
+  <div style="flex-basis: auto">This too has <b>flex-basis: auto</b> with a medium amount of extra content.</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+
+<article>
+<div>
+  <div style="flex-basis: auto">flex-basis: auto</div>
+  <div style="flex-basis: auto">flex-basis: auto</div>
+  <div style="flex-basis: 100%">flex-basis: 100%</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+
+<article>
+<div>
+  <div style="flex-basis: 70%">flex-basis: 70%</div>
+  <div style="flex-basis: auto">flex-basis: auto</div>
+  <div style="flex-basis: 80%">flex-basis: 80%</div>
+</div>
+<p>Flex container⤴</p>
+</article>
+</body>
+</html>

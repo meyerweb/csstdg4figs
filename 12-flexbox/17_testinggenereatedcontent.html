@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="code">
+<head style="display: block;">
+  <meta charset="utf-8"/>
+  <title>Justify-content</title>  
+  <link rel="stylesheet" href="c/examples.css"/><style>
+  <style>
+div {width: 50%;}
+  div, p {
+    padding: 5px;
+    border: solid 1px;
+    margin: 5px;
+    background-color: #eee;
+  }
+  p {
+    background-color: #bbb;
+  }
+  body {
+    font-size: 16px;
+    font-family: monospace;
+  }
+  </style>
+  <style id="editme"  contenteditable>
+  p {
+  display: flex;
+  flex-direction: row;
+}
+p:before, p:after {
+  margin: 5px; padding: 5px; background-color: green; order: 3; content: 'hi';
+}
+</style>
+</head>
+<body>
+
+<p>Hello</p>
+</body>

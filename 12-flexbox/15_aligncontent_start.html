@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: align-content</title> 
+
+   <link rel="stylesheet" href="c/examples.css"/>
+
+    <style style="display: block; padding: 10px; white-space: pre; font-size: 16px; " contenteditable>
+    body {padding: 10px;}
+div {background-color: rgba(0,0,0,0.1)}
+article {position: relative; width: 321px; float: left; margin-right: 50px;}
+article > div {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap-reverse;
+  border: 1px dashed;
+  height: 500px;
+  align-content: flex-start;
+  letter-spacing: 2px;
+}
+div > div {
+  border: 1px solid;
+}
+
+body {
+  font-size: 25px;
+  text-align: center;
+}
+pre {margin: 0 -20px 40px 0;
+text-align: left}
+.stretch {
+  align-self: stretch;
+  width: 1px;
+  background-color: transparent;
+  border-color: transparent;
+}
+.stretch:before {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  border-top: 1px solid blue;
+}
+.e:after,
+.f:after,
+.k:after {
+  content: '';
+  left: 0; right: 0;
+  position: absolute;
+  border-top: transparent solid 1px;
+  border-bottom: 1px solid red;
+  height: 1.2em;
+}
+div[style*=stretch] div:after {
+  content: none;
+}
+div[style*=stretch] .f:before,
+div[style*=stretch] .k:before,
+article:last-of-type p:before {
+  content: '';
+  left: 0; right: 0;
+  position: absolute;
+  border-bottom: 1px solid red;
+  transform: translatey(-1px);
+}
+.stretch:last-of-type:before,
+article:last-of-type p:before {
+
+  transform: translatey(-2px);
+}
+article > div {
+  background-image: repeating-linear-gradient(to bottom, transparent 0px, transparent 5px, rgba(0,0,0,0.075) 5px, rgba(0,0,0,0.075) 10px);
+  background-size: 100% 130px;
+  background-repeat: no-repeat;
+}
+article:first-of-type > div,
+article:nth-of-type(2) > div {
+  background-position: bottom
+}
+</style>
+</head>
+<body>
+<article>
+<div style="flex-flow: row wrap;">
+  <div class="a">A</div>
+  <div class="b">BB<br/>BB</div>
+  <div class="c">CCC<br/>CCC<br/>CCC</div>
+  <div class="d">DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="e">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="stretch"></div>
+  <div class="f">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class="g">GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div  class="h">HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class="i">III<br/>III<br/>III</div>
+  <div class="j">JJ<br/>JJ</div>
+  <div class="stretch"></div>
+  <div class="k">K</div>
+  <div class="stretch"></div>
+</div>
+<pre>flex-flow: row wrap; ⤴
+align-content: flex-start;</pre>
+</article>
+
+<article>
+<div style="flex-flow: row-reverse wrap">
+  <div class="a">A</div>
+  <div class="b">BB<br/>BB</div>
+  <div class="c">CCC<br/>CCC<br/>CCC</div>
+  <div class="d">DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="e">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="stretch"></div>
+  <div class="f">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class="g">GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div  class="h">HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class="i">III<br/>III<br/>III</div>
+  <div class="j">JJ<br/>JJ</div>
+  <div class="stretch"></div>
+  <div class="k">K</div>
+  <div class="stretch"></div>
+</div>
+<pre>flex-flow: row wrap-reverse; ⤴
+align-content: flex-start;</pre>
+</article>
+<article>
+<div style="flex-flow: row wrap-reverse">
+  <div class="a">A</div>
+  <div class="b">BB<br/>BB</div>
+  <div class="c">CCC<br/>CCC<br/>CCC</div>
+  <div class="d">DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="e">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="stretch"></div>
+  <div class="f">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class="g">GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div  class="h">HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class="i">III<br/>III<br/>III</div>
+  <div class="j">JJ<br/>JJ</div>
+  <div class="stretch"></div>
+  <div class="k">K</div>
+  <div class="stretch"></div>
+</div>
+<pre>flex-flow: row wrap-reverse; ⤴
+align-content: flex-start;</pre>
+</article>
+
+<article>
+<div style="flex-flow: row-reverse wrap-reverse">
+  <div class="a">A</div>
+  <div class="b">BB<br/>BB</div>
+  <div class="c">CCC<br/>CCC<br/>CCC</div>
+  <div class="d">DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="e">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="stretch"></div>
+  <div class="f">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div class="g">GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div  class="h">HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div class="i">III<br/>III<br/>III</div>
+  <div class="j">JJ<br/>JJ</div>
+  <div class="stretch"></div>
+  <div class="k">K</div>
+  <div class="stretch"></div>
+</div>
+<pre style="margin-right: -100px">flex-flow: row-reverse wrap-reverse; ⤴
+align-content: flex-start;</pre>
+</article>
+</body>
+</html>

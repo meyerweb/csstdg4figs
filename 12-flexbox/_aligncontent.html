@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: align-content</title> 
+
+  <link rel="stylesheet" href="c/examples.css"/>
+    <style contenteditable>
+    body {padding: 100px;}
+div {background-color: rgba(0,0,0,0.1)}
+article {position: relative; width: 320px; float: left; margin-right: 50px;}
+article > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border: 1px dashed;
+  height: 500px;
+}
+div > div {
+  border: 1px solid;
+}
+
+body {
+  font-size: 25px;
+  text-align: center;
+}
+p {margin: 0 -20px 40px;}
+
+.tall:before,
+.tall:after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  border-top: 1px solid red;
+  height: 1px;
+}
+.tall:after {
+  border-top: none; height: 1.2em;
+  border-bottom: 1px solid blue;
+}
+article:last-of-type .tall:after{content: none;}
+article:last-of-type .tall:before{border-color: purple;}
+
+</style>
+</head>
+<body>
+<article>
+<div style="align-content: flex-start">
+  <div>A</div>
+  <div>BB<br/>BB</div>
+  <div>CCC<br/>CCC<br/>CCC</div>
+  <div>DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="tall">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="tall">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div>HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div>III<br/>III<br/>III</div>
+  <div class="b">JJ<br/>JJ</div>
+  <div class="tall">K</div>
+</div>
+<p>align-content: flex-start ⤴</p>
+</article>
+
+<article>
+<div style="align-content: flex-end">
+  <div>A</div>
+  <div>BB<br/>BB</div>
+  <div>CCC<br/>CCC<br/>CCC</div>
+  <div>DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="tall">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="tall">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div>HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div>III<br/>III<br/>III</div>
+  <div class="b">JJ<br/>JJ</div>
+  <div class="tall">K</div>
+</div>
+<p>align-content: flex-end ⤴</p>
+</article>
+
+<article>
+<div style="align-content: center">
+  <div>A</div>
+  <div>BB<br/>BB</div>
+  <div>CCC<br/>CCC<br/>CCC</div>
+  <div>DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="tall">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="tall">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div>HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div>III<br/>III<br/>III</div>
+  <div class="b">JJ<br/>JJ</div>
+  <div class="tall">K</div>
+</div>
+<p>align-content: center; ⤴</p>
+</article>
+
+<article>
+<div style="align-content: space-between;">
+  <div>A</div>
+  <div>BB<br/>BB</div>
+  <div class="foo">CCC<br/>CCC<br/>CCC</div>
+  <div>DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="tall">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="tall">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div>HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div>III<br/>III<br/>III</div>
+  <div class="b">JJ<br/>JJ</div>
+  <div class="tall">K</div>
+</div>
+<p>align-content:  space-between; ⤴</p>
+</article>
+<article>
+<div style="align-content: space-around;">
+  <div>A</div>
+  <div>BB<br/>BB</div>
+  <div class="foo">CCC<br/>CCC<br/>CCC</div>
+  <div>DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="tall">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="tall">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div>HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div>III<br/>III<br/>III</div>
+  <div class="b">JJ<br/>JJ</div>
+  <div class="tall">K</div>
+</div>
+<p>align-content:  space-around; ⤴</p>
+</article>
+
+<article>
+<div style="align-content: stretch;">
+  <div>A</div>
+  <div>BB<br/>BB</div>
+  <div>CCC<br/>CCC<br/>CCC</div>
+  <div>DDDD<br/>DDDD<br/>DDDD<br/>DDDD</div>
+  <div class="tall">EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE<br/>EEEEE</div>
+  <div class="tall">FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF<br/>FFFFFF</div>
+  <div>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG<br/>GGGGG</div>
+  <div>HHHH<br/>HHHH<br/>HHHH<br/>HHHH</div>
+  <div>III<br/>III<br/>III</div>
+  <div class="b">JJ<br/>JJ</div>
+  <div class="tall">K</div>
+</div>
+<p>align-content: stretch; ⤴</p>
+</article>
+</body>
+</html>

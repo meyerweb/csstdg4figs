@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+head, style {display: block;}
+[contenteditable] {-webkit-user-modify: read-write-plaintext-only;}
+style:first-of-type {visibility:hidden;}
+style:last-of-type {padding: 20px; font-size: 1.5em; white-space: pre; font-family: monospace; background-color: rgba(255,255,255,0.5);}
+html {min-height:100%;}
+div {border: 3px solid #ddaa00; padding: 3px; line-height: 2rem;}
+div div {border-color: #333;}
+div>div {border-style: dotted;}
+div:nth-of-type(2){border-style: dashed;}
+.a {background-color: #fff;}
+.b {background-color: #ccc;}
+.c {background-color: #999;}
+</style>
+
+<style contenteditable>
+body > div {
+  display: flex;
+}
+.a, .b {
+  flex: 0 1 200px;
+}
+.c {
+  flex: 1 0 200px;
+}
+ </style>
+<title>Flexbox</title>
+</head>
+
+<body>
+	<div id="container">
+		<div class="box a"><h1>A</h1><p>One sentence.</p></div>
+		<div class="box b"><h1>B</h1><p>A medium amount of text, but still nothing really interesting to read here. I promise.</div>
+		<div class="box c"><h1>C</h1><p>Yummy ipsum lorem kitten, bacon and mushroom. Rainbows rainbows pigeon wereunicorn app surprise, kittens pegasus delight unicorn wereunicorn rainbows. Pigeon unicorn surprise pony pigeon wereunicorn app app.</p></div>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Power Grid home page example</title>  
+  <style>
+  html {
+    background-color: #333;
+    font-family: helvetica;
+  }
+    
+    body > *, main > * {
+      outline: 1px #ccc solid;} 
+    * { 
+      padding: 10px;
+    } 
+ nav {background-color: #ccc;}
+ header, 
+ footer { 
+  text-align: center; 
+  background: #ddaa00; 
+  color: white;
+} 
+main {
+  background-color: grey;
+}
+button {
+  width: 100%;
+}
+    body, section {
+      background-color: white; 
+      margin: 5px;
+    }  
+    img {
+      background-color: #ccc;
+      padding: 0;
+    } 
+    h1 {
+      margin: 0;
+    } 
+    nav {
+      padding: 5px 2px;
+    }
+    nav a {
+      margin: 0 5px; 
+      background-color: white; 
+      color: #ddaa00; 
+      text-align: center; 
+      text-decoration: none; 
+      border: 1px solid #333;
+    }
+
+      section > button,
+      section > a {
+      background: linear-gradient(#ccc, #fff);
+      border: 1px solid #ccc;
+      text-decoration: none;
+      color: #666;
+      font-size: 0.75rem;
+      text-align: center;
+      display:inline-block;
+      box-sizing: border-box;
+    }
+/* relevant CSS */
+      nav {
+        display: flex;
+      }
+      section > img, 
+      section > button,
+      section > a {
+        width: 100%; 
+      }
+      nav a {
+        flex: 1; 
+      }
+
+  @media screen and (min-width: 40em) {
+    body, 
+    main, 
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main > section, 
+    main > section > p {
+      flex: 1;
+    }
+    header, nav {
+      order: -1;
+    }
+    main {
+      flex-direction: row;
+      border-bottom: 0.5rem solid;
+    }
+    main > section {
+      margin: 10px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <header><h1>Power Grid Homepage</h1></header>
+  <main>
+      <section>
+        <img alt=""  src="../static/img/unicorn1.jpg">
+        <p>This is some awesome content that is on the page.</p>
+        <a href="somewhere">Go Somewhere</a>
+      </section>
+      <section>
+        <img alt="" src="../static/img/unicorn2.jpg">
+        <p>This is more content than the previous box, but less than the next.</p>
+        <button>Click Me</button>
+      </section>
+      <section>
+        <img alt="" src="../static/img/unicorn3.jpg">
+        <p>We have lots of content here to show that content can grow, and everything can be the same size if you use flexbox. Even if this has tons of text, it will line up with the other sections.</p>
+        <button>Do Something</button>
+      </section>
+  </main>
+    <nav>
+      <a href="#1">Home</a>
+      <a href="#2">About</a>
+      <a href="#3">Blog</a>
+      <a href="#4">Careers</a>
+      <a href="#5">Contact Us</a>
+  </nav>
+  <footer>Copyright &copy; 2017</footer>
+</body>
+</html>

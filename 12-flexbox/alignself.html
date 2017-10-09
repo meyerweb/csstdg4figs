@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+head, style {display: block;}
+[contenteditable] {-webkit-user-modify: read-write-plaintext-only;}
+style:first-of-type {visibility:hidden;}
+style:last-of-type {padding: 20px; font-size: 1.5em; white-space: pre; font-family: monospace; background-color: rgba(255,255,255,0.5);}
+html {min-height:100%;}
+.container {background-color: #ddaa00;
+  display: flex;}
+div {border: 3px solid #ddaa00; padding: 3px; line-height: 1.6rem;}
+p { text-align: left}
+h1 {
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+.a {background-color: #fff;}
+.b {background-color: #ccc;}
+.c {background-color: #999;}
+.c h1 {line-height: 2;}
+.item {
+	flex: 1;
+}
+</style>
+
+<style contenteditable>.container{
+  align-items: center;
+}
+.b {
+	align-self: stretch;
+}
+</style>
+<title>Flexbox</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="item a"><h1>A: This is a header</h1><p>One sentence.</p></div>
+		<div class="item b"><h1>B: Another Header</h1><p>flex-start | flex-end | center | baseline | stretch</div>
+		<div class="item c"><h1>C: Header with line height</h1><p>Yummy ipsum lorem kitten, bacon and mushroom. Rainbows rainbows pigeon wereunicorn app surprise, kittens pegasus delight unicorn wereunicorn rainbows. Pigeon unicorn surprise pony pigeon wereunicorn app app.</p></div>
+	</div>
+  <code>auto | flex-start | flex-end | center | baseline | stretch</code>
+</body>
+</html>
+
