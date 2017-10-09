@@ -1,21 +1,27 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8"/>
-<title>Flex Items: align-content</title> 
-<link rel="stylesheet" href="c/examples.css"/>
-<style type="text/css">
-body {padding: 10px; display: flex; justify-content: space-evenly; flex-wrap: wrap;}
+  <meta charset="utf-8"/>
+  <title>Flex Items: align-content</title> 
+
+   <link rel="stylesheet" href="c/examples.css"/>
+
+    <style>
+    body {padding: 10px; display: flex; justify-content: space-evenly; flex-wrap: wrap;}
 div {background-color: rgba(0,0,0,0.1);}
-article {position: relative; width: 320px;}
+article {position: relative; display: flex; flex-direction: row-reverse;}
+article > p {writing-mode: vertical-lr; width: 1.5em; margin: 100px 0 0;}
 article > div {
+	position: relative;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: flex-start;
   flex-wrap: wrap;
   border: 1px dashed;
-  height: 500px;
-  background-image: repeating-linear-gradient(to bottom, white 0px, white 5px, rgba(0,0,0,0.075) 5px, rgba(0,0,0,0.075) 10px);
+  height: 300px;
+  width: 350px;
+  margin: 100px 0 30px;
+	background: #EEE;
 }
 div > div {
   border: 1px solid;
@@ -24,7 +30,6 @@ div > div {
   letter-spacing: 2px;
 }
 .stretch {flex: 0 1 0;}
-.k {flex: 1 0 95%;}
 body {
   font-size: 25px;
   text-align: center;
@@ -42,6 +47,9 @@ p {margin: 0 -20px 40px;}
   left: 0; right: 0;
   border-top: 1px solid red;
 }
+.a, .f, .k {margin-left: 20px;}
+.e, .j, .k {margin-right: 20px;}
+.k {flex: 0 1 2ch;}
 .e:after,
 .f:after,
 .k:after {
