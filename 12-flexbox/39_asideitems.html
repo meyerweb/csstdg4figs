@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Flex Items</title>  
+<link rel="stylesheet" href="c/examples.css"/>
+<style type="text/css">
+img {
+	background-image: linear-gradient(to bottom right, lightblue, white 50%, gold 50%, white);
+	width: 100px; 
+	height: 100px;
+	box-sizing: border-box; 
+}
+
+/*------- comment out or edit properties below -------*/ 
+aside {
+	background-color: rgba(0,0,0,0.1);
+	display: flex;
+	border: 1px dashed;
+	padding: 10px;
+	align-items: center;
+	line-height: 100px;
+}
+	aside > * {
+	border: 1px solid;
+	margin: 0 10px;
+	padding: 0 10px;
+}
+</style>
+</head>
+<body>
+
+<aside>
+
+<!-- a comment -->
+<h1>Header</h1>
+
+<img src="images/foo.jpg" alt="">
+Some text <a href="foo.html">with a link</a> and more text
+
+</aside>
+</body>
+</html>

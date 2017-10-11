@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="code">
+<head>
+  <meta charset="utf-8"/>
+  <title>Flex Items: flex-wrap</title>
+
+  <link rel="stylesheet" href="c/examples.css"/> 
+    <style contenteditable>
+body {
+  text-align: center;
+  padding: 3em 6em;
+}
+
+article {width: 24em;}
+section {
+  display: flex;
+  position: relative;
+  border: 1px dashed;
+  padding: 10px;
+  background: #EEE;
+  width: 24em; height: 14em;
+}
+section > span {
+  border: 1px solid;
+  margin: 10px;
+  padding: 0.5em 1em;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+section > div {position: absolute; top: -1.2em; left: -5em;
+	display: flex; justify-content: space-between;}
+section > div span {margin: 0 0.33em;}
+section > div.cross {
+	flex-direction: row-reverse;
+	color: red;
+	right: -1px;
+	left: -5.5em;
+	padding-bottom: 1.1em;
+	background: url(i/arrow-left.svg) 0 50% / 0.33em 0.75em no-repeat,
+		linear-gradient(to left,red,red)  50% 50% / 100% 3px no-repeat,
+		linear-gradient(to left,red,red)  100% 50% / 3px 2ch no-repeat;
+}
+section > div.cross .end {margin-left: 0.5em;}
+section > div.main {
+	flex-direction: column-reverse;
+	color: blue;
+	top: -2.4em;
+	bottom: -1px;
+	width: 10em;
+	align-items: flex-start;
+	background: url(i/arrow-up.svg) 50% 0 / 0.75em 0.33em no-repeat,
+		linear-gradient(to top,blue,blue)  50% 50% / 3px 100% no-repeat,
+		linear-gradient(to top,blue,blue)  50% 100% / 2ch 3px no-repeat;
+}
+section > div.main .end {align-self: flex-end; margin-top: 1.2em;}
+
+section + p {margin-top: 0.25em;}
+</style>
+</head>
+<body>
+<article>
+<section style="flex-flow: column-reverse wrap-reverse">
+  <span>A</span>
+  <span>BB</span>
+  <span>CCC</span>
+  <span>DDDD</span>
+  <span>EEE<br>EE</span>
+  <span>FFF<br>FFF</span>
+  <span>GGG<br>GGG</span>
+  <span>HHH<br>HHH<br>HHH</span>
+  <span>IIIII<br>IIIII</span>
+  <span>JJJJ<br>JJJ<br>JJJJ</span>
+<div class="main">
+<span class="start">main-start</span>
+<span class="end">main-end</span>
+</div>
+<div class="cross">
+<span class="start">cross-start</span>
+<span class="end">cross-end</span>
+</div>
+</section>
+<p>flex-row: column-reverse wrap-reverse; ⤴</p>
+</article>
+
+</body>
+</html>
