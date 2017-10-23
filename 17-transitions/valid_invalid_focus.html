@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+head, style {display: block; }
+[contenteditable] {-webkit-user-modify: read-write-plaintext-only;}
+style:first-of-type {visibility:hidden;}
+#editme {background-color: #dedede;padding: 20px; font-size: 1.1em; white-space: pre; font-family: monospace; white-space:pre; border-radius: 10px; border: 3px solid #aaa; background-color:#dedede; margin: 20px auto; width: 80%; font-family:"Courier New", Courier, monospace; max-height: 180px; overflow: scroll; }
+ul {list-style-type: none;}
+li {margin: 1em; margin: 10px 100px;}
+input {
+  border: 3px solid;
+  box-shadow: none;
+  outline: none;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 2em;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+	
+}
+</style>
+<style contenteditable id="editme">/* Matches some of the time, only when valid. */
+input:valid {
+	border-color: green;
+}
+/* matches  some of the time, when the prior selector does NOT match. */
+input:invalid {
+	border-color: red;
+}
+/* matches  some of the time, whether the input is valid or invalid */
+input:focus {
+	border-color: yellow;
+}</style>
+<title>Valid, Invalid, Focus</title>
+</head>
+<body>
+<ul>
+<li>
+<input type="text" pattern="valid" value="valid">
+</li>
+<li>
+<input type="text" pattern="valid" value="invalid">
+</li>
+<li>
+<input type="text" pattern="valid" value="autofocus" autofocus>
+</li>
+</ul>
+</body>
+</html>
+
