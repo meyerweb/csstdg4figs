@@ -7,6 +7,9 @@ header h2 {word-spacing: 0;}
 		}
 	}
 }
+
+p {line-height: 1.33;}
+
 @supports (--chno: 0) {
 	ol {list-style: decimal;}
 	ol li:not(.xmp) {margin-left: 0;}
