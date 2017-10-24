@@ -5,17 +5,26 @@ style#editme {
 	display: block;
 	-webkit-user-modify: read-write-plaintext-only;
 	white-space: pre-wrap;
-	}
-#editme {
 	padding: 1ch 2ch; margin: 2ch;
-	border: 0.25ch solid #aaa;
+	border: 0.25ch solid rgba(0,0,0,0.33);
 	border-radius: 1ch;
-	background-color: #dedede;
+	background-color: hsl(120,20%,90%);
 	font: 1.2rem Consolas, "Courier New", Courier, monospace;
-	white-space: pre;
 	max-height: 50vh;
 	overflow: auto;
 	}
+style#editme::before {
+	content: "Editable CSS";
+	display: block;
+	margin: -1ch -2ch 1em;
+	padding: 0.75ch 1ch 0.25ch;
+	background: rgba(0,42,0,0.15);
+	color: #666;
+	border-bottom: 2px solid rgba(0,0,0,0.33);
+	font-weight: bold;
+	font-family: sans-serif;
+	text-align: center;
+}
 
 body {
     font-family: Verdana, Geneva, sans-serif;

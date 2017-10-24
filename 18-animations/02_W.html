@@ -4,10 +4,15 @@
 <head>
 <meta charset="utf-8">
 <title></title>
-<link type="text/css" href="c/style-edit.css" rel="stylesheet">
-<style type="text/css">[contenteditable] {
+<link type="text/css" href="../styles/style-edit.css" rel="stylesheet">
+<style type="text/css">
+style#editme {
     -webkit-columns: 2;
     columns: 2;
+}
+style#editme::before {
+	border-right: 2px solid rgba(0,0,0,0.33);
+	margin-right: 1em;
 }
 .pencil {
     color: blue;

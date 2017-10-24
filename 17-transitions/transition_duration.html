@@ -1,32 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<style>
-head,style {
-	display: block; 
-}
-[contenteditable] {
-z-indexwebkit-user-modify: read-write-plaintext-only; 
-}
-style:first-of-type {
-	display: none; 
-}
-#editme {
-	background-color: #dedede;
-	padding: 20px;
-	font-size: 1.1em;
-	white-space: pre;
-	font-family: monospace;
-	white-space: pre;
-	border-radius: 10px;
-	border: 3px solid #aaa;
-	background-color: #dedede;
-	margin: 20px auto;
-	width: 80%;
-	font-family: "Courier New",Courier,monospace;
-	max-height: 180px;
-	overflow: auto; 
-}
+<meta charset="utf-8" />
+<style type="text/css">
+@import url(../styles/style-edit.css);
+p {margin: 2em auto; width: 80%;}
 ul {
 	list-style-type: none; 
 }
@@ -54,7 +32,7 @@ input:valid {
 </head>
 <body>
 
-<p>Note: as it changes to red, it changes slowly. When it changes to green it transitions quickly. You can edit the times in the CSS above to changes the duration of the transitions.</p>
+<p>Note: in the inputs below, integers (or their equivalents) are valid, while fractional numbers are not.  You can change the values via keyboard to make them invalid or valid.  When an input’s value becomes invalid, it changes slowly to red. When the value changes from invalid to valid, it changes to green quickly. You can edit the times in the CSS above to change the durations of the transitions.</p>
 
 <ul>
 <li>
