@@ -5,18 +5,21 @@
   <title>Flex Items: flex-wrap</title>
 
   <link rel="stylesheet" href="c/examples.css"/> 
-    <style contenteditable>
-    body {padding: 100px;}
-    article {width: 500px;}
-
-
-    article:nth-of-type(n+8) {
-      height: 500px;
-    }
-    article:nth-of-type(n+8) span{
-      max-width: 5em;
-    }
-
+  <style contenteditable>
+body {
+  font-size: 16px;
+  text-align: center;
+  padding: 100px;
+}
+article {
+  width: 500px;
+}
+article:nth-of-type(n+8) {
+  height: 500px;
+} 
+article:nth-of-type(n+8) span{
+  max-width: 5em;
+} 
 section {
   display: flex;
   border: 1px dashed;
@@ -29,182 +32,204 @@ span {
   background-color: rgba(0, 0, 0, 0.1);
   font-family: "ubuntu mono", monospace;
 }
-body {
-  font-size: 16px;
-  text-align: center;
+p {
+  margin-top: 0;
 }
-p {margin-top: 0;}
 </style>
 </head>
 <body>
 <article>
-<section style="flex-flow: row nowrap">
-  <span>A</span>
-  <span>BB</span>
-  <span>CCC</span>
-  <span>DD<br>DD</span>
-  <span>EEE<br>EE</span>
-  <span>FFF<br>FFF</span>
-  <span>GGG<br>GGG<br>G</span>
-  <span>HH<br>HH<br>HH<br>HH</span>
-  <span>III<br>III<br>III</span>
-  <span>JJJJJ<br>JJJJJ</span>
-</section>
-<p>flex-row: row nowrap; ⤴</p>
+  <section style="flex-flow: row nowrap">
+    <span>A</span>
+    <span>BB</span>
+    <span>CCC</span>
+    <span>DD<br>DD</span>
+    <span>EEE<br>EE</span>
+    <span>FFF<br>FFF</span>
+    <span>GGG<br>GGG<br>G</span>
+    <span>HH<br>HH<br>HH<br>HH</span>
+    <span>III<br>III<br>III</span>
+    <span>JJJJJ<br>JJJJJ</span>
+  </section>
+  <p>flex-row: row nowrap; ⤴</p>
 </article>
+
+
+
+
 <article>
-<section style="flex-flow: row wrap">
-  <span>A</span>
-  <span>BB</span>
-  <span>CCC</span>
-  <span>DD<br>DD</span>
-  <span>EEE<br>EE</span>
-  <span>FFF<br>FFF</span>
-  <span>GGG<br>GGG<br>G</span>
-  <span>HH<br>HH<br>HH<br>HH</span>
-  <span>III<br>III<br>III</span>
-  <span>JJJJJ<br>JJJJJ</span>
-</section>
-<p>flex-row: row wrap; ⤴</p>
+  <section style="flex-flow: row wrap">
+    <span>A</span>
+    <span>BB</span>
+    <span>CCC</span>
+    <span>DD<br>DD</span>
+    <span>EEE<br>EE</span>
+    <span>FFF<br>FFF</span>
+    <span>GGG<br>GGG<br>G</span>
+    <span>HH<br>HH<br>HH<br>HH</span>
+    <span>III<br>III<br>III</span>
+    <span>JJJJJ<br>JJJJJ</span>
+  </section>
+  <p>flex-row: row wrap; ⤴</p>
 </article>
+
+
+
+
 <article>
-<section style="flex-flow: row wrap-reverse">
-  <span>A</span>
-  <span>BB</span>
-  <span>CCC</span>
-  <span>DD<br>DD</span>
-  <span>EEE<br>EE</span>
-  <span>FFF<br>FFF</span>
-  <span>GGG<br>GGG<br>G</span>
-  <span>HH<br>HH<br>HH<br>HH</span>
-  <span>III<br>III<br>III</span>
-  <span>JJJJJ<br>JJJJJ</span>
-</section>
-<p>flex-row: row wrap-reverse; ⤴</p>
+  <section style="flex-flow: row wrap-reverse">
+    <span>A</span>
+    <span>BB</span>
+    <span>CCC</span>
+    <span>DD<br>DD</span>
+    <span>EEE<br>EE</span>
+    <span>FFF<br>FFF</span>
+    <span>GGG<br>GGG<br>G</span>
+    <span>HH<br>HH<br>HH<br>HH</span>
+    <span>III<br>III<br>III</span>
+    <span>JJJJJ<br>JJJJJ</span>
+  </section>
+  <p>flex-row: row wrap-reverse; ⤴</p>
 </article>
 
 <article>
-<section style="flex-flow: row">
-  <span>A</span>
-  <span>BB</span>
-  <span>CCC</span>
-  <span>DD<br>DD</span>
-  <span>EEE<br>EE</span>
-  <span>FFF<br>FFF</span>
-  <span>GGG<br>GGG<br>G</span>
-  <span>HH<br>HH<br>HH<br>HH</span>
-  <span>III<br>III<br>III</span>
-  <span>JJJJJ<br>JJJJJ</span>
-</section>
-<p>flex-row: row; ⤴</p>
+  <section style="flex-flow: row">
+    <span>A</span>
+    <span>BB</span>
+    <span>CCC</span>
+    <span>DD<br>DD</span>
+    <span>EEE<br>EE</span>
+    <span>FFF<br>FFF</span>
+    <span>GGG<br>GGG<br>G</span>
+    <span>HH<br>HH<br>HH<br>HH</span>
+    <span>III<br>III<br>III</span>
+    <span>JJJJJ<br>JJJJJ</span>
+  </section>
+  <p>flex-row: row; ⤴</p>
 </article>
 
 <article>
-<section style="flex-flow: nowrap">
-  <span>A</span>
-  <span>BB</span>
-  <span>CCC</span>
-  <span>DD<br>DD</span>
-  <span>EEE<br>EE</span>
-  <span>FFF<br>FFF</span>
-  <span>GGG<br>GGG<br>G</span>
-  <span>HH<br>HH<br>HH<br>HH</span>
-  <span>III<br>III<br>III</span>
-  <span>JJJJJ<br>JJJJJ</span>
-</section>
-<p>flex-row: nowrap; ⤴</p>
+  <section style="flex-flow: nowrap">
+    <span>A</span>
+    <span>BB</span>
+    <span>CCC</span>
+    <span>DD<br>DD</span>
+    <span>EEE<br>EE</span>
+    <span>FFF<br>FFF</span>
+    <span>GGG<br>GGG<br>G</span>
+    <span>HH<br>HH<br>HH<br>HH</span>
+    <span>III<br>III<br>III</span>
+    <span>JJJJJ<br>JJJJJ</span>
+  </section>
+  <p>flex-row: nowrap; ⤴</p>
 </article>
+
+
+
+
 <article>
-<section style="flex-flow: wrap">
-  <span>A</span>
-  <span>BB</span>
-  <span>CCC</span>
-  <span>DD<br>DD</span>
-  <span>EEE<br>EE</span>
-  <span>FFF<br>FFF</span>
-  <span>GGG<br>GGG<br>G</span>
-  <span>HH<br>HH<br>HH<br>HH</span>
-  <span>III<br>III<br>III</span>
-  <span>JJJJJ<br>JJJJJ</span>
-</section>
-<p>flex-row: wrap; ⤴</p>
+  <section style="flex-flow: wrap">
+    <span>A</span>
+    <span>BB</span>
+    <span>CCC</span>
+    <span>DD<br>DD</span>
+    <span>EEE<br>EE</span>
+    <span>FFF<br>FFF</span>
+    <span>GGG<br>GGG<br>G</span>
+    <span>HH<br>HH<br>HH<br>HH</span>
+    <span>III<br>III<br>III</span>
+    <span>JJJJJ<br>JJJJJ</span>
+  </section>
+  <p>flex-row: wrap; ⤴</p>
 </article>
+
+
+
+
 <article>
-<section style="flex-flow: wrap-reverse">
-  <span>A</span>
-  <span>BB</span>
-  <span>CCC</span>
-  <span>DD<br>DD</span>
-  <span>EEE<br>EE</span>
-  <span>FFF<br>FFF</span>
-  <span>GGG<br>GGG<br>G</span>
-  <span>HH<br>HH<br>HH<br>HH</span>
-  <span>III<br>III<br>III</span>
-  <span>JJJJJ<br>JJJJJ</span>
-</section>
-<p>flex-row: wrap-reverse; ⤴</p>
+  <section style="flex-flow: wrap-reverse">
+    <span>A</span>
+    <span>BB</span>
+    <span>CCC</span>
+    <span>DD<br>DD</span>
+    <span>EEE<br>EE</span>
+    <span>FFF<br>FFF</span>
+    <span>GGG<br>GGG<br>G</span>
+    <span>HH<br>HH<br>HH<br>HH</span>
+    <span>III<br>III<br>III</span>
+    <span>JJJJJ<br>JJJJJ</span>
+  </section>
+  <p>flex-row: wrap-reverse; ⤴</p>
 </article>
 
 <article>
-<section style="flex-flow: column">
-  <span>A</span>
-  <span>BB</span>
-  <span>CCC</span>
-  <span>DD<br>DD</span>
-  <span>EEE<br>EE</span>
-  <span>FFF<br>FFF</span>
-  <span>GGG<br>GGG<br>G</span>
-  <span>HH<br>HH<br>HH<br>HH</span>
-  <span>III<br>III<br>III</span>
-  <span>JJJJJ<br>JJJJJ</span>
-</section>
-<p>flex-row: column; ⤴</p>
+  <section style="flex-flow: column">
+    <span>A</span>
+    <span>BB</span>
+    <span>CCC</span>
+    <span>DD<br>DD</span>
+    <span>EEE<br>EE</span>
+    <span>FFF<br>FFF</span>
+    <span>GGG<br>GGG<br>G</span>
+    <span>HH<br>HH<br>HH<br>HH</span>
+    <span>III<br>III<br>III</span>
+    <span>JJJJJ<br>JJJJJ</span>
+  </section>
+  <p>flex-row: column; ⤴</p>
 </article>
 
 <article>
-<section style="flex-flow: column nowrap">
-  <span>A</span>
-  <span>BB</span>
-  <span>CCC</span>
-  <span>DD<br>DD</span>
-  <span>EEE<br>EE</span>
-  <span>FFF<br>FFF</span>
-  <span>GGG<br>GGG<br>G</span>
-  <span>HH<br>HH<br>HH<br>HH</span>
-  <span>III<br>III<br>III</span>
-  <span>JJJJJ<br>JJJJJ</span>
-</section>
-<p>flex-row: column nowrap; ⤴</p>
+  <section style="flex-flow: column nowrap">
+    <span>A</span>
+    <span>BB</span>
+    <span>CCC</span>
+    <span>DD<br>DD</span>
+    <span>EEE<br>EE</span>
+    <span>FFF<br>FFF</span>
+    <span>GGG<br>GGG<br>G</span>
+    <span>HH<br>HH<br>HH<br>HH</span>
+    <span>III<br>III<br>III</span>
+    <span>JJJJJ<br>JJJJJ</span>
+  </section>
+  <p>flex-row: column nowrap; ⤴</p>
 </article>
+
+
+
+
 <article>
-<section style="flex-flow: column wrap">
-  <span>A</span>
-  <span>BB</span>
-  <span>CCC</span>
-  <span>DD<br>DD</span>
-  <span>EEE<br>EE</span>
-  <span>FFF<br>FFF</span>
-  <span>GGG<br>GGG<br>G</span>
-  <span>HH<br>HH<br>HH<br>HH</span>
-  <span>III<br>III<br>III</span>
-  <span>JJJJJ<br>JJJJJ</span>
-</section>
-<p>flex-row: column wrap; ⤴</p>
+  <section style="flex-flow: column wrap">
+    <span>A</span>
+    <span>BB</span>
+    <span>CCC</span>
+    <span>DD<br>DD</span>
+    <span>EEE<br>EE</span>
+    <span>FFF<br>FFF</span>
+    <span>GGG<br>GGG<br>G</span>
+    <span>HH<br>HH<br>HH<br>HH</span>
+    <span>III<br>III<br>III</span>
+    <span>JJJJJ<br>JJJJJ</span>
+  </section>
+  <p>flex-row: column wrap; ⤴</p>
 </article>
+
+
+
+
 <article>
-<section style="flex-flow: column wrap-reverse">
-  <span>A</span>
-  <span>BB</span>
-  <span>CCC</span>
-  <span>DD<br>DD</span>
-  <span>EEE<br>EE</span>
-  <span>FFF<br>FFF</span>
-  <span>GGG<br>GGG<br>G</span>
-  <span>HH<br>HH<br>HH<br>HH</span>
-  <span>III<br>III<br>III</span>
-  <span>JJJJJ<br>JJJJJ</span>
-</section>
-<p>flex-row: column wrap-reverse; ⤴</p>
+  <section style="flex-flow: column wrap-reverse">
+    <span>A</span>
+    <span>BB</span>
+    <span>CCC</span>
+    <span>DD<br>DD</span>
+    <span>EEE<br>EE</span>
+    <span>FFF<br>FFF</span>
+    <span>GGG<br>GGG<br>G</span>
+    <span>HH<br>HH<br>HH<br>HH</span>
+    <span>III<br>III<br>III</span>
+    <span>JJJJJ<br>JJJJJ</span>
+  </section>
+  <p>flex-row: column wrap-reverse; ⤴</p>
 </article>
 
 </body>

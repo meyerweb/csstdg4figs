@@ -4,20 +4,26 @@
 	<meta charset="utf-8"/>
 	<title>Flex Items: align-content</title> 
 	 <link rel="stylesheet" href="c/examples.css"/>
-<style type="text/css">
-body {padding: 1ch;
+<style>
+body {
+  	padding: 1ch;
 	font-size: 25px;
 	text-align: center;
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: wrap;
 }
-article {display: flex; flex-wrap: wrap; flex: 1 1 400px; justify-content: center;}
-div {background-color: rgba(0,0,0,0.1)}
+article {
+  display: flex; 
+  flex-flow: wrap; 
+  flex: 1 1 400px; 
+  justify-content: center;
+}div {
+  background-color: rgba(0,0,0,0.1);
+}
 article > div {
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	align-items: stretch;
-	flex-wrap: wrap;
 	border: 1px dashed;
 	box-sizing: border-box;
 	height: 500px;
@@ -37,12 +43,27 @@ div > div {
 	border-top: 2px solid red;
 	border-bottom: 2px solid blue;
 }
-.k {flex: 1 0 95%;}
+.k {
+  flex: 1 0 95%;
+}
 
-article > .labels {margin: 1px 0.25ch; padding: 0; list-style: none; font-style: italic;}
-article > .labels li {box-sizing: border-box;
-	display: flex; align-items: center; padding: 1px 0 1px 1.5ch;}
-article > .labels li.n {opacity: 0; width: 1ch; background: #FAA;}
+article > .labels {
+  margin: 1px 0.25ch; 
+  padding: 0; 
+  list-style: none; 
+  font-style: italic;
+}
+article > .labels li {
+	box-sizing: border-box;
+	display: flex; 
+	align-items: center; 
+	padding: 1px 0 1px 1.5ch;
+}
+article > .labels li.n {
+  opacity: 0; 
+  width: 1ch; 
+  background: #FAA;
+}
 article > .labels li:not(.n) {
 	color: purple;
 	background-image: linear-gradient(blue, blue),
@@ -53,24 +74,35 @@ article > .labels li:not(.n) {
 	background-position: 0 0, 1ch 0, 0 100%;
 	}
 
-article:nth-of-type(1) .labels li:not(.n) {height: 60px;}
-article:nth-of-type(2) .labels li:not(.n) {height: 20px;}
-article:nth-of-type(3) .labels li:not(.n) {height: 30px;}
+article:nth-of-type(1) .labels li:not(.n) {
+  height: 60px;
+}
+article:nth-of-type(2) .labels li:not(.n) {
+  height: 20px;
+}
+article:nth-of-type(3) .labels li:not(.n) {
+  height: 30px;
+}
 
 article:nth-of-type(2) > .labels li:nth-child(3),
 article:nth-of-type(2) > .labels li:nth-child(6) {
 	background-image: linear-gradient(blue, blue),
 		linear-gradient(blue, purple),
 		linear-gradient(purple, purple);
-		background-size: 1ch 2px, 2px 100%, 1ch 1px;}
+		background-size: 1ch 2px, 2px 100%, 1ch 1px;
+}
 article:nth-of-type(2) > .labels li:nth-child(4),
 article:nth-of-type(2) > .labels li:nth-child(7) {
 	background-image: linear-gradient(purple, purple),
 		linear-gradient(purple, red),
 		linear-gradient(red, red);
-		background-size: 1ch 1px, 2px 100%, 1ch 2px;}
+		background-size: 1ch 1px, 2px 100%, 1ch 2px;
+}
 
-article > p {flex: 1 0 100%; padding-right: 4ch;}
+article > p {
+  flex: 1 0 100%; 
+  padding-right: 4ch;
+}
 
 </style>
 </head>

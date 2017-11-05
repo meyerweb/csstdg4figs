@@ -4,19 +4,52 @@
 <meta charset="utf-8"/>
 <title>Flex Items: flex shrink</title>
 <link rel="stylesheet" href="c/examples.css"/>
-<style type="text/css">
+<style>
 
-div{background-color:rgba(0,0,0,0.1)}
-article{width:752px;}
-article>div{display:flex;border:1px dashed;padding:2px;min-height:100px;box-sizing:border-box;}
-div>div{border:1px solid;margin:2px;padding:1ch 0;width:300px;font-size:1rem;font-weight: bold;box-sizing:border-box;
-	display: flex; flex-direction: column; justify-content: center;}
-div>div em {display: block; margin-top: 0.25ch; font-size: 95%; font-weight: normal;}
-body{font-size:20px;text-align:center;}
-p{margin-top:0;}
-div img {display: block; height: 50px; width: 298px; margin-bottom: 1ch;}
-/* article>div {padding: 0;}
-div>div {margin: 0 !important;} */
+div {
+  background-color:rgba(0,0,0,0.1);
+}
+article {
+  width: 752px;
+}
+article > div {
+  display: flex;
+  border: 1px dashed;
+  padding: 2px;
+  min-height: 100px;
+  box-sizing: border-box;
+}
+div > div {
+  border: 1px solid;
+  margin: 2px;
+  padding: 1ch 0;
+  width: 300px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-sizing: border-box;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+}
+div > div em {
+  display: block; 
+  margin-top: 0.25ch; 
+  font-size: 95%; 
+  font-weight: normal;
+}
+body {
+  font-size:20px;
+  text-align:center;
+}
+p {
+  margin-top:0;
+}
+div img {
+  display: block; 
+  height: 50px; 
+  width: 298px; 
+  margin-bottom: 1ch;
+}
 </style>
 </head>
 <body>

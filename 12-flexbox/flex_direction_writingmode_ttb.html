@@ -7,19 +7,26 @@
 <style  contenteditable>
 html {
   -webkit-writing-mode: horizontal-tb;
-  writing-mode: horizontal-tb;}
-    html {
-      -webkit-writing-mode: vertical-rl;
+  writing-mode: horizontal-tb;
+}
+  html {
+  -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
-    }
-body {padding: 100px; display: flex; flex-direction: row;}
-div {background-color: rgba(0,0,0,0.1)}
-
+} 
+body {
+  padding: 100px; 
+  display: flex; 
+  flex-direction: row;
+}
+div {
+  background-color: rgba(0,0,0,0.1);
+}
 section {
   display: flex;
   wixdth: 400px;
   flex-direction: row;
-  margin-bottom: 20px; margin-right: 20px;
+  margin-bottom: 20px; 
+  margin-right: 20px;
 }
 
 article > div {
@@ -41,67 +48,77 @@ body {
   font-size: 25px;
   text-align: center;
 }
-p {margin-top: 0; 
+p {
+  margin-top: 0; 
   -webkit-writing-mode: horizontal-tb;
-  writing-mode: horizontal-tb;}
-div > div:nth-of-type(2) {background-color: rgba(0,0,0,0.2);}
-div > div:nth-of-type(3) {background-color: rgba(0,0,0,0.3);}
-div > div:nth-of-type(4) {background-color: rgba(0,0,0,0.4);}
-div > div:nth-of-type(5) {background-color: rgba(0,0,0,0.5);}
+  writing-mode: horizontal-tb;
+}
+div > div:nth-of-type(2) {
+  background-color: rgba(0,0,0,0.2);
+}
+div > div:nth-of-type(3) {
+  background-color: rgba(0,0,0,0.3);
+}
+div > div:nth-of-type(4) {
+  background-color: rgba(0,0,0,0.4);
+}
+div > div:nth-of-type(5) {
+  background-color: rgba(0,0,0,0.5);
+}
 </style>
 </head>
 <body>
 <figure>
 <section>
-<article>
-<div style="flex-direction: row;">
-  <div>一</div>
-  <div>二</div>
-  <div>三</div>
-  <div>四</div>
-  <div>五</div>
-</div>
-</article>
-<p>flex-direction: row; ⤴</p>
+  <article>
+    <div style="flex-direction: row;">
+      <div>一</div>
+      <div>二</div>
+      <div>三</div>
+      <div>四</div>
+      <div>五</div>
+    </div>
+  </article>
+  <p>flex-direction: row; ⤴</p>
 </section>
 
 <section>
-<article>
-<div style="flex-direction: row-reverse;">
-  <div>一</div>
-  <div>二</div>
-  <div>三</div>
-  <div>四</div>
-  <div>五</div>
-</div>
-</article>
-<p style="clear: both;">flex-direction: row-reverse;  ⤴ </p>
+  <article>
+    <div style="flex-direction: row-reverse;">
+      <div>一</div>
+      <div>二</div>
+      <div>三</div>
+      <div>四</div>
+      <div>五</div>
+    </div>
+  </article>
+  <p style="clear: both;">flex-direction: row-reverse;  ⤴ </p>
 </section>
 </figure>
 <section>
-<article style="width: 45%; float: left">
-<div style="flex-direction: column;">
-  <div>一</div>
-  <div>二</div>
-  <div>三</div>
-  <div>四</div>
-  <div>五</div>
-</div>
-</article>
-<p>flex-direction: column; ⤴  </p>
+  <article style="width: 45%; float: left">
+    <div style="flex-direction: column;">
+      <div>一</div>
+      <div>二</div>
+      <div>三</div>
+      <div>四</div>
+      <div>五</div>
+    </div>
+  </article>
+  <p>flex-direction: column; ⤴  </p>
 </section>
 
 <section>
-<article style="width: 45%; float: right">
-<div style="flex-direction:  column-reverse;">
-  <div>一</div>
-  <div>二</div>
-  <div>三</div>
-  <div>四</div>
-  <div>五</div>
-</div>
-</article>
-<p>flex-direction: column-reverse; ⤴   </p>
+  <article style="width: 45%; float: right">
+    <div style="flex-direction:  column-reverse;">
+      <div>一</div>
+      <div>二</div>
+      <div>三</div>
+      <div>四</div>
+      <div>五</div>
+    </div>
+  </article>
+  <p>flex-direction: column-reverse; ⤴   </p>
 </section>
 
 </body>

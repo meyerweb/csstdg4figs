@@ -6,8 +6,14 @@
   
 <link rel="stylesheet" href="c/examples.css">  
 <style  contenteditable>
-    body {padding: 100px;}
-div {background-color: rgba(0,0,0,0.1)}
+body {
+  padding: 100px;
+  font-size: 25px;
+  text-align: center;
+}
+div {
+  background-color: rgba(0,0,0,0.1);
+}
 article > div {
   display: inline-flex;
   border: 1px dashed;
@@ -21,55 +27,75 @@ div > div {
   line-height: 50px;
   flex: 1 1 auto;
 }
-body {
-  font-size: 25px;
-  text-align: center;
+p {
+  margin-top: 0;
 }
-p {margin-top: 0;}
-div > div:nth-of-type(2) {background-color: rgba(0,0,0,0.2);}
-div > div:nth-of-type(3) {background-color: rgba(0,0,0,0.3);}
-div > div:nth-of-type(4) {background-color: rgba(0,0,0,0.4);}
-div > div:nth-of-type(5) {background-color: rgba(0,0,0,0.5);}
+div > div:nth-of-type(2) {
+  background-color: rgba(0,0,0,0.2);
+}
+div > div:nth-of-type(3) {
+  background-color: rgba(0,0,0,0.3);
+}
+div > div:nth-of-type(4) {
+  background-color: rgba(0,0,0,0.4);
+}
+div > div:nth-of-type(5) {
+  background-color: rgba(0,0,0,0.5);
+}
 </style>
 </head>
 <body  dir="rtl">
 <article dir="rtl">
-<div style="flex-direction: row;">
-  <div>א</div>
-  <div>ב</div>
-  <div>ג</div>
-  <div>ד</div>
-  <div>ה</div>
-</div>
-<p> ⤴ ;flex-direction: row</p>
+  <div style="flex-direction: row;">
+    <div>א</div>
+    <div>ב</div>
+    <div>ג</div>
+    <div>ד</div>
+    <div>ה</div>
+  </div>
+  <p> ⤴ ;flex-direction: row</p>
 </article>
+
+
+
+
 <article>
-<div style="flex-direction: row-reverse;">
-  <div>א</div>
-  <div>ב</div>
-  <div>ג</div>
-  <div>ד</div>
-  <div>ה</div>
-</div>
-<p> ⤴ ;flex-direction: row-reverse</p>
-</article><article style="width: 45%; float: left">
-<div style="flex-direction: column;">
-  <div>א</div>
-  <div>ב</div>
-  <div>ג</div>
-  <div>ד</div>
-  <div>ה</div>
-</div>
-<p>flex-direction: ⤴  column</p>
-</article><article style="width: 45%; float: right">
-<div style="flex-direction:  column-reverse;">
-  <div>א</div>
-  <div>ב</div>
-  <div>ג</div>
-  <div>ד</div>
-  <div>ה</div>
-</div>
-<p>flex-direction: ⤴   column-reverse</p>
+  <div style="flex-direction: row-reverse;">
+    <div>א</div>
+    <div>ב</div>
+    <div>ג</div>
+    <div>ד</div>
+    <div>ה</div>
+  </div>
+  <p> ⤴ ;flex-direction: row-reverse</p>
+</article>
+
+
+
+
+<article style="width: 45%; float: left">
+  <div style="flex-direction: column;">
+    <div>א</div>
+    <div>ב</div>
+    <div>ג</div>
+    <div>ד</div>
+    <div>ה</div>
+  </div>
+  <p>flex-direction: ⤴  column</p>
+</article>
+
+
+
+
+<article style="width: 45%; float: right">
+  <div style="flex-direction:  column-reverse;">
+    <div>א</div>
+    <div>ב</div>
+    <div>ג</div>
+    <div>ד</div>
+    <div>ה</div>
+  </div>
+  <p>flex-direction: ⤴   column-reverse</p>
 </article>
 </body>
 </html>

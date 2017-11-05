@@ -4,10 +4,22 @@
 <meta charset="utf-8"/>
 <title>Flex Items: align-content</title> 
 <link rel="stylesheet" href="c/examples.css"/>
-<style type="text/css">
-body {padding: 10px; display: flex; justify-content: space-evenly; flex-wrap: wrap;}
-div {background-color: rgba(0,0,0,0.1);}
-article {position: relative; width: 320px;}
+<style>
+body {
+  padding: 10px; 
+  display: flex; 
+  justify-content: space-evenly; 
+  flex-wrap: wrap;
+  font-size: 25px;
+  text-align: center;
+}
+div {
+  background-color: rgba(0,0,0,0.1);
+}
+article {
+  position: relative; 
+  width: 320px;
+}
 article > div {
   display: flex;
   flex-direction: row;
@@ -15,7 +27,12 @@ article > div {
   flex-wrap: wrap;
   border: 1px dashed;
   height: 500px;
-  background-image: repeating-linear-gradient(to bottom, white 0px, white 5px, rgba(0,0,0,0.075) 5px, rgba(0,0,0,0.075) 10px);
+  background-image: 
+    repeating-linear-gradient(to bottom, 
+      white 0px, 
+      white 5px, 
+      rgba(0,0,0,0.075) 5px, 
+      rgba(0,0,0,0.075) 10px);
 }
 div > div {
   border: 1px solid;
@@ -23,16 +40,19 @@ div > div {
   background-color: rgb(208,208,208);
   letter-spacing: 2px;
 }
-.stretch {flex: 0 1 0;}
-.k {flex: 1 0 95%;}
-body {
-  font-size: 25px;
-  text-align: center;
+.stretch {
+  flex: 0 1 0;
 }
-p {margin: 0 -20px 40px;}
+.k {
+  flex: 1 0 95%;
+}
+p {
+  margin: 0 -20px 40px;
+}
 .stretch {
   align-self: stretch;
-  width: 1px; margin-left: -2px;
+  width: 1px; 
+  margin-left: -2px;
   background-color: transparent;
   border-color: transparent;
 }
@@ -92,6 +112,10 @@ article:last-of-type p:before {
 </div>
 <p>align-content: stretch; ⤴</p>
 </article>
+
+
+
+
 <article>
 <div style="align-content: flex-start">
   <div class="a">A</div>
@@ -171,6 +195,10 @@ article:last-of-type p:before {
 </div>
 <p>align-content:  space-between; ⤴</p>
 </article>
+
+
+
+
 <article>
 <div style="align-content: space-around;">
   <div class="a">A</div>
@@ -190,6 +218,10 @@ article:last-of-type p:before {
 </div>
 <p>align-content:  space-around; ⤴</p>
 </article>
+
+
+
+
 <article>
 <div style="align-content: space-evenly;">
   <div class="a">A</div>

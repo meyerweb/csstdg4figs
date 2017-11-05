@@ -3,10 +3,10 @@
 <head style="display: block;">
   <meta charset="utf-8"/>
   <title>Justify-content</title> 
-  <link rel="stylesheet" href="estelle/examples.css"/><style type="text/css">
-
-div {background-color: rgba(0,0,0,0.1); font-family: monospace;}
-article { }
+  <link rel="stylesheet" href="estelle/examples.css"/><style>div {
+  background-color: rgba(0,0,0,0.1);
+  font-family: monospace;
+}
 article > div {
   display: flex;
   border: 1px dashed;
@@ -23,64 +23,78 @@ body {
   font-size: 25px;
   text-align: center;
 }
-p {margin-top: 0;}
-.container {margin: 20px; flex-wrap: wrap;}
-.container:nth-of-type(1) {justify-content: center;}
-.container:nth-of-type(2) {justify-content: space-between;}
-.container:nth-of-type(3) {justify-content: space-around;}
-.container:nth-of-type(4) {justify-content: space-evenly;}
-article {width: 60%; margin: auto;}
+p {
+  margin-top: 0;
+}
+.container {
+  margin: 20px; flex-wrap: wrap;
+}
+.container:nth-of-type(1) {
+  justify-content: center;
+}
+.container:nth-of-type(2) {
+  justify-content: space-between;
+}
+.container:nth-of-type(3) {
+  justify-content: space-around;
+}
+.container:nth-of-type(4) {
+  justify-content: space-evenly;
+}
+article {
+  width: 60%; margin: auto;
+}
 </style>
 </head>
 <body>
 
 <article>
 <div class="container">
-    <div>A</div>
-    <div>BBB</div>
-    <div>CCCCCC</div>
-    <div>DD</div>
-    <div>EEEE</div>
-    <div>FFFFF</div>
-    <div>GGGGGGG</div>
-    <div>H</div>
-    <div>III</div>
+  <div>A</div>
+  <div>BBB</div>
+  <div>CCCCCC</div>
+  <div>DD</div>
+  <div>EEEE</div>
+  <div>FFFFF</div>
+  <div>GGGGGGG</div>
+  <div>H</div>
+  <div>III</div>
 </div>
 <p>justify-content: center; ⤴</p>
 <div class="container">
-    <div>A</div>
-    <div>BBB</div>
-    <div>CCCCCC</div>
-    <div>DD</div>
-    <div>EEEE</div>
-    <div>FFFFF</div>
-    <div>GGGGGGG</div>
-    <div>H</div>
-    <div>III</div>
+  <div>A</div>
+  <div>BBB</div>
+  <div>CCCCCC</div>
+  <div>DD</div>
+  <div>EEEE</div>
+  <div>FFFFF</div>
+  <div>GGGGGGG</div>
+  <div>H</div>
+  <div>III</div>
 </div>
 <p>justify-content: space-between; ⤴</p>
 <div class="container">
-    <div>A</div>
-    <div>BBB</div>
-    <div>CCCCCC</div>
-    <div>DD</div>
-    <div>EEEE</div>
-    <div>FFFFF</div>
-    <div>GGGGGGG</div>
-    <div>H</div>
-    <div>III</div>
+  <div>A</div>
+  <div>BBB</div>
+  <div>CCCCCC</div>
+  <div>DD</div>
+  <div>EEEE</div>
+  <div>FFFFF</div>
+  <div>GGGGGGG</div>
+  <div>H</div>
+  <div>III</div>
 </div>
 <p>justify-content: space-around; ⤴</p>
 <div class="container">
-    <div>A</div>
-    <div>BBB</div>
-    <div>CCCCCC</div>
-    <div>DD</div>
-    <div>EEEE</div>
-    <div>FFFFF</div>
-    <div>GGGGGGG</div>
-    <div>H</div>
-    <div>III</div>
+  <div>A</div>
+  <div>BBB</div>
+  <div>CCCCCC</div>
+  <div>DD</div>
+  <div>EEEE</div>
+  <div>FFFFF</div>
+  <div>GGGGGGG</div>
+  <div>H</div>
+  <div>III</div>
 </div>
 <p>justify-content: space-evenly; ⤴</p>
 </article>

@@ -3,37 +3,43 @@
 <head style="display: block;">
   <meta charset="utf-8"/>
   <title>Link Visited Focus Hover Active</title>  
-  <link rel="stylesheet" href="c/examples.css"/><style type="text/css">
-  head {display: block;}
-  head * {display: none;}
-  label {
-    font-family: sans-serif;
-    border: 1px solid;
-    border-radius: 10px;
-    background-color: #ddaa00;
-    box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.4);
-    align-items: center;
-    padding: 0 10px;
-    
-    transform-origin: top left;
-
-  }
-  label > * { padding: 0 10px;}
-  h3 {text-transform: uppercase;}
-  small {
-    font-size: 9px;
-  }
-  </style>
-  <style style="display: block; padding: 10px; white-space: pre; font-size: 16px; font-family: monospace;" contenteditable>label {transform: scale(2.5);
-    display: inline-flex;}
-small {width: 140px}</style>
+  <link rel="stylesheet" href="c/examples.css"/>
+  <link rel="stylesheet" href="../styles/style-edit.css"/>
+  <style>
+label {
+  font-family: sans-serif;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #ddaa00;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.4);
+  align-items: center;
+  padding: 0 10px;
+  transform-origin: top left;
+} 
+label > * { 
+  padding: 0 10px;
+} 
+h3 {
+  text-transform: uppercase;
+} 
+small {
+  font-size: 9px;
+} 
+</style>
+<style id="editme" contenteditable>label {
+  transform: scale(2.5);
+  display: inline-flex;
+}
+small {
+  width: 140px;
+}</style>
 </head>
 <body>
   
   <label>
-    <input type="checkbox" id="c">
-    <h3>agree</h3>
-    <small>Check yes to sign away your life, privacy and priveleges for no apparent reason</small>
+  <input type="checkbox" id="c">
+  <h3>agree</h3>
+  <small>Check yes to sign away your life, privacy and priveleges for no apparent reason</small>
   </label>
 
 </body>

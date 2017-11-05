@@ -4,63 +4,68 @@
   <meta charset="utf-8"/>
   <title>Simple Navigation Example - centered</title>  
   <link rel="stylesheet" href="c/examples.css"/>
-  <style type="text/css">
-  body {
-    padding: 100px;
-  }
-  nav {
-      display: flex;
-      border-bottom: 1px solid #ccc;
-      margin-top: 30px;
-    }
-  nav:nth-of-type(1){justify-content: center;}
-  section{
-    padding: 20px;
-    border: dashed #aaa 1px;
-    margin: 20px;
-
-  }
-  a {
-    margin: 0 5px;
-    padding: 5px 15px;
-    background-color: #da0;
-    border-radius: 3px 3px 0 0;
-    text-decoration: none;
-    color: white;
-  }
-  a:hover {
-    background-color: #fc2;
-    text-decoration: none;
-    color: black;
-  }
- pre {
+  <style>
+body {
+  padding: 100px;
+} 
+nav {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin-top: 30px;
+} 
+nav:nth-of-type(1){
+  justify-content: center;
+}
+section{
+  padding: 20px;
+  border: dashed #aaa 1px;
+  margin: 20px;
+} 
+a {
+  margin: 0 5px;
+  padding: 5px 15px;
+  background-color: #da0;
+  border-radius: 3px 3px 0 0;
+  text-decoration: none;
+  color: white;
+} 
+a:hover {
+  background-color: #fc2;
+  text-decoration: none;
+  color: black;
+} 
+pre {
   direction: ltr;
  }
-  </style>
+</style>
 </head>
 <body>
 <section>
-<article>
-    <nav>
-      <a href="#1">Home</a>
-      <a href="#2">About</a>
-      <a href="#3">Blog</a>
-      <a href="#4">Careers</a>
-      <a href="#5">Contact Us</a>
-    </nav>
 
-    <pre>justify-content: center; ⤴</pre>
+<article>
+  <nav>
+    <a href="#1">Home</a>
+    <a href="#2">About</a>
+    <a href="#3">Blog</a>
+    <a href="#4">Careers</a>
+    <a href="#5">Contact Us</a>
+  </nav>
+  <pre>justify-content: center; ⤴</pre>
 </article>
+
+
 <article dir="rtl" lang="he-il">
-    <nav>
-      <a href="#1">דף הבית</a>
-      <a href="#2">עלינו</a>
-      <a href="#3">בלוג</a>
-      <a href="#4">קריירה</a>
-      <a href="#5">איש קשר</a>
-    </nav>
-    <pre>justify-content: center; ⤴</pre>
+  <nav>
+    <a href="#1">דף הבית</a>
+    <a href="#2">עלינו</a>
+    <a href="#3">בלוג</a>
+    <a href="#4">קריירה</a>
+    <a href="#5">איש קשר</a>
+  </nav>
+  <pre>justify-content: center; ⤴</pre>
 </article>
+
+
 </section>
 </body>
 </html>

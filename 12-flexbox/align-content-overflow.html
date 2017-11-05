@@ -6,11 +6,28 @@
 
    <link rel="stylesheet" href="c/examples.css"/>
 
-    <style type="text/css">
-    body {padding: 10px; display: flex; justify-content: space-evenly; flex-wrap: wrap;}
-div {background-color: rgba(0,0,0,0.1);}
-article {position: relative; display: flex; flex-direction: row-reverse;}
-article > p {writing-mode: vertical-lr; width: 1.5em; margin: 100px 0 0;}
+  <style>
+body {
+  padding: 10px; 
+  display: flex; 
+  justify-content: space-evenly; 
+  flex-flow: wrap;
+  font-size: 25px;
+  text-align: center;
+}
+div {
+  background-color: rgba(0,0,0,0.1);
+}
+article {
+  position: relative; 
+  display: flex; 
+  flex-direction: row-reverse;
+}
+article > p {
+  writing-mode: vertical-lr; 
+  width: 1.5em; 
+  margin: 120px 0;
+}
 article > div {
 	position: relative;
   display: flex;
@@ -29,15 +46,16 @@ div > div {
   background-color: rgb(208,208,208);
   letter-spacing: 2px;
 }
-.stretch {flex: 0 1 0;}
-body {
-  font-size: 25px;
-  text-align: center;
+.stretch {
+  flex: 0 1 0;
 }
-p {margin: 0 -20px 40px;}
+p {
+  margin: 0 -20px 40px;
+}
 .stretch {
   align-self: stretch;
-  width: 1px; margin-left: -2px;
+  width: 1px; 
+  margin-left: -2px;
   background-color: transparent;
   border-color: transparent;
 }
@@ -47,9 +65,15 @@ p {margin: 0 -20px 40px;}
   left: 0; right: 0;
   border-top: 1px solid red;
 }
-.a, .f, .k {margin-left: 20px;}
-.e, .j, .k {margin-right: 20px;}
-.k {flex: 0 1 2ch;}
+.a, .f, .k {
+  margin-left: 20px;
+}
+.e, .j, .k {
+  margin-right: 20px;
+}
+.k {
+  flex: 0 1 2ch;
+}
 .e:after,
 .f:after,
 .k:after {
@@ -74,7 +98,6 @@ article:last-of-type p:before {
 }
 .stretch:last-of-type:before,
 article:last-of-type p:before {
-
   transform: translatey(-2px);
 }
 </style>
@@ -100,6 +123,10 @@ article:last-of-type p:before {
 </div>
 <p>align-content: stretch; ⤴</p>
 </article>
+
+
+
+
 <article>
 <div style="align-content: flex-start">
   <div class="a">A</div>
@@ -179,6 +206,10 @@ article:last-of-type p:before {
 </div>
 <p>align-content:  space-between; ⤴</p>
 </article>
+
+
+
+
 <article>
 <div style="align-content: space-around;">
   <div class="a">A</div>
@@ -198,6 +229,10 @@ article:last-of-type p:before {
 </div>
 <p>align-content:  space-around; ⤴</p>
 </article>
+
+
+
+
 <article>
 <div style="align-content: space-evenly;">
   <div class="a">A</div>

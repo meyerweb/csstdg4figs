@@ -1,3 +1,8 @@
-@import url(../styles/style-edit.css);
-body * {font-family: "Myriad Pro",Myriad,"Liberation Sans","Nimbus Sans L","Helvetica Neue";}
-style {font-family: "ubuntu mono",Consolas,monospace;}
+@import url(../../styles/style-edit.css);
+body * {
+	font-family: "Myriad Pro",Myriad,"Liberation Sans","Nimbus Sans L","Helvetica Neue";
+}
+style,
+div > div {
+	font-family: "ubuntu mono", Consolas, monospace;
+}
