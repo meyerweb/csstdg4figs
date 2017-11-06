@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="c/examples.css"/>
 <style contenteditable>
 body {
-  padding: 100px;
+  padding: 2em 100px;
   text-align: center;
 }
 div {
@@ -49,14 +49,16 @@ p {
   text-align: left; 
   padding-left: 100px;
 }
-article:nth-last-of-type(4n+12), 
-article:nth-last-of-type(6) {
-  margin-top: 150px;
+section {
+  margin-bottom: 150px;
 }
 
 </style>
 </head>
 <body>
+
+<section>
+
 <article class="initial">
   <div>
     <div>A</div>
@@ -71,7 +73,6 @@ article:nth-last-of-type(6) {
   </div>
   <p>flex: initial; ⤴</p>
 </article>
-
 
 <article class="initial">
   <div>
@@ -88,9 +89,6 @@ article:nth-last-of-type(6) {
 <p>flex: initial; ⤴</p>
 </article>
 
-
-
-
 <article class="initial hundred">
   <div>
     <div>A</div>
@@ -105,9 +103,6 @@ article:nth-last-of-type(6) {
   </div>
   <p>flex: initial; width: 50px; ⤴</p>
 </article>
-
-
-
 
 <article class="initial hundred">
   <div>
@@ -124,6 +119,9 @@ article:nth-last-of-type(6) {
   <p>flex: initial;  width: 50px; ⤴</p>
 </article>
 
+</section>
+
+<section>
 
 <article class=auto>
   <div>
@@ -140,9 +138,6 @@ article:nth-last-of-type(6) {
   <p>flex: auto; ⤴</p>
 </article>
 
-
-
-
 <article class=auto>
   <div>
     <div>A</div>
@@ -157,9 +152,6 @@ article:nth-last-of-type(6) {
   </div>
   <p>flex: auto; ⤴</p>
 </article>
-
-
-
 
 <article class="auto hundred">
   <div>
@@ -176,9 +168,6 @@ article:nth-last-of-type(6) {
   <p>flex: auto;  width: 50px; ⤴</p>
 </article>
 
-
-
-
 <article class="auto hundred">
   <div>
     <div>A</div>
@@ -194,28 +183,9 @@ article:nth-last-of-type(6) {
   <p>flex: auto;  width: 50px;  ⤴</p>
 </article>
 
+</section>
 
-
-
-
-
-<article class=none>
-  <div>
-    <div>A</div>
-    <div>B B</div>
-    <div>C C C</div>
-    <div>D D D D</div>
-    <div>E E E E E</div>
-    <div>F F F F</div>
-    <div>G G G</div>
-    <div>H H</div>
-    <div>I</div>
-  </div>
-  <p>flex: none; ⤴</p>
-</article>
-
-
-
+<section>
 
 <article class=none>
   <div>
@@ -232,8 +202,20 @@ article:nth-last-of-type(6) {
   <p>flex: none; ⤴</p>
 </article>
 
-
-
+<article class=none>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: none; ⤴</p>
+</article>
 
 <article class="none hundred">
   <div>
@@ -250,9 +232,6 @@ article:nth-last-of-type(6) {
   <p>flex: none;  width: 50px; ⤴</p>
 </article>
 
-
-
-
 <article class="none hundred">
   <div>
     <div>A</div>
@@ -268,8 +247,9 @@ article:nth-last-of-type(6) {
   <p>flex: none;  width: 50px; ⤴</p>
 </article>
 
+</section>
 
-
+<section>
 
 <article class="flex3">
   <div>
@@ -313,13 +293,7 @@ article:nth-last-of-type(6) {
   <p>flex: 0 - 5; ⤴</p>
 </article>
 
-
-
-
 <article></article>
-
-
-
 
 <article>
   <div>
@@ -333,9 +307,6 @@ article:nth-last-of-type(6) {
   <p>flex: 0 - 5; ⤴</p>
 </article>
 
-
-
-
 <article>
   <div>
     <div style="flex: 0">flex: 0</div>
@@ -348,9 +319,9 @@ article:nth-last-of-type(6) {
   <p>flex: 0 - 5; ⤴</p>
 </article>
 
+</section>
 
-
-
+<section>
 
 <article class="flex3 hundred">
   <div>
@@ -394,13 +365,7 @@ article:nth-last-of-type(6) {
   <p>flex: 0 - 5;   width: 50px; ⤴</p>
 </article>
 
-
-
-
 <article></article>
-
-
-
 
 <article class="hundred">
   <div>
@@ -414,9 +379,6 @@ article:nth-last-of-type(6) {
   <p>flex: 0 - 5;  width: 50px; ⤴</p>
 </article>
 
-
-
-
 <article class="hundred">
   <div>
     <div style="flex: 0">flex: 0</div>
@@ -428,5 +390,8 @@ article:nth-last-of-type(6) {
   </div>
   <p>flex: 0 - 5;  width: 50px; ⤴</p>
 </article>
+
+</section>
+
 </body>
 </html>
