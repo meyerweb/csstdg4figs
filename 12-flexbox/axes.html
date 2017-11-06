@@ -5,14 +5,25 @@
   <title>Flex Items: flex-direction: row;</title>  
 <link rel="stylesheet" href="c/examples.css">  
 <style  contenteditable>
-body {padding: 5em;}
-div {background-color: rgba(0,0,0,0.1)}
-article {position: relative; }
+body {
+  font-size: 25px;
+  text-align: center;
+  padding: 5em;
+}
+div {
+  background-color: rgba(0,0,0,0.1);
+}
+article {
+  position: relative; 
+}
 article:first-of-type,
-article:nth-of-type(2) {border-top: 1px solid red;}
-
+article:nth-of-type(2) {
+  border-top: 1px solid red;
+}
 article:last-of-type,
-article:nth-of-type(3) {border-left: 1px solid red;}
+article:nth-of-type(3) {
+  border-left: 1px solid red;
+}
 article > div::before {
   content: '⬋ cross axis';
   position: absolute;
@@ -49,13 +60,11 @@ article:nth-of-type(1)::before {
   top: 22%;
   left: 105%;
 }
-
 article:nth-of-type(2)::before {
   border-right-color: blue;
   top: 22%;
   left: -6%;
 }
-
 article:nth-of-type(n+3)::before {
   border-left-color: red;
   top: 24.1%;
@@ -72,12 +81,10 @@ article:nth-of-type(4)::after {
   top: -15%;
   left: 73.5%;
 }
-
 article:first-of-type p,
 article:nth-of-type(2) p {
   border-top: 1px solid red;
 }
-
 span {
   position: relative; left: -10px;
   top: 70px;
@@ -85,13 +92,10 @@ span {
   overflow: visible;
   white-space: nowrap;
 }
-
 [class^=row] span {
   transform: rotate(-90deg);
   left: 25px;
 }
-[class^=row] span:last-of-type {}
-
 article > div {
   display: inline-flex;
   border: 1px dashed;
@@ -105,12 +109,12 @@ div > div {
   flex: 1 1 auto;
   min-height: 100px;
 }
-body {
-  font-size: 25px;
-  text-align: center;
+span {
+  color: blue;
 }
-span {color: blue;}
-p {margin-top: 0;}
+p {
+  margin-top: 0;
+}
 
 article:nth-of-type(n+3) > div::before {
   content: '⬋ main axis';
@@ -170,12 +174,12 @@ div:nth-of-type(2):after {
   overflow: visible;
   white-space: nowrap;
 }
-[class^="col"] div:nth-of-type(2):before{
+[class^="col"] div:nth-of-type(2):before {
   left: -58px;
   transform: rotate(-90deg);
   top: auto;
 }
-[class^="col"] div:nth-of-type(2):after{
+[class^="col"] div:nth-of-type(2):after {
   right: -35px;
   transform: rotate(-90deg);
   left: auto;
@@ -191,15 +195,11 @@ div:nth-of-type(2):after {
 .row-reverse {
   flex-direction: row-reverse;
 }
-.row-reverse::before {
-
-}
 .row-reverse::after {
   right: 0;
   text-indent: 90%;
   left: auto;
 }
-
 </style>
 </head>
 <body>
@@ -215,6 +215,10 @@ div:nth-of-type(2):after {
 </div>
 <p>flex-direction: row; ⤴</p>
 </article>
+
+
+
+
 <article>
 <div class="row-reverse">
   <span style="left: 60px;">main-start</span>
@@ -227,6 +231,10 @@ div:nth-of-type(2):after {
 </div>
 <p>flex-direction: row-reverse; ⤴</p>
 </article>
+
+
+
+
 <article style="width: 45%; float: left">
 <div class="column" style="flex-direction: column;">
   <span>main-start</span>

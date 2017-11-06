@@ -5,13 +5,15 @@
   <title>Flex Items: flex-wrap</title>
 
   <link rel="stylesheet" href="c/examples.css"/> 
-    <style contenteditable>
+  <style contenteditable>
 body {
   text-align: center;
   padding: 3em 6em;
 }
 
-article {width: 24em;}
+article {
+  width: 24em;
+}
 section {
   display: flex;
   position: relative;
@@ -26,9 +28,13 @@ section > span {
   padding: 0.5em 1em;
   background-color: rgba(0, 0, 0, 0.1);
 }
-section > div {position: absolute; top: -1.2em; left: -5em;
-	display: flex; justify-content: space-between;}
-section > div span {margin: 0 0.33em;}
+section > div {
+  position: absolute; top: -1.2em; left: -5em;
+	display: flex; justify-content: space-between;
+}
+section > div span {
+  margin: 0 0.33em;
+}
 section > div.cross {
 	flex-direction: row-reverse;
 	color: red;
@@ -39,7 +45,9 @@ section > div.cross {
 		linear-gradient(to left,red,red)  50% 50% / 100% 3px no-repeat,
 		linear-gradient(to left,red,red)  100% 50% / 3px 2ch no-repeat;
 }
-section > div.cross .end {margin-left: 0.5em;}
+section > div.cross .end {
+  margin-left: 0.5em;
+}
 section > div.main {
 	flex-direction: column-reverse;
 	color: blue;
@@ -51,9 +59,13 @@ section > div.main {
 		linear-gradient(to top,blue,blue)  50% 50% / 3px 100% no-repeat,
 		linear-gradient(to top,blue,blue)  50% 100% / 2ch 3px no-repeat;
 }
-section > div.main .end {align-self: flex-end; margin-top: 1.2em;}
+section > div.main .end {
+  align-self: flex-end; margin-top: 1.2em;
+}
 
-section + p {margin-top: 0.25em;}
+section + p {
+  margin-top: 0.25em;
+}
 </style>
 </head>
 <body>

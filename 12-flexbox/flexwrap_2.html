@@ -3,9 +3,17 @@
 <head>
   <meta charset="utf-8"/>
   <title>Flex Items: flex-wrap</title>  
-  <link rel="stylesheet" href="c/examples.css"/><style type="text/css">
-    body {padding: 100px;}
-div {background-color: rgba(0,0,0,0.1); font-family: monospace;}
+  <link rel="stylesheet" href="c/examples.css"/>
+<style>
+body {
+  padding: 100px;
+  font-size: 25px;
+  text-align: center;
+}
+div {
+  background-color: rgba(0,0,0,0.1);
+  font-family: monospace;
+}
 article > div {
   display: flex;
   border: 1px dashed;
@@ -16,11 +24,9 @@ div > div {
   margin: 10px;
   padding: 0.5em 1em;
 }
-body {
-  font-size: 25px;
-  text-align: center;
+p {
+  margin-top: 0;
 }
-p {margin-top: 0;}
 </style>
 </head>
 <body>
@@ -40,6 +46,10 @@ p {margin-top: 0;}
 </div>
 <p>flex-wrap: nowrap; ⤴</p>
 </article>
+
+
+
+
 <article>
 <div style="flex-wrap: wrap">
   <div>A</div>

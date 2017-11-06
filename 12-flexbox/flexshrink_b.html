@@ -5,12 +5,12 @@
   <title>Flex Items</title>
 
   <link rel="stylesheet" href="c/examples.css"/>
-  <style type="text/css">
+  <style>
 
   /* as if flex: 0 1 value; were set */
 div {
-    background-color: rgba(0,0,0,0.1);
-  }
+  background-color: rgba(0,0,0,0.1);
+} 
 article  {
   width: 520px; /* book reads 500. We added 20px to allow for between item padding */
   box-sizing: content-box;
@@ -29,14 +29,17 @@ div > div {
   padding: 40px 0; 
   font-size: 1rem;
   box-sizing: content-box;
-
 }
 body {
   font-size: 20px;
   text-align: center;
 }
-p {margin-top: 0;}
-b {background-color: rgba(255,255,255,0.3);}
+p {
+  margin-top: 0;
+}
+b {
+  background-color: rgba(255,255,255,0.3);
+}
 </style>
 </head>
 <body>
@@ -44,25 +47,49 @@ b {background-color: rgba(255,255,255,0.3);}
 
 <article>
 <div>
-  <div style="flex-shrink: 1"><b>flex-shrink: 1.0</b> is set with a few words</div>
-  <div style="flex-shrink: 1; background-color: rgba(0,0,0,0.2);">This has <b>flex-shrink: 1;</b> and <i>background-color: rgba(0, 0, 0, 0.2);</i> set with a lot of additional text, unlike other flex items across a few lines.</div>
-  <div style="flex-shrink: 1">This too has <b>flex-shrink: 1</b> with a medium amount of extra content.</div>
+  <div style="flex-shrink: 1">
+    <b>flex-shrink: 1</b> is set with a few words
+  </div>
+  <div style="flex-shrink: 1; background-color: rgba(0,0,0,0.2);">
+    This has <b>flex-shrink: 1;</b> and <i>background-color: rgba(0, 0, 0, 0.2);</i> set with a lot of additional text, unlike other flex items across a few lines.
+  </div>
+  <div style="flex-shrink: 1">
+    This too has <b>flex-shrink: 1</b> with a medium amount of extra content.
+  </div>
 </div>
 <p>same shrink factors⤴</p>
 </article>
+
+
+
+
 <article>
 <div>
-  <div style="flex-shrink: .5"><b>flex-shrink: 0.5</b> is set with a few words</div>
-  <div style="flex-shrink: 1; background-color: rgba(0,0,0,0.2);">This has <b>flex-shrink: 1;</b> and <i>background-color: rgba(0, 0, 0, 0.2);</i> set with a lot of additional text, unlike other flex items across a few lines.</div>
-  <div style="flex-shrink: 1">This too has <b>flex-shrink: 1</b> with a medium amount of extra content.</div>
+  <div style="flex-shrink: .5">
+    <b>flex-shrink: 0.5</b> is set with a few words
+  </div>
+  <div style="flex-shrink: 1; background-color: rgba(0,0,0,0.2);">
+    This has <b>flex-shrink: 1;</b> and <i>background-color: rgba(0, 0, 0, 0.2);</i> set with a lot of additional text, unlike other flex items across a few lines.
+  </div>
+  <div style="flex-shrink: 1">
+    This too has <b>flex-shrink: 1</b> with a medium amount of extra content.
+  </div>
 </div>
 <p>different shrink factors⤴</p>
 </article>
+
+
+
+
 <article>
 <div>
-  <div style="flex-shrink: 0"><b>flex-shrink: 0.0</b> is set with a few words</div>
-  <div style="flex-shrink: 0; background-color: rgba(0,0,0,0.2);">This has <b>flex-shrink: 0;</b> and <i>background-color: rgba(0, 0, 0, 0.2);</i> set with a lot of additional text, unlike other flex items across a few lines.</div>
-  <div style="flex-shrink: 0">This too has <b>flex-shrink: 0</b> with a medium amount of extra content.</div>
+  <div style="flex-shrink: 0"><b>flex-shrink: 0</b> is set with a few words</div>
+  <div style="flex-shrink: 0; background-color: rgba(0,0,0,0.2);">
+    This has <b>flex-shrink: 0;</b> and <i>background-color: rgba(0, 0, 0, 0.2);</i> set with a lot of additional text, unlike other flex items across a few lines.
+  </div>
+  <div style="flex-shrink: 0">
+    This too has <b>flex-shrink: 0</b> with a medium amount of extra content.
+  </div>
 </div>
 <p>null shrink factors⤴</p>
 </article>

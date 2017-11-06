@@ -4,10 +4,19 @@
   <meta charset="utf-8"/>
   <title>Flex Items: align-items</title>  
    <link rel="stylesheet" href="c/examples.css"/>
-    <style type="text/css">
-    body {padding: 100px;}
-div {background-color: rgba(0,0,0,0.1)}
-article {position: relative; width: 16em;}
+
+<style>
+body {
+  padding: 100px;
+  font-size: 25px;
+  text-align: center;
+}
+div {
+  background-color: rgba(0,0,0,0.1);
+}
+article {
+  position: relative; width: 16em;
+}
 article > div {
  display: inline-flex;
  flex-flow: row wrap;
@@ -15,8 +24,7 @@ article > div {
 }
 article > div > div {
  border: 1px solid;
- margin: 0 10px;
- 
+ margin: 0 10px; 
 }
 .c, .h {
  margin-top: 10px;
@@ -31,12 +39,9 @@ div > div {
   border: 1px solid;
   margin: 0 10px 0;
 }
-
-body {
-  font-size: 25px;
-  text-align: center;
+p {
+  margin-top: 0;
 }
-p {margin-top: 0;}
 .k:before,
 .e:after,
 .f:after,
@@ -48,20 +53,22 @@ article:before{
   border-top: 1px solid red;
   height: 1px; 
 }
-
 div:before {
   margin-top: -1px;
 }
-.j {font-size: 3rem;}
+.j {
+  font-size: 3rem;
+}
 .e:after,
 .f:after,
 .k:after {
   border-top: none; height: 1.2em;
   border-bottom: 1px solid blue;
 }
-
 </style>
 </head>
+
+
 <body>
 
 <article>

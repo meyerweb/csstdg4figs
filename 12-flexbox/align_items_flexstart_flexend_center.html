@@ -4,40 +4,45 @@
 <meta charset="utf-8"/>
 <title>Flex Items: align-items</title>  
 <link rel="stylesheet" href="c/examples.css"/>
-<style type="text/css">
-body {display: flex; justify-content: space-between;
-	padding: 100px;}
-div {background-color: rgba(0,0,0,0.1)}
-article {position: relative; width: 16em;}
-    article > div {
-      display: inline-flex;
-      flex-flow: row wrap;
-      border: 1px dashed;
-    }
-    article > div > div {
-      border: 1px solid;
-      margin: 0 10px;
-      
-    }
-    .c, .h {
-      margin-top: 10px;
-    }
-    .d, .i {
-      margin-top: 20px;
-    }
-    .j {
-      font-size: 3rem;
-    }
+<style>
+body {
+  display: flex; 
+  justify-content: space-between;
+	padding: 100px;
+  font-size: 25px;
+  text-align: center;
+}
+div {
+  background-color: rgba(0,0,0,0.1);
+}
+article {
+  position: relative; width: 16em;
+}
+article > div {
+  display: inline-flex;
+  flex-flow: row wrap;
+  border: 1px dashed;
+} 
+article > div > div {
+  border: 1px solid;
+  margin: 0 10px;  
+} 
+.c, .h {
+  margin-top: 10px;
+} 
+.d, .i {
+  margin-top: 20px;
+} 
+.j {
+  font-size: 3rem;
+} 
 div > div {
   border: 1px solid;
   margin: 0 10px 0;
 }
-
-body {
-  font-size: 25px;
-  text-align: center;
+p {
+  margin-top: 0;
 }
-p {margin-top: 0;}
 .k:before,
 .e:after,
 .f:after,
@@ -53,7 +58,9 @@ article:before{
 div:before {
   margin-top: -1px;
 }
-.j {font-size: 3rem;}
+.j {
+  font-size: 3rem;
+}
 .e:after,
 .f:after,
 .k:after {

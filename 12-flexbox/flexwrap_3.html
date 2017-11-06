@@ -4,9 +4,16 @@
   <meta charset="utf-8"/>
   <title>Flex Items: flex-wrap</title>  
   <link rel="stylesheet" href="c/examples.css"/>
-  <style type="text/css">
-    body {padding: 100px;}
-div {background-color: rgba(0,0,0,0.1); font-family: monospace;}
+<style>
+body {
+  padding: 100px;
+  font-size: 25px;
+  text-align: center;
+}
+div {
+  background-color: rgba(0,0,0,0.1); 
+  font-family: monospace;
+}
 article > div {
   display: flex;
   border: 1px dashed;
@@ -17,47 +24,48 @@ div > div {
   margin: 10px;
   padding: 0.5em 1em;
 }
-body {
-  font-size: 25px;
-  text-align: center;
+p {
+  margin-top: 0;
 }
-p {margin-top: 0;}
-</style>
-<style type="text/css">
-div {min-width: 0;}
+div {
+  min-width: 0;
+}
 </style>
 </head>
 <body>
 <article>
-<div style="flex-wrap: nowrap">
-  <div>A</div>
-  <div>BB</div>
-  <div>CCC</div>
-  <div>DDDD</div>
-  <div>EEE<br>EE</div>
-  <div>FFF<br>FFF</div>
-  <div>GGGG<br>GGGG</div>
-  <div>HHH<br>HHH<br>HHH</div>
-  <div>IIIII<br>IIIII</div>
-  <div>JJJJ<br>JJJ<br>JJJJ</div>
-</div>
-</div>
+  <div style="flex-wrap: nowrap">
+    <div>A</div>
+    <div>BB</div>
+    <div>CCC</div>
+    <div>DDDD</div>
+    <div>EEE<br>EE</div>
+    <div>FFF<br>FFF</div>
+    <div>GGGG<br>GGGG</div>
+    <div>HHH<br>HHH<br>HHH</div>
+    <div>IIIII<br>IIIII</div>
+    <div>JJJJ<br>JJJ<br>JJJJ</div>
+  </div>
 <p>flex-wrap: nowrap; ⤴</p>
 </article>
+
+
+
+
 <article>
-<div style="flex-wrap: wrap">
-  <div>A</div>
-  <div>BB</div>
-  <div>CCC</div>
-  <div>DDDD</div>
-  <div>EEE<br>EE</div>
-  <div>FFF<br>FFF</div>
-  <div>GGGG<br>GGGG</div>
-  <div>HHH<br>HHH<br>HHH</div>
-  <div>IIIII<br>IIIII</div>
-  <div>JJJJ<br>JJJ<br>JJJJ</div>
-</div>
-<p>flex-wrap: wrap; ⤴</p>
+  <div style="flex-wrap: wrap">
+    <div>A</div>
+    <div>BB</div>
+    <div>CCC</div>
+    <div>DDDD</div>
+    <div>EEE<br>EE</div>
+    <div>FFF<br>FFF</div>
+    <div>GGGG<br>GGGG</div>
+    <div>HHH<br>HHH<br>HHH</div>
+    <div>IIIII<br>IIIII</div>
+    <div>JJJJ<br>JJJ<br>JJJJ</div>
+  </div>
+  <p>flex-wrap: wrap; ⤴</p>
 </article>
 </body>
 </html>

@@ -3,9 +3,15 @@
 <head>
   <meta charset="utf-8"/>
   <title>Flex Items: flex: initial</title>  
-  <link rel="stylesheet" href="c/examples.css"/><style contenteditable>
-    body {padding: 100px;}
-div {background-color: rgba(0,0,0,0.1);}
+  <link rel="stylesheet" href="c/examples.css"/>
+<style contenteditable>
+body {
+  padding: 100px;
+  text-align: center;
+}
+div {
+  background-color: rgba(0,0,0,0.1);
+}
 article > div {
   display: flex;
   outline: 1px dashed;
@@ -26,7 +32,6 @@ div > div {
 .initial div div {
   flex: 0 1 auto;
 }
-
 .auto div > div {
   flex: auto;
 }
@@ -39,13 +44,13 @@ div > div {
 article.flex3 > div > div {
   flex: 3;
 }
-
-body {
-  text-align: center;
+p {
+  margin-top: 0; 
+  text-align: left; 
+  padding-left: 100px;
 }
-p {margin-top: 0; text-align: left; padding-left: 100px;}
-
-article:nth-last-of-type(4n+12), article:nth-last-of-type(6) {
+article:nth-last-of-type(4n+12), 
+article:nth-last-of-type(6) {
   margin-top: 150px;
 }
 
@@ -53,119 +58,140 @@ article:nth-last-of-type(4n+12), article:nth-last-of-type(6) {
 </head>
 <body>
 <article class="initial">
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: initial; ⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: initial; ⤴</p>
 </article>
+
+
 <article class="initial">
-<div>
-
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
 <p>flex: initial; ⤴</p>
 </article>
+
+
+
+
 <article class="initial hundred">
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: initial; width: 50px; ⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: initial; width: 50px; ⤴</p>
 </article>
+
+
+
+
 <article class="initial hundred">
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: initial;  width: 50px; ⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: initial;  width: 50px; ⤴</p>
 </article>
 
 
 <article class=auto>
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: auto; ⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: auto; ⤴</p>
 </article>
+
+
+
+
 <article class=auto>
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: auto; ⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: auto; ⤴</p>
 </article>
+
+
+
+
 <article class="auto hundred">
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: auto;  width: 50px; ⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: auto;  width: 50px; ⤴</p>
 </article>
+
+
+
+
 <article class="auto hundred">
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: auto;  width: 50px;  ⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: auto;  width: 50px;  ⤴</p>
 </article>
 
 
@@ -174,128 +200,152 @@ article:nth-last-of-type(4n+12), article:nth-last-of-type(6) {
 
 
 <article class=none>
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: none; ⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: none; ⤴</p>
 </article>
+
+
+
+
 <article class=none>
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: none; ⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: none; ⤴</p>
 </article>
+
+
+
+
 <article class="none hundred">
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: none;  width: 50px; ⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: none;  width: 50px; ⤴</p>
 </article>
+
+
+
+
 <article class="none hundred">
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: none;  width: 50px; ⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: none;  width: 50px; ⤴</p>
 </article>
 
 
 
 
 <article class="flex3">
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: 3; ⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: 3; ⤴</p>
 </article>
 
 <article class="flex3">
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: 3; ⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: 3; ⤴</p>
 </article>
 
 <article>
-<div>
-  <div style="flex:0">flex: 0</div>
-  <div style="flex:1">flex: 1</div>
-  <div style="flex:2">flex: 2</div>
-  <div style="flex:3">flex: 3</div>
-  <div style="flex:4">flex: 4</div>
-  <div style="flex:5">flex: 5</div>
-</div>
-<p>flex: 0 - 5; ⤴</p>
+  <div>
+    <div style="flex: 0">flex: 0</div>
+    <div style="flex: 1">flex: 1</div>
+    <div style="flex: 2">flex: 2</div>
+    <div style="flex: 3">flex: 3</div>
+    <div style="flex: 4">flex: 4</div>
+    <div style="flex: 5">flex: 5</div>
+  </div>
+  <p>flex: 0 - 5; ⤴</p>
 </article>
+
+
+
+
 <article></article>
+
+
+
+
 <article>
-<div>
-  <div style="flex:0"></div>
-  <div style="flex:1"></div>
-  <div style="flex:2"></div>
-  <div style="flex:3"></div>
-  <div style="flex:4"></div>
-  <div style="flex:5"></div>
-</div>
-<p>flex: 0 - 5; ⤴</p>
+  <div>
+    <div style="flex: 0"></div>
+    <div style="flex: 1"></div>
+    <div style="flex: 2"></div>
+    <div style="flex: 3"></div>
+    <div style="flex: 4"></div>
+    <div style="flex: 5"></div>
+  </div>
+  <p>flex: 0 - 5; ⤴</p>
 </article>
+
+
+
+
 <article>
-<div>
-  <div style="flex:0">flex: 0</div>
-  <div style="flex:1">flex: 1</div>
-  <div style="flex:2">flex: 2</div>
-  <div style="flex:3">flex: 3</div>
-  <div style="flex:4">flex: 4</div>
-  <div style="flex:5">flex: 5</div>
-</div>
-<p>flex: 0 - 5; ⤴</p>
+  <div>
+    <div style="flex: 0">flex: 0</div>
+    <div style="flex: 1">flex: 1</div>
+    <div style="flex: 2">flex: 2</div>
+    <div style="flex: 3">flex: 3</div>
+    <div style="flex: 4">flex: 4</div>
+    <div style="flex: 5">flex: 5</div>
+  </div>
+  <p>flex: 0 - 5; ⤴</p>
 </article>
 
 
@@ -303,68 +353,80 @@ article:nth-last-of-type(4n+12), article:nth-last-of-type(6) {
 
 
 <article class="flex3 hundred">
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: 3;   width: 50px; ⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: 3;   width: 50px; ⤴</p>
 </article>
 
 <article class="flex3 hundred">
-<div>
-  <div>A</div>
-  <div>B B</div>
-  <div>C C C</div>
-  <div>D D D D</div>
-  <div>E E E E E</div>
-  <div>F F F F</div>
-  <div>G G G</div>
-  <div>H H</div>
-  <div>I</div>
-</div>
-<p>flex: 3;   width: 50px;⤴</p>
+  <div>
+    <div>A</div>
+    <div>B B</div>
+    <div>C C C</div>
+    <div>D D D D</div>
+    <div>E E E E E</div>
+    <div>F F F F</div>
+    <div>G G G</div>
+    <div>H H</div>
+    <div>I</div>
+  </div>
+  <p>flex: 3;   width: 50px;⤴</p>
 </article>
 
 <article class="hundred">
-<div>
-  <div style="flex:0">flex: 0</div>
-  <div style="flex:1">flex: 1</div>
-  <div style="flex:2">flex: 2</div>
-  <div style="flex:3">flex: 3</div>
-  <div style="flex:4">flex: 4</div>
-  <div style="flex:5">flex: 5</div>
-</div>
-<p>flex: 0 - 5;   width: 50px; ⤴</p>
+  <div>
+    <div style="flex: 0">flex: 0</div>
+    <div style="flex: 1">flex: 1</div>
+    <div style="flex: 2">flex: 2</div>
+    <div style="flex: 3">flex: 3</div>
+    <div style="flex: 4">flex: 4</div>
+    <div style="flex: 5">flex: 5</div>
+  </div>
+  <p>flex: 0 - 5;   width: 50px; ⤴</p>
 </article>
+
+
+
+
 <article></article>
+
+
+
+
 <article class="hundred">
-<div>
-  <div style="flex:0"></div>
-  <div style="flex:1"></div>
-  <div style="flex:2"></div>
-  <div style="flex:3"></div>
-  <div style="flex:4"></div>
-  <div style="flex:5"></div>
-</div>
-<p>flex: 0 - 5;  width: 50px; ⤴</p>
+  <div>
+    <div style="flex: 0"></div>
+    <div style="flex: 1"></div>
+    <div style="flex: 2"></div>
+    <div style="flex: 3"></div>
+    <div style="flex: 4"></div>
+    <div style="flex: 5"></div>
+  </div>
+  <p>flex: 0 - 5;  width: 50px; ⤴</p>
 </article>
+
+
+
+
 <article class="hundred">
-<div>
-  <div style="flex:0">flex: 0</div>
-  <div style="flex:1">flex: 1</div>
-  <div style="flex:2">flex: 2</div>
-  <div style="flex:3">flex: 3</div>
-  <div style="flex:4">flex: 4</div>
-  <div style="flex:5">flex: 5</div>
-</div>
-<p>flex: 0 - 5;  width: 50px; ⤴</p>
+  <div>
+    <div style="flex: 0">flex: 0</div>
+    <div style="flex: 1">flex: 1</div>
+    <div style="flex: 2">flex: 2</div>
+    <div style="flex: 3">flex: 3</div>
+    <div style="flex: 4">flex: 4</div>
+    <div style="flex: 5">flex: 5</div>
+  </div>
+  <p>flex: 0 - 5;  width: 50px; ⤴</p>
 </article>
 </body>
 </html>

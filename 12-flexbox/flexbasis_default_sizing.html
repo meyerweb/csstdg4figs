@@ -5,10 +5,10 @@
   <title>Flex Items</title>  
   
   <link rel="stylesheet" href="c/examples.css"/>
-  <style type="text/css">
+  <style>
 div {
-    background-color: rgba(0,0,0,0.1);
-  }
+  background-color: rgba(0,0,0,0.1);
+} 
 article  {
   width: 520px; /* book reads 500. We added 20px to allow for between item padding */
   box-sizing: content-box;
@@ -32,35 +32,59 @@ body {
   font-size: 20px;
   text-align: center;
 }
-p {margin-top: 0;}
+p {
+  margin-top: 0;
+}
 </style>
 </head>
 <body>
 
 <article>
-<div>
-  <div style="width: 100px">width: 100px</div>
-  <div style="width: 200px">width: 200px</div>
-  <div style="width: 300px">width: 300px</div>
-</div>
-<p>Flex container⤴</p>
+  <div>
+    <div style="width: 100px">
+      width: 100px
+    </div>
+    <div style="width: 200px">
+      width: 200px
+    </div>
+    <div style="width: 300px">
+      width: 300px
+    </div>
+  </div>
+  <p>Flex container⤴</p>
 </article>
+
+
+
+
 <article>
-<div>
-  <div  style="width: 200px">width: 200px</div>
-  <div  style="width: 400px">width: 400px</div>
-  <div  style="width: 200px">width: 200px</div>
-</div>
-<p>Flex container⤴</p>
+  <div>
+    <div style="width: 200px">
+      width: 200px
+    </div>
+    <div style="width: 400px">
+      width: 400px
+    </div>
+    <div style="width: 200px">
+      width: 200px
+    </div>
+  </div>
+  <p>Flex container⤴</p>
 </article>
 
 <article>
-<div>
-  <div>lots of content, but no width explicitly set.</div>
-  <div>Even more content than above, but no width explicitly set.</div>
-  <div>Lots and lots of content.Even more content than above, but no width explicitly set.</div>
-</div>
-<p>Flex container⤴</p>
+  <div>
+    <div>
+      lots of content, but no width explicitly set.
+    </div>
+    <div>
+      Even more content than above, but no width explicitly set.
+    </div>
+    <div>
+      Lots and lots of content.Even more content than above, but no width explicitly set.
+    </div>
+  </div>
+  <p>Flex container⤴</p>
 </article>
 </body>
 </html>

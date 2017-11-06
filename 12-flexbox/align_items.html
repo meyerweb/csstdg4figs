@@ -4,39 +4,44 @@
   <meta charset="utf-8"/>
   <title>Flex Items: align-items</title>  
    <link rel="stylesheet" href="c/examples.css"/>
-    <style type="text/css">
-    body {padding: 100px;}
-div {background-color: rgba(0,0,0,0.1)}
-article {position: relative; width: 442px;}
-    article > div {
-      display: inline-flex;
-      flex-flow: row wrap;
-      border: 1px dashed;
-    }
-    article > div > div {
-      border: 1px solid;
-      margin: 0 10px;
-      
-    }
-    .c, .h {
-      margin-top: 10px;
-    }
-    .d, .i {
-      margin-top: 20px;
-    }
-    .j {
-      font-size: 3rem;
-    }
+  <style>
+body {
+  padding: 100px;
+  font-size: 25px;
+  text-align: center;
+}
+div {
+  background-color: rgba(0,0,0,0.1);
+}
+article {
+  position: relative; width: 442px;
+}
+article > div {
+  display: inline-flex;
+  flex-flow: row wrap;
+  border: 1px dashed;
+} 
+article > div > div {
+  border: 1px solid;
+  margin: 0 10px;
+  
+} 
+.c, .h {
+  margin-top: 10px;
+} 
+.d, .i {
+  margin-top: 20px;
+} 
+.j {
+  font-size: 3rem;
+} 
 div > div {
   border: 1px solid;
   margin: 0 10px 0;
 }
-
-body {
-  font-size: 25px;
-  text-align: center;
+p {
+  margin-top: 0;
 }
-p {margin-top: 0;}
 .k:before,
 .e:after,
 .f:after,
@@ -44,36 +49,34 @@ p {margin-top: 0;}
 article:before,
 div[style*="baseline"] .j:before,
 div[style*="baseline"] .j:after,
-div[style*="baseline"] .d:after{
+div[style*="baseline"] .d:after {
   content: '';
   position: absolute;
-  left: 0; right: 0;
+  left: 0; 
+  right: 0;
   border-top: 1px solid red;
   height: 1px; 
 }
-
 div:before {
   margin-top: -1px;
 }
-.j {font-size: 3rem;}
+.j {
+  font-size: 3rem;
+}
 .e:after,
 .f:after,
 .k:after {
   border-top: none; height: 1.2em;
   border-bottom: 1px solid blue;
 }
-
-
 div[style*="baseline"] .j:after{
-    top: 4.7em;
-    border-color: green;
+  top: 4.7em;
+  border-color: green;
 }
-
 div[style*="baseline"] .d:after{
-    top: 2.07em;
-    border-color: green;
+  top: 2.07em;
+  border-color: green;
 }
-
 </style>
 </head>
 <body>
